@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -657,3 +658,18 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+div p.vatjss-footer {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2.0625rem;
+  font-size: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center; }
+
+div p span.vatjss-capitalize {
+  text-transform: uppercase; }
