@@ -11,7 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-				<p class="vatjss-footer">&copy; 2017 <span class="vatjss-capitalize">vatjss</span>(Vancouver Aboriginal Transformative Services). All Rights Reserved.</p>
+				<p class="vatjss-footer">&copy; 2017 <span class="vatjss-text-uppercase">vatjss</span>(Vancouver Aboriginal Transformative Services). All Rights Reserved.</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
