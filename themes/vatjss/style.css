@@ -1,9 +1,9 @@
 /*!
-Theme Name: VATJSS
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Chinatsu, Ayesha, Camden and Bobby
-Author URI: http://vatjss.cp.academy.red
-Description: A WordPress starter theme for VATJSS.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -231,7 +232,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
