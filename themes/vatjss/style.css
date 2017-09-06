@@ -224,6 +224,127 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-weight: bold;
+  font-style: normal; }
+
+.vatjss-container {
+  padding: 20px 15px;
+  margin: 0 auto;
+  max-width: 1120px; }
+
+.vatjss-container-fluid {
+  padding: 20px 0px;
+  margin: 0 auto;
+  max-width: 1120px; }
+
+.vatjss-vertical-align-center {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex; }
+
+.vatjss-flex-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.vatjss-flex-container-no-wrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.vatjss-flex-item-mobile-100 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-70 {
+  -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-60 {
+  -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-50 {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-40 {
+  -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-33 {
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-30 {
+  -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+  padding: 0 15px; }
+
+.vatjss-flex-item-mobile-25 {
+  -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+  padding: 0 15px; }
+
+@media (min-width: 768px) {
+  .vatjss-flex-item-desktop-100 {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-70 {
+    -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-60 {
+    -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-50 {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-40 {
+    -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-33 {
+    -ms-flex: 0 0 33.333%;
+        flex: 0 0 33.333%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-30 {
+    -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+    padding: 0 15px; }
+  .vatjss-flex-item-desktop-25 {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    padding: 0 15px; } }
+
+.vatjss-text-center {
+  text-align: center; }
+
+.vatjss-text-uppercase {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -658,6 +779,22 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.vatjss-home-hero {
+  background-image: linear-gradient(rgba(151, 30, 22, 0.5) 0, rgba(151, 30, 22, 0.5)), url("../../images/bc_lake.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw; }
+
+.vatjss-home-banner {
+  background-image: url("../../images/red_maple_background.png");
+  background-repeat: repeat;
+  background-position: center;
+  overflow: auto;
+  height: 20vh; }
+  .vatjss-home-banner h2 {
+    color: #fff; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

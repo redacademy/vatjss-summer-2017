@@ -1,0 +1,111 @@
+// Base SCSS that sets up the html layout
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h5,h6{
+  font-weight: bold;
+  font-style: normal;
+}
+
+.vatjss-container{
+  padding: 20px 15px;
+  margin: 0 auto;
+  max-width: $container-width;
+}
+.vatjss-container-fluid{
+  padding: 20px 0px;
+  margin: 0 auto;
+  max-width: $container-width;
+}
+.vatjss-vertical-align-center{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.vatjss-flex-container{
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.vatjss-flex-container-no-wrap{
+  flex-wrap: nowrap;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.vatjss-flex-item-mobile-100{
+  flex: 0 0 100%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-70{
+  flex: 0 0 70%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-60{
+  flex: 0 0 60%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-50{
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-40{
+  flex: 0 0 40%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-33{
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-30{
+  flex: 0 0 30%;
+  padding: 0 15px;
+}
+.vatjss-flex-item-mobile-25{
+  flex: 0 0 25%;
+  padding: 0 15px;
+}
+@include desktop {
+  .vatjss-flex-item-desktop-100{
+    flex: 0 0 100%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-70{
+    flex: 0 0 70%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-60{
+    flex: 0 0 60%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-50{
+    flex: 0 0 50%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-40{
+    flex: 0 0 40%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-33{
+    flex: 0 0 33.333%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-30{
+    flex: 0 0 30%;
+    padding: 0 15px;
+  }
+  .vatjss-flex-item-desktop-25{
+    flex: 0 0 25%;
+    padding: 0 15px;
+  }
+}
+.vatjss-text-center{
+  text-align: center;
+}
+.vatjss-text-uppercase{
+  text-transform: uppercase;
+}
