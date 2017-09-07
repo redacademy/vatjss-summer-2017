@@ -1,4 +1,4 @@
-$(function($) {
+(function($) {
 
   var windowW = window.innerWidth;
 
