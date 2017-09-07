@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * Template Name: About Page
  *
  * @package VATJSS_Theme
  */
