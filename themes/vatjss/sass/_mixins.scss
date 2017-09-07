@@ -10,3 +10,13 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@function rem($pixels, $context: 16) {
+	@return #{$pixels/$context}rem;
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

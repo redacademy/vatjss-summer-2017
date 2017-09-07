@@ -3,3 +3,28 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.vatjss-home-hero{
+  background-image:linear-gradient(rgba(151, 30, 22, 0.5) 0,rgba(151, 30, 22, 0.5)),url('../../images/bc_lake.png');
+  background-size:cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+.vatjss-home-banner {
+  overflow: auto;
+  height: 30vh;
+  h2{
+    color:$color__background-body;
+  }
+}
+.vatjss-home-banner,.vatjss-home-mobile-subscribe-banner {
+  background-image: url('../../images/red_maple_background.png');
+  background-repeat: repeat;
+  background-position: center;
+}
+.vatjss-home-mobile-subscribe-banner{
+  height: 20vh;
+  button{
+    font-size: rem(24);
+  }
+}
