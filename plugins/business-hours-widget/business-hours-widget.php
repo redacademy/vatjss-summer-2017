@@ -51,10 +51,9 @@ class Vatjss_Biz_Hours extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'VATJSS Hours',
+			'VATJSS Hours & Location',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
 				'description' => 'Add business hours.'
@@ -102,7 +101,9 @@ class Vatjss_Biz_Hours extends WP_Widget {
 		$tuesday_friday = empty( $instance['tuesday_friday'] ) ? '' : apply_filters( 'widget_title', $instance['tuesday_friday'] );
 		$wednesday = empty( $instance['wednesday'] ) ? '' : apply_filters( 'widget_title', $instance['wednesday'] );	
 		$saturday_sunday = empty( $instance['saturday_sunday'] ) ? '' : apply_filters( 'widget_title', $instance['saturday_sunday'] );
+		$address = empty( $instance['address'] ) ? '' : apply_filters( 'widget_title', $instance['address'] );
 		
+
 		ob_start();
 
 		if ( $title ){
@@ -134,6 +135,8 @@ class Vatjss_Biz_Hours extends WP_Widget {
 		$instance['tuesday_friday'] = strip_tags( $new_instance['tuesday_friday'] );
 		$instance['wednesday'] = strip_tags( $new_instance['wednesday'] );
 		$instance['saturday_sunday'] = strip_tags( $new_instance['saturday_sunday'] );
+		$instance['address'] = strip_tags( $new_instance['address'] );
+		
 		
 		return $instance;
 
@@ -154,6 +157,7 @@ class Vatjss_Biz_Hours extends WP_Widget {
 				'tuesday_friday'		=> '',
 				'wednesday'					=> '',
 				'saturday_sunday'		=> '',
+				'address'						=> '',
 			)
 		);
 
@@ -162,6 +166,8 @@ class Vatjss_Biz_Hours extends WP_Widget {
 		$tuesday_friday = strip_tags( $instance['tuesday_friday'] );
 		$wednesday = strip_tags( $instance['wednesday'] );
 		$saturday_sunday = strip_tags( $instance['saturday_sunday'] );
+		$address = strip_tags( $instance['address'] );
+		
 		
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );

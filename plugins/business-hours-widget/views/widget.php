@@ -22,3 +22,9 @@
   <span class="day-of-the-week">Saturday - Sunday:</span> <?php echo $saturday_sunday; ?>
 </p>
 <?php endif; ?>
+
+<?php if ( strlen( trim( $address)) > 0 ) : ?>
+<p>
+  <span class="widget_address">Address:</span> <?php echo $address; ?>
+</p>
+<?php endif; ?>

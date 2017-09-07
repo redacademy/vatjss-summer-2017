@@ -12,7 +12,7 @@ get_header(); ?>
 
     </section>
     <section class="vatjss-home-banner vatjss-vertical-align-center">
-      <h2 class="vatjss-text-uppercase vatjss-text-center">strengthening resiliency within the aboriginal community</h2>
+      <h2 class="vatjss-text-uppercase vatjss-text-center">"strengthening resiliency within the aboriginal community"</h2>
     </section>
     <section class="vatjss-container-fluid">
       <?php
@@ -22,7 +22,7 @@ get_header(); ?>
       <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
         <div>
         </div>
-      <?php endforeach; wp_reset_postdata(); ?>
+      <?php endforeach; wp_reset_postdata(); ?> 
       <?php
       ?>
       <?php
@@ -41,5 +41,5 @@ get_header(); ?>
   </main>
 </div>
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
