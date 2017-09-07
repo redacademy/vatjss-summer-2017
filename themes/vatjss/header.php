@@ -22,13 +22,21 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				</div><!-- .site-branding -->
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				<div class="vatjss-container">
+					<div class="vatjss-flex-container-no-wrap">
+						<div class="site-branding vatjss-flex-item-desktop-30">
+							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						</div>
+						<nav id="site-navigation" class="main-navigation vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70" role="navigation">
+							<img class="vatjss-hidden-desktop vatjss-mobile-logo" src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_mobile_logo.svg alt="hero image"/>
+							<div id="vatjss-nav-menu" class="vatjss-hidden-mobile vatjss-nav-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?></div>
+							<div class="vatjss-phone-search">
+								<a class="phone" href="888-888-8888"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="vatjss-hidden-mobile">888-888-8888</span></a>
+								<?php echo get_search_form(); ?>
+							</div>
+						</nav>
+					</div>
+				</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

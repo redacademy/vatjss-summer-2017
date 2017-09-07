@@ -130,3 +130,137 @@ a {
 		width: 50%;
 	}
 }
+
+.responsive-menu-button{
+	box-shadow: none;
+	&:hover,&:focus{
+		box-shadow: none;
+	}
+}
+.site-header{
+	position: fixed;
+	width: 100%;
+	background: rgba(255,255,255,0.5);
+	top: 44px;
+	.vatjss-nav-menu{
+		display: inline-block;
+		width: 80%;
+		max-height: 24px;
+		transition: all 0.4s ease-in-out;
+	}
+	.menu{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		li{
+			a{
+				color:$color_black;
+			}
+		}
+	}
+	.vatjss-phone-search{
+		display: inline-block;
+		float: right;
+		a{
+			display: inline-block;
+			padding-top: 5px;
+			position: fixed;
+			top: 0;
+			right: 0;
+			padding: 10px 15px;
+			background:black;
+			color:white;
+			span{
+				margin-right: 10px;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	.hide-item{
+		opacity: 0;
+		width: 0;
+		overflow: hidden;
+	}
+	.search-form{
+		display: inline-block;
+		fieldset{
+			padding: 0;
+			border: none;
+			margin-left: 15px;
+		}
+		label{
+			.fa{
+				color:black;
+				font-size: rem(22);
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+		.search-field{
+			width: 0;
+			border: none;
+			background-color: transparent;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+		}
+		.search-field:focus{
+			outline: none;
+			border-bottom: 1px solid #fff;
+		}
+		.search-field-focus{
+			width: 200px;	
+		}
+		.search-submit{
+			display: none;
+		}
+	}
+}
+@include mobile {
+	.site-header{
+		top:0;
+		background:black;
+		.vatjss-phone-search{
+			a{
+				position: relative;
+				padding: 5px;
+			}
+		}
+		.main-navigation{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			position: relative;
+		}
+		.fa-phone{
+			color:white;
+			font-size: rem(22);
+			position: relative;
+			top: 2px;
+		}
+		.vatjss-mobile-logo{
+			max-height: rem(50);
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,0);
+			transition: opacity 0.4s ease-in-out;
+		}
+		.menu{
+			li{
+				display: none;
+			}
+		}
+		.search-form{
+			label{
+				.fa{
+					color:white;
+				}
+			}
+			.search-field-focus{
+				width: 100px;	
+			}
+		}
+	}
+}

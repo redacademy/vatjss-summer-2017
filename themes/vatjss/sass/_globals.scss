@@ -69,7 +69,19 @@ h1,h2,h3,h4,h5,h5,h6{
   flex: 0 0 25%;
   padding: 0 15px;
 }
+.vatjss-flex-item-mobile-20{
+  flex: 0 0 20%;
+  padding: 0 15px;
+}
+@include mobile {
+  .vatjss-hidden-mobile{
+    display:none;
+  }
+}
 @include desktop {
+  .vatjss-hidden-desktop{
+    display:none;
+  }
   .vatjss-flex-item-desktop-100{
     flex: 0 0 100%;
     padding: 0 15px;
@@ -102,7 +114,12 @@ h1,h2,h3,h4,h5,h5,h6{
     flex: 0 0 25%;
     padding: 0 15px;
   }
+  .vatjss-flex-item-desktop-20{
+    flex: 0 0 20%;
+    padding: 0 15px;
+  }
 }
+
 .vatjss-text-center{
   text-align: center;
 }
