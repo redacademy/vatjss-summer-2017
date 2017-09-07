@@ -1,6 +1,6 @@
 <?php
 /**
- * RED WordPress Widget Boilerplate
+ * Business Hours Widget
  *
  * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
  *
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Widget_Name extends WP_Widget {
+class Vatjss_Biz_Hours extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -103,7 +103,6 @@ class Widget_Name extends WP_Widget {
 		$wednesday = empty( $instance['wednesday'] ) ? '' : apply_filters( 'widget_title', $instance['wednesday'] );	
 		$saturday_sunday = empty( $instance['saturday_sunday'] ) ? '' : apply_filters( 'widget_title', $instance['saturday_sunday'] );
 		
-
 		ob_start();
 
 		if ( $title ){
