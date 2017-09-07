@@ -13,7 +13,7 @@ get_header(); ?>
 
     </section>
     <section class="vatjss-home-banner vatjss-vertical-align-center">
-      <h2>strengthening resiliency within the aboriginal community</h2>
+      <h2 class="vatjss-text-uppercase vatjss-text-center">strengthening resiliency within the aboriginal community</h2>
     </section>
     <section class="vatjss-container-fluid">
       <?php
@@ -35,7 +35,7 @@ get_header(); ?>
         </div>
       <?php endforeach; wp_reset_postdata(); ?>
     </section>
-    <section class="vatjss-container-fluid vatjss-text-center">
+    <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button>Subscribe</button>
     </section>
   </main>
