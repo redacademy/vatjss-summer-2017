@@ -1,7 +1,6 @@
 <?php
 /**
- * The main template file.
- *
+ * Template Name: Front Page
  * @package VATJSS_Theme
  */
 
@@ -22,14 +21,16 @@ get_header(); ?>
       ?>
       <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
         <div>
-          <p><?php echo $service_type->description ?></p>
+          <p><?php echo $service_type ?></p>
         </div>
       <?php endforeach; wp_reset_postdata(); ?>
+      <?php
+      ?>
       <?php
         $resource_args = array( 'taxonomy' => 'resources-type');
         $resource_types = get_terms( $resource_args );
       ?>
-      <?php foreach ( $resource_types as $resource_type ) : setup_postdata( $service_type ); ?>
+      <?php foreach ( $resource_types as $resource_type ) : setup_postdata( $resource_type ); ?>
         <div>
           <p><?php echo $resource_type->description ?></p>
         </div>
