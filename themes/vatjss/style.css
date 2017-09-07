@@ -44,7 +44,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Nunito");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -798,12 +797,50 @@ object {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-div p.vatjss-footer {
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 2.0625rem;
-  font-size: 1.5rem;
+footer.site-footer {
+  background: #000; }
+  @media (min-width: 768px) {
+    footer.site-footer {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem; } }
+
+div.vatjss-footer-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  div.vatjss-footer-icons .vatjss-socialmedia-icon {
+    background-color: #000;
+    color: #fff;
+    height: 2.125rem;
+    width: 2.125rem;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    margin-left: 1.3125rem;
+    margin-top: 1.125rem; }
+
+div p.vatjss-footer-mobile {
+  line-height: 1.0625rem;
+  font-size: 0.875rem;
   background-color: #000;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.125rem; }
+  @media (min-width: 768px) {
+    div p.vatjss-footer-mobile {
+      display: none; } }
+
+div p.vatjss-footer-web {
+  display: none; }
+  @media (min-width: 768px) {
+    div p.vatjss-footer-web {
+      display: unset;
+      margin-bottom: 2.0625rem;
+      color: #fff; } }

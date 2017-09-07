@@ -1,14 +1,57 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+footer.site-footer{
+  background: $background_black;
+  
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
+}
 
-div p.vatjss-footer {
-  font-family: $font_secondary;
-  font-weight: 500;
-  font-style: normal;
-  line-height: rem(33);
-  font-size: rem(24);
-  background-color: $color_black;
+div.vatjss-footer-icons {
+  display: flex;
+  justify-content: center;
+
+  .vatjss-socialmedia-icon {
+    background-color: $background_black;
+    color: $color_white;
+    height: rem(34);
+    width: rem(34);
+    align-self: auto;
+    margin-left: rem(21);
+    margin-top: rem(18);    
+
+    @include desktop {
+     
+    }
+  }
+}
+
+div p.vatjss-footer-mobile {
+  line-height: rem(17);
+  font-size: rem(14);
+  background-color: $background_black;
   color: $color_white;
   text-align: center;
+  margin-bottom: rem(18); 
+ 
+  @include desktop {
+    display: none;
+  }
+}
+
+div p.vatjss-footer-web {
+  display: none;
+  
+  @include desktop {
+    display: unset;
+    margin-bottom: rem(33);
+    color: $color_white;
+    
+  }
 }
