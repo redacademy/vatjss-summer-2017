@@ -21,7 +21,7 @@ get_header(); ?>
       ?>
       <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
         <div>
-          <p><?php echo $service_type ?></p>
+          <p><?php echo $service_type-> ?></p>
         </div>
       <?php endforeach; wp_reset_postdata(); ?>
       <?php
