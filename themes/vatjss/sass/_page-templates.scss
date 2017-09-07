@@ -11,12 +11,20 @@
   width: 100vw;
 }
 .vatjss-home-banner {
+  overflow: auto;
+  height: 30vh;
+  h2{
+    color:$color__background-body;
+  }
+}
+.vatjss-home-banner,.vatjss-home-mobile-subscribe-banner {
   background-image: url('../../images/red_maple_background.png');
   background-repeat: repeat;
   background-position: center;
-  overflow: auto;
+}
+.vatjss-home-mobile-subscribe-banner{
   height: 20vh;
-  h2{
-    color:$color__background-body;
+  button{
+    font-size: rem(24);
   }
 }

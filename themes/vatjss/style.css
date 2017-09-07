@@ -787,13 +787,20 @@ object {
   width: 100vw; }
 
 .vatjss-home-banner {
-  background-image: url("../../images/red_maple_background.png");
-  background-repeat: repeat;
-  background-position: center;
   overflow: auto;
-  height: 20vh; }
+  height: 30vh; }
   .vatjss-home-banner h2 {
     color: #fff; }
+
+.vatjss-home-banner, .vatjss-home-mobile-subscribe-banner {
+  background-image: url("../../images/red_maple_background.png");
+  background-repeat: repeat;
+  background-position: center; }
+
+.vatjss-home-mobile-subscribe-banner {
+  height: 20vh; }
+  .vatjss-home-mobile-subscribe-banner button {
+    font-size: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Footer
