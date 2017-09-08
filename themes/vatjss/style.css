@@ -1284,3 +1284,35 @@ div p.vatjss-footer-web {
       display: unset;
       margin-bottom: 2.0625rem;
       color: #fff; } }
+
+/* ABOUT PAGE STYLE */
+section.vatjss-about-content {
+  background: url(../../images/red_maple_background.png);
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%; }
+  section.vatjss-about-content h2.vatjss-story-header {
+    height: 1.5625rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    font-size: 1.5rem; }
+  section.vatjss-about-content p {
+    height: 100%;
+    width: 90%;
+    line-height: 1.875rem;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1.875rem;
+    margin: auto; }
+
+.vatjss-our-vision {
+  display: none; }
+  @media (min-width: 768px) {
+    .vatjss-our-vision {
+      display: unset; } }
+
+.about-content .widget-area {
+  display: none; }

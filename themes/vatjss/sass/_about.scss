@@ -1,0 +1,39 @@
+/* ABOUT PAGE STYLE */
+
+section.vatjss-about-content {
+  background: url(../../images/red_maple_background.png);
+  color: $color_white;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+    
+  h2.vatjss-story-header {
+    height: rem(25);	
+    font-size: rem(24);	
+    line-height: rem(28);	
+    text-align: center;
+    font-size: rem(24);
+  }
+
+  p {
+    height: 100%;
+    width: 90%;
+    line-height: rem(30);
+    border-bottom: $border_grey;
+    padding-bottom: rem(30);    
+    margin: auto;  
+  }
+
+}
+
+.vatjss-our-vision {
+  display: none;
+
+  @include desktop {
+    display: unset;
+  }
+}
+
+.about-content .widget-area {
+  display: none;
+}  //fix widget  
