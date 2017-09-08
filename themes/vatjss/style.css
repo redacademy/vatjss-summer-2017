@@ -1232,6 +1232,18 @@ object {
       .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
         display: none; } }
 
+/*404 page*/
+.error404 {
+  background: #971E16;
+  color: #fff; }
+  .error404 .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    vertical-align: center; }
+    .error404 .site-content h1 {
+      text-align: center; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

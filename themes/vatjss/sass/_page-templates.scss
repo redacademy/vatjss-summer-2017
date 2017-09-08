@@ -214,3 +214,21 @@
     }
   }
 }
+
+/*404 page*/
+
+.error404{
+  background:$background_red;
+  color:$color_white;
+    .site-content{
+      display:flex;
+      height:100vh;
+      vertical-align: center;
+        h1{
+          text-align: center;
+        }
+    
+    }
+}
+
+
