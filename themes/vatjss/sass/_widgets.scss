@@ -17,14 +17,6 @@
 }
 
 /* bottom sidebar */
-div.widget-area {
-
-	@include desktop {
-		display: flex;
-	}
-}
-
-
 div div aside#text-3 {
 	display: none;
 

@@ -20,3 +20,12 @@ function vatjss_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'vatjss_body_classes' );
+
+function vatjss_archive_title( $title ) {
+	if ( is_post_type_archive('staff') ) {
+			$title = 'Our Staff';
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'vatjss_archive_title' );

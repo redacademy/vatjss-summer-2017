@@ -142,6 +142,7 @@ a {
 	width: 100%;
 	background: rgba(255,255,255,0.5);
 	top: 44px;
+	z-index: 10;
 	.vatjss-nav-menu{
 		display: inline-block;
 		width: 80%;
@@ -223,9 +224,14 @@ a {
 		top:0;
 		background:black;
 		.vatjss-phone-search{
+			min-width: 70px;
 			a{
 				position: relative;
-				padding: 5px;
+				padding: 0px;
+				display: inline-block;
+				span{
+					margin: 0;
+				}
 			}
 		}
 		.main-navigation{
@@ -253,6 +259,9 @@ a {
 			}
 		}
 		.search-form{
+			fieldset{
+				margin-left: rem(15);
+			}
 			label{
 				.fa{
 					color:white;

@@ -8,6 +8,27 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+				<header class="entry-header">
+					<div class="vatjss-custom-hero">
+            <h2 class="vatjss-about">Crime is best viewed as a violate of people and relationships. 
+              Conflict that emerges is an opportunity for positive 
+              <span class="vatjss-text-uppercase">transformation</span> 
+              for the victim, offender, and the community.</h2>
+					</div>
+				</header>
+				<div class="container about-content">
+							<h2 class="story-header">Our Story</h2>
+							<?php echo CFS()->get( ' ' ); ?>	
+							<h2 class="story-header">Our Team</h2>
+							<?php echo CFS()->get( ' ' ); ?>
+				</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+
+<!-- <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
     <section class="vatjss-home-hero">
 
@@ -52,7 +73,7 @@ get_header(); ?>
       <button>Subscribe</button>
     </section>
   </main>
-</div>
+</div> -->
 
 
 <?php get_footer(); ?>
