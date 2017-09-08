@@ -16,14 +16,30 @@ get_header(); ?>
     </section>
     <section class="vatjss-container-fluid">
       <?php
-        $service_args = array( 'taxonomy' => 'services-type');
-        $service_types = get_terms( $service_args );
+        $service_types = get_terms( 'services-type');
+        $housing = $service_types[1];
       ?>
+<<<<<<< HEAD
       <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
         <div>
         </div>
       <?php endforeach; wp_reset_postdata(); ?> 
+=======
+      <div class="housing-services-fp">
+        <h3 class="housing-title-fp">Housing Services</h3>
+        <p class="housing-description-fp"><?php echo $housing->description ?></p>
+        <div class="housing-learn-more-fp" href="/services/housing-services">Learn More <span>></span></div>
+      </div>
+      <?php $justice = $service_types[2]; ?>
+      <div class="justice-services-fp">
+        <h3 class="justice-title-fp">Transformative Justice Services</h3>
+        <p class="justice-description-fp"><?php echo $justice->description ?></p>
+        <div class="justice-learn-more-fp" href="/services/justice-services">Learn More <span>></span></div>
+      </div>
+>>>>>>> got the services divs to display on the front-page
       <?php
+      //   <h3>
+      // <?php
       ?>
       <?php
         $resource_args = array( 'taxonomy' => 'resources-type');
