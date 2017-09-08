@@ -908,6 +908,47 @@ http://flickity.metafizzy.co
 .widget_search .search-submit {
   display: none; }
 
+/* bottom sidebar */
+div div aside#text-3 {
+  display: none; }
+  @media (min-width: 768px) {
+    div div aside#text-3 {
+      display: unset; } }
+
+div div aside#text-2 {
+  display: none; }
+  @media (min-width: 768px) {
+    div div aside#text-2 {
+      display: unset; } }
+
+div aside.vatjss-biz-hours-class {
+  background: #000;
+  color: #fff; }
+  div aside.vatjss-biz-hours-class h2.widget-title {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem; }
+  div aside.vatjss-biz-hours-class p span.day-of-the-week {
+    text-transform: uppercase; }
+
+.vatjss-business-hours {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0.99375rem;
+  padding-right: 0.99375rem;
+  font-size: 0.9375rem; }
+  .vatjss-business-hours .vatjss-hours {
+    width: 460px;
+    line-height: .6; }
+
+.vatjss-widget-address p {
+  padding-left: 0.99375rem;
+  margin: 0; }
+  .vatjss-widget-address p span.widget_address {
+    display: none; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1037,7 +1078,9 @@ object {
 # Footer
 --------------------------------------------------------------*/
 footer.site-footer {
-  background: #000; }
+  background: #000;
+  position: absolute;
+  width: 100%; }
   @media (min-width: 768px) {
     footer.site-footer {
       display: -ms-flexbox;
@@ -1070,8 +1113,7 @@ div p.vatjss-footer-mobile {
   font-size: 0.875rem;
   background-color: #000;
   color: #fff;
-  text-align: center;
-  margin-bottom: 1.125rem; }
+  text-align: center; }
   @media (min-width: 768px) {
     div p.vatjss-footer-mobile {
       display: none; } }

@@ -15,3 +15,68 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/* bottom sidebar */
+div.widget-area {
+
+	@include desktop {
+		display: flex;
+	}
+}
+
+
+div div aside#text-3 {
+	display: none;
+
+	@include desktop {
+		display: unset;
+		margin: 0;
+	 }
+}  //subscribe
+
+div div aside#text-2 {
+	display: none;
+
+	@include desktop {
+		display: unset;
+		margin: 0;
+	}
+}  //social
+
+div aside.vatjss-biz-hours-class {
+	background: $background_black;
+	color: $color_white;
+	
+	h2.widget-title {
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: rem(30);
+		padding-bottom: rem(30);
+	}
+
+	p span.day-of-the-week {
+		text-transform: uppercase;
+	}
+}  //biz hour
+
+.vatjss-business-hours{
+	display: flex;
+	padding-left: rem(15.9);
+	padding-right: rem(15.9);
+	font-size: rem(15);
+
+		.vatjss-hours{
+			width: 460px;
+			line-height: .6;
+		}
+}
+
+.vatjss-widget-address p {
+	padding-left: rem(15.9);
+	margin: 0;
+
+	span.widget_address {
+		display: none;
+	}	
+}

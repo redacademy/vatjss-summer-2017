@@ -3,6 +3,8 @@
 --------------------------------------------------------------*/
 footer.site-footer{
   background: $background_black;
+  position: absolute;
+  width: 100%;
   
   @include desktop {
     display: flex;
@@ -24,12 +26,8 @@ div.vatjss-footer-icons {
     width: rem(34);
     align-self: auto;
     margin-left: rem(21);
-    margin-top: rem(18);    
-
-    @include desktop {
-     
-    }
-  }
+    margin-top: rem(18);
+  }    
 }
 
 div p.vatjss-footer-mobile {
@@ -38,7 +36,6 @@ div p.vatjss-footer-mobile {
   background-color: $background_black;
   color: $color_white;
   text-align: center;
-  margin-bottom: rem(18); 
  
   @include desktop {
     display: none;
