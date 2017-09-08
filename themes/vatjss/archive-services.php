@@ -17,11 +17,11 @@ get_header(); ?>
       <section class="vatjss-service-hero">
         <div class="vatjss-container">
           <div class="vatjss-flex-container-no-wrap vatjss-btn-section vatjss-hidden-desktop">
-            <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
             <div class="vatjss-flex-item-mobile-33">
-              <button class="vatjss-service-btn"><?php echo $service_type->name ?> Services</button>
+              <?php the_title( sprintf( '<button class="vatjss-service-btn">'), '</button>' ); ?>
             </div>
-            <?php endforeach; wp_reset_postdata(); ?>
+            <?php endwhile; ?>
           </div>
           <h1 class="vatjss-text-center">Services for Youth and Adults</h1>
         </div>
@@ -32,15 +32,15 @@ get_header(); ?>
       <div class="vatjss-services-section-container">
         <div class="vatjss-container">
           <div class="vatjss-flex-container-no-wrap">
-          <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
+          <?php while ( have_posts() ) : the_post(); ?>
             <section id="post-<?php the_ID(); ?>" class="vatjss-services-section vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-33">
               <header class="entry-header">
-                <h2><?php echo $service_type->name ?> Services</h2>
-                <p><?php echo $service_type->description ?></p> 
-                <a class="vatjss-service-learn-btn" href="<?php echo get_term_link($service_type) ?>">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                <?php the_title( sprintf( '<h2 class="entry-title">'), '</h2>' ); ?>
+                <p><?php the_content(); ?></p> 
+                <a class="vatjss-service-learn-btn" href="<?php echo get_permalink() ?>">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
               </header>
             </section>
-          <?php endforeach; wp_reset_postdata(); ?>
+            <?php endwhile; ?>
           </div>
         </div>
       </div>

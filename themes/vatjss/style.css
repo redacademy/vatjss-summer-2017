@@ -1084,7 +1084,7 @@ object {
   .vatjss-home-mobile-subscribe-banner button {
     font-size: 1.5rem; }
 
-.post-type-archive-services .site-content, .post-type-archive-staff .site-content {
+.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content {
   padding-top: 4.375rem; }
 
 .post-type-archive-staff h1 {
@@ -1174,8 +1174,19 @@ object {
     color: white;
     border-radius: 0; }
 
+.services-template-default .vatjss-services-sidebar button {
+  width: 100%;
+  background: #971E16;
+  border: 1px solid white;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 0;
+  padding: 20px;
+  font-size: 1rem; }
+
 @media (min-width: 768px) {
-  .post-type-archive-services .site-content, .post-type-archive-staff .site-content {
+  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content {
     padding-top: 7.125rem; }
   .post-type-archive-staff h1 {
     text-align: center;

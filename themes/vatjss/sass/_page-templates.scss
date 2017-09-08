@@ -28,7 +28,7 @@
     font-size: rem(24);
   }
 }
-.post-type-archive-services, .post-type-archive-staff{
+.post-type-archive-services, .post-type-archive-staff,.services-template-default{
   .site-content{
     padding-top: rem(70);
   }
@@ -134,8 +134,23 @@
     }
   }
 }
+.services-template-default{
+  .vatjss-services-sidebar{
+    button{
+      width: 100%;
+      background: $background_red;
+      border: 1px solid white;
+      box-shadow: none;
+      text-shadow: none;
+      color:white;
+      border-radius: 0;
+      padding: 20px;
+      font-size: rem(16);
+    }
+  }
+}
 @include desktop {
-  .post-type-archive-services, .post-type-archive-staff{
+  .post-type-archive-services, .post-type-archive-staff,.services-template-default{
     .site-content{
       padding-top: rem(114);
     }
