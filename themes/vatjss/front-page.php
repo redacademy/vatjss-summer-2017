@@ -16,22 +16,29 @@ get_header(); ?>
     </section>
     <section class="vatjss-container-fluid">
       <?php
-        $service_types = get_terms( 'services-type');
+        $service_types = get_terms( 'services-type' );
         $housing = $service_types[1];
       ?>
       <div class="housing-services-fp">
         <h3 class="housing-title-fp">Housing Services</h3>
         <p class="housing-description-fp"><?php echo $housing->description ?></p>
-        <div class="housing-learn-more-fp" href="/services/housing-services">Learn More <span>></span></div>
+        <div class="housing-learn-more-fp"><a href="services/housing-services">Learn More <span>></span></a></div>
       </div>
       <?php $justice = $service_types[2]; ?>
       <div class="justice-services-fp">
         <h3 class="justice-title-fp">Transformative Justice Services</h3>
         <p class="justice-description-fp"><?php echo $justice->description ?></p>
-        <div class="justice-learn-more-fp" href="/services/justice-services">Learn More <span>></span></div>
+        <div class="justice-learn-more-fp"><a href="services/justice-services">Learn More <span>></span></a></div>
       </div>
       <?php
+        $resources_category = get_categories( 'resources=types' );
+        $resources = $resources_category[0];
       ?>
+      <div class="resources-fp">
+        <h3 class="resources-title-fp">Resources</h3>
+        <p class="resources-description-fp"><?php echo $resources->description ?></p>
+        <div class="resources-learn-more-fp"><a href="resources">Learn More <span>></span></a></div>
+      </div>
       <?php
         $resource_args = array( 'taxonomy' => 'resources-type');
         $resource_types = get_terms( $resource_args );
