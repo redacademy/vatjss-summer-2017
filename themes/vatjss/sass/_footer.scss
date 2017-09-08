@@ -3,13 +3,10 @@
 --------------------------------------------------------------*/
 footer.site-footer{
   background: $background_black;
-<<<<<<< HEAD
   overflow: auto;
-=======
   position: absolute;
   width: 100%;
   
->>>>>>> bottom sidebar made; styled 80% of mobile, do desktop styling
   @include desktop {
     display: flex;
     flex-direction: row-reverse;
