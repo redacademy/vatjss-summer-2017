@@ -8,7 +8,20 @@ get_header(); ?>
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
     <section class="vatjss-home-hero">
-    <?php echo CFS()->get(  ); ?>
+      <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": false }'>
+        <?php
+          $carousel_articles = CFS()->get( 'front_page_carousel_items' );
+          foreach ($carousel_articles as $article) :
+        ?>
+        <div class="carousel-cell">
+          <h3 class="carousel-title"><?php echo $article['front_page_carousel_Item_title'] ?></h3>
+          <p class="carousel-content"><?php echo $article['front_page_carousel_item_content'] ?></p>
+          <div class="carousel-button">
+            <a href="<?php echo $article['front_page_carousel_link'] ?>">Learn More <span>></span></a>
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div>
     </section>
     <section class="vatjss-home-banner vatjss-vertical-align-center">
       <h2 class="vatjss-text-uppercase vatjss-text-center">strengthening resiliency within the aboriginal community</h2>

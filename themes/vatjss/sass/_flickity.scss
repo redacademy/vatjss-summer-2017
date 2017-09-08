@@ -1,6 +1,7 @@
 /*! Flickity v2.0.9
 http://flickity.metafizzy.co
 ---------------------------------------------- */
+//from flickity --NEVER TOUCH--
 
 .flickity-enabled {
   position: relative;
@@ -127,4 +128,28 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+//added styling
+.main-carousel {
+  width: 100vw;
+  height: 90%;
+  .flickity-viewport, .flickity-slider {
+    height: 100%;
+  width: 100%;
+    .carousel-cell {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .carousel-title, .carousel-button, .carousel-content {
+        display: block;
+        width: 40%;
+        text-align: center;
+      }
+    }
+  }
 }
