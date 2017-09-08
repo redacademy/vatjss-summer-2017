@@ -921,13 +921,15 @@ div div aside#text-3 {
   display: none; }
   @media (min-width: 768px) {
     div div aside#text-3 {
-      display: unset; } }
+      display: unset;
+      margin: 0; } }
 
 div div aside#text-2 {
   display: none; }
   @media (min-width: 768px) {
     div div aside#text-2 {
-      display: unset; } }
+      display: unset;
+      margin: 0; } }
 
 div aside.vatjss-biz-hours-class {
   background: #000;
@@ -1224,12 +1226,9 @@ object {
 --------------------------------------------------------------*/
 footer.site-footer {
   background: #000;
-<<<<<<< HEAD
-  overflow: auto; }
-=======
+  overflow: auto;
   position: absolute;
   width: 100%; }
->>>>>>> bottom sidebar made; styled 80% of mobile, do desktop styling
   @media (min-width: 768px) {
     footer.site-footer {
       display: -ms-flexbox;
