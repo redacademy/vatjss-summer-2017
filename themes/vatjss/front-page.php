@@ -38,10 +38,11 @@ get_header(); ?>
         <p class="resources-description-fp"><?php echo $resources->description ?></p>
         <div class="resources-learn-more-fp"><a href="resource">Learn More <span>></span></a></div>
       </div>
-      <?php
-        $resources_category = get_categories( 'resources=types' );
-        $resources = $resources_category[0];
-      ?>
+      <div class="volunteer-fp">
+        <h3 class="volunteer-title-fp">Volunteer Opportunities</h3>
+        <p class="volunteer-description-fp"><?php echo CFS()->get( 'volunteer_opportunities' ); ?></p>
+        <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <span>></span></div>
+      </div>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button>Subscribe</button>
