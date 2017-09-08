@@ -25,15 +25,15 @@ get_header(); ?>
       <?php endforeach; wp_reset_postdata(); ?> 
       <?php
       ?>
-      <?php
-        $resource_args = array( 'taxonomy' => 'resources-type');
-        $resource_types = get_terms( $resource_args );
-      ?>
-      <?php foreach ( $resource_types as $resource_type ) : setup_postdata( $resource_type ); ?>
-        <div>
-          <p><?php echo $resource_type->description ?></p>
-        </div>
-      <?php endforeach; wp_reset_postdata(); ?>
+      <div class="resources-fp">
+        <h3 class="resources-title-fp">Resources</h3>
+        <p class="resources-description-fp"><?php echo $resources->description ?></p>
+        <div class="resources-learn-more-fp"><a href="resource">Learn More <span>></span></a></div>
+      </div>
+      <div class="volunteer-fp">
+        <h3 class="volunteer-title-fp">Volunteer Opporunities</h3>
+        <p class="volunteer-description-fp"><?php echo CFS()->get( 'volunteer_opportunities' );?></p>
+      </div>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button>Subscribe</button>
