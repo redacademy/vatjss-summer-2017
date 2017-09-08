@@ -12,19 +12,13 @@ get_header(); ?>
 
     </section>
     <section class="vatjss-home-banner vatjss-vertical-align-center">
-      <h2 class="vatjss-text-uppercase vatjss-text-center">"strengthening resiliency within the aboriginal community"</h2>
+      <h2 class="vatjss-text-uppercase vatjss-text-center">strengthening resiliency within the aboriginal community</h2>
     </section>
     <section class="vatjss-container-fluid">
       <?php
         $service_types = get_terms( 'services-type');
         $housing = $service_types[1];
       ?>
-<<<<<<< HEAD
-      <?php foreach ( $service_types as $service_type ) : setup_postdata( $service_type ); ?>
-        <div>
-        </div>
-      <?php endforeach; wp_reset_postdata(); ?> 
-=======
       <div class="housing-services-fp">
         <h3 class="housing-title-fp">Housing Services</h3>
         <p class="housing-description-fp"><?php echo $housing->description ?></p>
@@ -36,10 +30,7 @@ get_header(); ?>
         <p class="justice-description-fp"><?php echo $justice->description ?></p>
         <div class="justice-learn-more-fp" href="/services/justice-services">Learn More <span>></span></div>
       </div>
->>>>>>> got the services divs to display on the front-page
       <?php
-      //   <h3>
-      // <?php
       ?>
       <?php
         $resource_args = array( 'taxonomy' => 'resources-type');
@@ -57,5 +48,5 @@ get_header(); ?>
   </main>
 </div>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
