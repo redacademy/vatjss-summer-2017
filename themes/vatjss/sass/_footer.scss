@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 footer.site-footer{
   background: $background_black;
-  
+  overflow: auto;
   @include desktop {
     display: flex;
     flex-direction: row-reverse;

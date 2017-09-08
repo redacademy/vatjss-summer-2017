@@ -28,7 +28,11 @@
     font-size: rem(24);
   }
 }
-
+.post-type-archive-services, .post-type-archive-staff{
+  .site-content{
+    padding-top: rem(70);
+  }
+}
 .post-type-archive-staff{
   h1{
     color:white;
@@ -42,9 +46,6 @@
     p{
       font-size: rem(24);
     }
-  }
-  .site-content{
-    padding-top: rem(70);
   }
   .page-header{
     overflow: auto;
@@ -81,14 +82,68 @@
     border-bottom: 1px solid white;
   }
 }
+.post-type-archive-services{
+  h1{
+    color:white;
+    font-size: rem(22);
+  }
+  .vatjss-service-hero{
+    background-image: linear-gradient(rgba(255,255,255,.15) 0,rgba(255,255,255,.15)),url('../../images/healing.jpeg');
+    background-size:cover;
+    background-position: center;
+    height: calc(100vh - 70px);
+  }
+  .vatjss-services-section-container{
+    .vatjss-flex-container-no-wrap{
+      display: block;
+    }
+  }
+  
+  .vatjss-services-section{
+    h2{
+      font-size: rem(18);
+    }
+    .vatjss-service-learn-btn{
+      background-color: $background_red;
+      padding: rem(6) rem(12);
+      color:white;
+      text-decoration: none;
+      font-size: rem(14);
+      display: inline-block;
+      .fa{
+        position: relative;
+        top: 1px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .vatjss-btn-section{
+    margin: 0;
+    .vatjss-flex-item-mobile-33{
+      padding: 0;
+    }
+    .vatjss-service-btn{
+      width: 100%;
+      background: transparent;
+      border: 1px solid white;
+      box-shadow: none;
+      font-size: rem(12);
+      text-shadow: none;
+      color:white;
+      border-radius: 0;
+    }
+  }
+}
 @include desktop {
+  .post-type-archive-services, .post-type-archive-staff{
+    .site-content{
+      padding-top: rem(114);
+    }
+  }
   .post-type-archive-staff{
     h1{
       text-align: center;
       color:white;
-    }
-    .site-content{
-      padding-top: rem(114);
     }
     .vatjss-staff-img{
       width: 100%;
@@ -112,6 +167,35 @@
       display: flex;
       margin-left: -15px;
       margin-right: -15px;
+    }
+  }
+  .post-type-archive-services{
+    h1{
+      font-size: rem(34);
+    }
+    .vatjss-services-section-container{
+      background: $background_black;
+      .vatjss-flex-container-no-wrap{
+        display: flex;
+      }
+    }
+    .vatjss-services-section{
+      text-align: center;
+      h2{
+        font-size: rem(24);
+        color:white;
+      }
+      p{
+        color:white;
+      }
+      .vatjss-service-learn-btn{
+        float: none;
+        font-size: rem(16);
+        padding: rem(10) rem(15);
+        .fa{
+          display: none;
+        }
+      }
     }
   }
 }
