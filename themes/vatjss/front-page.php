@@ -8,7 +8,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
     <section class="vatjss-home-hero">
-
+    <?php echo CFS()->get(  ); ?>
     </section>
     <section class="vatjss-home-banner vatjss-vertical-align-center">
       <h2 class="vatjss-text-uppercase vatjss-text-center">strengthening resiliency within the aboriginal community</h2>
