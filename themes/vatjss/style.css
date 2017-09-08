@@ -692,9 +692,14 @@ a {
   .site-header {
     top: 0;
     background: black; }
-    .site-header .vatjss-phone-search a {
-      position: relative;
-      padding: 5px; }
+    .site-header .vatjss-phone-search {
+      min-width: 70px; }
+      .site-header .vatjss-phone-search a {
+        position: relative;
+        padding: 0px;
+        display: inline-block; }
+        .site-header .vatjss-phone-search a span {
+          margin: 0; }
     .site-header .main-navigation {
       display: -ms-flexbox;
       display: flex;
@@ -716,6 +721,8 @@ a {
       transition: opacity 0.4s ease-in-out; }
     .site-header .menu li {
       display: none; }
+    .site-header .search-form fieldset {
+      margin-left: 0.9375rem; }
     .site-header .search-form label .fa {
       color: white; }
     .site-header .search-form .search-field-focus {
@@ -1032,6 +1039,81 @@ object {
   height: 20vh; }
   .vatjss-home-mobile-subscribe-banner button {
     font-size: 1.5rem; }
+
+.post-type-archive-staff h1 {
+  color: white; }
+
+.post-type-archive-staff .vatjss-staff-header {
+  background-image: linear-gradient(rgba(151, 30, 22, 0.5) 0, rgba(151, 30, 22, 0.5)), url("../../images/ruth-jenna-hands.png");
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  height: 60vh; }
+  .post-type-archive-staff .vatjss-staff-header p {
+    font-size: 1.5rem; }
+
+.post-type-archive-staff .site-content {
+  padding-top: 4.375rem; }
+
+.post-type-archive-staff .page-header {
+  overflow: auto; }
+
+.post-type-archive-staff .vatjss-staff-img {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden; }
+  .post-type-archive-staff .vatjss-staff-img img {
+    min-width: 100px; }
+
+.post-type-archive-staff .entry-content {
+  margin-top: 0.625rem; }
+
+.post-type-archive-staff h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: white; }
+
+.post-type-archive-staff P {
+  word-break: break-all;
+  margin: 0 0 0.625rem 0;
+  font-size: 0.875rem;
+  color: white; }
+
+.post-type-archive-staff .vatjss-staff-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/black_maple_background.png");
+  background-repeat: repeat;
+  background-position: center;
+  border-bottom: 1px solid white; }
+
+@media (min-width: 768px) {
+  .post-type-archive-staff h1 {
+    text-align: center;
+    color: white; }
+  .post-type-archive-staff .site-content {
+    padding-top: 7.125rem; }
+  .post-type-archive-staff .vatjss-staff-img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0;
+    text-align: center; }
+  .post-type-archive-staff h2 {
+    font-size: 1.75rem; }
+  .post-type-archive-staff p {
+    font-size: 1rem; }
+  .post-type-archive-staff .vatjss-staff-section {
+    border: none; }
+  .post-type-archive-staff .vatjss-flex-container-staff-desktop {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px; } }
 
 /*--------------------------------------------------------------
 # Footer

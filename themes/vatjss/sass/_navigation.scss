@@ -223,9 +223,14 @@ a {
 		top:0;
 		background:black;
 		.vatjss-phone-search{
+			min-width: 70px;
 			a{
 				position: relative;
-				padding: 5px;
+				padding: 0px;
+				display: inline-block;
+				span{
+					margin: 0;
+				}
 			}
 		}
 		.main-navigation{
@@ -253,6 +258,9 @@ a {
 			}
 		}
 		.search-form{
+			fieldset{
+				margin-left: rem(15);
+			}
 			label{
 				.fa{
 					color:white;
