@@ -1,28 +1,13 @@
 (function($) {
 
-  var windowW = window.innerWidth;
-
   $('.main-carousel').flickity({
-    cellAlign: 'left',
-    contain: true,
+    cellAlign: 'center',
+    contain: false,
     cellSelector: '.carousel-cell',
-    prevNextButtons: false,
-    autoPlay: true,
-    groupCells: 1
+    prevNextButtons: true,
+    autoPlay: false,
+    groupCells: 1,
   });
-
-  if (windowW === 600) {
-    $('.main-carousel').flickity({
-      groupCells: 2,
-      autoPlay: true,
-    })
-  }
-  else if (windowW===1240) {
-    $('.main-carousel').flickity({
-      groupCells: 4,
-      autoPlay: true,
-    })
-  }
 
   $("a").on('click', function(event) {
 

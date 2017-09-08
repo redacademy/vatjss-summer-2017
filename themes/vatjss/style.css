@@ -846,6 +846,29 @@ http://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
 
+.main-carousel {
+  width: 100vw;
+  height: 90%; }
+  .main-carousel .flickity-viewport, .main-carousel .flickity-slider {
+    height: 100%;
+    width: 100%; }
+    .main-carousel .flickity-viewport .carousel-cell, .main-carousel .flickity-slider .carousel-cell {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .main-carousel .flickity-viewport .carousel-cell .carousel-title, .main-carousel .flickity-viewport .carousel-cell .carousel-button, .main-carousel .flickity-viewport .carousel-cell .carousel-content, .main-carousel .flickity-slider .carousel-cell .carousel-title, .main-carousel .flickity-slider .carousel-cell .carousel-button, .main-carousel .flickity-slider .carousel-cell .carousel-content {
+        display: block;
+        width: 40%;
+        text-align: center; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
