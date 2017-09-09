@@ -9,7 +9,7 @@
 
     <?php if ( strlen( trim( $tuesday_friday)) > 0 ) : ?>
     <p>
-      <span class="day-of-the-week">Tuesday - Friday:</span> <?php echo $tuesday_friday; ?>
+      <span class="day-of-the-week">Tuesday-Friday:</span> <?php echo $tuesday_friday; ?>
     </p>
     <?php endif; ?>
 
@@ -21,7 +21,7 @@
 
     <?php if ( strlen( trim( $saturday_sunday)) > 0 ) : ?>
     <p>
-      <span class="day-of-the-week">Saturday - Sunday:</span> <?php echo $saturday_sunday; ?>
+      <span class="day-of-the-week">Saturday-Sunday:</span> <?php echo $saturday_sunday; ?>
     </p>
     <?php endif; ?>
     </div> 

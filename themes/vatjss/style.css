@@ -971,14 +971,17 @@ div aside.vatjss-biz-hours-class {
   display: flex;
   padding-left: 0.99375rem;
   padding-right: 0.99375rem;
-  font-size: 0.9375rem; }
+  font-size: 0.875rem; }
   .vatjss-business-hours .vatjss-hours {
     width: 460px;
     line-height: .6; }
 
 .vatjss-widget-address p {
-  padding-left: 0.99375rem;
-  margin: 0; }
+  padding-left: 0.9375rem;
+  margin: 0;
+  line-height: 2.1875rem;
+  font-size: 0.875rem;
+  text-transform: uppercase; }
   .vatjss-widget-address p span.widget_address {
     display: none; }
 
@@ -1348,6 +1351,3 @@ section.vatjss-about-content {
   @media (min-width: 768px) {
     .vatjss-our-vision {
       display: unset; } }
-
-.about-content .widget-area {
-  display: none; }
