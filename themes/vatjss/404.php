@@ -19,7 +19,7 @@ get_header(); ?>
 
 				<div class="page-content">
 					<p><?php echo esc_html( 'Sorry!' ); ?></p>
-					<p><?php echo esc_html( 'There has been a bug in the code.'); ?></p>
+					<p><?php echo esc_html( 'There has been a bug in the slug.'); ?></p>
 					<p><?php echo esc_html( 'That page does not exist any more.'); ?></p>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
