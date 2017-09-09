@@ -1,5 +1,14 @@
 /* ABOUT PAGE STYLE */
 
+header div h2.vatjss-about {
+  height: 100%;
+  width: 90%;
+  line-height: rem(30); 
+  margin: 195px 21px; 
+  text-align: center;
+  font-size: rem(18);
+}
+
 section.vatjss-about-content {
   background: url(../../images/red_maple_background.png);
   color: $color_white;
@@ -34,6 +43,6 @@ section.vatjss-about-content {
   }
 }
 
-// section div.about-sidebar {
-//   display: none;
-// }  //fix widget  
+// section.vatjss-sidebar-widget {
+//    display: none;
+//  }  //fix widget  

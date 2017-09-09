@@ -1324,6 +1324,14 @@ div p.vatjss-footer-web {
       color: #fff; } }
 
 /* ABOUT PAGE STYLE */
+header div h2.vatjss-about {
+  height: 100%;
+  width: 90%;
+  line-height: 1.875rem;
+  margin: 195px 21px;
+  text-align: center;
+  font-size: 1.125rem; }
+
 section.vatjss-about-content {
   background: url(../../images/red_maple_background.png);
   color: #fff;
