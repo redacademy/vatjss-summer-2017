@@ -5,4 +5,9 @@
  * @package VATJSS_Theme
  */
 
-get_header(); ?>
+get_header();
+
+get_sidebar();
+
+get_footer();
+?>
