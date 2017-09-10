@@ -160,8 +160,23 @@ a {
 	.vatjss-nav-menu{
 		display: inline-block;
 		width: 80%;
-		max-height: 24px;
+		max-height: 44px;
 		transition: all 0.4s ease-in-out;
+		.sub-menu{
+			background: #494949;
+			top: 2.5rem;
+			li{
+				padding: 10px 60px;
+				border-bottom: 1px solid $color__border-abbr;
+				a{
+					color:white;
+					text-align: center;
+				}
+			}
+			li:last-child{
+				border-bottom: none;
+			}
+		}
 	}
 	.menu{
 		width: 100%;
@@ -170,6 +185,13 @@ a {
 		li{
 			a{
 				color:$color_black;
+				padding: 10px;
+			}
+			&:hover{
+				background: #494949;
+				a{
+					color:$color_white;
+				}
 			}
 		}
 	}
@@ -209,6 +231,7 @@ a {
 			.fa{
 				color:black;
 				font-size: rem(22);
+				padding: 10px;
 				&:hover{
 					cursor: pointer;
 				}
