@@ -135,19 +135,144 @@
   }
 }
 .services-template-default{
-  .vatjss-services-sidebar{
-    button{
+  .vatjss-serivce-no-padding{
+    padding-top:0;
+    padding-bottom: 0;
+  }
+  .vatjss-service-hero{
+    background-color: $color_black;
+    position: relative;
+    
+  }
+  .entry-content{
+    margin: 0;
+  }
+  .entry-header{
+    position: relative;
+    img{
       width: 100%;
+      display: block;
+    }
+  }
+  .vatjss-service-housing-education{
+    background-color: $color_black;
+    h2,p{
+      color: $color_white;
+    }
+  }
+  .vatjss-mobile-accordian, .vatjss-service-faq-section{
+    button.accordion-services {
+      background-color: $background_red;
+      box-shadow: none;
+      text-shadow: none;
+      color: $color_white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: all 0.4s ease-in-out; 
+      border-radius:0;
+      border-bottom: 1px solid white;
+    }
+    button.accordion-services:last-child {
+      border-bottom: none;
+    }
+    button.accordion-services.active, button.accordion-services:hover {
+      background-color: $color__border-abbr;
+    }
+    div.panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: auto;
+    }
+  }
+  .vatjss-service-title{
+    position: absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-image: linear-gradient(rgba(0,0,0,.7) 0,rgba(0,0,0,.7));
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    h1,p{
+      color:white;
+    }
+    h1{
+      font-size: rem(24);
+    }
+    p{
+      font-size:rem(14);
+    }
+  }
+  .vatjss-services-sidebar{
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    button{
+      width: 60%;
       background: $background_red;
-      border: 1px solid white;
+      border:none;
+      border-bottom: 1px solid black;
       box-shadow: none;
       text-shadow: none;
       color:white;
       border-radius: 0;
-      padding: 20px;
+      padding: 30px 10px;
       font-size: rem(16);
     }
   }
+  .vatjss-justify-end{
+    justify-content: flex-end;
+  }
+  .vatjss-service-resource-section{
+    padding: 40px 0;
+    background-image: url('../../images/red_maple_background.png');
+    h2,p{
+      color:white;
+      margin-top: 0;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      background-color: $color_black;
+      color:white;
+      padding: 10px 20px;
+      border-radius:5px;
+    }
+  }
+  .vatjss-service-faq-section{
+    background: $color_black;
+    .vatjss-container-fluid{
+      padding-bottom: 0;
+    }
+    h2{
+      color:white;
+    }
+    button.accordion-services{
+      font-size: rem(16);
+      
+    }
+  }
+}
+
+/*404 page*/
+
+.error404{
+  background:$background_red;
+  color:$color_white;
+    .site-content{
+      display:flex;
+      height:100vh;
+      vertical-align: center;
+        h1{
+          text-align: center;
+        }
+    
+    }
 }
 @include desktop {
   .post-type-archive-services, .post-type-archive-staff,.services-template-default{
@@ -213,22 +338,26 @@
       }
     }
   }
-}
-
-/*404 page*/
-
-.error404{
-  background:$background_red;
-  color:$color_white;
-    .site-content{
-      display:flex;
-      height:100vh;
-      vertical-align: center;
-        h1{
-          text-align: center;
-        }
-    
+  .services-template-default{
+    .vatjss-service-title{
+      width:80%;
+      height: auto;
+      h1{
+        font-size: rem(32);
+      }
+      p{
+        font-size:rem(16);
+      }
     }
+    .vatjss-serivce-no-padding{
+      padding-top:rem(20);
+      padding-bottom: rem(20);
+    }
+    .vatjss-service-faq-section{
+      background: $color_black;
+      .vatjss-container-fluid{
+        padding-bottom: 20px;
+      }
+    }
+  }
 }
-
-

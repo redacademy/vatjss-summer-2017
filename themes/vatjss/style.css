@@ -1200,16 +1200,125 @@ object {
     color: white;
     border-radius: 0; }
 
-.services-template-default .vatjss-services-sidebar button {
-  width: 100%;
-  background: #971E16;
-  border: 1px solid white;
+.services-template-default .vatjss-serivce-no-padding {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.services-template-default .vatjss-service-hero {
+  background-color: #000;
+  position: relative; }
+
+.services-template-default .entry-content {
+  margin: 0; }
+
+.services-template-default .entry-header {
+  position: relative; }
+  .services-template-default .entry-header img {
+    width: 100%;
+    display: block; }
+
+.services-template-default .vatjss-service-housing-education {
+  background-color: #000; }
+  .services-template-default .vatjss-service-housing-education h2, .services-template-default .vatjss-service-housing-education p {
+    color: #fff; }
+
+.services-template-default .vatjss-mobile-accordian button.accordion-services, .services-template-default .vatjss-service-faq-section button.accordion-services {
+  background-color: #971E16;
   box-shadow: none;
   text-shadow: none;
-  color: white;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: all 0.4s ease-in-out;
   border-radius: 0;
-  padding: 20px;
-  font-size: 1rem; }
+  border-bottom: 1px solid white; }
+
+.services-template-default .vatjss-mobile-accordian button.accordion-services:last-child, .services-template-default .vatjss-service-faq-section button.accordion-services:last-child {
+  border-bottom: none; }
+
+.services-template-default .vatjss-mobile-accordian button.accordion-services.active, .services-template-default .vatjss-mobile-accordian button.accordion-services:hover, .services-template-default .vatjss-service-faq-section button.accordion-services.active, .services-template-default .vatjss-service-faq-section button.accordion-services:hover {
+  background-color: #666; }
+
+.services-template-default .vatjss-mobile-accordian div.panel, .services-template-default .vatjss-service-faq-section div.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: auto; }
+
+.services-template-default .vatjss-service-title {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7));
+  padding: 10px;
+  width: 100%;
+  height: 100%; }
+  .services-template-default .vatjss-service-title h1, .services-template-default .vatjss-service-title p {
+    color: white; }
+  .services-template-default .vatjss-service-title h1 {
+    font-size: 1.5rem; }
+  .services-template-default .vatjss-service-title p {
+    font-size: 0.875rem; }
+
+.services-template-default .vatjss-services-sidebar {
+  position: absolute;
+  left: 0;
+  padding-left: 0; }
+  .services-template-default .vatjss-services-sidebar button {
+    width: 60%;
+    background: #971E16;
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 0;
+    padding: 30px 10px;
+    font-size: 1rem; }
+
+.services-template-default .vatjss-justify-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.services-template-default .vatjss-service-resource-section {
+  padding: 40px 0;
+  background-image: url("../../images/red_maple_background.png"); }
+  .services-template-default .vatjss-service-resource-section h2, .services-template-default .vatjss-service-resource-section p {
+    color: white;
+    margin-top: 0; }
+  .services-template-default .vatjss-service-resource-section a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; }
+
+.services-template-default .vatjss-service-faq-section {
+  background: #000; }
+  .services-template-default .vatjss-service-faq-section .vatjss-container-fluid {
+    padding-bottom: 0; }
+  .services-template-default .vatjss-service-faq-section h2 {
+    color: white; }
+  .services-template-default .vatjss-service-faq-section button.accordion-services {
+    font-size: 1rem; }
+
+/*404 page*/
+.error404 {
+  background: #971E16;
+  color: #fff; }
+  .error404 .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    vertical-align: center; }
+    .error404 .site-content h1 {
+      text-align: center; }
 
 @media (min-width: 768px) {
   .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content {
@@ -1256,19 +1365,21 @@ object {
       font-size: 1rem;
       padding: 0.625rem 0.9375rem; }
       .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
-        display: none; } }
-
-/*404 page*/
-.error404 {
-  background: #971E16;
-  color: #fff; }
-  .error404 .site-content {
-    display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
-    vertical-align: center; }
-    .error404 .site-content h1 {
-      text-align: center; }
+        display: none; }
+  .services-template-default .vatjss-service-title {
+    width: 80%;
+    height: auto; }
+    .services-template-default .vatjss-service-title h1 {
+      font-size: 2rem; }
+    .services-template-default .vatjss-service-title p {
+      font-size: 1rem; }
+  .services-template-default .vatjss-serivce-no-padding {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+  .services-template-default .vatjss-service-faq-section {
+    background: #000; }
+    .services-template-default .vatjss-service-faq-section .vatjss-container-fluid {
+      padding-bottom: 20px; } }
 
 /*--------------------------------------------------------------
 # Footer
