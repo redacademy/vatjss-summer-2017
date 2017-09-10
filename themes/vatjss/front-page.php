@@ -17,7 +17,7 @@ get_header(); ?>
           <h3 class="carousel-title"><?php echo $article['front_page_carousel_Item_title'] ?></h3>
           <p class="carousel-content"><?php echo $article['front_page_carousel_item_content'] ?></p>
           <div class="carousel-button">
-            <a href="<?php echo $article['front_page_carousel_link'] ?>">Learn More <span>></span></a>
+            <a href="<?php echo $article['front_page_carousel_link'] ?>">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
           </div>
         </div>
         <?php endforeach; ?>
@@ -34,13 +34,13 @@ get_header(); ?>
       <div class="housing-services-fp">
         <h3 class="housing-title-fp">Housing Services</h3>
         <p class="housing-description-fp"><?php echo $housing->description ?></p>
-        <div class="housing-learn-more-fp"><a href="services/housing-services">Learn More <span>></span></a></div>
+        <div class="housing-learn-more-fp"><a href="services/housing-services">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
       </div>
       <?php $justice = $service_types[2]; ?>
       <div class="justice-services-fp">
         <h3 class="justice-title-fp">Transformative Justice Services</h3>
         <p class="justice-description-fp"><?php echo $justice->description ?></p>
-        <div class="justice-learn-more-fp"><a href="services/justice-services">Learn More <span>></span></a></div>
+        <div class="justice-learn-more-fp"><a href="services/justice-services">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
       </div>
       <?php
         $resources_category = get_categories( 'resources=types' );
@@ -49,12 +49,12 @@ get_header(); ?>
       <div class="resources-fp">
         <h3 class="resources-title-fp">Resources</h3>
         <p class="resources-description-fp"><?php echo $resources->description ?></p>
-        <div class="resources-learn-more-fp"><a href="resource">Learn More <span>></span></a></div>
+        <div class="resources-learn-more-fp"><a href="resource">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
       </div>
       <div class="volunteer-fp">
         <h3 class="volunteer-title-fp">Volunteer Opportunities</h3>
         <p class="volunteer-description-fp"><?php echo CFS()->get( 'volunteer_opportunities' ); ?></p>
-        <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <span>></span></div>
+        <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></div>
       </div>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
