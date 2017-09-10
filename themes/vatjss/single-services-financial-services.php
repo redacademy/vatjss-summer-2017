@@ -43,9 +43,7 @@ get_header(); ?>
 								</div>
 
 								<button class="accordion-services">Resources</button>
-								<div class="panel">
-									<p>Lorem ipsum...</p>
-								</div>
+								<?php get_template_part( 'template-parts/resources', 'financial' ); ?>
 
 								<button class="accordion-services">FAQ</button>
 								<div class="panel">

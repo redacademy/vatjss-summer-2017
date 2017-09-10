@@ -9,6 +9,7 @@
 
 <div class="panel">
   <?php
+      $terms = get_terms( 'resources-type' );
       $args1 = array( 'child_of' => 5, 'parent' => 5 );
       $term1_children = get_terms( 'resources-type', $args1 );
       foreach ( $term1_children as $term1_child ) : setup_postdata( $term1_child );
