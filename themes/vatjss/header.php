@@ -20,11 +20,13 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-
+			
+			<div class="site-header-background"></div>
 			<header id="masthead" class="site-header" role="banner">
 				<div class="vatjss-container">
 					<div class="vatjss-flex-container-no-wrap">
 						<div class="site-branding vatjss-flex-item-desktop-30">
+						<a href=<?php echo home_url() ?>><img src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_logo_text_side_white.svg alt="VATJSS logo image"/></a>
 							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						</div>
 						<nav id="site-navigation" class="main-navigation vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70" role="navigation">

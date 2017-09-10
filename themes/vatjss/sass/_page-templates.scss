@@ -98,7 +98,6 @@
       display: block;
     }
   }
-  
   .vatjss-services-section{
     h2{
       font-size: rem(18);
@@ -421,9 +420,32 @@
   }
 }
 @include desktop {
+  body{
+    &:not(.home){
+      .site-header-background{
+        background-image:linear-gradient(rgba(0,0,0, 0.6) 0,rgba(0,0,0, 0.6)),url('../../images/black_maple_background.png');
+      }
+      .site-header{
+        background: rgba(151, 30, 22,0.5);
+        .menu{
+          li{
+            a{
+              color:$color_white;
+            }
+          }
+        }
+        .fa-search{
+          color:white;
+        }
+      }
+    }
+  }
+  .vatjss-home-hero{
+    padding-top: 134px;
+  }
   .post-type-archive-services, .post-type-archive-staff,.services-template-default{
     .site-content{
-      padding-top: rem(114);
+      padding-top: rem(180);
     }
   }
   .post-type-archive-staff{
