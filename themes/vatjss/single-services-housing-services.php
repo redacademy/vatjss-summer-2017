@@ -15,9 +15,11 @@ get_header(); ?>
 				<div class="vatjss-container-fluid vatjss-serivce-no-padding">
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-mobile-30 vatjss-services-sidebar vatjss-hidden-mobile">
-							<button><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></button>
-							<button>Resources</button>
-							<button>FAQ</button>
+							<div class="vatjss-services-sidebar-btns">
+								<button><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></button>
+								<button>Resources</button>
+								<button>FAQ</button>
+							</div>
 						</div>
 						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
 							<header class="entry-header">
@@ -74,7 +76,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="entry-content vatjss-hidden-mobile">
-				<section class="vatjss-service-housing-education">
+				<section class="vatjss-service-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
@@ -84,7 +86,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</section>
-				<section class="vatjss-service-resource-section">
+				<section class="vatjss-service-red-maple-background-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">

@@ -29,4 +29,9 @@
           }
       }
   }
+  $('#vatjss-justice-service-carousel .circle-container button').click(function(){
+    var stepClick = '#vatjss-justice-service-step-' + this.value;
+    $( "#vatjss-justice-service-carousel .vatjss-justice-service-step" ).removeClass( "active" );
+    $( "#vatjss-justice-service-carousel "+ stepClick ).addClass( "active" );
+  });
 })(jQuery);

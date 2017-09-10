@@ -142,6 +142,7 @@
   .vatjss-service-hero{
     background-color: $color_black;
     position: relative;
+    padding: 20px 0;
     
   }
   .entry-content{
@@ -154,10 +155,33 @@
       display: block;
     }
   }
-  .vatjss-service-housing-education{
+  .vatjss-service-section{
     background-color: $color_black;
     h2,p{
       color: $color_white;
+      margin-top: 0;
+    }
+    .vatjss-flex-item-desktop-70{
+      padding: 20px 15px;
+    }
+  }
+  .vatjss-justify-end{
+    justify-content: flex-end;
+  }
+  .vatjss-service-red-maple-background-section{
+    padding: 40px 0;
+    background-image: url('../../images/red_maple_background.png');
+    h2,p{
+      color:white;
+      margin-top: 0;
+    }
+    a{
+      display: inline-block;
+      text-decoration: none;
+      background-color: $color_black;
+      color:white;
+      padding: 10px 20px;
+      border-radius:5px;
     }
   }
   .vatjss-mobile-accordian, .vatjss-service-faq-section{
@@ -175,6 +199,7 @@
       transition: all 0.4s ease-in-out; 
       border-radius:0;
       border-bottom: 1px solid white;
+      font-size: rem(16);
     }
     button.accordion-services:last-child {
       border-bottom: none;
@@ -189,59 +214,151 @@
       overflow: auto;
     }
   }
-  .vatjss-service-title{
-    position: absolute;
-    top:50%;
-    right: 50%;
-    transform: translate(50%,-50%);
-    background-image: linear-gradient(rgba(0,0,0,.7) 0,rgba(0,0,0,.7));
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    h1,p{
-      color:white;
+  .vatjss-financial-services,.vatjss-home-services{
+    .vatjss-service-title{
+      position: absolute;
+      top:50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+      background-image: linear-gradient(rgba(0,0,0,.7) 0,rgba(0,0,0,.7));
+      padding: 10px;
+      h1,p{
+        color:white;
+        text-align: center;
+      }
+      h1{
+        font-size: rem(24);
+      }
+      p{
+        font-size:rem(16);
+      }
     }
-    h1{
-      font-size: rem(24);
-    }
-    p{
-      font-size:rem(14);
+    .vatjss-services-sidebar{
+      .vatjss-services-sidebar-btns{
+        position: absolute;
+        left: 0;
+        padding-left: 0;
+      }
+      button{
+        width: 60%;
+        background: $background_red;
+        border:none;
+        border-bottom: 1px solid black;
+        box-shadow: none;
+        text-shadow: none;
+        color:white;
+        border-radius: 0;
+        padding: 30px 10px;
+        font-size: rem(16);
+      }
     }
   }
-  .vatjss-services-sidebar{
-    position: absolute;
-    left: 0;
-    padding-left: 0;
-    button{
-      width: 60%;
-      background: $background_red;
-      border:none;
-      border-bottom: 1px solid black;
-      box-shadow: none;
-      text-shadow: none;
-      color:white;
-      border-radius: 0;
-      padding: 30px 10px;
-      font-size: rem(16);
+  .vatjss-justice-services{
+    .entry-header{
+      display: block;
     }
-  }
-  .vatjss-justify-end{
-    justify-content: flex-end;
-  }
-  .vatjss-service-resource-section{
-    padding: 40px 0;
-    background-image: url('../../images/red_maple_background.png');
-    h2,p{
-      color:white;
-      margin-top: 0;
+    .vatjss-service-section{
+      .vatjss-flex-item-desktop-70{
+        border-bottom: 1px solid white;
+      }
     }
-    a{
+    .vatjss-service-justice-resource-btn{
+      background-color:$background_red;
       display: inline-block;
       text-decoration: none;
-      background-color: $color_black;
       color:white;
       padding: 10px 20px;
       border-radius:5px;
+      margin-bottom: 1.5rem;
+    }
+    .vatjss-service-title{
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0,0,0, 0.5) 0,rgba(0,0,0, 0.5)),url('../../images/syim-photo-3.jpg');
+      background-position: center;
+      background-size: cover;
+      h1,p{
+        color:white;
+        text-align: center;
+      }
+      h1{
+        font-size: rem(24);
+      }
+      p{
+        font-size:rem(14);
+      }
+    }
+    .vatjss-justice-service-carousel{
+      overflow: auto;
+      position: relative;
+      .vatjss-justice-service-steps{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        p{
+          display: block;
+          color:white;
+          display:none;
+          font-size: rem(24);
+          margin: 0;
+        }
+        .active{
+          display: block;
+        }
+      }
+      .vatjss-carousel-background{
+        background-image: linear-gradient(rgba(0,0,0, 0.6) 0,rgba(0,0,0, 0.6)),url('../../images/vatjss_logo_justice_service.svg'),linear-gradient(rgba(255,255,255, 1) 0,rgba(255,255,255, 1));
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        border-radius: 50%;
+      }
+    }
+    .circle-container {
+      @include on-circle($item-count: 7, $circle-size: 16rem, $item-size: 2.5rem); 
+      margin: rem(40) auto;
+      border: solid 5px tomato;
+      button { 
+        display: block; 
+        border-radius: 50%;
+        transition: .15s;
+        width: 100%;
+        height:100%;
+        box-shadow: none;
+        text-shadow: none;
+        font-size:rem(16);
+        &:hover{
+
+        }
+      }
+    }
+    .vatjss-services-sidebar{
+      .vatjss-services-sidebar-btns{
+        position: absolute;
+        left: 0;
+        padding-left: 0;
+      }
+      button{
+        width: 85%;
+        display: block;
+        background: $background_red;
+        border:none;
+        border-bottom: 1px solid black;
+        box-shadow: none;
+        text-shadow: none;
+        color:white;
+        border-radius: 0;
+        padding: 30px 10px;
+        font-size: rem(16);
+      }
     }
   }
   .vatjss-service-faq-section{
@@ -254,7 +371,6 @@
     }
     button.accordion-services{
       font-size: rem(16);
-      
     }
   }
 }
@@ -273,6 +389,36 @@
         }
     
     }
+}
+@media(min-width:992px){
+  .services-template-default{
+    .vatjss-justice-services{
+      .vatjss-justice-service-carousel{
+        .vatjss-carousel-background{
+          background-size: 250px;
+          width: 250px;
+          height: 250px;
+        }
+        .circle-container {
+          @include on-circle($item-count: 7, $circle-size: 20rem, $item-size: 3.5rem); 
+          margin: rem(40) auto;
+          border: solid 5px tomato;
+          button { 
+            display: block; 
+            border-radius: 50%;
+            transition: .15s;
+            width: 100%;
+            height:100%;
+            box-shadow: none;
+            text-shadow: none;
+            &:hover{
+    
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @include desktop {
   .post-type-archive-services, .post-type-archive-staff,.services-template-default{
@@ -357,6 +503,18 @@
       background: $color_black;
       .vatjss-container-fluid{
         padding-bottom: 20px;
+      }
+    }
+    .vatjss-justice-services{
+      .entry-header{
+        align-items: center;
+        display: flex;
+      }
+      .vatjss-service-title{
+        background: none;
+        h1,p{
+          text-align: left;
+        }
       }
     }
   }
