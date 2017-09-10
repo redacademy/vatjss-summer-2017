@@ -70,26 +70,7 @@ get_header(); ?>
 								</div>
 
 								<button class="accordion-services">Resources</button>
-								<div class="panel">
-								<?php
-										$args = array( 
-											'post_type' => 'resource',
-											'tax_query' => array(
-												array(
-													'taxonomy' => 'resources-type',
-													'field'    => 'slug',
-													'terms'    => 'housing-support',
-												),
-											)
-										);
-										$resource_posts = get_posts( $args );
-										d($resource_posts);
-									?>
-									<?php foreach ( $resource_posts as $resource ) : setup_postdata( $resource ); ?>
-									<h3><?php echo $resource->post_title ?></h3>
-									<p><?php echo $resource->post_content ?></p>
-									<?php endforeach; wp_reset_postdata(); ?>
-								</div>
+									<?php get_template_part('template-parts/resources', 'justice'); ?>
 
 								<button class="accordion-services">FAQ</button>
 								<div class="panel">
