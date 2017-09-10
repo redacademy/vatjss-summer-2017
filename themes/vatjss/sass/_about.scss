@@ -1,9 +1,9 @@
 /* ABOUT PAGE STYLE */
 
 header div h2.vatjss-about {
+  height: 70vh;
   max-width: 100%;
   line-height: rem(30); 
-  margin: 0 auto; 
   text-align: center;
   font-size: rem(18);
 }
@@ -14,6 +14,16 @@ section.vatjss-about-content {
   display:flex;
   flex-direction: column;
   width: 100%;
+    @include desktop {
+      background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../../images/black_maple_background.png);;
+      height: 100vh;
+    }
+
+    .vatjss-about-category {
+      @include desktop {
+        display: none;
+      }
+    }
     
   h2.vatjss-story-header {
     height: rem(25);	
@@ -45,3 +55,39 @@ section.vatjss-about-content {
 // section.vatjss-sidebar-widget {
 //    display: none;
 //  }  //fix widget  
+.page-template-about .vatjss-biz-hours-class {
+  display: none;
+    @include desktop {
+      display: unset;
+      width: 26rem;
+    }
+}
+.page-template-about .vatjss-staff-content {
+   background: black;
+   .vatjss-staff {
+    color: #fff;
+   }
+  .vatjss-our-staff {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  p {
+    margin: 0;
+  }
+}
+.page-template-about .vatjss-learn-more-button {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+.page-template-about .widget-area {
+  @include desktop {
+  color: $color_white;
+  display: flex;
+  background: black;
+  flex: 5;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  }
+}

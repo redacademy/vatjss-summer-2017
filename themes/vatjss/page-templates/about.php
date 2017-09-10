@@ -35,11 +35,31 @@ get_header(); ?>
 				<h2 class="vatjss-story-header">Funding</h2>
 					<?php echo CFS()->get( 'about_funding' ); ?>
 			</div>
+			<!-- Buttons for Desktop -->
+			<div class="vatjss-mission-buttons">
+				<div class="vatjss-our-mission-button">
+					<a class="vatjss-mission-button-link" href="#">Our Mission</a>
+				</div>
+				<div class="vatjss-our-story-button">
+					<a class="vatjss-story-button-link" href="#">Our Story</a>
+				</div>
+				<div class="vatjss-our-vision-button">
+					<a class="vatjss-vision-button-link" href="#">Our Vision</a>
+				</div>
+				<div class="vatjss-funding-button">
+					<a class="vatjss-funding-button-link" href="#">Funding</a>
+				</div>
+			</div>
     </section>
     <section class="container vatjss-staff-content">
-      <!--get staff photo-->
-      <h2 class="vatjss-our-staff">VATJSS Staff</h2>
-        <?php echo CFS()->get( 'our_staff' ); ?>
+			<!--get staff photo-->
+			<div class="vatjss-staff">
+      	<h2 class="vatjss-our-staff">VATJSS Staff</h2>
+				<?php echo CFS()->get( 'our_staff' ); ?>
+			</div>
+			<div class="vatjss-learn-more-button">
+				<a class="vatjss-button-link" href="#">Learn more</a>
+			</div>
     </section>
 	</main><!-- #main -->
 	</div><!-- #primary -->

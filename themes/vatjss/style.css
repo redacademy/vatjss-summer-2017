@@ -959,14 +959,16 @@ div div aside#text-3 {
   @media (min-width: 768px) {
     div div aside#text-3 {
       display: unset;
-      margin: 0; } }
+      margin: 0;
+      width: 33rem; } }
 
 div div aside#text-2 {
   display: none; }
   @media (min-width: 768px) {
     div div aside#text-2 {
       display: unset;
-      margin: 0; } }
+      margin: 0;
+      width: 22rem; } }
 
 div aside.vatjss-biz-hours-class {
   background: #000;
@@ -1637,9 +1639,9 @@ div p.vatjss-footer-web {
 
 /* ABOUT PAGE STYLE */
 header div h2.vatjss-about {
+  height: 70vh;
   max-width: 100%;
   line-height: 1.875rem;
-  margin: 0 auto;
   text-align: center;
   font-size: 1.125rem; }
 
@@ -1651,6 +1653,13 @@ section.vatjss-about-content {
   -ms-flex-direction: column;
       flex-direction: column;
   width: 100%; }
+  @media (min-width: 768px) {
+    section.vatjss-about-content {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/black_maple_background.png);
+      height: 100vh; } }
+  @media (min-width: 768px) {
+    section.vatjss-about-content .vatjss-about-category {
+      display: none; } }
   section.vatjss-about-content h2.vatjss-story-header {
     height: 1.5625rem;
     font-size: 1.5rem;
@@ -1670,3 +1679,37 @@ section.vatjss-about-content {
   @media (min-width: 768px) {
     .vatjss-our-vision {
       display: unset; } }
+
+.page-template-about .vatjss-biz-hours-class {
+  display: none; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-biz-hours-class {
+      display: unset;
+      width: 26rem; } }
+
+.page-template-about .vatjss-staff-content {
+  background: black; }
+  .page-template-about .vatjss-staff-content .vatjss-staff {
+    color: #fff; }
+  .page-template-about .vatjss-staff-content .vatjss-our-staff {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1rem; }
+  .page-template-about .vatjss-staff-content p {
+    margin: 0; }
+
+.page-template-about .vatjss-learn-more-button {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem; }
+
+@media (min-width: 768px) {
+  .page-template-about .widget-area {
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    background: black;
+    -ms-flex: 5;
+        flex: 5;
+    padding-left: 4rem;
+    padding-right: 4rem; } }
