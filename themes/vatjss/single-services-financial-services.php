@@ -7,16 +7,17 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area vatjss-home-services">
+	<div id="primary" class="content-area vatjss-financial-services">
 		<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>">
 			<div class="vatjss-service-hero">
 				<div class="vatjss-container-fluid vatjss-serivce-no-padding">
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-						<div class="vatjss-flex-item-mobile-30 vatjss-services-sidebar vatjss-hidden-mobile">
+						<div class="vatjss-flex-item-desktp-30 vatjss-services-sidebar vatjss-hidden-mobile">
 							<div class="vatjss-services-sidebar-btns">
-								<button><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></button>
+								<button><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></button>
+								<button><?php $props = CFS()->get_field_info( 'tax_clinic' ); echo $props['label'];  ?></button>
 								<button>Resources</button>
 								<button>FAQ</button>
 							</div>
@@ -32,13 +33,17 @@ get_header(); ?>
 								</div>
 							</header>
 							<div class="vatjss-mobile-accordian vatjss-hidden-desktop">
-								<button class="accordion-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></button>
+								<button class="accordion-services"><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></button>
 								<div class="panel">
-									<?php echo CFS()->get( 'housing_services' ); ?>
+									<?php echo CFS()->get( 'income_assist' ); ?>
+								</div>
+								<button class="accordion-services"><?php $props = CFS()->get_field_info( 'tax_clinic' ); echo $props['label'];  ?></button>
+								<div class="panel">
+									<?php echo CFS()->get( 'tax_clinic' ); ?>
 								</div>
 
 								<button class="accordion-services">Resources</button>
-									<?php get_template_part('template-parts/resources', 'housing'); ?>
+								<?php get_template_part( 'template-parts/resources', 'financial' ); ?>
 
 								<button class="accordion-services">FAQ</button>
 								<div class="panel">
@@ -61,8 +66,18 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></h2>
-								<?php echo CFS()->get( 'housing_services' ); ?>
+								<h2><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></h2>
+								<?php echo CFS()->get( 'income_assist' ); ?>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="vatjss-service-section">
+					<div class="vatjss-container-fluid">
+						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
+							<div class="vatjss-flex-item-desktop-70">
+								<h2><?php $props = CFS()->get_field_info( 'tax_clinic' ); echo $props['label'];  ?></h2>
+								<p><?php echo CFS()->get( 'tax_clinic' ); ?></p>
 							</div>
 						</div>
 					</div>

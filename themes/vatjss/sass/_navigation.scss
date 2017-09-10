@@ -137,12 +137,26 @@ a {
 		box-shadow: none;
 	}
 }
+.site-header-background{
+	width: 100%;
+	height: 180px;
+	position: absolute;
+	top: 0;
+}
 .site-header{
 	position: fixed;
 	width: 100%;
 	background: rgba(255,255,255,0.5);
 	top: 44px;
 	z-index: 10;
+	.vatjss-flex-container-no-wrap{
+		align-items: center;
+	}
+	.site-branding{
+		img{
+			max-width: 60%;
+		}
+	}
 	.vatjss-nav-menu{
 		display: inline-block;
 		width: 80%;
@@ -256,6 +270,12 @@ a {
 		.menu{
 			li{
 				display: none;
+			}
+		}
+		.vatjss-phone-search{
+			a{
+				top:0;
+				position: relative
 			}
 		}
 		.search-form{

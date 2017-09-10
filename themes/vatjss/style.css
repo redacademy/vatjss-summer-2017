@@ -626,12 +626,23 @@ a {
   .responsive-menu-button:hover, .responsive-menu-button:focus {
     box-shadow: none; }
 
+.site-header-background {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  top: 0; }
+
 .site-header {
   position: fixed;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
   top: 44px;
   z-index: 10; }
+  .site-header .vatjss-flex-container-no-wrap {
+    -ms-flex-align: center;
+        align-items: center; }
+  .site-header .site-branding img {
+    max-width: 60%; }
   .site-header .vatjss-nav-menu {
     display: inline-block;
     width: 80%;
@@ -722,6 +733,9 @@ a {
       transition: opacity 0.4s ease-in-out; }
     .site-header .menu li {
       display: none; }
+    .site-header .vatjss-phone-search a {
+      top: 0;
+      position: relative; }
     .site-header .search-form fieldset {
       margin-left: 0.9375rem; }
     .site-header .search-form label .fa {
@@ -1200,20 +1214,307 @@ object {
     color: white;
     border-radius: 0; }
 
-.services-template-default .vatjss-services-sidebar button {
+.services-template-default .vatjss-serivce-no-padding {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.services-template-default .vatjss-service-hero {
+  background-color: #000;
+  position: relative;
+  padding: 20px 0; }
+
+.services-template-default .entry-content {
+  margin: 0; }
+
+.services-template-default .entry-header {
+  position: relative; }
+  .services-template-default .entry-header img {
+    width: 100%;
+    display: block; }
+
+.services-template-default .vatjss-service-section {
+  background-color: #000; }
+  .services-template-default .vatjss-service-section h2, .services-template-default .vatjss-service-section p {
+    color: #fff;
+    margin-top: 0; }
+  .services-template-default .vatjss-service-section .vatjss-flex-item-desktop-70 {
+    padding: 20px 15px; }
+
+.services-template-default .vatjss-justify-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.services-template-default .vatjss-service-red-maple-background-section {
+  padding: 40px 0;
+  background-image: url("../../images/red_maple_background.png"); }
+  .services-template-default .vatjss-service-red-maple-background-section h2, .services-template-default .vatjss-service-red-maple-background-section p {
+    color: white;
+    margin-top: 0; }
+  .services-template-default .vatjss-service-red-maple-background-section a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; }
+
+.services-template-default .vatjss-mobile-accordian button.accordion-services, .services-template-default .vatjss-service-faq-section button.accordion-services {
+  background-color: #971E16;
+  box-shadow: none;
+  text-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+  font-size: 1rem; }
+
+.services-template-default .vatjss-mobile-accordian button.accordion-services:last-child, .services-template-default .vatjss-service-faq-section button.accordion-services:last-child {
+  border-bottom: none; }
+
+.services-template-default .vatjss-mobile-accordian button.accordion-services.active, .services-template-default .vatjss-mobile-accordian button.accordion-services:hover, .services-template-default .vatjss-service-faq-section button.accordion-services.active, .services-template-default .vatjss-service-faq-section button.accordion-services:hover {
+  background-color: #666; }
+
+.services-template-default .vatjss-mobile-accordian div.panel, .services-template-default .vatjss-service-faq-section div.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: auto; }
+
+.services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7));
+  padding: 10px; }
+  .services-template-default .vatjss-financial-services .vatjss-service-title h1, .services-template-default .vatjss-financial-services .vatjss-service-title p, .services-template-default .vatjss-home-services .vatjss-service-title h1, .services-template-default .vatjss-home-services .vatjss-service-title p {
+    color: white;
+    text-align: center; }
+  .services-template-default .vatjss-financial-services .vatjss-service-title h1, .services-template-default .vatjss-home-services .vatjss-service-title h1 {
+    font-size: 1.5rem; }
+  .services-template-default .vatjss-financial-services .vatjss-service-title p, .services-template-default .vatjss-home-services .vatjss-service-title p {
+    font-size: 1rem; }
+
+.services-template-default .vatjss-financial-services .vatjss-services-sidebar .vatjss-services-sidebar-btns, .services-template-default .vatjss-home-services .vatjss-services-sidebar .vatjss-services-sidebar-btns {
+  position: absolute;
+  left: 0;
+  padding-left: 0; }
+
+.services-template-default .vatjss-financial-services .vatjss-services-sidebar button, .services-template-default .vatjss-home-services .vatjss-services-sidebar button {
+  width: 60%;
   background: #971E16;
-  border: 1px solid white;
+  border: none;
+  border-bottom: 1px solid black;
   box-shadow: none;
   text-shadow: none;
   color: white;
   border-radius: 0;
-  padding: 20px;
+  padding: 30px 10px;
   font-size: 1rem; }
 
+.services-template-default .vatjss-justice-services .entry-header {
+  display: block; }
+
+.services-template-default .vatjss-justice-services .vatjss-service-section .vatjss-flex-item-desktop-70 {
+  border-bottom: 1px solid white; }
+
+.services-template-default .vatjss-justice-services .vatjss-service-justice-resource-btn {
+  background-color: #971E16;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 1.5rem; }
+
+.services-template-default .vatjss-justice-services .vatjss-service-title {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5)), url("../../images/syim-photo-3.jpg");
+  background-position: center;
+  background-size: cover; }
+  .services-template-default .vatjss-justice-services .vatjss-service-title h1, .services-template-default .vatjss-justice-services .vatjss-service-title p {
+    color: white;
+    text-align: center; }
+  .services-template-default .vatjss-justice-services .vatjss-service-title h1 {
+    font-size: 1.5rem; }
+  .services-template-default .vatjss-justice-services .vatjss-service-title p {
+    font-size: 0.875rem; }
+
+.services-template-default .vatjss-justice-services .vatjss-justice-service-carousel {
+  overflow: auto;
+  position: relative; }
+  .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%); }
+    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps p {
+      display: block;
+      color: white;
+      display: none;
+      font-size: 1.5rem;
+      margin: 0; }
+    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps .active {
+      display: block; }
+  .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6)), url("../../images/vatjss_logo_justice_service.svg"), linear-gradient(white 0, white);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%; }
+
+.services-template-default .vatjss-justice-services .circle-container {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  margin: 2.5rem auto;
+  border: solid 5px tomato; }
+  .services-template-default .vatjss-justice-services .circle-container > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1.25rem;
+    width: 2.5rem;
+    height: 2.5rem; }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(1) {
+      transform: rotate(-89deg) translate(8rem) rotate(89deg); }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(2) {
+      transform: rotate(-37.57143deg) translate(8rem) rotate(37.57143deg); }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(3) {
+      transform: rotate(13.85714deg) translate(8rem) rotate(-13.85714deg); }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(4) {
+      transform: rotate(65.28571deg) translate(8rem) rotate(-65.28571deg); }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(5) {
+      transform: rotate(116.71429deg) translate(8rem) rotate(-116.71429deg); }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(6) {
+      transform: rotate(168.14286deg) translate(8rem) rotate(-168.14286deg); }
+    .services-template-default .vatjss-justice-services .circle-container > *:nth-of-type(7) {
+      transform: rotate(219.57143deg) translate(8rem) rotate(-219.57143deg); }
+  .services-template-default .vatjss-justice-services .circle-container button {
+    display: block;
+    border-radius: 50%;
+    transition: .15s;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1rem; }
+
+.services-template-default .vatjss-justice-services .vatjss-services-sidebar .vatjss-services-sidebar-btns {
+  position: absolute;
+  left: 0;
+  padding-left: 0; }
+
+.services-template-default .vatjss-justice-services .vatjss-services-sidebar button {
+  width: 85%;
+  display: block;
+  background: #971E16;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  border-radius: 0;
+  padding: 30px 10px;
+  font-size: 1rem; }
+
+.services-template-default .vatjss-service-faq-section {
+  background: #000; }
+  .services-template-default .vatjss-service-faq-section .vatjss-container-fluid {
+    padding-bottom: 0; }
+  .services-template-default .vatjss-service-faq-section h2 {
+    color: white; }
+  .services-template-default .vatjss-service-faq-section button.accordion-services {
+    font-size: 1rem; }
+
+/*404 page*/
+.error404 {
+  background: #971E16;
+  color: #fff; }
+  .error404 .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    vertical-align: center; }
+    .error404 .site-content h1 {
+      text-align: center; }
+
+@media (min-width: 992px) {
+  .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {
+    background-size: 250px;
+    width: 250px;
+    height: 250px; }
+  .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    margin: 2.5rem auto;
+    border: solid 5px tomato; }
+    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > * {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -1.75rem;
+      width: 3.5rem;
+      height: 3.5rem; }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(1) {
+        transform: rotate(-89deg) translate(10rem) rotate(89deg); }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(2) {
+        transform: rotate(-37.57143deg) translate(10rem) rotate(37.57143deg); }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(3) {
+        transform: rotate(13.85714deg) translate(10rem) rotate(-13.85714deg); }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(4) {
+        transform: rotate(65.28571deg) translate(10rem) rotate(-65.28571deg); }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(5) {
+        transform: rotate(116.71429deg) translate(10rem) rotate(-116.71429deg); }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(6) {
+        transform: rotate(168.14286deg) translate(10rem) rotate(-168.14286deg); }
+      .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(7) {
+        transform: rotate(219.57143deg) translate(10rem) rotate(-219.57143deg); }
+    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container button {
+      display: block;
+      border-radius: 50%;
+      transition: .15s;
+      width: 100%;
+      height: 100%;
+      box-shadow: none;
+      text-shadow: none; } }
+
 @media (min-width: 768px) {
+  body:not(.home) .site-header-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6)), url("../../images/black_maple_background.png"); }
+  body:not(.home) .site-header {
+    background: rgba(151, 30, 22, 0.5); }
+    body:not(.home) .site-header .menu li a {
+      color: #fff; }
+    body:not(.home) .site-header .fa-search {
+      color: white; }
+  .vatjss-home-hero {
+    padding-top: 134px; }
   .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content {
-    padding-top: 7.125rem; }
+    padding-top: 11.25rem; }
   .post-type-archive-staff h1 {
     text-align: center;
     color: white; }
@@ -1256,19 +1557,30 @@ object {
       font-size: 1rem;
       padding: 0.625rem 0.9375rem; }
       .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
-        display: none; } }
-
-/*404 page*/
-.error404 {
-  background: #971E16;
-  color: #fff; }
-  .error404 .site-content {
+        display: none; }
+  .services-template-default .vatjss-service-title {
+    width: 80%;
+    height: auto; }
+    .services-template-default .vatjss-service-title h1 {
+      font-size: 2rem; }
+    .services-template-default .vatjss-service-title p {
+      font-size: 1rem; }
+  .services-template-default .vatjss-serivce-no-padding {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+  .services-template-default .vatjss-service-faq-section {
+    background: #000; }
+    .services-template-default .vatjss-service-faq-section .vatjss-container-fluid {
+      padding-bottom: 20px; }
+  .services-template-default .vatjss-justice-services .entry-header {
+    -ms-flex-align: center;
+        align-items: center;
     display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
-    vertical-align: center; }
-    .error404 .site-content h1 {
-      text-align: center; }
+    display: flex; }
+  .services-template-default .vatjss-justice-services .vatjss-service-title {
+    background: none; }
+    .services-template-default .vatjss-justice-services .vatjss-service-title h1, .services-template-default .vatjss-justice-services .vatjss-service-title p {
+      text-align: left; } }
 
 /*--------------------------------------------------------------
 # Footer
