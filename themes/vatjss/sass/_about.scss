@@ -1,10 +1,9 @@
 /* ABOUT PAGE STYLE */
 
 header div h2.vatjss-about {
-  height: 100%;
-  width: 90%;
+  max-width: 100%;
   line-height: rem(30); 
-  margin: 195px 21px; 
+  margin: 0 auto; 
   text-align: center;
   font-size: rem(18);
 }
