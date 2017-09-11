@@ -1598,18 +1598,6 @@ object {
       align-items: center;
   padding: 40px 0; }
 
-/*404 page*/
-.error404 {
-  background: #971e16;
-  color: #fff; }
-  .error404 .site-content {
-    display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
-    vertical-align: center; }
-    .error404 .site-content h1 {
-      text-align: center; }
-
 @media (min-width: 992px) {
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {
     background-size: 250px;
@@ -1910,3 +1898,15 @@ section.vatjss-about-content {
 @media (min-width: 768px) {
   .page-template-about footer .vatjss-footer-icons {
     display: none; } }
+
+/*404 page*/
+.error404 {
+  background: #971e16;
+  color: #fff; }
+  .error404 .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    vertical-align: center; }
+    .error404 .site-content h1 {
+      text-align: center; }
