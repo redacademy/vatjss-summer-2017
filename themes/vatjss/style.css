@@ -1227,7 +1227,7 @@ object {
   font-size: 1.125rem; }
 
 .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn {
-  background-color: #971E16;
+  background-color: #971e16;
   padding: 0.375rem 0.75rem;
   color: white;
   text-decoration: none;
@@ -1297,7 +1297,7 @@ object {
     border-radius: 5px; }
 
 .services-template-default .vatjss-mobile-accordian button.accordion-services, .services-template-default .vatjss-service-faq-section button.accordion-services {
-  background-color: #971E16;
+  background-color: #971e16;
   box-shadow: none;
   text-shadow: none;
   color: #fff;
@@ -1346,7 +1346,7 @@ object {
 
 .services-template-default .vatjss-financial-services .vatjss-services-sidebar button, .services-template-default .vatjss-home-services .vatjss-services-sidebar button {
   width: 60%;
-  background: #971E16;
+  background: #971e16;
   border: none;
   border-bottom: 1px solid black;
   box-shadow: none;
@@ -1363,7 +1363,7 @@ object {
   border-bottom: 1px solid white; }
 
 .services-template-default .vatjss-justice-services .vatjss-service-justice-resource-btn {
-  background-color: #971E16;
+  background-color: #971e16;
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -1464,7 +1464,7 @@ object {
 .services-template-default .vatjss-justice-services .vatjss-services-sidebar button {
   width: 85%;
   display: block;
-  background: #971E16;
+  background: #971e16;
   border: none;
   border-bottom: 1px solid black;
   box-shadow: none;
@@ -1494,7 +1494,7 @@ object {
   background-color: #000; }
 
 .post-type-archive-tribe_events .tribe-events-calendar thead tr th {
-  background-color: #971E16; }
+  background-color: #971e16; }
 
 .post-type-archive-tribe_events .tribe-events-calendar td {
   background-color: #f9f9f9; }
@@ -1521,7 +1521,7 @@ object {
 
 /*404 page*/
 .error404 {
-  background: #971E16;
+  background: #971e16;
   color: #fff; }
   .error404 .site-content {
     display: -ms-flexbox;
@@ -1782,3 +1782,25 @@ section.vatjss-about-content {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
+    border: 1px solid #979797;
+    background: #971e16;
+    height: 9.9375rem;
+    width: 41.4375rem;
+    border-radius: 0.625rem;
+    margin-top: 1rem; }
+    .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons a.vatjss-link-header {
+      text-decoration: none;
+      color: #fff;
+      font-size: 2.25rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding-top: 3.4375rem; }
+
+.page-template-about div div.vatjss-first {
+  margin-left: 2.5rem; }
+
+.page-template-about div div.vatjss-second {
+  margin-right: 2.5rem; }

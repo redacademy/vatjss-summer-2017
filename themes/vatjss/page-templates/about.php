@@ -38,19 +38,19 @@ get_header(); ?>
 			<!-- Buttons for Desktop -->
 			<div class="vatjss-mission-buttons">
 				<div class="vatjss-first">
-					<div class="vatjss-our-mission-button">
-						<a class="vatjss-mission-button-link" href="#">Our Mission</a>
+					<div class="vatjss-mission-button vatjss-all-buttons">
+						<a class="vatjss-mission-button-link vatjss-link-header" href="#">Mission</a>
 					</div>
-					<div class="vatjss-our-story-button">
-						<a class="vatjss-story-button-link" href="#">Our Story</a>
+					<div class="vatjss-story-button vatjss-all-buttons">
+						<a class="vatjss-story-button-link vatjss-link-header" href="#">Story</a>
 					</div>
 				</div>
 				<div class="vatjss-second">
-					<div class="vatjss-our-vision-button">
-						<a class="vatjss-vision-button-link" href="#">Our Vision</a>
+					<div class="vatjss-vision-button vatjss-all-buttons">
+						<a class="vatjss-vision-button-link vatjss-link-header" href="#">Vision</a>
 					</div>
-					<div class="vatjss-funding-button">
-						<a class="vatjss-funding-button-link" href="#">Funding</a>
+					<div class="vatjss-funding-button vatjss-all-buttons">
+						<a class="vatjss-funding-button-link vatjss-link-header" href="#">Funding</a>
 					</div>
 				</div>
 			</div>

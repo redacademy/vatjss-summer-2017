@@ -14,6 +14,7 @@ section.vatjss-about-content {
   display:flex;
   flex-direction: column;
   width: 100%;
+  
     @include desktop {
       background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../../images/black_maple_background.png);;
       height: 100vh;
@@ -52,30 +53,33 @@ section.vatjss-about-content {
   }
 }
 
-// section.vatjss-sidebar-widget {
-//    display: none;
-//  }  //fix widget  
 .page-template-about .vatjss-biz-hours-class {
   display: none;
+
     @include desktop {
       display: unset;
       width: 26rem;
     }
 }
+
 .page-template-about .vatjss-staff-content {
    background: black;
+ 
    .vatjss-staff {
     color: #fff;
    }
+
   .vatjss-our-staff {
     margin: 0;
     text-align: center;
     padding-bottom: 1rem;
   }
+
   p {
     margin: 0;
   }
 }
+
 .page-template-about .vatjss-learn-more-button {
   text-align: center;
   padding-top: 1.5rem;
@@ -85,4 +89,30 @@ section.vatjss-about-content {
 .page-template-about .vatjss-mission-buttons {
   display: flex;
   justify-content: space-between;
+
+  div.vatjss-all-buttons {
+    border: $border_grey;
+    background: $background_red;
+    height: rem(159);
+    width: rem(663);
+    border-radius: rem(10);
+    margin-top: rem(16);
+
+    a.vatjss-link-header {
+      text-decoration: none;
+      color: $color_white;
+      font-size: rem(36);
+      display: flex;
+      justify-content: center;
+      padding-top: rem(55);
+    }
+  }
+}
+
+.page-template-about div div.vatjss-first {
+  margin-left: rem(40);  
+}
+
+.page-template-about div div.vatjss-second {
+  margin-right: rem(40);
 }
