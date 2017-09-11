@@ -1151,7 +1151,7 @@ object {
   .vatjss-home-mobile-subscribe-banner button {
     font-size: 1.5rem; }
 
-.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .post-type-archive-tribe_events .site-content {
+.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content {
   padding-top: 4.375rem; }
 
 .post-type-archive-staff h1 {
@@ -1472,41 +1472,46 @@ object {
   .services-template-default .vatjss-service-faq-section button.accordion-services {
     font-size: 1rem; }
 
-.post-type-archive-tribe_events .tribe-bar-disabled {
+.page-template-events .tribe-bar-disabled {
   z-index: 5; }
 
-.post-type-archive-tribe_events .tribe-events-page-title {
+.page-template-events .tribe-events-page-title {
   color: #fff;
   margin-top: 0; }
 
-.post-type-archive-tribe_events .vatjss-calendar-events {
+.page-template-events .vatjss-calendar-events {
   background-color: #000; }
 
-.post-type-archive-tribe_events .tribe-events-calendar thead tr th {
+.page-template-events .tribe-events-calendar thead tr th {
   background-color: #971E16; }
 
-.post-type-archive-tribe_events .tribe-events-calendar td {
+.page-template-events .tribe-events-calendar td {
   background-color: #f9f9f9; }
 
-.post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event {
+.page-template-events .vatjss-calendar-list-events .vatjss-calendar-list-event {
   padding-top: 40px; }
 
-.post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event:first-child {
+.page-template-events .vatjss-calendar-list-events .vatjss-calendar-list-event:first-child {
   padding-top: 0px; }
 
-.post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event-date, .post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event-title, .post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event-description {
+.page-template-events .vatjss-calendar-list-events .vatjss-calendar-list-event-date, .page-template-events .vatjss-calendar-list-events .vatjss-calendar-list-event-title, .page-template-events .vatjss-calendar-list-events .vatjss-calendar-list-event-description {
   margin-top: 0;
   color: #fff; }
 
-.post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event-title {
+.page-template-events .vatjss-calendar-list-events .vatjss-calendar-list-event-title {
   font-size: 1.3125rem; }
 
-.post-type-archive-tribe_events .vatjss-community-partner-logo-banner {
+.page-template-events .vatjss-community-partner-logo-banner {
   background-image: url("../../images/red_maple_background.png"); }
-  .post-type-archive-tribe_events .vatjss-community-partner-logo-banner h2 {
+  .page-template-events .vatjss-community-partner-logo-banner h2 {
     color: #fff;
     padding: 40px 0;
     font-size: 1.125rem; }
+
+.page-template-events .vatjss-community-partner-logo-list .vatjss-flex-container-no-wrap {
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 0; }
 
 /*404 page*/
 .error404 {
@@ -1576,7 +1581,7 @@ object {
       color: white; }
   .vatjss-home-hero {
     padding-top: 134px; }
-  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .post-type-archive-tribe_events .site-content {
+  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content {
     padding-top: 11.25rem; }
   .post-type-archive-staff h1 {
     text-align: center;

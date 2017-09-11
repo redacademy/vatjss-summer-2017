@@ -28,7 +28,7 @@
     font-size: rem(24);
   }
 }
-.post-type-archive-services, .post-type-archive-staff,.services-template-default,.post-type-archive-tribe_events{
+.post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events{
   .site-content{
     padding-top: rem(70);
   }
@@ -373,7 +373,7 @@
     }
   }
 }
-.post-type-archive-tribe_events{
+.page-template-events{
   .tribe-bar-disabled{
     z-index: 5;
   }
@@ -420,6 +420,10 @@
     }
   }
   .vatjss-community-partner-logo-list{
+    .vatjss-flex-container-no-wrap{
+      align-items: center;
+      padding: 40px 0;
+    }
   }
 }
 /*404 page*/
@@ -491,7 +495,7 @@
   .vatjss-home-hero{
     padding-top: 134px;
   }
-  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.post-type-archive-tribe_events{
+  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events{
     .site-content{
       padding-top: rem(180);
     }
