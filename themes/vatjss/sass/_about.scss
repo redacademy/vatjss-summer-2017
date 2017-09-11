@@ -82,37 +82,56 @@ section.vatjss-about-content {
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
-  height: rem(40);	
-  width: rem(140);	
-  border-radius: rem(5);	
-  background-color: $background_red;
-  padding-top: rem(9);
-
+  height: rem(32);
+  width: rem(160);  
+  background-color: $background_red;  
+  border-radius: rem(5);
+  
   a.vatjss-button-link {
     color: $color_white;
 
+    span.vatjss-right-arrow {
+      padding-left: 20px;
+      font-size: 20px;
+    }
   }
+
+  @include desktop {
+    height: rem(40);	
+    width: rem(140);	
+    padding-top: rem(9);
+
+    a span.vatjss-right-arrow {
+      display: none;
+    }
+
+
+  }   
 }
 
 .page-template-about .vatjss-mission-buttons {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 
-  div.vatjss-all-buttons {
-    border: $border_grey;
-    background: $background_red;
-    height: rem(159);
-    width: rem(663);
-    border-radius: rem(10);
-    margin-top: rem(16);
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
 
-    a.vatjss-link-header {
-      text-decoration: none;
-      color: $color_white;
-      font-size: rem(36);
-      display: flex;
-      justify-content: center;
-      padding-top: rem(55);
+    div.vatjss-all-buttons {
+      border: $border_grey;
+      background: $background_red;
+      height: rem(159);
+      width: rem(663);
+      border-radius: rem(10);
+      margin-top: rem(16);
+
+      a.vatjss-link-header {
+        text-decoration: none;
+        color: $color_white;
+        font-size: rem(36);
+        display: flex;
+        justify-content: center;
+        padding-top: rem(55);
+      }
     }
   }
 }
@@ -127,6 +146,8 @@ section.vatjss-about-content {
   margin-left: 20px;
 }
 
-.page-template-about footer .vatjss-footer-icons {
-  display: none;
-}
+ .page-template-about footer .vatjss-footer-icons {
+  @include desktop {
+    display: none;
+  }
+ }

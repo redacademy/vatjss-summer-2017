@@ -62,7 +62,7 @@ get_header(); ?>
 				<?php echo CFS()->get( 'our_staff' ); ?>
 			</div>
 			<div class="vatjss-read-more-button">
-				<a class="vatjss-button-link vatjss-text-uppercase">Read more</a>
+				<a class="vatjss-button-link vatjss-text-uppercase">Read more<span class="vatjss-right-arrow">></span></a>
 			</div>
     </section>
 	</main><!-- #main -->

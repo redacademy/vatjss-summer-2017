@@ -1857,35 +1857,47 @@ section.vatjss-about-content {
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
-  height: 2.5rem;
-  width: 8.75rem;
-  border-radius: 0.3125rem;
+  height: 2rem;
+  width: 10rem;
   background-color: #971e16;
-  padding-top: 0.5625rem; }
+  border-radius: 0.3125rem; }
   .page-template-about .vatjss-read-more-button a.vatjss-button-link {
     color: #fff; }
+    .page-template-about .vatjss-read-more-button a.vatjss-button-link span.vatjss-right-arrow {
+      padding-left: 20px;
+      font-size: 20px; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-read-more-button {
+      height: 2.5rem;
+      width: 8.75rem;
+      padding-top: 0.5625rem; }
+      .page-template-about .vatjss-read-more-button a span.vatjss-right-arrow {
+        display: none; } }
 
 .page-template-about .vatjss-mission-buttons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
-    border: 1px solid #979797;
-    background: #971e16;
-    height: 9.9375rem;
-    width: 41.4375rem;
-    border-radius: 0.625rem;
-    margin-top: 1rem; }
-    .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons a.vatjss-link-header {
-      text-decoration: none;
-      color: #fff;
-      font-size: 2.25rem;
+  display: none; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-mission-buttons {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      padding-top: 3.4375rem; }
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
+        border: 1px solid #979797;
+        background: #971e16;
+        height: 9.9375rem;
+        width: 41.4375rem;
+        border-radius: 0.625rem;
+        margin-top: 1rem; }
+        .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons a.vatjss-link-header {
+          text-decoration: none;
+          color: #fff;
+          font-size: 2.25rem;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          padding-top: 3.4375rem; } }
 
 .page-template-about div div.vatjss-first {
   margin-left: 2.5rem;
@@ -1895,5 +1907,6 @@ section.vatjss-about-content {
   margin-right: 2.5rem;
   margin-left: 20px; }
 
-.page-template-about footer .vatjss-footer-icons {
-  display: none; }
+@media (min-width: 768px) {
+  .page-template-about footer .vatjss-footer-icons {
+    display: none; } }
