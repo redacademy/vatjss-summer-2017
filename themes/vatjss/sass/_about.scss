@@ -14,10 +14,10 @@ section.vatjss-about-content {
   display:flex;
   flex-direction: column;
   width: 100%;
-  
+
     @include desktop {
       background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../../images/black_maple_background.png);;
-      height: 100vh;
+      height: 60vh;
     }
 
     .vatjss-about-category {
@@ -80,10 +80,18 @@ section.vatjss-about-content {
   }
 }
 
-.page-template-about .vatjss-learn-more-button {
+.page-template-about .vatjss-read-more-button {
   text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
+  height: rem(40);	
+  width: rem(140);	
+  border-radius: rem(5);	
+  background-color: $background_red;
+  padding-top: rem(9);
+
+  a.vatjss-button-link {
+    color: $color_white;
+
+  }
 }
 
 .page-template-about .vatjss-mission-buttons {
@@ -110,9 +118,15 @@ section.vatjss-about-content {
 }
 
 .page-template-about div div.vatjss-first {
-  margin-left: rem(40);  
+  margin-left: rem(40); 
+  margin-right: 20px;
 }
 
 .page-template-about div div.vatjss-second {
   margin-right: rem(40);
+  margin-left: 20px;
+}
+
+.page-template-about footer .vatjss-footer-icons {
+  display: none;
 }

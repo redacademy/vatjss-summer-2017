@@ -984,6 +984,22 @@ http://flickity.metafizzy.co
 /* bottom sidebar */
 div div aside#text-3 {
   display: none; }
+  div div aside#text-3 form p input.wpcf7-form-control {
+    background: #000;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border-radius: 0.625rem;
+    border: 3px solid #FFFFFF; }
+  div div aside#text-3 form p input.wpcf7-submit {
+    background: #971e16;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: none;
+    padding: 16px 30px;
+    letter-spacing: 0.0625rem;
+    font-size: 1rem; }
   @media (min-width: 768px) {
     div div aside#text-3 {
       display: unset;
@@ -1004,7 +1020,19 @@ div div aside#text-2 {
       border-right: 5px solid #971E16;
       text-align: center;
       -ms-flex-line-pack: center;
-          align-content: center; } }
+          align-content: center; }
+      div div aside#text-2 div.textwidget {
+        font-size: 3.4375rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 7.5rem; }
+        div div aside#text-2 div.textwidget div.vatjss-widget-social-icons {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 div aside.vatjss-biz-hours-class {
   background: #000;
@@ -1013,10 +1041,8 @@ div aside.vatjss-biz-hours-class {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 1.875rem;
+    padding-top: 1.25rem;
     padding-bottom: 1.875rem; }
-  div aside.vatjss-biz-hours-class p span.day-of-the-week {
-    text-transform: uppercase; }
 
 .vatjss-business-hours {
   display: -ms-flexbox;
@@ -1027,6 +1053,13 @@ div aside.vatjss-biz-hours-class {
   .vatjss-business-hours .vatjss-hours {
     width: 460px;
     line-height: .6; }
+  @media (min-width: 768px) {
+    .vatjss-business-hours {
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .vatjss-business-hours .vatjss-hours {
+        padding-left: 0.9375rem;
+        margin-left: 110px; } }
 
 .vatjss-widget-address p {
   padding-left: 0.9375rem;
@@ -1036,6 +1069,11 @@ div aside.vatjss-biz-hours-class {
   text-transform: uppercase; }
   .vatjss-widget-address p span.widget_address {
     display: none; }
+  @media (min-width: 768px) {
+    .vatjss-widget-address p {
+      width: 147px;
+      margin-left: 110px;
+      margin-top: 40px; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1735,7 +1773,7 @@ section.vatjss-about-content {
   @media (min-width: 768px) {
     section.vatjss-about-content {
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/black_maple_background.png);
-      height: 100vh; } }
+      height: 60vh; } }
   @media (min-width: 768px) {
     section.vatjss-about-content .vatjss-about-category {
       display: none; } }
@@ -1777,10 +1815,15 @@ section.vatjss-about-content {
   .page-template-about .vatjss-staff-content p {
     margin: 0; }
 
-.page-template-about .vatjss-learn-more-button {
+.page-template-about .vatjss-read-more-button {
   text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 3rem; }
+  height: 2.5rem;
+  width: 8.75rem;
+  border-radius: 0.3125rem;
+  background-color: #971e16;
+  padding-top: 0.5625rem; }
+  .page-template-about .vatjss-read-more-button a.vatjss-button-link {
+    color: #fff; }
 
 .page-template-about .vatjss-mission-buttons {
   display: -ms-flexbox;
@@ -1805,7 +1848,12 @@ section.vatjss-about-content {
       padding-top: 3.4375rem; }
 
 .page-template-about div div.vatjss-first {
-  margin-left: 2.5rem; }
+  margin-left: 2.5rem;
+  margin-right: 20px; }
 
 .page-template-about div div.vatjss-second {
-  margin-right: 2.5rem; }
+  margin-right: 2.5rem;
+  margin-left: 20px; }
+
+.page-template-about footer .vatjss-footer-icons {
+  display: none; }

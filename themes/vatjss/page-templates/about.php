@@ -39,18 +39,18 @@ get_header(); ?>
 			<div class="vatjss-mission-buttons">
 				<div class="vatjss-first">
 					<div class="vatjss-mission-button vatjss-all-buttons">
-						<a class="vatjss-mission-button-link vatjss-link-header" href="#">Mission</a>
+						<a class="vatjss-mission-button-link vatjss-link-header vatjss-text-uppercase" href="#">Mission</a>
 					</div>
 					<div class="vatjss-story-button vatjss-all-buttons">
-						<a class="vatjss-story-button-link vatjss-link-header" href="#">Story</a>
+						<a class="vatjss-story-button-link vatjss-link-header vatjss-text-uppercase" href="#">Story</a>
 					</div>
 				</div>
 				<div class="vatjss-second">
 					<div class="vatjss-vision-button vatjss-all-buttons">
-						<a class="vatjss-vision-button-link vatjss-link-header" href="#">Vision</a>
+						<a class="vatjss-vision-button-link vatjss-link-header vatjss-text-uppercase" href="#">Vision</a>
 					</div>
 					<div class="vatjss-funding-button vatjss-all-buttons">
-						<a class="vatjss-funding-button-link vatjss-link-header" href="#">Funding</a>
+						<a class="vatjss-funding-button-link vatjss-link-header vatjss-text-uppercase" href="#">Funding</a>
 					</div>
 				</div>
 			</div>
@@ -58,11 +58,11 @@ get_header(); ?>
     <section class="container vatjss-staff-content">
 			<!--get staff photo-->
 			<div class="vatjss-staff">
-      	<h2 class="vatjss-our-staff">VATJSS Staff</h2>
+      	<h2 class="vatjss-our-staff vatjss-text-uppercase">Our Staff</h2>
 				<?php echo CFS()->get( 'our_staff' ); ?>
 			</div>
-			<div class="vatjss-learn-more-button">
-				<a class="vatjss-button-link">Learn more</a>
+			<div class="vatjss-read-more-button">
+				<a class="vatjss-button-link vatjss-text-uppercase">Read more</a>
 			</div>
     </section>
 	</main><!-- #main -->
