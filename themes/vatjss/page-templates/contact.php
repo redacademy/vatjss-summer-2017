@@ -67,7 +67,7 @@ get_header(); ?>
         <p>circlecoordinator@vatjss.com</p>
       </div>
       <div class="volunteer-form-contact-page">
-        <?php echo CFS()->get( 'volunteer_form' );
+        <?php echo CFS()->get( 'volunteer_form' ); ?>
     </div>
   </element>
 
