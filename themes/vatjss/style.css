@@ -543,6 +543,12 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.logged-in .site-header {
+  top: 44px; }
+
+.site-header {
+  top: 0px; }
+
 /* Links */
 a {
   color: royalblue; }
@@ -1074,6 +1080,15 @@ div aside.vatjss-biz-hours-class {
       width: 147px;
       margin-left: 110px;
       margin-top: 40px; } }
+
+section.resource-list-page {
+  height: 0px;
+  overflow: hidden; }
+
+div.resource-toggle {
+  margin-top: 50px;
+  padding: 20px;
+  width: 0px; }
 
 /*--------------------------------------------------------------
 # Content
