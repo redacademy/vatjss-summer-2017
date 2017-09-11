@@ -2,7 +2,22 @@
 # Resource List
 --------------------------------------------------------------*/
 
+.site-main {
+  overflow: auto;
+  min-height: 75vh;
+}
+
 //resource page elements
+.resources-content-area {
+  background-image: url('../../images/black_maple_background.png');
+  background-position: center;
+  background-repeat: repeat;
+  @include desktop {
+    background-image: none;
+    background: black;
+  }
+}
+
 section.resource-list-page {
   height: 0px;
   width: 100%;
@@ -10,7 +25,7 @@ section.resource-list-page {
 }
 
 .site-header-background {
-  display:none;
+  display: none;
 }
 
 div.vatjss-mobile-resource-toggle-container {

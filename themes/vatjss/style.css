@@ -1093,6 +1093,19 @@ div aside.vatjss-biz-hours-class {
 /*--------------------------------------------------------------
 # Resource List
 --------------------------------------------------------------*/
+.site-main {
+  overflow: auto;
+  min-height: 75vh; }
+
+.resources-content-area {
+  background-image: url("../../images/black_maple_background.png");
+  background-position: center;
+  background-repeat: repeat; }
+  @media (min-width: 768px) {
+    .resources-content-area {
+      background-image: none;
+      background: black; } }
+
 section.resource-list-page {
   height: 0px;
   width: 100%;
