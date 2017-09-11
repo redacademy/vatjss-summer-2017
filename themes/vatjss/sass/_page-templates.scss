@@ -383,12 +383,23 @@
   }
   .vatjss-calendar-events{
     background-color: $color_black;
+    padding: 40px 0;
   }
-  .tribe-events-calendar{
+  .simcal-default-calendar-grid.simcal-default-calendar-dark .simcal-day-void{
+    background-color: #f9f9f9;
+  }
+  .simcal-default-calendar-grid.simcal-default-calendar-dark .simcal-day:hover{
+    background-color: grey;
+    span{
+      color:white;
+    }
+  }
+  .simcal-calendar-grid{
     thead{
       tr{
         th{
           background-color:$background_red;
+          color:$color_white;
         }
       }
     }
@@ -396,19 +407,23 @@
       background-color: #f9f9f9;
     }
   }
-  .vatjss-calendar-list-events{
-    .vatjss-calendar-list-event{
-      padding-top: 40px;
-    }
-    .vatjss-calendar-list-event:first-child{
-      padding-top: 0px;
-    }
-    .vatjss-calendar-list-event-date,.vatjss-calendar-list-event-title,.vatjss-calendar-list-event-description{
+  .simcal-calendar-list {
+    .simcal-day-label,.simcal-events-list-container{
       margin-top: 0;
-      color: $color_white;
     }
-    .vatjss-calendar-list-event-title{
-      font-size: rem(21);
+    .simcal-day-label{
+      font-size:rem(18);
+    }
+    .simcal-events{
+      padding-left: 0;
+      margin-left: 8px;
+      p{
+        font-size:rem(14);
+        color:$color_white;
+      }
+      .simcal-event-title{
+        font-size: rem(16);
+      }
     }
   }
   .vatjss-community-partner-logo-banner{
