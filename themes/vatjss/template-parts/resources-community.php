@@ -16,7 +16,7 @@
       foreach ( $term1_children as $term1_child ) : setup_postdata( $term1_child );
         echo '<div class=resource-accordion-title-' . $term1_child->term_id . '"><h4>' . $term1_child->name . '</h4></div><div class=resource-accordion-section-' . $term1_child->term_id . '>';
         $args2 = array( 'child_of' => $term1_child->term_id, 'parent' => $term1_child->term_id );
-        $term2_children = get_terms( 'resources-type', $args2 );d($term1_child);
+        $term2_children = get_terms( 'resources-type', $args2 );
         foreach ( $term2_children as $term2_child ) : setup_postdata( $term2_child );
           $args3 = array( 
             'numberposts' =>  -1,
