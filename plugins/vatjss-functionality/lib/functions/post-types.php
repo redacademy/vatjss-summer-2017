@@ -236,3 +236,60 @@ function vatjss_cpt_staff() {
   
   }
   add_action( 'init', 'vatjss_cpt_staff', 0 );
+
+// Register Community Partner Custom Post Type
+function vatjss_cpt_community_partners() {
+  
+    $labels = array(
+      'name'                  => 'Community Partners',
+      'singular_name'         => 'Community Partner',
+      'menu_name'             => 'Comunity Partner',
+      'name_admin_bar'        => 'Community Partner',
+      'archives'              => 'Partner Archives',
+      'attributes'            => 'Partner Attributes',
+      'parent_item_colon'     => 'Parent Partner:',
+      'all_items'             => 'All Partners',
+      'add_new_item'          => 'Add New Partner',
+      'add_new'               => 'Add New',
+      'new_item'              => 'New Partner',
+      'edit_item'             => 'Edit Partner',
+      'update_item'           => 'Update Partner',
+      'view_item'             => 'View Partner',
+      'view_items'            => 'View Partners',
+      'search_items'          => 'Search Partner',
+      'not_found'             => 'Not found',
+      'not_found_in_trash'    => 'Not found in Trash',
+      'featured_image'        => 'Featured Image',
+      'set_featured_image'    => 'Set featured image',
+      'remove_featured_image' => 'Remove featured image',
+      'use_featured_image'    => 'Use as featured image',
+      'insert_into_item'      => 'Insert into Partner',
+      'uploaded_to_this_item' => 'Uploaded to this Partner',
+      'items_list'            => 'Partners list',
+      'items_list_navigation' => 'Partners list navigation',
+      'filter_items_list'     => 'Filter Partners list',
+    );
+    $args = array(
+      'label'                 => 'Community Partner',
+      'description'           => 'VATJSS community partners',
+      'labels'                => $labels,
+      'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', ),
+      'hierarchical'          => true,
+      'public'                => true,
+      'show_ui'               => true,
+      'show_in_menu'          => true,
+      'menu_position'         => 5,
+      'menu_icon'             => 'dashicons-universal-access-alt',
+      'show_in_admin_bar'     => true,
+      'show_in_nav_menus'     => true,
+      'can_export'            => true,
+      'has_archive'           => true,		
+      'exclude_from_search'   => false,
+      'publicly_queryable'    => true,
+      'capability_type'       => 'post',
+      'show_in_rest'          => true,
+    );
+    register_post_type( 'community_partner', $args );
+  
+  }
+  add_action( 'init', 'vatjss_cpt_community_partners', 0 );

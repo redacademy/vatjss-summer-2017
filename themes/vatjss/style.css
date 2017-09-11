@@ -1501,6 +1501,13 @@ object {
 .post-type-archive-tribe_events .vatjss-calendar-list-events .vatjss-calendar-list-event-title {
   font-size: 1.3125rem; }
 
+.post-type-archive-tribe_events .vatjss-community-partner-logo-banner {
+  background-image: url("../../images/red_maple_background.png"); }
+  .post-type-archive-tribe_events .vatjss-community-partner-logo-banner h2 {
+    color: #fff;
+    padding: 40px 0;
+    font-size: 1.125rem; }
+
 /*404 page*/
 .error404 {
   background: #971E16;
@@ -1636,7 +1643,9 @@ object {
   .services-template-default .vatjss-justice-services .vatjss-service-title {
     background: none; }
     .services-template-default .vatjss-justice-services .vatjss-service-title h1, .services-template-default .vatjss-justice-services .vatjss-service-title p {
-      text-align: left; } }
+      text-align: left; }
+  .post-type-archive-tribe_events .vatjss-community-partner-logo-banner h2 {
+    font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
 # Footer

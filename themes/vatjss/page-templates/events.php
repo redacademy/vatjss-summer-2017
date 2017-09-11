@@ -37,6 +37,14 @@ get_header(); ?>
             </div>
           </div>
         </section>
+        <section class="vatjss-community-partner-logo-banner">
+          <div class="vatjss-container">
+            <h2 class="vatjss-text-center">To see what else is going on in your community, check out these other organizations</h2>
+          </div>
+        </section>
+        <section class="vatjss-community-partner-logo-list">
+
+        </section>
       </article>
 
 			<?php endwhile; // End of the loop. ?>

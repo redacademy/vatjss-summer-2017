@@ -411,6 +411,16 @@
       font-size: rem(21);
     }
   }
+  .vatjss-community-partner-logo-banner{
+    background-image: url('../../images/red_maple_background.png');
+    h2{
+      color:$color_white;
+      padding: 40px 0;
+      font-size: rem(18);
+    }
+  }
+  .vatjss-community-partner-logo-list{
+  }
 }
 /*404 page*/
 
@@ -575,6 +585,13 @@
         h1,p{
           text-align: left;
         }
+      }
+    }
+  }
+  .post-type-archive-tribe_events{
+    .vatjss-community-partner-logo-banner{
+      h2{
+        font-size: rem(24);
       }
     }
   }
