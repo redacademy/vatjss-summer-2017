@@ -30,23 +30,6 @@ function vatjss_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'vatjss_archive_title' );
 
 // ABOUT HERO BACKGROUND 
-// function my_style_method() {
-// 	switch(true) {
-// 		case is_page('page-templates/about'):
-// 			$urlAbout = CFS()->get('about_header_image');
-// 			$custom_css = "
-// 				.vatjss-custom-hero {
-// 					background: url ({ $urlAbout }) no-repeat center bottom;
-// 					background-size: cover;
-// 				};";
-// 			break;
-// 				default: $custom_css;	
-// 			break;
-// 	}
-// 	wp_add_inline_style('vatjss-style', $custom_css);
-// }
-// add_action('wp_enqueue_scripts', 'my_style_method');
-
 function vatjss_about_dynamic_css() {
 	if( ! is_page_template( 'page-templates/about.php' )) {
 		return;

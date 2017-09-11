@@ -978,7 +978,10 @@ div div aside#text-3 {
       display: unset;
       margin: 0;
       width: 33rem;
-      border-right: 5px solid #971E16; } }
+      border-right: 5px solid #971E16;
+      text-align: center;
+      -ms-flex-line-pack: center;
+          align-content: center; } }
 
 div div aside#text-2 {
   display: none; }
@@ -987,7 +990,10 @@ div div aside#text-2 {
       display: unset;
       margin: 0;
       width: 22rem;
-      border-right: 5px solid #971E16; } }
+      border-right: 5px solid #971E16;
+      text-align: center;
+      -ms-flex-line-pack: center;
+          align-content: center; } }
 
 div aside.vatjss-biz-hours-class {
   background: #000;
@@ -1732,3 +1738,9 @@ section.vatjss-about-content {
         flex: 5;
     padding-left: 4rem;
     padding-right: 4rem; } }
+
+.page-template-about .vatjss-mission-buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }

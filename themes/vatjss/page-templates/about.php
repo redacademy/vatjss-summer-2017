@@ -12,7 +12,6 @@ get_header(); ?>
 		<header class="entry-header">
 			<div class="vatjss-custom-hero">
 				<!--get hero banner-->
-				<?php echo '<img src="' . CFS()->get( 'about_header-image' ) . '" />'; ?>
         <h2 class="vatjss-about">Crime is best viewed as a violate of people and relationships. 
           Conflict that emerges is an opportunity for positive 
           <span class="vatjss-text-uppercase">transformation</span> 
@@ -38,17 +37,21 @@ get_header(); ?>
 			</div>
 			<!-- Buttons for Desktop -->
 			<div class="vatjss-mission-buttons">
-				<div class="vatjss-our-mission-button">
-					<a class="vatjss-mission-button-link" href="#">Our Mission</a>
+				<div class="vatjss-first">
+					<div class="vatjss-our-mission-button">
+						<a class="vatjss-mission-button-link" href="#">Our Mission</a>
+					</div>
+					<div class="vatjss-our-story-button">
+						<a class="vatjss-story-button-link" href="#">Our Story</a>
+					</div>
 				</div>
-				<div class="vatjss-our-story-button">
-					<a class="vatjss-story-button-link" href="#">Our Story</a>
-				</div>
-				<div class="vatjss-our-vision-button">
-					<a class="vatjss-vision-button-link" href="#">Our Vision</a>
-				</div>
-				<div class="vatjss-funding-button">
-					<a class="vatjss-funding-button-link" href="#">Funding</a>
+				<div class="vatjss-second">
+					<div class="vatjss-our-vision-button">
+						<a class="vatjss-vision-button-link" href="#">Our Vision</a>
+					</div>
+					<div class="vatjss-funding-button">
+						<a class="vatjss-funding-button-link" href="#">Funding</a>
+					</div>
 				</div>
 			</div>
     </section>
