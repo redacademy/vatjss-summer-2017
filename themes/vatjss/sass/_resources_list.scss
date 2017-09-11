@@ -1,10 +1,77 @@
+/*--------------------------------------------------------------
+# Resource List
+--------------------------------------------------------------*/
+
+//resource page elements
 section.resource-list-page {
   height: 0px;
+  width: 100%;
   overflow: hidden;
 }
 
-div.resource-toggle {
-  margin-top: 50px;
-  padding: 20px;
-  width: 0px;
+.site-header-background {
+  display:none;
+}
+
+div.vatjss-mobile-resource-toggle-container {
+  margin: 100px auto 20px;
+  height: auto;
+  width: 92vw;
+  min-width: 246px;
+  max-width: 366px;
+  display: flex;
+  border: $border_grey;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-family: $font_main;
+  div.resource-toggle-mobile {
+    &:hover {
+      background-color: $background_red;
+    }
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+    &:last-child {
+      border-right:none;
+      border-radius: 0 5px 5px 0;
+    }
+    border-right: $border_grey;
+    margin: 0;
+    padding: 0;
+    width: $a-third;
+    height: 100%;
+    display: block;
+    h3 {
+      font-size: 0.77rem;
+      text-align: center;
+      padding: 5px 10px;
+      margin: 0;
+      @include desktop {
+        height: 0px;
+        border: none;
+        overflow: hidden;
+      }
+    }
+    @include desktop {
+      height: 0px;
+      border: none;
+      overflow: hidden;
+    }
+  }
+  @include desktop {
+    height: 0px;
+    border: none;
+    overflow: hidden;
+  }
+}
+
+div.resource-toggle-desktop {
+  width: 200px;
+  height: 0px;
+  overflow: hidden;
+  @include desktop {
+    height: 100px;
+    width: auto;
+  }
 }

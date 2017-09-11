@@ -377,7 +377,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -1090,14 +1090,73 @@ div aside.vatjss-biz-hours-class {
       margin-left: 110px;
       margin-top: 40px; } }
 
+/*--------------------------------------------------------------
+# Resource List
+--------------------------------------------------------------*/
 section.resource-list-page {
   height: 0px;
+  width: 100%;
   overflow: hidden; }
 
-div.resource-toggle {
-  margin-top: 50px;
-  padding: 20px;
-  width: 0px; }
+.site-header-background {
+  display: none; }
+
+div.vatjss-mobile-resource-toggle-container {
+  margin: 100px auto 20px;
+  height: auto;
+  width: 92vw;
+  min-width: 246px;
+  max-width: 366px;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+    border-right: 1px solid #979797;
+    margin: 0;
+    padding: 0;
+    width: 33.33333%;
+    height: 100%;
+    display: block; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+      background-color: #971e16; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
+      border-radius: 5px 0 0 5px; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
+      border-right: none;
+      border-radius: 0 5px 5px 0; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
+      font-size: 0.77rem;
+      text-align: center;
+      padding: 5px 10px;
+      margin: 0; }
+      @media (min-width: 768px) {
+        div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
+          height: 0px;
+          border: none;
+          overflow: hidden; } }
+    @media (min-width: 768px) {
+      div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+        height: 0px;
+        border: none;
+        overflow: hidden; } }
+  @media (min-width: 768px) {
+    div.vatjss-mobile-resource-toggle-container {
+      height: 0px;
+      border: none;
+      overflow: hidden; } }
+
+div.resource-toggle-desktop {
+  width: 200px;
+  height: 0px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    div.resource-toggle-desktop {
+      height: 100px;
+      width: auto; } }
 
 /*--------------------------------------------------------------
 # Content
