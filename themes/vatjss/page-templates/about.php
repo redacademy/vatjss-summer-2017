@@ -11,7 +11,8 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<header class="entry-header">
 			<div class="vatjss-custom-hero">
-        <!--get hero banner-->
+				<!--get hero banner-->
+				<?php echo '<img src="' . CFS()->get( 'about_header-image' ) . '" />'; ?>
         <h2 class="vatjss-about">Crime is best viewed as a violate of people and relationships. 
           Conflict that emerges is an opportunity for positive 
           <span class="vatjss-text-uppercase">transformation</span> 

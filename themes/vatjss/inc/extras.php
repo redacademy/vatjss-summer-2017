@@ -46,3 +46,22 @@ add_filter( 'get_the_archive_title', 'vatjss_archive_title' );
 // 	wp_add_inline_style('vatjss-style', $custom_css);
 // }
 // add_action('wp_enqueue_scripts', 'my_style_method');
+
+function vatjss_about_dynamic_css() {
+	if( ! is_page_template( 'page-templates/about.php' )) {
+		return;
+	}
+	$image = CFS()->get( 'about_header_image' );
+	if ( ! $image ) {
+		return;
+	}
+	$banner_css = ".page-template-about .entry-header {
+		background: url({$image}) no-repeat center bottom;
+		height: 100vh;
+		background-size: cover;
+		margin: 0;
+		padding: 0;
+	}";
+	wp_add_inline_style( 'vatjss-style', $banner_css );
+}
+add_action( 'wp_enqueue_scripts', 'vatjss_about_dynamic_css');
