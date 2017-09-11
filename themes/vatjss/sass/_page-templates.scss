@@ -28,7 +28,7 @@
     font-size: rem(24);
   }
 }
-.post-type-archive-services, .post-type-archive-staff,.services-template-default{
+.post-type-archive-services, .post-type-archive-staff,.services-template-default,.post-type-archive-tribe_events{
   .site-content{
     padding-top: rem(70);
   }
@@ -373,7 +373,45 @@
     }
   }
 }
-
+.post-type-archive-tribe_events{
+  .tribe-bar-disabled{
+    z-index: 5;
+  }
+  .tribe-events-page-title{
+    color:$color_white;
+    margin-top: 0;
+  }
+  .vatjss-calendar-events{
+    background-color: $color_black;
+  }
+  .tribe-events-calendar{
+    thead{
+      tr{
+        th{
+          background-color:$background_red;
+        }
+      }
+    }
+    td{
+      background-color: #f9f9f9;
+    }
+  }
+  .vatjss-calendar-list-events{
+    .vatjss-calendar-list-event{
+      padding-top: 40px;
+    }
+    .vatjss-calendar-list-event:first-child{
+      padding-top: 0px;
+    }
+    .vatjss-calendar-list-event-date,.vatjss-calendar-list-event-title,.vatjss-calendar-list-event-description{
+      margin-top: 0;
+      color: $color_white;
+    }
+    .vatjss-calendar-list-event-title{
+      font-size: rem(21);
+    }
+  }
+}
 /*404 page*/
 
 .error404{
@@ -443,7 +481,7 @@
   .vatjss-home-hero{
     padding-top: 134px;
   }
-  .post-type-archive-services, .post-type-archive-staff,.services-template-default{
+  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.post-type-archive-tribe_events{
     .site-content{
       padding-top: rem(180);
     }
