@@ -17,16 +17,21 @@ get_header(); ?>
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-      <?php the_content(); 
-      if ( has_post_thumbnail() ) {
-        the_post_thumbnail('large');
-      } 
+      <div class="vatjss-map"><?php the_content(); ?> </div>
+      <?php
+        if ( has_post_thumbnail() ) {
+          the_post_thumbnail('large');
+        }
+        echo '<div>' . CFS()->get( 'address' ) . '</div>';
       ?>
+
       
     </div><!-- .entry-content -->
   </article><!-- #post-## -->
 
       <?php endwhile; // End of the loop. ?>
+      <element class="vatjss-contact-form">
+        <?php echo CFS()->get( 'contact_form_shortcode' ); ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->
