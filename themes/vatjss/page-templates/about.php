@@ -59,7 +59,7 @@ get_header(); ?>
 				<?php echo CFS()->get( 'our_staff' ); ?>
 			</div>
 			<div class="vatjss-learn-more-button">
-				<a class="vatjss-button-link" href="#">Learn more</a>
+				<a class="vatjss-button-link">Learn more</a>
 			</div>
     </section>
 	</main><!-- #main -->

@@ -977,7 +977,8 @@ div div aside#text-3 {
     div div aside#text-3 {
       display: unset;
       margin: 0;
-      width: 33rem; } }
+      width: 33rem;
+      border-right: 5px solid #971E16; } }
 
 div div aside#text-2 {
   display: none; }
@@ -985,7 +986,8 @@ div div aside#text-2 {
     div div aside#text-2 {
       display: unset;
       margin: 0;
-      width: 22rem; } }
+      width: 22rem;
+      border-right: 5px solid #971E16; } }
 
 div aside.vatjss-biz-hours-class {
   background: #000;
