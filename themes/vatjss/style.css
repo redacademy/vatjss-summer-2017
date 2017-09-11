@@ -1785,6 +1785,9 @@ object {
     font-size: 1.5rem; } }
 
 /* Contact Page */
+.vatjss span h3 {
+  text-transform: uppercase; }
+
 span .no {
   text-transform: uppercase; }
 
