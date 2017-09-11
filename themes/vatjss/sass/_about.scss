@@ -81,16 +81,7 @@ section.vatjss-about-content {
   padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
-.page-template-about .widget-area {
-  @include desktop {
-  color: $color_white;
-  display: flex;
-  background: black;
-  flex: 5;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  }
-}
+
 .page-template-about .vatjss-mission-buttons {
   display: flex;
   justify-content: space-between;

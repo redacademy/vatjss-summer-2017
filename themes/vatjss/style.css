@@ -960,6 +960,17 @@ http://flickity.metafizzy.co
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .widget-area {
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    background: black;
+    -ms-flex: 5;
+        flex: 5;
+    padding-left: 4rem;
+    padding-right: 4rem; } }
+
 .widget {
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
@@ -1765,17 +1776,6 @@ section.vatjss-about-content {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 3rem; }
-
-@media (min-width: 768px) {
-  .page-template-about .widget-area {
-    color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    background: black;
-    -ms-flex: 5;
-        flex: 5;
-    padding-left: 4rem;
-    padding-right: 4rem; } }
 
 .page-template-about .vatjss-mission-buttons {
   display: -ms-flexbox;
