@@ -29,9 +29,17 @@ get_header(); ?>
     </div><!-- .entry-content -->
   </article><!-- #post-## -->
 
-      <?php endwhile; // End of the loop. ?>
-      <element class="vatjss-contact-form">
-        <?php echo CFS()->get( 'contact_form_shortcode' ); ?>
+  <?php endwhile; // End of the loop. ?>
+  <element class="vatjss-contact-form">
+    <div class="vatjss-hidden-divs-contact">
+      <div class="vatjss-contact-form-hide"> <h3> Send Us a Message </h3> </div>
+      <div class="vatjss-staff-contact-hide"> <h3> Staff Contact Information </h3> </div>
+      <div class="vatjss-volunteer-hide"> <h3> Volunteer Opportunities </h3> </div>
+      <div class="vatjss-contact-form-show"> <?php echo CFS()->get( 'contact_form_shortcode' ); ?> </div>
+      <div class="vatjss-staff-contact-show"> <!--staff posts--> </div>
+      <div class=""> <!--Volunteer Opportunities--> </div>
+    </div>
+  </element>
 
     </main><!-- #main -->
   </div><!-- #primary -->
