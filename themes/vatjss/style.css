@@ -1737,6 +1737,10 @@ object {
   .post-type-archive-tribe_events .vatjss-community-partner-logo-banner h2 {
     font-size: 1.5rem; } }
 
+/* Contact Page */
+span .no {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
