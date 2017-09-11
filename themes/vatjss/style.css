@@ -1096,6 +1096,9 @@ div aside.vatjss-biz-hours-class {
 .site-main {
   overflow: auto;
   min-height: 75vh; }
+  @media (min-width: 768px) {
+    .site-main {
+      min-height: 90vh; } }
 
 .resources-content-area {
   background-image: url("../../images/black_maple_background.png");
@@ -1798,7 +1801,7 @@ object {
     font-size: 1.5rem; } }
 
 /* Contact Page */
-.vatjss span h3 {
+.vatjss span {
   text-transform: uppercase; }
 
 span .no {

@@ -5,6 +5,9 @@
 .site-main {
   overflow: auto;
   min-height: 75vh;
+  @include desktop {
+    min-height: 90vh;
+  }
 }
 
 //resource page elements
