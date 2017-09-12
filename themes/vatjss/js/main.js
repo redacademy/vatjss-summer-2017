@@ -34,4 +34,5 @@
     $( "#vatjss-justice-service-carousel .vatjss-justice-service-step" ).removeClass( "active" );
     $( "#vatjss-justice-service-carousel "+ stepClick ).addClass( "active" );
   });
+  
 })(jQuery);
