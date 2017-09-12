@@ -68,19 +68,23 @@ section.vatjss-about-content {
 
 .page-template-about .vatjss-staff-content {
    background: black;
+   display: flex;
+   flex-direction: column;
  
    .vatjss-staff {
     color: #fff;
    }
 
-  .vatjss-our-staff {
-    margin: 0;
-    text-align: center;
+  h2.vatjss-our-staff {
+    margin: auto;
     padding-bottom: 1rem;
+    margin-top: 305px;
+    margin-left: 20px;
   }
 
   p {
-    margin: 0;
+    margin: auto;
+    width: 90%;
   }
 }
 
@@ -91,6 +95,9 @@ section.vatjss-about-content {
   background-color: $background_red;  
   border-radius: rem(5);
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: auto;  
   
   a.vatjss-button-link {
     color: $color_white;

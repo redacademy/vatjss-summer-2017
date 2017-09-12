@@ -39,7 +39,7 @@ function vatjss_about_dynamic_css() {
 		return;
 	}
 	$banner_css = ".vatjss-custom-hero{
-		background: linear-gradient(230deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), 
+		background: linear-gradient(230deg, rgba(0, 0, 0, 0.45) 0, rgba(0, 0, 0, 0.45)), 
 			url({$image}) no-repeat center bottom;
 		height: 100vh;
 		background-size: cover;
@@ -59,11 +59,15 @@ function vatjss_about_staff_css() {
 	if ( ! $staff_photo ) {
 		return;
 	}
-
 	$staff_photo_css = " .vatjss-staff-img {
 		background-image: url({$staff_photo});
-		width: 100px;
-		height: 100px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 43%;		
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: absolute;
 	}";
 	wp_add_inline_style( 'vatjss-style', $staff_photo_css );
 }

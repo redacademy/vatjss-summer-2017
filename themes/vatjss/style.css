@@ -2075,15 +2075,21 @@ section.vatjss-about-content {
       width: 26rem; } }
 
 .page-template-about .vatjss-staff-content {
-  background: black; }
+  background: black;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .page-template-about .vatjss-staff-content .vatjss-staff {
     color: #fff; }
-  .page-template-about .vatjss-staff-content .vatjss-our-staff {
-    margin: 0;
-    text-align: center;
-    padding-bottom: 1rem; }
+  .page-template-about .vatjss-staff-content h2.vatjss-our-staff {
+    margin: auto;
+    padding-bottom: 1rem;
+    margin-top: 305px;
+    margin-left: 20px; }
   .page-template-about .vatjss-staff-content p {
-    margin: 0; }
+    margin: auto;
+    width: 90%; }
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
@@ -2091,7 +2097,10 @@ section.vatjss-about-content {
   width: 10rem;
   background-color: #971e16;
   border-radius: 0.3125rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: auto; }
   .page-template-about .vatjss-read-more-button a.vatjss-button-link {
     color: #fff; }
     .page-template-about .vatjss-read-more-button a.vatjss-button-link span.vatjss-right-arrow {
