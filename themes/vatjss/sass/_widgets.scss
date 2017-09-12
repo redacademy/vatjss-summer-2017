@@ -132,8 +132,8 @@ div aside.vatjss-biz-hours-class {
 	}	
 
 	@include desktop {
-		width: 147px;
-		margin-left: 110px;		
-		margin-top: 40px;
+		width: rem(147);
+		margin-left: rem(110);		
+		margin-top: rem(40);
 	}
 }

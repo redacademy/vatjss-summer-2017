@@ -1094,9 +1094,9 @@ div aside.vatjss-biz-hours-class {
     display: none; }
   @media (min-width: 768px) {
     .vatjss-widget-address p {
-      width: 147px;
-      margin-left: 110px;
-      margin-top: 40px; } }
+      width: 9.1875rem;
+      margin-left: 6.875rem;
+      margin-top: 2.5rem; } }
 
 /*--------------------------------------------------------------
 # Resource List
@@ -1451,6 +1451,14 @@ object {
   height: 20vh; }
   .vatjss-home-mobile-subscribe-banner button {
     font-size: 1.5rem; }
+
+@media (min-width: 768px) {
+  .page-template-front-page footer .vatjss-footer-web {
+    margin-right: 17.8125rem; } }
+
+@media (min-width: 768px) {
+  .page-template-front-page footer .vatjss-footer-icons {
+    display: none; } }
 
 .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content {
   padding-top: 5.125rem; }
@@ -2396,6 +2404,9 @@ section.vatjss-about-content {
 /* 404 PAGE */
 body.error404 header.site-header {
   top: 0; }
+  @media (min-width: 768px) {
+    body.error404 header.site-header {
+      top: 44px; } }
 
 body.error404 {
   background: #971E16;

@@ -52,7 +52,7 @@ get_header(); ?>
       <div class="volunteer-fp">
         <h3 class="volunteer-title-fp">Volunteer Opportunities</h3>
         <p class="volunteer-description-fp"><?php echo CFS()->get( 'volunteer_opportunities' ); ?></p>
-        <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+        <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
       </div>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">

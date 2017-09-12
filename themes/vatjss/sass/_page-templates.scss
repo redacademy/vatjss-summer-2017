@@ -75,6 +75,23 @@
     font-size: rem(24);
   }
 }
+//FRONT PAGE WIDGETS
+
+
+
+//FRONT PAGE FOOTER
+.page-template-front-page footer .vatjss-footer-web {
+  @include desktop {
+    margin-right: rem(285);
+  }  
+}
+
+ .page-template-front-page footer .vatjss-footer-icons {
+  @include desktop {
+    display: none;
+  }
+ }
+
 .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact{
   .site-content{
     padding-top: rem(82);

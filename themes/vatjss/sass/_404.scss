@@ -1,6 +1,10 @@
 /* 404 PAGE */
 body.error404 header.site-header {
   top: 0;
+
+  @include desktop {
+    top: 44px;
+  }
 }
 
 body.error404{
