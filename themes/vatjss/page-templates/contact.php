@@ -66,8 +66,8 @@ get_header(); ?>
           <div id="vatjss-mobile-volunteer-opportunity-section" class="tabcontent">
             <div class="vatjss-volunteer-container">
               <div class="volunteer-title">
-                  <h3><span class="council">vatjss</span> is seeking dedicated Community Council Members</h3>
-                  <h3> Elders strongly encourage to apply ° <span class="no">no</span> experience necessary</h3>
+                  <h3 class="vatjss-text-center">VATJSSis seeking dedicated Community Council Members</h3>
+                  <h3 class="vatjss-text-center"> Elders strongly encourage to apply no experience necessary</h3>
               </div>
               <div class="volunteer-requirements">
                   <h4 class="volunteer-requirements-title">Volunteer Requirements</h4>      
@@ -89,9 +89,9 @@ get_header(); ?>
               </div>
               <div class="volunteer-contact">
                 <p>If you are committed to empowering our Urban Aboriginal Community through participation in Traditional Aboriginal Justice Process, please contact:</p>
-                <p>Victoria Grosse</p>
-                <p>(604) 251 – 7200 ext. 175</p>
-                <p>circlecoordinator@vatjss.com</p>
+                <p class="volunteer-contact-name">Victoria Grosse</p>
+                <p class="volunteer-contact-phone">(604) 251 – 7200 ext. 175</p>
+                <p class="volunteer-contact-email">circlecoordinator@vatjss.com</p>
               </div>
               <div class="volunteer-form-contact-page">
                 <?php echo CFS()->get( 'volunteer_form' ); ?>

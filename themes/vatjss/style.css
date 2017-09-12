@@ -1769,7 +1769,7 @@ object {
   margin: 5px 0; }
 
 .page-template-contact .vatjss-mobile-tab-section {
-  background: #000;
+  background: #971e16;
   padding: 40px 0;
   /* Style the tab */
   /* Style the tab content */ }
@@ -1778,21 +1778,26 @@ object {
     overflow: hidden;
     margin: 0; }
     .page-template-contact .vatjss-mobile-tab-section .tab button {
-      background: transparent;
+      background: #fff;
       box-shadow: none;
       text-shadow: none;
-      color: #fff;
+      color: #000;
       font-size: 0.75rem;
       width: 33.33%;
       text-align: center;
       padding: 10px 10px;
-      border-radius: 0; }
-      .page-template-contact .vatjss-mobile-tab-section .tab button:hover {
+      border-radius: 0;
+      border: 1px solid #000; }
+      .page-template-contact .vatjss-mobile-tab-section .tab button:hover, .page-template-contact .vatjss-mobile-tab-section .tab button:active:focus {
         background-color: #fff;
         color: #000; }
     .page-template-contact .vatjss-mobile-tab-section .tab .active {
-      background-color: #fff;
-      color: #000; }
+      background-color: #000;
+      color: #fff; }
+      .page-template-contact .vatjss-mobile-tab-section .tab .active:hover, .page-template-contact .vatjss-mobile-tab-section .tab .active:active:focus {
+        background-color: #000;
+        color: #fff;
+        outline: none; }
   .page-template-contact .vatjss-mobile-tab-section .tabcontent {
     display: none; }
   .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form h3 {
@@ -1806,6 +1811,17 @@ object {
     background-color: #fff;
     width: 100%;
     padding: 5px; }
+  .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container {
+    color: #fff; }
+    .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container ul {
+      padding: 0; }
+    .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-benefits-container h4, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-requirements h4 {
+      margin-bottom: 10px; }
+    .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-contact .volunteer-contact-name, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-contact .volunteer-contact-phone, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-contact .volunteer-contact-email {
+      margin-bottom: 0;
+      margin-top: 0; }
+    .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-form-contact-page {
+      margin-top: 40px; }
 
 @media (min-width: 992px) {
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {

@@ -545,7 +545,7 @@
     }
   }
   .vatjss-mobile-tab-section{
-    background:$color_black;
+    background:$background_red;
     padding: 40px 0;
     /* Style the tab */
     .tab {
@@ -553,23 +553,29 @@
       overflow: hidden;
       margin: 0;
       button{
-        background: transparent;
+        background: $color_white;
         box-shadow: none;
         text-shadow: none;
-        color:$color_white;
+        color:$color_black;
         font-size:rem(12);
         width: 33.33%;
         text-align: center;
         padding: 10px 10px;
         border-radius: 0;
-        &:hover{
+        border: 1px solid $color_black;
+        &:hover,&:active:focus{
           background-color: $color_white;
           color:$color_black;
         }
       }
       .active{
-        background-color: $color_white;
-        color:$color_black;
+        background-color: $color_black;
+        color:$color_white;
+        &:hover,&:active:focus{
+          background-color: $color_black;
+          color:$color_white;
+          outline:none;
+        }
       }
     }
     /* Style the tab content */
@@ -593,6 +599,26 @@
         background-color: $color_white;
         width: 100%;
         padding: 5px;
+      }
+    }
+    .vatjss-volunteer-container{
+      color:$color_white;
+      ul{
+        padding: 0;
+      }
+      .volunteer-benefits-container,.volunteer-requirements{
+        h4{
+          margin-bottom:10px;
+        }
+      }
+      .volunteer-contact{
+        .volunteer-contact-name,.volunteer-contact-phone,.volunteer-contact-email{
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+      }
+      .volunteer-form-contact-page{
+        margin-top: 40px;
       }
     }
   }
