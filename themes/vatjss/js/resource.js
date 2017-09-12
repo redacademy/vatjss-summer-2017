@@ -18,10 +18,13 @@
       if ( $(this).next().hasClass("resource-accordion-toggle-on") ) {
         $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
         $(this).children('.button-chevron').removeClass('button-chevron-toggle-on');
+        $(this).removeClass('resource-accordion-button-toggle-on');
         return;
       }
+      $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
       $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
       $(this).next().addClass('resource-accordion-toggle-on');
       $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
+      $(this).addClass('resource-accordion-button-toggle-on');
     });
 }(jQuery));

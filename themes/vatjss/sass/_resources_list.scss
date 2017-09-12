@@ -12,6 +12,9 @@
 
 .site-header-background {
   z-index: -1000;
+  @include desktop {
+    z-index: 1;
+  }
 }
 
 //resource page elements
@@ -19,12 +22,19 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/black_maple_background.png');
   background-position: top right;
   background-repeat: repeat;
-  background-size: 200%;
+  @include desktop {
+    main {
+      display: flex;
+    }
+  }
 
   section.resource-list-page {
     height: 0px;
     width: 100%;
     overflow: hidden;
+    @include desktop {
+      height: auto;
+    }
   }
 
   div.vatjss-mobile-resource-toggle-container {
@@ -41,19 +51,26 @@
     color: white;
     font-family: $font_main;
     z-index: -1;
+    @include desktop {
+      z-index: 1;
+      width: 300px;
+      height: 300px;
+      margin: 200px auto 20px 0;
+      position: relative;
+      left: 0;
+      flex-direction: column;
+      border-color: black;
+      border-radius: 0;
+      background-color: $background_red;
+    }
+    .vatjss-mobile-accordion {
+      @include desktop {
+        width: 100%;
+        margin-top: 300px;
+      }
+    }
 
     div.resource-toggle-mobile {
-      &:hover {
-        background-color: $background_red;
-        cursor: pointer;
-      }
-      &:first-child {
-        border-radius: 5px 0 0 5px;
-      }
-      &:last-child {
-        border-right:none;
-        border-radius: 0 5px 5px 0;
-      }
       border-right: $border_grey;
       margin: 0;
       padding: 0;
@@ -61,27 +78,48 @@
       height: 100%;
       display: block;
       z-index: 1;
+      @include desktop {
+        border: 1px black solid;
+        width: 100%;
+        height: $a-third;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover {
+        background-color: $background_red;
+        cursor: pointer;
+        @include desktop {
+          background-color: white;
+          color: black;
+        }
+      }
+      &:first-child {
+        border-radius: 5px 0 0 5px;
+        @include desktop {
+          border-radius: 0;
+        }
+      }
+      &:last-child {
+        border-right:none;
+        border-radius: 0 5px 5px 0;
+        @include desktop {
+          border-radius: 0;
+        }
+      }
       h3 {
         font-size: 0.77rem;
         text-align: center;
         padding: 5px 10px;
         margin: 0;
         @include desktop {
-          height: 0px;
-          border: none;
-          overflow: hidden;
+          font-size: 1.3rem;
+          padding: 0;
+          span {
+            display: none;
+          }
         }
       }
-      @include desktop {
-        height: 0px;
-        border: none;
-        overflow: hidden;
-      }
-    }
-    @include desktop {
-      height: 0px;
-      border: none;
-      overflow: hidden;
     }
   }
 
@@ -91,7 +129,7 @@
     overflow: hidden;
     @include desktop {
       height: 100px;
-      width: auto;
+      width: 100%;
     }
   }
 
@@ -103,6 +141,9 @@
     color: white;
     width: 430px;
     margin: 0 auto;
+    @include desktop {
+      width: 100%;
+    }
     h4 {
       margin: 0;
       font-size: 1.3rem;
@@ -132,16 +173,16 @@
     border: none;
     border-radius: 10px;
     .resource-accordion-button {
-      padding: 5px;
       border-bottom: 1px grey solid;
       position: relative;
-      &:hover {
+      &:hover h4  {
         background-color: rgba(151, 30, 22, 0.2);
       }
       &:first-child {
         border-top: 1px grey solid;
       }
       h4 {
+        padding: 5px;
         text-align: center;
         color: $background_red;
         text-decoration: none;
@@ -160,6 +201,12 @@
         transform: rotate(90deg);
       }
     }
+    div.resource-accordion-button.resource-accordion-button-toggle-on {
+      background-color: black;
+      &:hover h4  {
+        background-color: rgba(151, 30, 22, 0.3);
+      }
+    }
   }
   
 
@@ -171,7 +218,6 @@
     height: auto;
     background-color: rgba(0, 0, 0, 1);
   }
-
   @include desktop {
     background-image: none;
     background: black;

@@ -32,7 +32,7 @@ get_header(); ?>
 									<?php the_content(); ?>
 								</div>
 							</header>
-							<div class="vatjss-mobile-accordian vatjss-hidden-desktop">
+							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
 								<button class="accordion-services"><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></button>
 								<div class="panel">
 									<?php echo CFS()->get( 'income_assist' ); ?>

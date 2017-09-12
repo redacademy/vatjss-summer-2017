@@ -1110,16 +1110,25 @@ div aside.vatjss-biz-hours-class {
 
 .site-header-background {
   z-index: -1000; }
+  @media (min-width: 768px) {
+    .site-header-background {
+      z-index: 1; } }
 
 .resources-content-area {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/black_maple_background.png");
   background-position: top right;
-  background-repeat: repeat;
-  background-size: 200%; }
+  background-repeat: repeat; }
+  @media (min-width: 768px) {
+    .resources-content-area main {
+      display: -ms-flexbox;
+      display: flex; } }
   .resources-content-area section.resource-list-page {
     height: 0px;
     width: 100%;
     overflow: hidden; }
+    @media (min-width: 768px) {
+      .resources-content-area section.resource-list-page {
+        height: auto; } }
   .resources-content-area div.vatjss-mobile-resource-toggle-container {
     z-index: 1000;
     margin: 100px auto 20px;
@@ -1135,6 +1144,23 @@ div aside.vatjss-biz-hours-class {
     color: white;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     z-index: -1; }
+    @media (min-width: 768px) {
+      .resources-content-area div.vatjss-mobile-resource-toggle-container {
+        z-index: 1;
+        width: 300px;
+        height: 300px;
+        margin: 200px auto 20px 0;
+        position: relative;
+        left: 0;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        border-color: black;
+        border-radius: 0;
+        background-color: #971E16; } }
+    @media (min-width: 768px) {
+      .resources-content-area div.vatjss-mobile-resource-toggle-container .vatjss-mobile-accordion {
+        width: 100%;
+        margin-top: 300px; } }
     .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
       border-right: 1px solid #979797;
       margin: 0;
@@ -1143,14 +1169,35 @@ div aside.vatjss-biz-hours-class {
       height: 100%;
       display: block;
       z-index: 1; }
+      @media (min-width: 768px) {
+        .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+          border: 1px black solid;
+          width: 100%;
+          height: 33.33333%;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; } }
       .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
         background-color: #971E16;
         cursor: pointer; }
+        @media (min-width: 768px) {
+          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+            background-color: white;
+            color: black; } }
       .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
         border-radius: 5px 0 0 5px; }
+        @media (min-width: 768px) {
+          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
+            border-radius: 0; } }
       .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
         border-right: none;
         border-radius: 0 5px 5px 0; }
+        @media (min-width: 768px) {
+          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
+            border-radius: 0; } }
       .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
         font-size: 0.77rem;
         text-align: center;
@@ -1158,19 +1205,10 @@ div aside.vatjss-biz-hours-class {
         margin: 0; }
         @media (min-width: 768px) {
           .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
-            height: 0px;
-            border: none;
-            overflow: hidden; } }
-      @media (min-width: 768px) {
-        .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
-          height: 0px;
-          border: none;
-          overflow: hidden; } }
-    @media (min-width: 768px) {
-      .resources-content-area div.vatjss-mobile-resource-toggle-container {
-        height: 0px;
-        border: none;
-        overflow: hidden; } }
+            font-size: 1.3rem;
+            padding: 0; }
+            .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 span {
+              display: none; } }
   .resources-content-area .resource-toggle-desktop {
     width: 200px;
     height: 0px;
@@ -1178,13 +1216,16 @@ div aside.vatjss-biz-hours-class {
     @media (min-width: 768px) {
       .resources-content-area .resource-toggle-desktop {
         height: 100px;
-        width: auto; } }
+        width: 100%; } }
   .resources-content-area section.resource-list-page.resource-toggle-on {
     height: auto; }
   .resources-content-area .panel {
     color: white;
     width: 430px;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .resources-content-area .panel {
+        width: 100%; } }
     .resources-content-area .panel h4 {
       margin: 0;
       font-size: 1.3rem;
@@ -1207,14 +1248,14 @@ div aside.vatjss-biz-hours-class {
     border: none;
     border-radius: 10px; }
     .resources-content-area .resources-accordion .resource-accordion-button {
-      padding: 5px;
       border-bottom: 1px grey solid;
       position: relative; }
-      .resources-content-area .resources-accordion .resource-accordion-button:hover {
+      .resources-content-area .resources-accordion .resource-accordion-button:hover h4 {
         background-color: rgba(151, 30, 22, 0.2); }
       .resources-content-area .resources-accordion .resource-accordion-button:first-child {
         border-top: 1px grey solid; }
       .resources-content-area .resources-accordion .resource-accordion-button h4 {
+        padding: 5px;
         text-align: center;
         color: #971E16;
         text-decoration: none; }
@@ -1232,6 +1273,10 @@ div aside.vatjss-biz-hours-class {
         top: 0; }
       .resources-content-area .resources-accordion .resource-accordion-button .button-chevron-toggle-on {
         transform: rotate(90deg); }
+    .resources-content-area .resources-accordion div.resource-accordion-button.resource-accordion-button-toggle-on {
+      background-color: black; }
+      .resources-content-area .resources-accordion div.resource-accordion-button.resource-accordion-button-toggle-on:hover h4 {
+        background-color: rgba(151, 30, 22, 0.3); }
   .resources-content-area .resource-accordion-section {
     height: 0;
     overflow: hidden; }
@@ -1541,7 +1586,7 @@ object {
     padding: 10px 20px;
     border-radius: 5px; }
 
-.services-template-default .vatjss-mobile-accordian button.accordion-services, .services-template-default .vatjss-service-faq-section button.accordion-services {
+.services-template-default .vatjss-mobile-accordion button.accordion-services, .services-template-default .vatjss-service-faq-section button.accordion-services {
   background-color: #971E16;
   box-shadow: none;
   text-shadow: none;
@@ -1557,13 +1602,13 @@ object {
   border-bottom: 1px solid white;
   font-size: 1rem; }
 
-.services-template-default .vatjss-mobile-accordian button.accordion-services:last-child, .services-template-default .vatjss-service-faq-section button.accordion-services:last-child {
+.services-template-default .vatjss-mobile-accordion button.accordion-services:last-child, .services-template-default .vatjss-service-faq-section button.accordion-services:last-child {
   border-bottom: none; }
 
-.services-template-default .vatjss-mobile-accordian button.accordion-services.active, .services-template-default .vatjss-mobile-accordian button.accordion-services:hover, .services-template-default .vatjss-service-faq-section button.accordion-services.active, .services-template-default .vatjss-service-faq-section button.accordion-services:hover {
+.services-template-default .vatjss-mobile-accordion button.accordion-services.active, .services-template-default .vatjss-mobile-accordion button.accordion-services:hover, .services-template-default .vatjss-service-faq-section button.accordion-services.active, .services-template-default .vatjss-service-faq-section button.accordion-services:hover {
   background-color: #666; }
 
-.services-template-default .vatjss-mobile-accordian div.panel, .services-template-default .vatjss-service-faq-section div.panel {
+.services-template-default .vatjss-mobile-accordion div.panel, .services-template-default .vatjss-service-faq-section div.panel {
   padding: 0 18px;
   background-color: white;
   display: none;

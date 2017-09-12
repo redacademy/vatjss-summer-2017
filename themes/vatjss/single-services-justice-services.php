@@ -50,7 +50,7 @@ get_header(); ?>
                   </div>
                 </div>
 							</header>
-							<div class="vatjss-mobile-accordian vatjss-hidden-desktop">
+							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
                 <button class="accordion-services">Restorative Justice</button>
 								<div class="panel">
 									<p>
