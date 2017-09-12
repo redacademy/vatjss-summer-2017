@@ -81,6 +81,10 @@ h1,h2,h3,h4,h5,h5,h6{
   .vatjss-hidden-mobile{
     display:none;
   }
+  .vatjss-no-padding-mobile{
+    padding-left:0;
+    padding-right:0; 
+  }
 }
 @include desktop {
   .vatjss-hidden-desktop{
@@ -134,3 +138,4 @@ h1,h2,h3,h4,h5,h5,h6{
 .vatjss-text-uppercase{
   text-transform: uppercase;
 }
+

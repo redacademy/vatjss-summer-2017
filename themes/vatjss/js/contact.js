@@ -6,6 +6,7 @@ function openTab(evt, cityName) {
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+      tabcontent[i].style.backgroundColor = "transparent";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
@@ -16,5 +17,6 @@ function openTab(evt, cityName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityName).style.backgroundColor = "#971e16";
   evt.currentTarget.className += " active";
 }

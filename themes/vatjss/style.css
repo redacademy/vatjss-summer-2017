@@ -316,7 +316,10 @@ h1, h2, h3, h4, h5, h5, h6 {
 
 @media (max-width: 767px) {
   .vatjss-hidden-mobile {
-    display: none; } }
+    display: none; }
+  .vatjss-no-padding-mobile {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (min-width: 768px) {
   .vatjss-hidden-desktop {
@@ -1778,40 +1781,149 @@ object {
       align-items: center;
   padding: 40px 0; }
 
-.page-template-contact .vatjss-location-map-section .vatjss-container-fluid {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 15px;
-  padding-left: 15px; }
+.page-template-contact .vatjss-black-btn {
+  background-color: #000;
+  color: #fff;
+  box-shadow: none;
+  text-shadow: none; }
+  .page-template-contact .vatjss-black-btn:hover {
+    background-color: #971e16; }
 
-.page-template-contact .vatjss-location-map-section .vatjss-location-section {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  position: relative;
-  -ms-flex-order: 2;
-      order: 2; }
-  .page-template-contact .vatjss-location-map-section .vatjss-location-section p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.page-template-contact .site-main {
+  background-color: #000; }
+
+.page-template-contact .vatjss-location-map-section {
+  padding: 40px 0; }
+  .page-template-contact .vatjss-location-map-section .vatjss-container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .page-template-contact .vatjss-location-map-section .vatjss-location-section {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    -ms-flex-order: 2;
+        order: 2; }
+    .page-template-contact .vatjss-location-map-section .vatjss-location-section p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 20px 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff; }
+  .page-template-contact .vatjss-location-map-section .vatjss-map-section {
+    -ms-flex-order: 1;
+        order: 1; }
+    .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
+      margin: 0 -15px;
+      height: 300px; }
+    .page-template-contact .vatjss-location-map-section .vatjss-map-section iframe {
+      width: 100%;
+      height: 300px; }
+
+.page-template-contact .vatjss-contact-form-staff-section {
+  padding: 40px 0;
+  /* Style the tab content */ }
+  .page-template-contact .vatjss-contact-form-staff-section .tab {
     text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 20px 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff; }
+    overflow: hidden; }
+    .page-template-contact .vatjss-contact-form-staff-section .tab button {
+      background: #000;
+      box-shadow: none;
+      text-shadow: none;
+      color: #fff;
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+      padding: 10px 10px;
+      border-radius: 0;
+      border: 1px solid #000; }
+      .page-template-contact .vatjss-contact-form-staff-section .tab button:hover, .page-template-contact .vatjss-contact-form-staff-section .tab button:active:focus, .page-template-contact .vatjss-contact-form-staff-section .tab buttonfocus {
+        background-color: #971e16;
+        border: 1px solid #971e16;
+        outline: none; }
+    .page-template-contact .vatjss-contact-form-staff-section .tab .active {
+      background-color: #971e16;
+      color: #fff;
+      border: 1px solid #971e16; }
+      .page-template-contact .vatjss-contact-form-staff-section .tab .active:hover, .page-template-contact .vatjss-contact-form-staff-section .tab .active:active:focus, .page-template-contact .vatjss-contact-form-staff-section .tab .activefocus {
+        background-color: #971e16;
+        color: #fff;
+        border: 1px solid #971e16;
+        outline: none; }
+  .page-template-contact .vatjss-contact-form-staff-section .tabcontent {
+    display: none; }
+  .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-staff-section {
+    overflow: auto;
+    padding: 30px 15px; }
+  .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section {
+    overflow: auto;
+    padding: 30px 15px; }
+    .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form h3 {
+      display: none; }
+    .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: 0 -15px; }
+      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form label {
+        color: #fff; }
+      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form textarea {
+        max-height: 150px; }
+      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form input[type=submit] {
+        background-color: #000;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        border: none;
+        font-size: 1rem;
+        padding: 15px 20px; }
+        .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form input[type=submit]:hover {
+          background-color: gray; }
+      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form .vatjss-contact-left {
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+        padding: 0 15px; }
+        .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form .vatjss-contact-left input {
+          width: 100%; }
+      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form .vatjss-contact-right {
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+        padding: 0 15px; }
+        .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form .vatjss-contact-right input {
+          width: 100%; }
+      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form .vatjss-contact-bottom {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        text-align: center; }
 
-.page-template-contact .vatjss-location-map-section .vatjss-map-section {
-  -ms-flex-order: 1;
-      order: 1; }
-  .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
-    margin: 0 -15px;
-    height: 300px; }
-  .page-template-contact .vatjss-location-map-section .vatjss-map-section iframe {
-    width: 100%;
-    height: 300px; }
+.page-template-contact .vatjss-contact-volunteer-section {
+  padding: 40px 0; }
+  .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container {
+    color: #fff; }
+    .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-requirements ul, .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-benefits-container ul {
+      padding: 0;
+      margin-left: 20px; }
+    .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-contact .volunteer-contact-name, .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-contact .volunteer-contact-phone, .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-contact .volunteer-contact-email {
+      margin-bottom: 0;
+      margin-top: 0; }
+    .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-form-contact-page form input[type=submit] {
+      background-color: #971e16;
+      color: #fff;
+      box-shadow: none;
+      text-shadow: none;
+      border: none;
+      font-size: 1rem;
+      padding: 15px 20px; }
+      .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-form-contact-page form input[type=submit]:hover {
+        background-color: #c4271c; }
 
 .page-template-contact .vatjss-staff-section .vatjss-staff-individual {
   padding: 20px 15px; }
