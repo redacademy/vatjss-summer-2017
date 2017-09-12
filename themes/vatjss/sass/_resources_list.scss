@@ -63,12 +63,6 @@
       border-radius: 0;
       background-color: $background_red;
     }
-    .vatjss-mobile-accordion {
-      @include desktop {
-        width: 100%;
-        margin-top: 300px;
-      }
-    }
 
     div.resource-toggle-mobile {
       border-right: $border_grey;
@@ -119,6 +113,18 @@
             display: none;
           }
         }
+      }
+    }
+  }
+
+  .vatjss-mobile-accordion {
+    @include desktop {
+      width: 100%;
+      margin: 200px 30px;
+      .vatjss-resource-desktop-content {
+        color: white;
+        background-color: pink;
+        height: 100px;
       }
     }
   }
