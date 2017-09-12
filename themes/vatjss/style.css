@@ -2348,7 +2348,10 @@ section.vatjss-about-content {
   .page-template-about footer .vatjss-footer-icons {
     display: none; } }
 
-/*404 page*/
+/* 404 PAGE */
+body.error404 header.site-header {
+  top: 0; }
+
 body.error404 {
   background: #971E16;
   color: #fff; }
@@ -2357,5 +2360,26 @@ body.error404 {
     display: flex;
     height: 100vh;
     vertical-align: center; }
-    body.error404 .site-content h1 {
-      text-align: center; }
+
+div div main section.error-404 {
+  margin-top: 35%;
+  text-align: center; }
+  div div main section.error-404 header h1.page-title {
+    height: 2.5rem;
+    width: 23.4375rem;
+    opacity: 0.29;
+    font-size: 9rem;
+    z-index: -100000; }
+  div div main section.error-404 div i.fa-bug {
+    width: 100%;
+    opacity: 0.5;
+    font-size: 6.875rem;
+    z-index: 10000;
+    margin-top: -10rem; }
+  div div main section.error-404 div.page-content p.vatjss-404-sentence {
+    height: 100%;
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    line-height: 2.5rem; }

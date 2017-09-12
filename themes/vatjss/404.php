@@ -15,14 +15,15 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( '404' ); ?></h1>
+					<div>
+						<i class="fa fa-bug" aria-hidden="true"></i>	
+					</div>	
 				</header><!-- .page-header -->
 
-				<div class="page-content">
-					<i class="fa fa-bug" aria-hidden="true"></i>				
-					<h2><?php echo esc_html( 'Sorry!' ); ?></p>
-					<p><?php echo esc_html( 'There has been a bug in the slug.'); ?></p>
-					<p><?php echo esc_html( 'Check URL again.'); ?></p>
-					<button type="button" class="vatjss-return-search-btn vatjss-text-uppercase"><span class="vatjss-return-arrow"><</span>Back to Search</button>
+				<div class="page-content">			
+					<p class="vatjss-404-sentence"><?php echo esc_html( 'Sorry!' ); ?></p>
+					<p class="vatjss-404-sentence"><?php echo esc_html( 'There has been a bug in the slug.'); ?></p>
+				  <p class="vatjss-404-sentence"><?php echo esc_html( 'Check URL again.'); ?></p> 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

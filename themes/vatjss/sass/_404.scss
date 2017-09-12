@@ -1,4 +1,7 @@
-/*404 page*/
+/* 404 PAGE */
+body.error404 header.site-header {
+  top: 0;
+}
 
 body.error404{
   background:$background_red;
@@ -8,9 +11,35 @@ body.error404{
     display:flex;
     height:100vh;
     vertical-align: center;
+  }
+}
 
-      h1{
-        text-align: center;
-      }
+div div main section.error-404 {
+  margin-top:35%;
+  text-align: center;
+
+  header h1.page-title {
+    height: rem(40);	
+    width: rem(375);
+    opacity: 0.29;
+    font-size: rem(144);
+    z-index: -100000;
+  }
+
+  div i.fa-bug {
+    width: 100%;
+    opacity: 0.5;
+    font-size: rem(110);
+    z-index: 10000;
+    margin-top: rem(-160);
+  }
+
+  div.page-content p.vatjss-404-sentence {
+    height: 100%;	
+    width: 80%;	
+    color: #FFFFFF;
+    font-size: rem(20);	
+    margin: 0 auto;
+    line-height: rem(40);
   }
 }
