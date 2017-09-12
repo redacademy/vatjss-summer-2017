@@ -58,8 +58,11 @@ get_header(); ?>
     <section class="container vatjss-staff-content">
 			<!--get staff photo-->
 			<div class="vatjss-staff">
-      	<h2 class="vatjss-our-staff vatjss-text-uppercase">Our Staff</h2>
-				<?php echo CFS()->get( 'our_staff' ); ?>
+				<div class="vatjss-staff-img"></div>
+				<div class="vatjss-staff-parag">
+					<h2 class="vatjss-our-staff vatjss-text-uppercase">Our Staff</h2>
+					<?php echo CFS()->get( 'our_staff' ); ?>
+				</div>
 			</div>
 			<div class="vatjss-read-more-button">
 				<a class="vatjss-button-link vatjss-text-uppercase">Read more<span class="vatjss-right-arrow">></span></a>

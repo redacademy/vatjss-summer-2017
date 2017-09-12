@@ -1,11 +1,15 @@
 /* ABOUT PAGE STYLE */
 
-header div h2.vatjss-about {
-  height: 70vh;
-  max-width: 100%;
+div h2.vatjss-about {
   line-height: rem(30); 
   text-align: center;
   font-size: rem(18);
+  margin-left: auto;
+  margin-right: auto;
+  width: 16rem;
+  padding-top: 50%;
+  color: white;
+
 }
 
 section.vatjss-about-content {
@@ -86,6 +90,7 @@ section.vatjss-about-content {
   width: rem(160);  
   background-color: $background_red;  
   border-radius: rem(5);
+  margin: 0 auto;
   
   a.vatjss-button-link {
     color: $color_white;

@@ -1101,6 +1101,9 @@ div aside.vatjss-biz-hours-class {
 .site-main {
   overflow: auto;
   min-height: 75vh; }
+  @media (min-width: 768px) {
+    .site-main {
+      min-height: 90vh; } }
 
 .resources-content-area {
   background-image: url("../../images/black_maple_background.png");
@@ -1117,9 +1120,10 @@ section.resource-list-page {
   overflow: hidden; }
 
 .site-header-background {
-  display: none; }
+  z-index: -1000; }
 
 div.vatjss-mobile-resource-toggle-container {
+  z-index: 1000;
   margin: 100px auto 20px;
   height: auto;
   width: 92vw;
@@ -1850,10 +1854,10 @@ object {
     font-size: 1.5rem; } }
 
 /* Contact Page */
-.vatjss span {
+span.council {
   text-transform: uppercase; }
 
-span .no {
+.no {
   text-transform: uppercase; }
 
 /*--------------------------------------------------------------
@@ -1910,12 +1914,15 @@ div p.vatjss-footer-web {
       color: #fff; } }
 
 /* ABOUT PAGE STYLE */
-header div h2.vatjss-about {
-  height: 70vh;
-  max-width: 100%;
+div h2.vatjss-about {
   line-height: 1.875rem;
   text-align: center;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16rem;
+  padding-top: 50%;
+  color: white; }
 
 section.vatjss-about-content {
   background: url(../../images/red_maple_background.png);
@@ -1975,7 +1982,8 @@ section.vatjss-about-content {
   height: 2rem;
   width: 10rem;
   background-color: #971e16;
-  border-radius: 0.3125rem; }
+  border-radius: 0.3125rem;
+  margin: 0 auto; }
   .page-template-about .vatjss-read-more-button a.vatjss-button-link {
     color: #fff; }
     .page-template-about .vatjss-read-more-button a.vatjss-button-link span.vatjss-right-arrow {
@@ -2027,13 +2035,13 @@ section.vatjss-about-content {
     display: none; } }
 
 /*404 page*/
-.error404 {
+body.error404 {
   background: #971e16;
   color: #fff; }
-  .error404 .site-content {
+  body.error404 .site-content {
     display: -ms-flexbox;
     display: flex;
     height: 100vh;
     vertical-align: center; }
-    .error404 .site-content h1 {
+    body.error404 .site-content h1 {
       text-align: center; }

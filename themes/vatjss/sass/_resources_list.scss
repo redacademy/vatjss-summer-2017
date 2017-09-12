@@ -5,6 +5,9 @@
 .site-main {
   overflow: auto;
   min-height: 75vh;
+  @include desktop {
+    min-height: 90vh;
+  }
 }
 
 //resource page elements
@@ -25,10 +28,11 @@ section.resource-list-page {
 }
 
 .site-header-background {
-  display: none;
+  z-index: -1000;
 }
 
 div.vatjss-mobile-resource-toggle-container {
+  z-index: 1000;
   margin: 100px auto 20px;
   height: auto;
   width: 92vw;
