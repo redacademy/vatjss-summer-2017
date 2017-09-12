@@ -1119,9 +1119,10 @@ section.resource-list-page {
   overflow: hidden; }
 
 .site-header-background {
-  display: none; }
+  z-index: -1000; }
 
 div.vatjss-mobile-resource-toggle-container {
+  z-index: 1000;
   margin: 100px auto 20px;
   height: auto;
   width: 92vw;
