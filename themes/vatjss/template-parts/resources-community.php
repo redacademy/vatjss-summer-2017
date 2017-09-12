@@ -14,7 +14,14 @@
       $term1_children = get_terms( 'resources-type', $args1 );
       echo '<div class="resources-accordion">';
       foreach ( $term1_children as $term1_child ) : setup_postdata( $term1_child );
-        echo '<div class=resource-accordion-title-' . $term1_child->term_id . '"><h4>' . $term1_child->name . '</h4></div><div class=resource-accordion-section-' . $term1_child->term_id . '>';
+        echo
+        '<div class="resource-accordion-button resource-accordion-title-' . $term1_child->term_id . '">
+        <h4>' . $term1_child->name . '</h4>
+          <div class=button-chevron>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="resource-accordion-section resource-accordion-section-' . $term1_child->term_id . '">';
         $args2 = array( 'child_of' => $term1_child->term_id, 'parent' => $term1_child->term_id );
         $term2_children = get_terms( 'resources-type', $args2 );
         foreach ( $term2_children as $term2_child ) : setup_postdata( $term2_child );
