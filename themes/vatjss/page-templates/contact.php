@@ -39,8 +39,8 @@ get_header(); ?>
       <div class="vatjss-staff-contact-show"> <!--staff posts--> </div>
       <div class="volunteer-container">
         <div class="volunteer-title">
-             <h3>VATJSS is seeking dedicated Community Council Members</h3>
-             <h3> Elders strongly encourage to apply °<span class="no">no</span> experience necessary</h3>
+             <h3><span class="council">vatjss</span> is seeking dedicated Community Council Members</h3>
+             <h3> Elders strongly encourage to apply ° <span class="no">no</span> experience necessary</h3>
         </div>
       <div class="volunteer-requirements">
           <h4 class="volunteer-requirements-title">Volunteer Requirements</h4>      

@@ -8,19 +8,17 @@ get_header(); ?>
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
     <section class="vatjss-home-hero">
-      <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": false }'>
-        <?php
-          $carousel_articles = CFS()->get( 'front_page_carousel_items' );
-          foreach ($carousel_articles as $article) :
-        ?>
-        <div class="carousel-cell">
-          <h3 class="carousel-title"><?php echo $article['front_page_carousel_Item_title'] ?></h3>
-          <p class="carousel-content"><?php echo $article['front_page_carousel_item_content'] ?></p>
-          <div class="carousel-button">
-            <a href="<?php echo $article['front_page_carousel_link'] ?>">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": false }'>
+          <?php
+            $carousel_articles = CFS()->get( 'front_page_carousel_items' );
+            foreach ($carousel_articles as $article) :
+          ?>
+          <div class="carousel-cell">
+            <h3 class="carousel-title vatjss-text-uppercase"><?php echo $article['front_page_carousel_Item_title'] ?></h3>
+            <p class="carousel-content"><?php echo $article['front_page_carousel_item_content'] ?></p>
+            <a class="vatjss-carousel-button vatjss-text-uppercase" href="<?php echo $article['front_page_carousel_link'] ?>">Learn More</a>
           </div>
-        </div>
-        <?php endforeach; ?>
+          <?php endforeach; ?>
       </div>
     </section>
     <section class="vatjss-home-banner vatjss-vertical-align-center">

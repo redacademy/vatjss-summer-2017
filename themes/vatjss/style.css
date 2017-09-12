@@ -736,8 +736,12 @@ a {
   .site-header {
     top: 0;
     background: black; }
+    .site-header .vatjss-container {
+      padding-right: 0;
+      padding-left: 0; }
     .site-header .vatjss-phone-search {
-      min-width: 70px; }
+      min-width: 33%;
+      max-height: 90px; }
       .site-header .vatjss-phone-search a {
         position: relative;
         padding: 0px;
@@ -1281,7 +1285,46 @@ object {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .vatjss-home-hero .main-carousel .flickity-viewport .carousel-cell {
+    width: 100%; }
+  .vatjss-home-hero .main-carousel .flickity-viewport .carousel-cell .carousel-content {
+    width: 70%; }
+  .vatjss-home-hero .main-carousel {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+    .vatjss-home-hero .main-carousel h3 {
+      margin-bottom: 0; }
+    .vatjss-home-hero .main-carousel .flickity-prev-next-button .arrow {
+      fill: white; }
+    .vatjss-home-hero .main-carousel .flickity-prev-next-button {
+      background: transparent;
+      box-shadow: none;
+      color: #fff; }
+    .vatjss-home-hero .main-carousel .flickity-page-dots {
+      position: relative;
+      bottom: 150px; }
+      .vatjss-home-hero .main-carousel .flickity-page-dots .dot {
+        background-color: #fff;
+        opacity: 1;
+        width: 12px;
+        height: 12px; }
+      .vatjss-home-hero .main-carousel .flickity-page-dots .is-selected {
+        background-color: #971e16;
+        border: 1px solid #fff; }
+    .vatjss-home-hero .main-carousel .vatjss-carousel-button {
+      background-color: #971e16;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px; }
 
 .vatjss-home-banner {
   overflow: auto;
@@ -1729,6 +1772,14 @@ object {
       color: white; }
   .vatjss-home-hero {
     padding-top: 134px; }
+    .vatjss-home-hero .main-carousel {
+      height: 60%;
+      max-width: 600px; }
+      .vatjss-home-hero .main-carousel h3 {
+        font-size: 1.5rem; }
+      .vatjss-home-hero .main-carousel .flickity-page-dots {
+        position: relative;
+        bottom: 30px; }
   .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content {
     padding-top: 11.25rem; }
   .post-type-archive-staff h1 {
@@ -1801,10 +1852,10 @@ object {
     font-size: 1.5rem; } }
 
 /* Contact Page */
-.vatjss span {
+span.council {
   text-transform: uppercase; }
 
-span .no {
+.no {
   text-transform: uppercase; }
 
 /*--------------------------------------------------------------
