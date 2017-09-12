@@ -29,7 +29,7 @@ function vatjss_archive_title( $title ) {
 }
 add_filter( 'get_the_archive_title', 'vatjss_archive_title' );
 
-// ABOUT HERO BACKGROUND 
+/* ABOUT HERO BACKGROUND */
 function vatjss_about_dynamic_css() {
 	if( ! is_page_template( 'page-templates/about.php' )) {
 		return;
@@ -39,7 +39,8 @@ function vatjss_about_dynamic_css() {
 		return;
 	}
 	$banner_css = ".vatjss-custom-hero{
-		background: linear-gradient(230deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url({$image}) no-repeat center bottom;
+		background: linear-gradient(230deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), 
+			url({$image}) no-repeat center bottom;
 		height: 100vh;
 		background-size: cover;
 		margin: 0;
@@ -49,18 +50,20 @@ function vatjss_about_dynamic_css() {
 }
 add_action( 'wp_enqueue_scripts', 'vatjss_about_dynamic_css');
 
-/* staff page group photo */
+/* STAFF PAGE GROUP PHOTO */
 function vatjss_about_staff_css() {
 	if ( ! is_page_template( 'page-templates/about.php' )) {
 		return;
 	}
-	$staff_photo = CFS()->get( 'staff_team_photo ');
+	$staff_photo = CFS()->get( 'staff_team_photo');
 	if ( ! $staff_photo ) {
 		return;
 	}
+
 	$staff_photo_css = " .vatjss-staff-img {
-		background: url({$staff_photo}) no-repeat center bottom;
-		background-size: cover;
+		background-image: url({$staff_photo});
+		width: 100px;
+		height: 100px;
 	}";
 	wp_add_inline_style( 'vatjss-style', $staff_photo_css );
 }
