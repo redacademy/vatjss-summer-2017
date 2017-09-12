@@ -9,7 +9,14 @@ div h2.vatjss-about {
   width: 16rem;
   padding-top: 50%;
   color: white;
-
+    @include desktop {
+      padding-top: 25%;
+      height: rem(156);	
+      width: rem(962);	
+      font-size: rem(30);	
+      font-weight: 500;	
+      line-height: rem(39);
+    }
 }
 
 section.vatjss-about-content {
@@ -18,10 +25,10 @@ section.vatjss-about-content {
   display:flex;
   flex-direction: column;
   width: 100%;
-
     @include desktop {
-      background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../../images/black_maple_background.png);;
-      height: 60vh;
+      background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+        url(../../images/black_maple_background.png);
+      height: 65vh;
     }
 
     .vatjss-about-category {
@@ -78,13 +85,20 @@ section.vatjss-about-content {
   h2.vatjss-our-staff {
     margin: auto;
     padding-bottom: 1rem;
-    margin-top: 305px;
-    margin-left: 20px;
+    margin-top: rem(305);
+    margin-left: rem(20);
   }
 
   p {
     margin: auto;
     width: 90%;
+
+    @include desktop {
+      height: 87px;	
+      width: 660px;		
+      font-size: 25px;	
+      line-height: 33px;
+    }
   }
 }
 
@@ -95,16 +109,16 @@ section.vatjss-about-content {
   background-color: $background_red;  
   border-radius: rem(5);
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: rem(50);
+  margin-bottom: rem(50);
   overflow: auto;  
   
   a.vatjss-button-link {
     color: $color_white;
 
     span.vatjss-right-arrow {
-      padding-left: 20px;
-      font-size: 20px;
+      padding-left: rem(20);
+      font-size: rem(20);
     }
   }
 
@@ -116,8 +130,6 @@ section.vatjss-about-content {
     a span.vatjss-right-arrow {
       display: none;
     }
-
-
   }   
 }
 
@@ -127,6 +139,7 @@ section.vatjss-about-content {
   @include desktop {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;    
 
     div.vatjss-all-buttons {
       border: $border_grey;
@@ -135,6 +148,7 @@ section.vatjss-about-content {
       width: rem(663);
       border-radius: rem(10);
       margin-top: rem(16);
+      margin-bottom: rem(35);
 
       a.vatjss-link-header {
         text-decoration: none;
@@ -155,7 +169,23 @@ section.vatjss-about-content {
 
 .page-template-about div div.vatjss-second {
   margin-right: rem(40);
-  margin-left: 20px;
+  margin-left: rem(20);
+}
+
+div div.vatjss-staff-img {
+
+  @include desktop {
+    height: 65%;
+    margin-left: rem(50);
+  }
+}
+
+
+//Footer
+.page-template-about footer .vatjss-footer-web {
+  @include desktop {
+    margin-right: rem(285);
+  }  
 }
 
  .page-template-about footer .vatjss-footer-icons {
