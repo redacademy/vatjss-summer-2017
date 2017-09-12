@@ -377,7 +377,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -736,8 +736,12 @@ a {
   .site-header {
     top: 0;
     background: black; }
+    .site-header .vatjss-container {
+      padding-right: 0;
+      padding-left: 0; }
     .site-header .vatjss-phone-search {
-      min-width: 70px; }
+      min-width: 33%;
+      max-height: 90px; }
       .site-header .vatjss-phone-search a {
         position: relative;
         padding: 0px;
@@ -1090,14 +1094,90 @@ div aside.vatjss-biz-hours-class {
       margin-left: 110px;
       margin-top: 40px; } }
 
+/*--------------------------------------------------------------
+# Resource List
+--------------------------------------------------------------*/
+.site-main {
+  overflow: auto;
+  min-height: 75vh; }
+  @media (min-width: 768px) {
+    .site-main {
+      min-height: 90vh; } }
+
+.resources-content-area {
+  background-image: url("../../images/black_maple_background.png");
+  background-position: center;
+  background-repeat: repeat; }
+  @media (min-width: 768px) {
+    .resources-content-area {
+      background-image: none;
+      background: black; } }
+
 section.resource-list-page {
   height: 0px;
+  width: 100%;
   overflow: hidden; }
 
-div.resource-toggle {
-  margin-top: 50px;
-  padding: 20px;
-  width: 0px; }
+.site-header-background {
+  z-index: -1000; }
+
+div.vatjss-mobile-resource-toggle-container {
+  z-index: 1000;
+  margin: 100px auto 20px;
+  height: auto;
+  width: 92vw;
+  min-width: 246px;
+  max-width: 366px;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+    border-right: 1px solid #979797;
+    margin: 0;
+    padding: 0;
+    width: 33.33333%;
+    height: 100%;
+    display: block; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+      background-color: #971e16; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
+      border-radius: 5px 0 0 5px; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
+      border-right: none;
+      border-radius: 0 5px 5px 0; }
+    div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
+      font-size: 0.77rem;
+      text-align: center;
+      padding: 5px 10px;
+      margin: 0; }
+      @media (min-width: 768px) {
+        div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
+          height: 0px;
+          border: none;
+          overflow: hidden; } }
+    @media (min-width: 768px) {
+      div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+        height: 0px;
+        border: none;
+        overflow: hidden; } }
+  @media (min-width: 768px) {
+    div.vatjss-mobile-resource-toggle-container {
+      height: 0px;
+      border: none;
+      overflow: hidden; } }
+
+div.resource-toggle-desktop {
+  width: 200px;
+  height: 0px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    div.resource-toggle-desktop {
+      height: 100px;
+      width: auto; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1206,7 +1286,46 @@ object {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .vatjss-home-hero .main-carousel .flickity-viewport .carousel-cell {
+    width: 100%; }
+  .vatjss-home-hero .main-carousel .flickity-viewport .carousel-cell .carousel-content {
+    width: 70%; }
+  .vatjss-home-hero .main-carousel {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+    .vatjss-home-hero .main-carousel h3 {
+      margin-bottom: 0; }
+    .vatjss-home-hero .main-carousel .flickity-prev-next-button .arrow {
+      fill: white; }
+    .vatjss-home-hero .main-carousel .flickity-prev-next-button {
+      background: transparent;
+      box-shadow: none;
+      color: #fff; }
+    .vatjss-home-hero .main-carousel .flickity-page-dots {
+      position: relative;
+      bottom: 150px; }
+      .vatjss-home-hero .main-carousel .flickity-page-dots .dot {
+        background-color: #fff;
+        opacity: 1;
+        width: 12px;
+        height: 12px; }
+      .vatjss-home-hero .main-carousel .flickity-page-dots .is-selected {
+        background-color: #971e16;
+        border: 1px solid #fff; }
+    .vatjss-home-hero .main-carousel .vatjss-carousel-button {
+      background-color: #971e16;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px; }
 
 .vatjss-home-banner {
   overflow: auto;
@@ -1654,6 +1773,14 @@ object {
       color: white; }
   .vatjss-home-hero {
     padding-top: 134px; }
+    .vatjss-home-hero .main-carousel {
+      height: 60%;
+      max-width: 600px; }
+      .vatjss-home-hero .main-carousel h3 {
+        font-size: 1.5rem; }
+      .vatjss-home-hero .main-carousel .flickity-page-dots {
+        position: relative;
+        bottom: 30px; }
   .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content {
     padding-top: 11.25rem; }
   .post-type-archive-staff h1 {
@@ -1726,7 +1853,10 @@ object {
     font-size: 1.5rem; } }
 
 /* Contact Page */
-span .no {
+span.council {
+  text-transform: uppercase; }
+
+.no {
   text-transform: uppercase; }
 
 /*--------------------------------------------------------------

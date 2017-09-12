@@ -265,8 +265,13 @@ a {
 	.site-header{
 		top:0;
 		background:black;
+		.vatjss-container{
+			padding-right:0;
+			padding-left:0; 
+		}
 		.vatjss-phone-search{
-			min-width: 70px;
+			min-width: 33%;
+			max-height: 90px;
 			a{
 				position: relative;
 				padding: 0px;

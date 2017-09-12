@@ -4,6 +4,7 @@ $base__space-unit: 1.5rem;
 $container-width :1120px;
 $desktop-width: 768px;
 $mobile-width: 767px;
+$a-third: 33.33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
 
 // Colors
 $color__background-body: #fff;
@@ -36,7 +37,7 @@ $background_black: #000;
 $border_grey: 1px solid #979797;
 
 // Typography
-$font_main: 'Roboto', sans-serif;
+$font_main: 'Roboto', Arial, Helvetica, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
