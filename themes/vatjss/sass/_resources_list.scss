@@ -10,62 +10,67 @@
   }
 }
 
-//resource page elements
-.resources-content-area {
-  background-image: url('../../images/black_maple_background.png');
-  background-position: center;
-  background-repeat: repeat;
-  @include desktop {
-    background-image: none;
-    background: black;
-  }
-}
-
-section.resource-list-page {
-  height: 0px;
-  width: 100%;
-  overflow: hidden;
-}
-
 .site-header-background {
   z-index: -1000;
 }
 
-div.vatjss-mobile-resource-toggle-container {
-  z-index: 1000;
-  margin: 100px auto 20px;
-  height: auto;
-  width: 92vw;
-  min-width: 246px;
-  max-width: 366px;
-  display: flex;
-  border: $border_grey;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  font-family: $font_main;
-  div.resource-toggle-mobile {
-    &:hover {
-      background-color: $background_red;
-    }
-    &:first-child {
-      border-radius: 5px 0 0 5px;
-    }
-    &:last-child {
-      border-right:none;
-      border-radius: 0 5px 5px 0;
-    }
-    border-right: $border_grey;
-    margin: 0;
-    padding: 0;
-    width: $a-third;
-    height: 100%;
-    display: block;
-    h3 {
-      font-size: 0.77rem;
-      text-align: center;
-      padding: 5px 10px;
+//resource page elements
+.resources-content-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/black_maple_background.png');
+  background-position: top right;
+  background-repeat: repeat;
+  background-size: 200%;
+
+  section.resource-list-page {
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  div.vatjss-mobile-resource-toggle-container {
+    z-index: 1000;
+    margin: 100px auto 20px;
+    height: auto;
+    width: 92vw;
+    min-width: 246px;
+    max-width: 366px;
+    display: flex;
+    border: $border_grey;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: $font_main;
+    z-index: -1;
+    div.resource-toggle-mobile {
+      &:hover {
+        background-color: $background_red;
+        cursor: pointer;
+      }
+      &:first-child {
+        border-radius: 5px 0 0 5px;
+      }
+      &:last-child {
+        border-right:none;
+        border-radius: 0 5px 5px 0;
+      }
+      border-right: $border_grey;
       margin: 0;
+      padding: 0;
+      width: $a-third;
+      height: 100%;
+      display: block;
+      z-index: 1;
+      h3 {
+        font-size: 0.77rem;
+        text-align: center;
+        padding: 5px 10px;
+        margin: 0;
+        @include desktop {
+          height: 0px;
+          border: none;
+          overflow: hidden;
+        }
+      }
       @include desktop {
         height: 0px;
         border: none;
@@ -78,19 +83,47 @@ div.vatjss-mobile-resource-toggle-container {
       overflow: hidden;
     }
   }
-  @include desktop {
-    height: 0px;
-    border: none;
-    overflow: hidden;
-  }
-}
 
-div.resource-toggle-desktop {
-  width: 200px;
-  height: 0px;
-  overflow: hidden;
+  .resource-toggle-desktop {
+    width: 200px;
+    height: 0px;
+    overflow: hidden;
+    @include desktop {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  section.resource-list-page.resource-toggle-on {
+    height: auto;
+  }
+
+  .panel {
+    color: white;
+    width: 430px;
+    margin: 0 auto;
+    h4 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+    h5 {
+      margin: 0;
+      font-size: 1.1rem;
+      margin-left: 20px;
+    }
+    ul li a {
+      font-size: 0.8rem;
+      &:link, &:visited {
+        color: white;
+      }
+      &:link:hover, &:visited:hover {
+        color: lighten($background_red, 10%);
+      }
+    }
+  }
   @include desktop {
-    height: 100px;
-    width: auto;
+    background-image: none;
+    background: black;
   }
 }
