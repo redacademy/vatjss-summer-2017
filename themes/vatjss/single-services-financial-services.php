@@ -12,6 +12,17 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>">
 			<div class="vatjss-service-hero">
+				<div class="vatjss-flex-container-no-wrap vatjss-btn-section vatjss-hidden-desktop">
+					<?php 
+						$args = array( 'post_type' => 'services');
+						$service_page = get_posts( $args );
+					?>
+					<?php foreach ( $service_page as $post ) : setup_postdata( $post ); ?>
+						<div class="vatjss-flex-item-mobile-33">
+							<?php the_title( sprintf( '<a class="vatjss-service-btn" href="%s">', esc_url( get_permalink() )), '</a>' ); ?>
+						</div>
+					<?php endforeach; wp_reset_postdata(); ?>
+				</div>
 				<div class="vatjss-container-fluid vatjss-serivce-no-padding">
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-desktp-30 vatjss-services-sidebar vatjss-hidden-mobile">
