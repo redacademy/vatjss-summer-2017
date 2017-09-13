@@ -1,7 +1,4 @@
 /* ABOUT PAGE STYLE */
-
-
-
 .vatjss-about p{
   line-height: rem(30); 
   text-align: center;
@@ -12,15 +9,15 @@
   padding-top: 50%;
   color: white;
     @include desktop {
-      padding-top: 25%;
-      height: rem(156);	
-      width: rem(962);	
-      font-size: rem(30);	
-      font-weight: 500;	
-      line-height: rem(39);
-    }
+    padding-top: 35%;
+    height: 9.75rem;
+    width: 60.125rem;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 2.4375rem;
+  }
 }
-
+// about content
 section.vatjss-about-content {
   background: url(../../images/red_maple_background.png);
   color: $color_white;
@@ -55,7 +52,6 @@ section.vatjss-about-content {
     padding-bottom: rem(30);    
     margin: auto;  
   }
-
 }
 
 .vatjss-our-vision {
@@ -66,14 +62,103 @@ section.vatjss-about-content {
   }
 }
 
+.page-template-about .vatjss-mission-buttons {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(50);
+
+    div.vatjss-all-buttons {
+      border: $border_grey;
+      background: $background_red;
+      height: rem(160);
+      width: rem(663);
+      border-radius: rem(10);
+      margin-top: rem(16);
+      margin-bottom: rem(35);
+      overflow: scroll;
+    }
+  }
+}
+
+.page-template-about div div.vatjss-first {
+  margin-left: rem(40); 
+  margin-right: rem(20);
+}
+
+.page-template-about div div.vatjss-second {
+  margin-right: rem(40);
+  margin-left: rem(20);
+}
+
+@include desktop {
+  div.vatjss-hover {
+    h2 {
+      position: absolute;
+      transition: top 0.2s;
+    }
+    p { 
+      opacity: 0; 
+      transition: opacity 0.5s linear; }
+  }
+
+  div.vatjss-hover:hover{
+    p {	
+     opacity: 1;
+    }
+
+    h2 {
+      top: -100px;
+    }
+  }
+}
+
+//staff content
+.page-template-about .vatjss-staff-content {
+  background-color: black;
+  margin-bottom: rem(-1);  //**
+  
+  @include desktop {
+   padding-top: 50px;
+   padding-left: 50px;
+   padding-bottom: 25%;
+  }
+}
+
+.page-template-about div.vatjss-staff-img {
+  height: 285px;
+  width: 100%;
+
+  @include desktop {
+  position: absolute;
+  height: 485px;
+  width: 90%;
+  }
+}
+
+.page-template-about .vatjss-staff-parag {
+  margin: 0 auto;
+  width: 90%;
+  
+   @include desktop {
+    height: rem(300);
+    width: 45%;
+    font-size: 1.5625rem;
+    line-height: 2.0625rem;
+    left: 730px;
+    position: absolute;
+    overflow: auto;
+   }
+ }
 
 .page-template-about .vatjss-staff {
-   background: black;
-   display: flex;
-   flex-direction: column;
-   color: #fff;
-   }
-
+  background: black;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
@@ -95,59 +180,20 @@ section.vatjss-about-content {
 
   @include desktop {
     height: rem(40);	
-    width: rem(140);	
+    width: rem(204);	
     padding-top: rem(9);
+    padding-bottom: rem(44);
+    margin-top: rem(135); 
+    position: relative;
+    left: rem(88);
+    top: rem(210);
+    font-size: rem(24);
+    border-radius: rem(10);
 
     a span.vatjss-right-arrow {
       display: none;
     }
   }   
-}
-
-.page-template-about .vatjss-mission-buttons {
-  display: none;
-
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
-
-    div.vatjss-all-buttons {
-      border: $border_grey;
-      background: $background_red;
-      height: rem(159);
-      width: rem(663);
-      border-radius: rem(10);
-      margin-top: rem(16);
-      margin-bottom: rem(35);
-      
-      a.vatjss-link-header {
-        text-decoration: none;
-        color: $color_white;
-        font-size: rem(36);
-        display: flex;
-        justify-content: center;
-        padding-top: rem(55);
-      }
-    }
-  }
-}
-
-.page-template-about div div.vatjss-first {
-  margin-left: rem(40); 
-  margin-right: 20px;
-}
-
-.page-template-about div div.vatjss-second {
-  margin-right: rem(40);
-  margin-left: rem(20);
-}
-
-div div.vatjss-staff-img {
-
-  @include desktop {
-    height: 65%;
-    margin-left: rem(50);
-  }
 }
 
 //Footer
@@ -162,35 +208,3 @@ div div.vatjss-staff-img {
     display: none;
   }
  }
- .page-template-about .vatjss-staff-content {
-   background-color: black;
- }
- .page-template-about .vatjss-staff-parag {
-   margin: 0 auto;
-   width: 90%;
-    @include desktop {
-      height: 87px;	
-      width: 660px;		
-      font-size: 25px;	
-      line-height: 33px;
-    }
- }
-@include desktop {
-  div.vatjss-hover {
-    h2 {
-      position: absolute;
-      transition: top 0.2s;
-    }
-    p { 
-      opacity: 0; 
-      transition: opacity 0.5s linear; }
-  }
-  div.vatjss-hover:hover{
-    p {	
-      opacity: 1;
-  }
-  h2 {
-    top: -100px;
-    }
-  }
-}

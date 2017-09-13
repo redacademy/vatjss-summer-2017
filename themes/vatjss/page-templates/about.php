@@ -40,25 +40,21 @@ get_header(); ?>
 			<div class="vatjss-mission-buttons">
 				<div class="vatjss-first">
 					<div class="vatjss-hover vatjss-all-buttons">
-						<!-- <a class="vatjss-mission-button-link vatjss-link-header vatjss-text-uppercase" href="#">Mission</a> -->
-						<h2>Mission</h2>
+						<h2 class="vatjss-text-uppercase">Mission</h2>
 						<?php echo CFS()->get( 'about_our_mission' ); ?>
 					</div>
 					<div class="vatjss-hover vatjss-all-buttons">
-						<!-- <a class="vatjss-story-button-link vatjss-link-header vatjss-text-uppercase" href="#">Story</a> -->
-						<h2>Story</h2>
+						<h2 class ="vatjss-text-uppercase">Story</h2>
 						<?php echo CFS()->get( 'our_vision' ); ?>
 					</div>
 				</div>
 				<div class="vatjss-second">
 					<div class="vatjss-hover vatjss-all-buttons">
-						<!-- <a class="vatjss-vision-button-link vatjss-link-header vatjss-text-uppercase" href="#">Vision</a> -->
-						<h2>Vision</h2>
+						<h2 class="vatjss-text-uppercase">Vision</h2>
 						<?php echo CFS()->get( 'about_our_story' ); ?>	
 					</div>
 					<div class="vatjss-hover vatjss-all-buttons">
-						<!-- <a class="vatjss-funding-button-link vatjss-link-header vatjss-text-uppercase" href="#">Funding</a> -->
-						<h2>Funding</h2>
+						<h2 class="vatjss-text-uppercase">Funding</h2>
 						<?php echo CFS()->get( 'about_funding' ); ?>
 					</div>
 				</div>

@@ -2389,6 +2389,76 @@ section.vatjss-about-content {
     .vatjss-our-vision {
       display: unset; } }
 
+.page-template-about .vatjss-mission-buttons {
+  display: none; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-mission-buttons {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      margin-top: 3.125rem; }
+      .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
+        border: 1px solid #979797;
+        background: #971E16;
+        height: 10rem;
+        width: 41.4375rem;
+        border-radius: 0.625rem;
+        margin-top: 1rem;
+        margin-bottom: 2.1875rem;
+        overflow: scroll; } }
+
+.page-template-about div div.vatjss-first {
+  margin-left: 2.5rem;
+  margin-right: 20px; }
+
+.page-template-about div div.vatjss-second {
+  margin-right: 2.5rem;
+  margin-left: 1.25rem; }
+
+@media (min-width: 768px) {
+  div.vatjss-hover h2 {
+    position: absolute;
+    transition: top 0.2s; }
+  div.vatjss-hover p {
+    opacity: 0;
+    transition: opacity 0.5s linear; }
+  div.vatjss-hover:hover p {
+    opacity: 1; }
+  div.vatjss-hover:hover h2 {
+    top: -100px; } }
+
+.page-template-about .vatjss-staff-content {
+  background-color: black;
+  margin-bottom: -0.0625rem; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-staff-content {
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-bottom: 25%; } }
+
+.page-template-about div.vatjss-staff-img {
+  height: 285px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .page-template-about div.vatjss-staff-img {
+      position: absolute;
+      height: 485px;
+      width: 90%; } }
+
+.page-template-about .vatjss-staff-parag {
+  margin: 0 auto;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-staff-parag {
+      height: 18.75rem;
+      width: 45%;
+      font-size: 1.5625rem;
+      line-height: 2.0625rem;
+      left: 730px;
+      position: absolute;
+      overflow: auto; } }
+
 .page-template-about .vatjss-staff {
   background: black;
   display: -ms-flexbox;
@@ -2413,49 +2483,17 @@ section.vatjss-about-content {
   @media (min-width: 768px) {
     .page-template-about .vatjss-read-more-button {
       height: 2.5rem;
-      width: 8.75rem;
-      padding-top: 0.5625rem; }
+      width: 12.75rem;
+      padding-top: 0.5625rem;
+      padding-bottom: 2.75rem;
+      margin-top: 8.4375rem;
+      position: relative;
+      left: 5.5rem;
+      top: 13.125rem;
+      font-size: 1.5rem;
+      border-radius: 0.625rem; }
       .page-template-about .vatjss-read-more-button a span.vatjss-right-arrow {
         display: none; } }
-
-.page-template-about .vatjss-mission-buttons {
-  display: none; }
-  @media (min-width: 768px) {
-    .page-template-about .vatjss-mission-buttons {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-      .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
-        border: 1px solid #979797;
-        background: #971E16;
-        height: 9.9375rem;
-        width: 41.4375rem;
-        border-radius: 0.625rem;
-        margin-top: 1rem;
-        margin-bottom: 2.1875rem; }
-        .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons a.vatjss-link-header {
-          text-decoration: none;
-          color: #fff;
-          font-size: 2.25rem;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          padding-top: 3.4375rem; } }
-
-.page-template-about div div.vatjss-first {
-  margin-left: 2.5rem;
-  margin-right: 20px; }
-
-.page-template-about div div.vatjss-second {
-  margin-right: 2.5rem;
-  margin-left: 1.25rem; }
-
-@media (min-width: 768px) {
-  div div.vatjss-staff-img {
-    height: 65%;
-    margin-left: 3.125rem; } }
 
 @media (min-width: 768px) {
   .page-template-about footer .vatjss-footer-web {
@@ -2464,31 +2502,6 @@ section.vatjss-about-content {
 @media (min-width: 768px) {
   .page-template-about footer .vatjss-footer-icons {
     display: none; } }
-
-.page-template-about .vatjss-staff-content {
-  background-color: black; }
-
-.page-template-about .vatjss-staff-parag {
-  margin: 0 auto;
-  width: 90%; }
-  @media (min-width: 768px) {
-    .page-template-about .vatjss-staff-parag {
-      height: 87px;
-      width: 660px;
-      font-size: 25px;
-      line-height: 33px; } }
-
-@media (min-width: 768px) {
-  div.vatjss-hover h2 {
-    position: absolute;
-    transition: top 0.2s; }
-  div.vatjss-hover p {
-    opacity: 0;
-    transition: opacity 0.5s linear; }
-  div.vatjss-hover:hover p {
-    opacity: 1; }
-  div.vatjss-hover:hover h2 {
-    top: -100px; } }
 
 /* 404 PAGE */
 body.error404 header.site-header {
