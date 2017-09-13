@@ -1,6 +1,8 @@
 /* ABOUT PAGE STYLE */
 
-div h2.vatjss-about {
+
+
+.vatjss-about p{
   line-height: rem(30); 
   text-align: center;
   font-size: rem(18);
@@ -64,43 +66,14 @@ section.vatjss-about-content {
   }
 }
 
-.page-template-about .vatjss-biz-hours-class {
-  display: none;
 
-    @include desktop {
-      display: unset;
-      width: 26rem;
-    }
-}
-
-.page-template-about .vatjss-staff-content {
+.page-template-about .vatjss-staff {
    background: black;
    display: flex;
    flex-direction: column;
- 
-   .vatjss-staff {
-    color: #fff;
+   color: #fff;
    }
 
-  h2.vatjss-our-staff {
-    margin: auto;
-    padding-bottom: 1rem;
-    margin-top: rem(305);
-    margin-left: rem(20);
-  }
-
-  p {
-    margin: auto;
-    width: 90%;
-
-    @include desktop {
-      height: 87px;	
-      width: 660px;		
-      font-size: 25px;	
-      line-height: 33px;
-    }
-  }
-}
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
@@ -108,10 +81,8 @@ section.vatjss-about-content {
   width: rem(160);  
   background-color: $background_red;  
   border-radius: rem(5);
-  margin: 0 auto;
-  margin-top: rem(50);
-  margin-bottom: rem(50);
   overflow: auto;  
+  margin: 0 auto;
   
   a.vatjss-button-link {
     color: $color_white;
@@ -139,7 +110,6 @@ section.vatjss-about-content {
   @include desktop {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;    
 
     div.vatjss-all-buttons {
       border: $border_grey;
@@ -149,7 +119,7 @@ section.vatjss-about-content {
       border-radius: rem(10);
       margin-top: rem(16);
       margin-bottom: rem(35);
-
+      
       a.vatjss-link-header {
         text-decoration: none;
         color: $color_white;
@@ -192,3 +162,35 @@ div div.vatjss-staff-img {
     display: none;
   }
  }
+ .page-template-about .vatjss-staff-content {
+   background-color: black;
+ }
+ .page-template-about .vatjss-staff-parag {
+   margin: 0 auto;
+   width: 90%;
+    @include desktop {
+      height: 87px;	
+      width: 660px;		
+      font-size: 25px;	
+      line-height: 33px;
+    }
+ }
+@include desktop {
+  div.vatjss-hover {
+    h2 {
+      position: absolute;
+      transition: top 0.2s;
+    }
+    p { 
+      opacity: 0; 
+      transition: opacity 0.5s linear; }
+  }
+  div.vatjss-hover:hover{
+    p {	
+      opacity: 1;
+  }
+  h2 {
+    top: -100px;
+    }
+  }
+}

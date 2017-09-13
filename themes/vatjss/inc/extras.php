@@ -63,11 +63,10 @@ function vatjss_about_staff_css() {
 		background-image: url({$staff_photo});
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 43%;		
+		height: 43vh;		
 		width: 100%;
 		margin: 0;
 		padding: 0;
-		position: absolute;
 	}";
 	wp_add_inline_style( 'vatjss-style', $staff_photo_css );
 }

@@ -1055,7 +1055,9 @@ div div aside#text-2 {
           -ms-flex-direction: row;
               flex-direction: row;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between; }
+          div div aside#text-2 div.textwidget div.vatjss-widget-social-icons a {
+            color: #fff; } }
 
 div aside.vatjss-biz-hours-class {
   background: #000;
@@ -1097,6 +1099,13 @@ div aside.vatjss-biz-hours-class {
       width: 9.1875rem;
       margin-left: 6.875rem;
       margin-top: 2.5rem; } }
+
+.vatjss-biz-hours-class {
+  display: none; }
+  @media (min-width: 768px) {
+    .vatjss-biz-hours-class {
+      display: unset;
+      width: 26rem; } }
 
 /*--------------------------------------------------------------
 # Resource List
@@ -2247,7 +2256,7 @@ div p.vatjss-footer-web {
       color: #fff; } }
 
 /* ABOUT PAGE STYLE */
-div h2.vatjss-about {
+.vatjss-about p {
   line-height: 1.875rem;
   text-align: center;
   font-size: 1.125rem;
@@ -2257,7 +2266,7 @@ div h2.vatjss-about {
   padding-top: 50%;
   color: white; }
   @media (min-width: 768px) {
-    div h2.vatjss-about {
+    .vatjss-about p {
       padding-top: 25%;
       height: 9.75rem;
       width: 60.125rem;
@@ -2300,35 +2309,13 @@ section.vatjss-about-content {
     .vatjss-our-vision {
       display: unset; } }
 
-.page-template-about .vatjss-biz-hours-class {
-  display: none; }
-  @media (min-width: 768px) {
-    .page-template-about .vatjss-biz-hours-class {
-      display: unset;
-      width: 26rem; } }
-
-.page-template-about .vatjss-staff-content {
+.page-template-about .vatjss-staff {
   background: black;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
-  .page-template-about .vatjss-staff-content .vatjss-staff {
-    color: #fff; }
-  .page-template-about .vatjss-staff-content h2.vatjss-our-staff {
-    margin: auto;
-    padding-bottom: 1rem;
-    margin-top: 19.0625rem;
-    margin-left: 1.25rem; }
-  .page-template-about .vatjss-staff-content p {
-    margin: auto;
-    width: 90%; }
-    @media (min-width: 768px) {
-      .page-template-about .vatjss-staff-content p {
-        height: 87px;
-        width: 660px;
-        font-size: 25px;
-        line-height: 33px; } }
+      flex-direction: column;
+  color: #fff; }
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
@@ -2336,10 +2323,8 @@ section.vatjss-about-content {
   width: 10rem;
   background-color: #971E16;
   border-radius: 0.3125rem;
-  margin: 0 auto;
-  margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
-  overflow: auto; }
+  overflow: auto;
+  margin: 0 auto; }
   .page-template-about .vatjss-read-more-button a.vatjss-button-link {
     color: #fff; }
     .page-template-about .vatjss-read-more-button a.vatjss-button-link span.vatjss-right-arrow {
@@ -2360,8 +2345,7 @@ section.vatjss-about-content {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-      margin-top: 50px; }
+          justify-content: space-between; }
       .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
         border: 1px solid #979797;
         background: #971E16;
@@ -2400,6 +2384,31 @@ section.vatjss-about-content {
 @media (min-width: 768px) {
   .page-template-about footer .vatjss-footer-icons {
     display: none; } }
+
+.page-template-about .vatjss-staff-content {
+  background-color: black; }
+
+.page-template-about .vatjss-staff-parag {
+  margin: 0 auto;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .page-template-about .vatjss-staff-parag {
+      height: 87px;
+      width: 660px;
+      font-size: 25px;
+      line-height: 33px; } }
+
+@media (min-width: 768px) {
+  div.vatjss-hover h2 {
+    position: absolute;
+    transition: top 0.2s; }
+  div.vatjss-hover p {
+    opacity: 0;
+    transition: opacity 0.5s linear; }
+  div.vatjss-hover:hover p {
+    opacity: 1; }
+  div.vatjss-hover:hover h2 {
+    top: -100px; } }
 
 /* 404 PAGE */
 body.error404 header.site-header {

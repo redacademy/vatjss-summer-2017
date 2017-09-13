@@ -80,6 +80,10 @@ div div aside#text-2 {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
+
+				a{
+					color: $color_white;
+				}
 			}
 		}
 	}
@@ -136,4 +140,13 @@ div aside.vatjss-biz-hours-class {
 		margin-left: rem(110);		
 		margin-top: rem(40);
 	}
+}
+
+.vatjss-biz-hours-class {
+  display: none;
+
+    @include desktop {
+      display: unset;
+      width: 26rem;
+    }
 }

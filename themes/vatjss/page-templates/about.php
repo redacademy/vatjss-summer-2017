@@ -9,15 +9,16 @@ get_header(); ?>
 
 <div id="primary" class="about-content">
 	<main id="main" class="site-main" role="main">
-		<header class="entry-header">
-			<div class="vatjss-custom-hero">
+		<div class="vatjss-custom-hero">
+				<div class="vatjss-about">
 				<!--get hero banner-->
-        <h2 class="vatjss-about">Crime is best viewed as a violate of people and relationships. 
-          Conflict that emerges is an opportunity for positive 
-          <span class="vatjss-text-uppercase">transformation</span> 
-          for the victim, offender, and the community.</h2>
+					<p>Crime is best viewed as a violate of people and relationships. 
+						Conflict that emerges is an opportunity for positive 
+						<span class="vatjss-text-uppercase">transformation</span> 
+						for the victim, offender, and the community.
+					</p>
+				</div>
 			</div>
-		</header>
 		<section class="container vatjss-about-content">
 			<div class="vatjss-about-category">
 				<h2 class="vatjss-story-header">Our Mission</h2>
@@ -38,19 +39,27 @@ get_header(); ?>
 			<!-- Buttons for Desktop -->
 			<div class="vatjss-mission-buttons">
 				<div class="vatjss-first">
-					<div class="vatjss-mission-button vatjss-all-buttons">
-						<a class="vatjss-mission-button-link vatjss-link-header vatjss-text-uppercase" href="#">Mission</a>
+					<div class="vatjss-hover vatjss-all-buttons">
+						<!-- <a class="vatjss-mission-button-link vatjss-link-header vatjss-text-uppercase" href="#">Mission</a> -->
+						<h2>Mission</h2>
+						<?php echo CFS()->get( 'about_our_mission' ); ?>
 					</div>
-					<div class="vatjss-story-button vatjss-all-buttons">
-						<a class="vatjss-story-button-link vatjss-link-header vatjss-text-uppercase" href="#">Story</a>
+					<div class="vatjss-hover vatjss-all-buttons">
+						<!-- <a class="vatjss-story-button-link vatjss-link-header vatjss-text-uppercase" href="#">Story</a> -->
+						<h2>Story</h2>
+						<?php echo CFS()->get( 'our_vision' ); ?>
 					</div>
 				</div>
 				<div class="vatjss-second">
-					<div class="vatjss-vision-button vatjss-all-buttons">
-						<a class="vatjss-vision-button-link vatjss-link-header vatjss-text-uppercase" href="#">Vision</a>
+					<div class="vatjss-hover vatjss-all-buttons">
+						<!-- <a class="vatjss-vision-button-link vatjss-link-header vatjss-text-uppercase" href="#">Vision</a> -->
+						<h2>Vision</h2>
+						<?php echo CFS()->get( 'about_our_story' ); ?>	
 					</div>
-					<div class="vatjss-funding-button vatjss-all-buttons">
-						<a class="vatjss-funding-button-link vatjss-link-header vatjss-text-uppercase" href="#">Funding</a>
+					<div class="vatjss-hover vatjss-all-buttons">
+						<!-- <a class="vatjss-funding-button-link vatjss-link-header vatjss-text-uppercase" href="#">Funding</a> -->
+						<h2>Funding</h2>
+						<?php echo CFS()->get( 'about_funding' ); ?>
 					</div>
 				</div>
 			</div>
@@ -58,8 +67,7 @@ get_header(); ?>
     <section class="container vatjss-staff-content">
 			<!--get staff photo-->
 			<div class="vatjss-staff">
-				<div class="vatjss-staff-img">
-				</div>
+				<div class="vatjss-staff-img"></div>
 				<div class="vatjss-staff-parag">
 					<h2 class="vatjss-our-staff vatjss-text-uppercase">Our Staff</h2>
 					<?php echo CFS()->get( 'our_staff' ); ?>
