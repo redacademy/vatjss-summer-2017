@@ -2557,6 +2557,28 @@ section.vatjss-about-content {
   .page-template-about footer .vatjss-footer-icons {
     display: none; } }
 
+/*Search Page*/
+.search {
+  margin: 50.59px auto 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  height: 100vh; }
+  .search .page-title {
+    margin: 100px;
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+  .search .entry-header {
+    padding: 50px;
+    width: 100%; }
+    .search .entry-header .entry-title {
+      font-size: 2rem; }
+      .search .entry-header .entry-title a {
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #971E16; }
+
 /* 404 PAGE */
 body.error404 header.site-header {
   top: 0; }
@@ -2595,25 +2617,3 @@ div div main section.error-404 {
     font-size: 1.25rem;
     margin: 0 auto;
     line-height: 2.5rem; }
-
-/*Search Page*/
-.search {
-  margin: 50.59px auto 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1120px;
-  height: 100vh; }
-  .search .page-title {
-    margin: 100px;
-    text-transform: uppercase;
-    font-size: 2.5rem; }
-  .search .entry-header {
-    padding: 50px;
-    width: 100%; }
-    .search .entry-header .entry-title {
-      font-size: 2rem; }
-      .search .entry-header .entry-title a {
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #971E16; }
