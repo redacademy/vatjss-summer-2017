@@ -2262,6 +2262,26 @@ object {
     .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
       margin: 0; } }
 
+/*Search Page*/
+.search {
+  margin: 50.59px auto 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  min-height: 800px; }
+  .search .page-title {
+    margin: 100px;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+  .search .entry-header {
+    padding: 50px;
+    width: 100%; }
+    .search .entry-header a {
+      text-transform: uppercase;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #971E16; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
