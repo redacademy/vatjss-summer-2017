@@ -40,21 +40,21 @@ get_header(); ?>
 			<div class="vatjss-mission-buttons">
 				<div class="vatjss-first">
 					<div class="vatjss-hover vatjss-all-buttons">
-						<h2 class="vatjss-text-uppercase">Mission</h2>
+						<h2 class="vatjss-hover-title vatjss-text-uppercase">Mission</h2>
 						<?php echo CFS()->get( 'about_our_mission' ); ?>
 					</div>
 					<div class="vatjss-hover vatjss-all-buttons">
-						<h2 class ="vatjss-text-uppercase">Story</h2>
+						<h2 class="vatjss-hover-title vatjss-text-uppercase">Story</h2>
 						<?php echo CFS()->get( 'our_vision' ); ?>
 					</div>
 				</div>
 				<div class="vatjss-second">
 					<div class="vatjss-hover vatjss-all-buttons">
-						<h2 class="vatjss-text-uppercase">Vision</h2>
+						<h2 class=" vatjss-hover-title vatjss-text-uppercase">Vision</h2>
 						<?php echo CFS()->get( 'about_our_story' ); ?>	
 					</div>
 					<div class="vatjss-hover vatjss-all-buttons">
-						<h2 class="vatjss-text-uppercase">Funding</h2>
+						<h2 class="vatjss-hover-title vatjss-text-uppercase">Funding</h2>
 						<?php echo CFS()->get( 'about_funding' ); ?>
 					</div>
 				</div>

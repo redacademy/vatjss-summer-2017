@@ -2408,9 +2408,13 @@ section.vatjss-about-content {
         margin-bottom: 2.1875rem;
         overflow: scroll; } }
 
+.page-template-about div div h2.vatjss-hover-title {
+  padding-left: 280px;
+  padding-top: 45px; }
+
 .page-template-about div div.vatjss-first {
   margin-left: 2.5rem;
-  margin-right: 20px; }
+  margin-right: 1.25rem; }
 
 .page-template-about div div.vatjss-second {
   margin-right: 2.5rem;

@@ -8,8 +8,9 @@
   width: 16rem;
   padding-top: 50%;
   color: white;
+
     @include desktop {
-    padding-top: 35%;
+    padding-top: 25%;
     height: 9.75rem;
     width: 60.125rem;
     font-size: 1.875rem;
@@ -81,6 +82,10 @@ section.vatjss-about-content {
       overflow: scroll;
     }
   }
+}
+.page-template-about div div h2.vatjss-hover-title{
+  padding-left: 280px;
+  padding-top: 45px;
 }
 
 .page-template-about div div.vatjss-first {
