@@ -1,19 +1,25 @@
 (function($){
-  $('.housing-toggle').on('click', function(){
-    $('.resource-list-page').removeClass('resource-toggle-on');
-    $('.housing-resource-list').addClass('resource-toggle-on');
+  var windowWidth = window.innerWidth;
+  $(window).resize(function() {
+    windowWidth = window.innerWidth;
   });
+  if ( windowWidth <= 768 ){
 
-  $('.justice-toggle').on('click', function(){
-    $('.resource-list-page').removeClass('resource-toggle-on');
-    $('.justice-resource-list').addClass('resource-toggle-on');
-  });
+    $('.housing-toggle').on('click', function(){
+      $('.resource-list-page').removeClass('resource-toggle-on');
+      $('.housing-resource-list').addClass('resource-toggle-on');
+    });
 
-  $('.community-toggle').on('click', function(){
-    $('.resource-list-page').removeClass('resource-toggle-on');
-    $('.community-resource-list').addClass('resource-toggle-on');
-  });
-  
+    $('.justice-toggle').on('click', function(){
+      $('.resource-list-page').removeClass('resource-toggle-on');
+      $('.justice-resource-list').addClass('resource-toggle-on');
+    });
+
+    $('.community-toggle').on('click', function(){
+      $('.resource-list-page').removeClass('resource-toggle-on');
+      $('.community-resource-list').addClass('resource-toggle-on');
+    });
+    
     $('.resource-accordion-button').on('click', function(){
       if ( $(this).next().hasClass("resource-accordion-toggle-on") ) {
         $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
@@ -27,4 +33,24 @@
       $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
       $(this).addClass('resource-accordion-button-toggle-on');
     });
+  }
+  if ( windowWidth >= 769 ) {
+    $(document).ready(function() {
+      $("a[href^='#']").on('click', function(event) {
+
+        if (this.hash) {
+          event.preventDefault();
+
+          var hash = this.hash;
+          var focus = $(hash);
+
+          $('html, body').stop().animate({
+            'scrollTop': focus.offset().top - 120
+          }, 400, 'swing', function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  }
 }(jQuery));

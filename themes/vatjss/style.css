@@ -1180,18 +1180,26 @@ div aside.vatjss-biz-hours-class {
         .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
           border: 1px black solid;
           width: 100%;
-          height: 33.33333%;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center; } }
-      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+          height: 33.33333%; } }
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        width: 100%;
+        height: 100%; }
+        .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a:link {
+          text-decoration: none;
+          color: white; }
+        .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a:visited {
+          color: white; }
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover, .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a:hover, .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a:visited:hover {
         background-color: #971E16;
         cursor: pointer; }
         @media (min-width: 768px) {
-          .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+          .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover, .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a:hover, .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile a:visited:hover {
             background-color: white;
             color: black; } }
       .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
