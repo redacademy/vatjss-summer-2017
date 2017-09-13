@@ -33,7 +33,7 @@
 							<img class="vatjss-hidden-desktop vatjss-mobile-logo" src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_mobile_logo.svg alt="hero image"/>
 							<div id="vatjss-nav-menu" class="vatjss-hidden-mobile vatjss-nav-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?></div>
 							<div class="vatjss-phone-search">
-								<a class="phone" href="888-888-8888"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="vatjss-hidden-mobile">888-888-8888</span></a>
+								<a class="phone" href="tel:888-888-8888"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="vatjss-hidden-mobile">888-888-8888</span></a>
 								<?php echo get_search_form(); ?>
 							</div>
 						</nav>

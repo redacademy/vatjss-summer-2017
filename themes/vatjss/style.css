@@ -1114,7 +1114,7 @@ div aside.vatjss-biz-hours-class {
 --------------------------------------------------------------*/
 .post-type-archive-resource .site-main {
   overflow: auto;
-  min-height: 75vh; }
+  min-height: 85vh; }
   @media (min-width: 768px) {
     .post-type-archive-resource .site-main {
       min-height: 90vh; } }

@@ -1,4 +1,19 @@
 (function($){
+  function resourceAccordion() {
+    $('.resource-accordion-button').on('click', function(){
+      if ( $(this).next().hasClass("resource-accordion-toggle-on") ) {
+        $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
+        $(this).children('.button-chevron').removeClass('button-chevron-toggle-on');
+        $(this).removeClass('resource-accordion-button-toggle-on');
+        return;
+      }
+      $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
+      $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
+      $(this).next().addClass('resource-accordion-toggle-on');
+      $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
+      $(this).addClass('resource-accordion-button-toggle-on');
+    });
+  }
   var windowWidth = window.innerWidth;
   $(window).resize(function() {
     windowWidth = window.innerWidth;
@@ -19,20 +34,7 @@
       $('.resource-list-page').removeClass('resource-toggle-on');
       $('.community-resource-list').addClass('resource-toggle-on');
     });
-    
-    $('.resource-accordion-button').on('click', function(){
-      if ( $(this).next().hasClass("resource-accordion-toggle-on") ) {
-        $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
-        $(this).children('.button-chevron').removeClass('button-chevron-toggle-on');
-        $(this).removeClass('resource-accordion-button-toggle-on');
-        return;
-      }
-      $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
-      $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
-      $(this).next().addClass('resource-accordion-toggle-on');
-      $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
-      $(this).addClass('resource-accordion-button-toggle-on');
-    });
+    resourceAccordion();
   }
   if ( windowWidth >= 769 ) {
     $(document).ready(function() {
@@ -52,5 +54,6 @@
         }
       });
     });
+    resourceAccordion();
   }
 }(jQuery));
