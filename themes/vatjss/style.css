@@ -1384,6 +1384,20 @@ div aside.vatjss-biz-hours-class {
 .bypostauthor {
   display: block; }
 
+@media (min-width: 768px) {
+  body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap input.wpcf7-form-control.wpcf7-text {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    height: 60px;
+    border-radius: 8px; }
+  body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap textarea.wpcf7-textarea {
+    height: 176px;
+    padding: 15px;
+    border-radius: 8px; }
+  body.page-template-contact label {
+    font-size: 1.3rem; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -2025,8 +2039,6 @@ object {
       margin: 0 -15px; }
       .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form label {
         color: #fff; }
-      .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form textarea {
-        max-height: 150px; }
       .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section .vatjss-contact-form form input[type=submit] {
         background-color: #000;
         color: #fff;

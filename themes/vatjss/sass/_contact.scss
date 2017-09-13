@@ -1,0 +1,21 @@
+body.page-template-contact {
+  @include desktop  {
+    form.wpcf7-form div span.wpcf7-form-control-wrap {
+      select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, input.wpcf7-form-control.wpcf7-text {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        height: 60px;
+        border-radius: 8px;
+      }
+      textarea.wpcf7-textarea {        
+        height: 176px;
+        padding: 15px;
+        border-radius: 8px;
+      }
+    }
+    label {
+      font-size: 1.3rem;
+    }
+  }
+}
