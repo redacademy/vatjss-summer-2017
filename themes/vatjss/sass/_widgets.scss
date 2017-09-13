@@ -117,8 +117,7 @@ div aside.vatjss-biz-hours-class {
 			flex-direction: column;
 
 			.vatjss-hours {
-			padding-left: rem(15);
-			margin-left: 110px;
+			padding-left: rem(112);
 			
 			}
 		}
@@ -137,7 +136,7 @@ div aside.vatjss-biz-hours-class {
 
 	@include desktop {
 		width: rem(147);
-		margin-left: rem(110);		
+		margin-left: rem(100);		
 		margin-top: rem(40);
 	}
 }

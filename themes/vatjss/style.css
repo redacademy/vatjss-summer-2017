@@ -1083,8 +1083,7 @@ div aside.vatjss-biz-hours-class {
       -ms-flex-direction: column;
           flex-direction: column; }
       .vatjss-business-hours .vatjss-hours {
-        padding-left: 0.9375rem;
-        margin-left: 110px; } }
+        padding-left: 7rem; } }
 
 .vatjss-widget-address p {
   padding-left: 0.9375rem;
@@ -1097,7 +1096,7 @@ div aside.vatjss-biz-hours-class {
   @media (min-width: 768px) {
     .vatjss-widget-address p {
       width: 9.1875rem;
-      margin-left: 6.875rem;
+      margin-left: 6.25rem;
       margin-top: 2.5rem; } }
 
 .vatjss-biz-hours-class {
