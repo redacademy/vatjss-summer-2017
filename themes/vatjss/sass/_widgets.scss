@@ -36,6 +36,10 @@ div div aside#text-3 {
     padding-bottom: rem(10);
     border-radius: rem(10);
 		border: 3px solid #FFFFFF;	
+
+		&:focus {
+			color: $color_white;
+		}
 	}
 
 	form p input.wpcf7-submit {

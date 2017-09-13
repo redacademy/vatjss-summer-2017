@@ -1017,6 +1017,8 @@ div div aside#text-3 {
     padding-bottom: 0.625rem;
     border-radius: 0.625rem;
     border: 3px solid #FFFFFF; }
+    div div aside#text-3 form p input.wpcf7-form-control:focus {
+      color: #fff; }
   div div aside#text-3 form p input.wpcf7-submit {
     background: #971E16;
     color: #fff;
