@@ -13,7 +13,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
     <?php if ( have_posts() ) : ?>
       <?php
-        $service_types = get_terms( 'services-type' );
+        $args = array( 'post_type' => 'page', 'post__in' => array(379) );
+        $service_page = get_posts( $args );
       ?>
       <section class="vatjss-service-hero">
         <div class="vatjss-container">
@@ -25,6 +26,15 @@ get_header(); ?>
             <?php endwhile; ?>
           </div>
           <h1 class="vatjss-text-center">Services for Youth and Adults</h1>
+          <?php
+            foreach ( $service_page as $post ) : setup_postdata( $post );
+              the_content();
+              if ( has_post_thumbnail() ){
+                the_post_thumbnail( 'large' );
+              }
+              echo CFS()->get( 'is_this_for' );
+            endforeach; wp_reset_postdata(); ?>
+          ?>
         </div>
       </section>
       <?php
@@ -35,7 +45,9 @@ get_header(); ?>
           <div class="vatjss-flex-container-no-wrap">
           <?php while ( have_posts() ) : the_post(); ?>
             <section id="post-<?php the_ID(); ?>" class="vatjss-services-section vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-33">
+              <div class="vatjss-service-mobile-image vatjss-hidden-desktop"><?php the_post_thumbnail( 'full' ); ?></div>
               <header class="entry-header">
+                <img class="vatjss-service-icons vatjss-hidden-mobile" src=<?php echo CFS()->get( 'icon' ); ?> />
                 <?php the_title( sprintf( '<h2 class="entry-title">'), '</h2>' ); ?>
                 <p><?php the_content(); ?></p> 
                 <a class="vatjss-service-learn-btn" href="<?php echo get_permalink() ?>">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>

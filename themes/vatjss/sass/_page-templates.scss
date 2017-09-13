@@ -152,16 +152,56 @@
     background-image: linear-gradient(rgba(255,255,255,.15) 0,rgba(255,255,255,.15)),url('../../images/healing.jpeg');
     background-size:cover;
     background-position: center;
-    height: calc(100vh - 70px);
+    min-height: 100vh;
+    text-align: center;
+    img{
+      margin: 40px 0;
+    }
+    p{
+      text-align: center;
+      color:$color_white;
+      max-width: 800px;
+      margin: 0 auto;
+    }
   }
   .vatjss-services-section-container{
+    .vatjss-container{
+      padding: 0;
+    }
     .vatjss-flex-container-no-wrap{
       display: block;
     }
+    .vatjss-service-icons{
+      max-width: 35%;
+    }
   }
   .vatjss-services-section{
+    
+    position: relative;
+    overflow: hidden;
     h2{
       font-size: rem(18);
+      color:$color_white;
+    }
+    p{
+      color:$color_white;
+    }
+    .entry-header{
+      padding: 40px;
+      background:rgba(0,0,0,.5);
+      overflow: auto;
+    }
+    .vatjss-service-mobile-image{
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+      width: 100%;
+      height:100%;
+      img{
+        object-fit: cover;
+        width: 100%;
+      }
     }
     .vatjss-service-learn-btn{
       background-color: $background_red;
@@ -170,6 +210,7 @@
       text-decoration: none;
       font-size: rem(14);
       display: inline-block;
+      float: right;
       .fa{
         position: relative;
         top: 1px;
