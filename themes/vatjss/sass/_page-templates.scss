@@ -184,6 +184,7 @@
     }
     .vatjss-service-btn{
       width: 100%;
+      display: inline-block;
       background: transparent;
       border: 1px solid white;
       box-shadow: none;
@@ -191,6 +192,9 @@
       text-shadow: none;
       color:white;
       border-radius: 0;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
     }
   }
 }
@@ -277,11 +281,12 @@
   .vatjss-financial-services,.vatjss-home-services{
     .vatjss-service-title{
       position: absolute;
-      top:50%;
-      right: 50%;
-      transform: translate(50%,-50%);
+      top: 0;
+      right: 0;
       background-image: linear-gradient(rgba(0,0,0,.7) 0,rgba(0,0,0,.7));
       padding: 10px;
+      width: 100%;
+      height: 100%;
       h1,p{
         color:white;
         text-align: center;
@@ -906,14 +911,22 @@
     }
   }
   .services-template-default{
-    .vatjss-service-title{
-      width:80%;
-      height: auto;
-      h1{
-        font-size: rem(32);
-      }
-      p{
-        font-size:rem(16);
+    .vatjss-financial-services,.vatjss-home-services{
+      .vatjss-service-title{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+        padding: 10px;
+        height: auto;
+        width:80%;
+        h1{
+          font-size: rem(32);
+        }
+        p{
+          font-size:rem(16);
+        }
       }
     }
     .vatjss-serivce-no-padding{

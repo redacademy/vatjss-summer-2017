@@ -2,6 +2,8 @@
 /**
  * The template for displaying archive pages.
  *
+ * Template Name: Services
+ *
  * @package vatjss_Theme
  */
 
@@ -18,7 +20,7 @@ get_header(); ?>
           <div class="vatjss-flex-container-no-wrap vatjss-btn-section vatjss-hidden-desktop">
             <?php while ( have_posts() ) : the_post(); ?>
             <div class="vatjss-flex-item-mobile-33">
-              <?php the_title( sprintf( '<button class="vatjss-service-btn">'), '</button>' ); ?>
+              <?php the_title( sprintf( '<a class="vatjss-service-btn" href="%s">', esc_url( get_permalink() )), '</a>' ); ?>
             </div>
             <?php endwhile; ?>
           </div>

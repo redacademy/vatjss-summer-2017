@@ -322,6 +322,8 @@ h1, h2, h3, h4, h5, h5, h6 {
     padding-right: 0; } }
 
 @media (min-width: 768px) {
+  .vatjss-container-fluid {
+    padding: 20px 15px; }
   .vatjss-hidden-desktop {
     display: none; }
   .vatjss-flex-item-desktop-100 {
@@ -648,7 +650,8 @@ a {
   width: 100%;
   height: 180px;
   position: absolute;
-  top: 0; }
+  top: 0;
+  z-index: -1000; }
 
 .site-header {
   position: fixed;
@@ -1589,13 +1592,17 @@ object {
     padding: 0; }
   .post-type-archive-services .vatjss-btn-section .vatjss-service-btn {
     width: 100%;
+    display: inline-block;
     background: transparent;
     border: 1px solid white;
     box-shadow: none;
     font-size: 0.75rem;
     text-shadow: none;
     color: white;
-    border-radius: 0; }
+    border-radius: 0;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none; }
 
 .services-template-default .vatjss-serivce-no-padding {
   padding-top: 0;
@@ -1671,11 +1678,12 @@ object {
 
 .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7));
-  padding: 10px; }
+  padding: 10px;
+  width: 100%;
+  height: 100%; }
   .services-template-default .vatjss-financial-services .vatjss-service-title h1, .services-template-default .vatjss-financial-services .vatjss-service-title p, .services-template-default .vatjss-home-services .vatjss-service-title h1, .services-template-default .vatjss-home-services .vatjss-service-title p {
     color: white;
     text-align: center; }
@@ -2204,12 +2212,18 @@ object {
       padding: 0.625rem 0.9375rem; }
       .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
         display: none; }
-  .services-template-default .vatjss-service-title {
-    width: 80%;
-    height: auto; }
-    .services-template-default .vatjss-service-title h1 {
+  .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    padding: 10px;
+    height: auto;
+    width: 80%; }
+    .services-template-default .vatjss-financial-services .vatjss-service-title h1, .services-template-default .vatjss-home-services .vatjss-service-title h1 {
       font-size: 2rem; }
-    .services-template-default .vatjss-service-title p {
+    .services-template-default .vatjss-financial-services .vatjss-service-title p, .services-template-default .vatjss-home-services .vatjss-service-title p {
       font-size: 1rem; }
   .services-template-default .vatjss-serivce-no-padding {
     padding-top: 1.25rem;

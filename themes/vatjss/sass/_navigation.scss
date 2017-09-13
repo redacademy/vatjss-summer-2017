@@ -147,6 +147,7 @@ a {
 	height: 180px;
 	position: absolute;
 	top: 0;
+	z-index: -1000;	
 }
 .site-header{
 	position: fixed;
