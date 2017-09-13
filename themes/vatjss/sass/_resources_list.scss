@@ -123,11 +123,50 @@
       margin: 200px 30px;
       .vatjss-resource-desktop-content {
         color: white;
-        background-color: pink;
         height: 100px;
+        h3.resource-subtitle {
+          font-size: 1.7rem;
+          margin: 0;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .resource-toggle-desktop {
+        color: white;
+        font-size: 1.5rem;
+      }
+      .panel {
+        margin-left: 20px;
+        height: 200px;
+        overflow: scroll;
+      }
+      .community-resource-list .panel {
+        height: auto;
+        overflow: display;
+        div.resources-accordion {
+          background-color: $background_red;
+          border-radius: 0;
+          padding: 0;
+          width: 60vw;
+          min-width: 300px;
+          border: 1px grey solid;
+          h4{
+            color: white;
+            text-align: left;
+            padding: 10px;
+          }
+        }
+        .resource-accordion-button {
+          &:first-of-type{
+            border-top: none;
+          }
+          border-top: 1px grey solid;
+          border-bottom: none;
+          }
+        }
       }
     }
-  }
 
   .resource-toggle-desktop {
     width: 200px;

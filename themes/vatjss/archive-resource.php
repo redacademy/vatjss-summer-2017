@@ -18,9 +18,15 @@ get_header(); ?>
       </div>
       <div class="vatjss-mobile-accordion">
         <div class="vatjss-resource-desktop-content">
-          <?php the_title();
-          CFS()->get('subtitle');
-          the_content('293'); ?>
+          <?php 
+          $args = array( 'post_type' => 'page', 'post__in' => array(293) );
+          $resource_page = get_posts( $args );
+          foreach ( $resource_page as $post ) : setup_postdata( $post );
+          
+          echo '<h3 class=resource-subtitle>' . CFS()->get( 'subtitle' ) . '</h3>';
+          the_content();
+          
+          endforeach; wp_reset_postdata(); ?>
         </div> 
         <div class="housing-toggle resource-toggle-desktop"><h3>Housing</h3></div>
         <section class="housing-resource-list resource-list-page">

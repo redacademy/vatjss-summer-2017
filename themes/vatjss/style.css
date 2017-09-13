@@ -1211,8 +1211,38 @@ div aside.vatjss-biz-hours-class {
       margin: 200px 30px; }
       .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content {
         color: white;
-        background-color: pink;
-        height: 100px; } }
+        height: 100px; }
+        .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content h3.resource-subtitle {
+          font-size: 1.7rem;
+          margin: 0; }
+        .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content p {
+          font-size: 1.2rem; }
+      .resources-content-area .vatjss-mobile-accordion .resource-toggle-desktop {
+        color: white;
+        font-size: 1.5rem; }
+      .resources-content-area .vatjss-mobile-accordion .panel {
+        margin-left: 20px;
+        height: 200px;
+        overflow: scroll; }
+      .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel {
+        height: auto;
+        overflow: display; }
+        .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion {
+          background-color: #971E16;
+          border-radius: 0;
+          padding: 0;
+          width: 60vw;
+          min-width: 300px;
+          border: 1px grey solid; }
+          .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion h4 {
+            color: white;
+            text-align: left;
+            padding: 10px; }
+        .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel .resource-accordion-button {
+          border-top: 1px grey solid;
+          border-bottom: none; }
+          .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel .resource-accordion-button:first-of-type {
+            border-top: none; } }
   .resources-content-area .resource-toggle-desktop {
     width: 200px;
     height: 0px;
