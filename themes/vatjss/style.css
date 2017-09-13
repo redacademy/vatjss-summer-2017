@@ -1110,35 +1110,35 @@ div aside.vatjss-biz-hours-class {
 /*--------------------------------------------------------------
 # Resource List
 --------------------------------------------------------------*/
-.site-main {
+.post-type-archive-resource .site-main {
   overflow: auto;
   min-height: 75vh; }
   @media (min-width: 768px) {
-    .site-main {
+    .post-type-archive-resource .site-main {
       min-height: 90vh; } }
 
-.site-header-background {
+.post-type-archive-resource .site-header-background {
   z-index: -1000; }
   @media (min-width: 768px) {
-    .site-header-background {
+    .post-type-archive-resource .site-header-background {
       z-index: 1; } }
 
-.resources-content-area {
+.post-type-archive-resource .resources-content-area {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/black_maple_background.png");
   background-position: top right;
   background-repeat: repeat; }
   @media (min-width: 768px) {
-    .resources-content-area main {
+    .post-type-archive-resource .resources-content-area main {
       display: -ms-flexbox;
       display: flex; } }
-  .resources-content-area section.resource-list-page {
+  .post-type-archive-resource .resources-content-area section.resource-list-page {
     height: 0px;
     width: 100%;
     overflow: hidden; }
     @media (min-width: 768px) {
-      .resources-content-area section.resource-list-page {
+      .post-type-archive-resource .resources-content-area section.resource-list-page {
         height: auto; } }
-  .resources-content-area div.vatjss-mobile-resource-toggle-container {
+  .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container {
     z-index: 1000;
     margin: 100px auto 20px;
     height: auto;
@@ -1154,7 +1154,7 @@ div aside.vatjss-biz-hours-class {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     z-index: -1; }
     @media (min-width: 768px) {
-      .resources-content-area div.vatjss-mobile-resource-toggle-container {
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container {
         z-index: 1;
         width: 300px;
         height: 300px;
@@ -1166,7 +1166,7 @@ div aside.vatjss-biz-hours-class {
         border-color: black;
         border-radius: 0;
         background-color: #971E16; } }
-    .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+    .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
       border-right: 1px solid #979797;
       margin: 0;
       padding: 0;
@@ -1175,7 +1175,7 @@ div aside.vatjss-biz-hours-class {
       display: block;
       z-index: 1; }
       @media (min-width: 768px) {
-        .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
+        .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile {
           border: 1px black solid;
           width: 100%;
           height: 33.33333%;
@@ -1185,124 +1185,128 @@ div aside.vatjss-biz-hours-class {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center; } }
-      .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
         background-color: #971E16;
         cursor: pointer; }
         @media (min-width: 768px) {
-          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
+          .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:hover {
             background-color: white;
             color: black; } }
-      .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
         border-radius: 5px 0 0 5px; }
         @media (min-width: 768px) {
-          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
+          .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:first-child {
             border-radius: 0; } }
-      .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
         border-right: none;
         border-radius: 0 5px 5px 0; }
         @media (min-width: 768px) {
-          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
+          .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile:last-child {
             border-radius: 0; } }
-      .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
+      .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
         font-size: 0.77rem;
         text-align: center;
         padding: 5px 10px;
         margin: 0; }
         @media (min-width: 768px) {
-          .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
+          .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 {
             font-size: 1.3rem;
             padding: 0; }
-            .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 span {
+            .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile h3 span {
               display: none; } }
+  .post-type-archive-resource .resources-content-area .vatjss-resource-desktop-content {
+    height: 0;
+    overflow: hidden; }
   @media (min-width: 768px) {
-    .resources-content-area .vatjss-mobile-accordion {
+    .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion {
       width: 100%;
       margin: 200px 30px; }
-      .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content {
+      .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content {
         color: white;
-        height: 100px; }
-        .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content h3.resource-subtitle {
+        height: auto; }
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content h3.resource-subtitle {
           font-size: 1.7rem;
           margin: 0; }
-        .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content p {
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content p {
           font-size: 1.2rem; }
-      .resources-content-area .vatjss-mobile-accordion .resource-toggle-desktop {
+      .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .resource-toggle-desktop {
         color: white;
         font-size: 1.5rem; }
-      .resources-content-area .vatjss-mobile-accordion .panel {
+      .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .panel {
         margin-left: 20px;
         height: 200px;
         overflow: scroll; }
-      .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel {
+      .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel {
         height: auto;
         overflow: display; }
-        .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion {
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion {
           background-color: #971E16;
           border-radius: 0;
           padding: 0;
           width: 60vw;
           min-width: 300px;
           border: 1px grey solid; }
-          .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion h4 {
+          .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion h4 {
             color: white;
             text-align: left;
             padding: 10px; }
-        .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel .resource-accordion-button {
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel .resource-accordion-button {
           border-top: 1px grey solid;
           border-bottom: none; }
-          .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel .resource-accordion-button:first-of-type {
+          .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel .resource-accordion-button:first-of-type {
             border-top: none; } }
-  .resources-content-area .resource-toggle-desktop {
+  .post-type-archive-resource .resources-content-area .resource-toggle-desktop {
     width: 200px;
     height: 0px;
     overflow: hidden; }
     @media (min-width: 768px) {
-      .resources-content-area .resource-toggle-desktop {
+      .post-type-archive-resource .resources-content-area .resource-toggle-desktop {
         height: 100px;
         width: 100%; } }
-  .resources-content-area section.resource-list-page.resource-toggle-on {
+  .post-type-archive-resource .resources-content-area section.resource-list-page.resource-toggle-on {
     height: auto; }
-  .resources-content-area .panel {
+  .post-type-archive-resource .resources-content-area .panel {
     color: white;
     width: 430px;
     margin: 0 auto; }
     @media (min-width: 768px) {
-      .resources-content-area .panel {
+      .post-type-archive-resource .resources-content-area .panel {
         width: 100%; } }
-    .resources-content-area .panel h4 {
+    .post-type-archive-resource .resources-content-area .panel h4 {
       margin: 0;
       font-size: 1.3rem;
       text-decoration: underline; }
-    .resources-content-area .panel h5 {
+    .post-type-archive-resource .resources-content-area .panel h5 {
       margin: 0;
       font-size: 1rem;
       margin-left: 20px; }
-    .resources-content-area .panel ul li a {
+    .post-type-archive-resource .resources-content-area .panel ul li a {
       font-size: 0.8rem; }
-      .resources-content-area .panel ul li a:link, .resources-content-area .panel ul li a:visited {
+      .post-type-archive-resource .resources-content-area .panel ul li a:link, .post-type-archive-resource .resources-content-area .panel ul li a:visited {
         color: white; }
-      .resources-content-area .panel ul li a:link:hover, .resources-content-area .panel ul li a:visited:hover {
+      .post-type-archive-resource .resources-content-area .panel ul li a:link:hover, .post-type-archive-resource .resources-content-area .panel ul li a:visited:hover {
         color: #c4271c; }
-  .resources-content-area .resources-accordion {
+  .post-type-archive-resource .resources-content-area .resources-accordion {
     background: #f1f1f1;
     padding: 20px 0;
     width: 430px;
     margin: 0;
     border: none;
     border-radius: 10px; }
-    .resources-content-area .resources-accordion .resource-accordion-button {
+    .post-type-archive-resource .resources-content-area .resources-accordion .resource-accordion-button {
       border-bottom: 1px grey solid;
       position: relative; }
-      .resources-content-area .resources-accordion .resource-accordion-button:hover h4 {
-        background-color: rgba(151, 30, 22, 0.2); }
-      .resources-content-area .resources-accordion .resource-accordion-button:first-child {
+      .post-type-archive-resource .resources-content-area .resources-accordion .resource-accordion-button:hover h4 {
+        background-color: rgba(151, 30, 22, 0.2);
+        cursor: pointer; }
+      .post-type-archive-resource .resources-content-area .resources-accordion .resource-accordion-button:first-child {
         border-top: 1px grey solid; }
-      .resources-content-area .resources-accordion .resource-accordion-button h4 {
+      .post-type-archive-resource .resources-content-area .resources-accordion .resource-accordion-button h4 {
         padding: 5px;
         text-align: center;
         color: #971E16;
         text-decoration: none; }
-      .resources-content-area .resources-accordion .resource-accordion-button .button-chevron {
+      .post-type-archive-resource .resources-content-area .resources-accordion .resource-accordion-button .button-chevron {
         width: 43px;
         height: 43px;
         display: -ms-flexbox;
@@ -1314,20 +1318,21 @@ div aside.vatjss-biz-hours-class {
         position: absolute;
         right: 0;
         top: 0; }
-      .resources-content-area .resources-accordion .resource-accordion-button .button-chevron-toggle-on {
+      .post-type-archive-resource .resources-content-area .resources-accordion .resource-accordion-button .button-chevron-toggle-on {
         transform: rotate(90deg); }
-    .resources-content-area .resources-accordion div.resource-accordion-button.resource-accordion-button-toggle-on {
+    .post-type-archive-resource .resources-content-area .resources-accordion div.resource-accordion-button.resource-accordion-button-toggle-on {
       background-color: black; }
-      .resources-content-area .resources-accordion div.resource-accordion-button.resource-accordion-button-toggle-on:hover h4 {
-        background-color: rgba(151, 30, 22, 0.3); }
-  .resources-content-area .resource-accordion-section {
+      .post-type-archive-resource .resources-content-area .resources-accordion div.resource-accordion-button.resource-accordion-button-toggle-on:hover h4 {
+        background-color: rgba(151, 30, 22, 0.3);
+        cursor: pointer; }
+  .post-type-archive-resource .resources-content-area .resource-accordion-section {
     height: 0;
     overflow: hidden; }
-  .resources-content-area .resource-accordion-toggle-on {
+  .post-type-archive-resource .resources-content-area .resource-accordion-toggle-on {
     height: auto;
     background-color: black; }
   @media (min-width: 768px) {
-    .resources-content-area {
+    .post-type-archive-resource .resources-content-area {
       background-image: none;
       background: black; } }
 

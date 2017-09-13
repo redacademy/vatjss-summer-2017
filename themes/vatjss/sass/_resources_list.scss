@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Resource List
 --------------------------------------------------------------*/
-
+.post-type-archive-resource {
 .site-main {
   overflow: auto;
   min-height: 75vh;
@@ -116,6 +116,10 @@
       }
     }
   }
+  .vatjss-resource-desktop-content {
+    height: 0;
+    overflow: hidden;
+  }
 
   .vatjss-mobile-accordion {
     @include desktop {
@@ -123,7 +127,7 @@
       margin: 200px 30px;
       .vatjss-resource-desktop-content {
         color: white;
-        height: 100px;
+        height: auto;
         h3.resource-subtitle {
           font-size: 1.7rem;
           margin: 0;
@@ -222,6 +226,7 @@
       position: relative;
       &:hover h4  {
         background-color: rgba(151, 30, 22, 0.2);
+        cursor: pointer;
       }
       &:first-child {
         border-top: 1px grey solid;
@@ -250,6 +255,7 @@
       background-color: black;
       &:hover h4  {
         background-color: rgba(151, 30, 22, 0.3);
+        cursor: pointer;
       }
     }
   }
@@ -267,4 +273,5 @@
     background-image: none;
     background: black;
   }
+}
 }
