@@ -1,16 +1,17 @@
 /* ABOUT PAGE STYLE */
+.page-template-about .vatjss-custom-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .vatjss-about p{
   line-height: rem(30); 
-  text-align: center;
   font-size: rem(18);
-  margin-left: auto;
-  margin-right: auto;
   width: 16rem;
-  padding-top: 50%;
   color: white;
 
     @include desktop {
-    padding-top: 25%;
     height: 9.75rem;
     width: 60.125rem;
     font-size: 1.875rem;
@@ -25,10 +26,12 @@ section.vatjss-about-content {
   display:flex;
   flex-direction: column;
   width: 100%;
+
     @include desktop {
       background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
         url(../../images/black_maple_background.png);
-      height: 65vh;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .vatjss-about-category {
@@ -68,34 +71,29 @@ section.vatjss-about-content {
 
   @include desktop {
     display: flex;
-    justify-content: space-between;
-    margin-top: rem(50);
+    margin-bottom: 0;
+    padding: 5rem 40px;
+
 
     div.vatjss-all-buttons {
       border: $border_grey;
       background: $background_red;
       height: rem(160);
-      width: rem(663);
       border-radius: rem(10);
-      margin-top: rem(16);
-      margin-bottom: rem(35);
       overflow: scroll;
     }
   }
 }
+
+div div.vatjss-first {
+  @include desktop {
+
+  }
+}
+
 .page-template-about div div h2.vatjss-hover-title{
   padding-left: 280px;
   padding-top: 45px;
-}
-
-.page-template-about div div.vatjss-first {
-  margin-left: rem(40); 
-  margin-right: rem(20);
-}
-
-.page-template-about div div.vatjss-second {
-  margin-right: rem(40);
-  margin-left: rem(20);
 }
 
 @include desktop {
@@ -106,7 +104,9 @@ section.vatjss-about-content {
     }
     p { 
       opacity: 0; 
-      transition: opacity 0.5s linear; }
+      transition: opacity 0.5s linear; 
+      border: none;
+    }
   }
 
   div.vatjss-hover:hover{
@@ -123,13 +123,7 @@ section.vatjss-about-content {
 //staff content
 .page-template-about .vatjss-staff-content {
   background-color: black;
-  margin-bottom: rem(-1);  //**
-  
-  @include desktop {
-   padding-top: 50px;
-   padding-left: 50px;
-   padding-bottom: 25%;
-  }
+  margin-bottom: rem(-1);  
 }
 
 .page-template-about div.vatjss-staff-img {
@@ -137,32 +131,41 @@ section.vatjss-about-content {
   width: 100%;
 
   @include desktop {
-  position: absolute;
   height: 485px;
   width: 90%;
+  margin-left: 50px;
   }
 }
 
 .page-template-about .vatjss-staff-parag {
   margin: 0 auto;
-  width: 90%;
+  padding-left: 16px;
+
   
    @include desktop {
     height: rem(300);
-    width: 45%;
     font-size: 1.5625rem;
     line-height: 2.0625rem;
     left: 730px;
     position: absolute;
     overflow: auto;
+    p{
+      padding-right: 50px;      
+    }
    }
  }
 
 .page-template-about .vatjss-staff {
+
   background: black;
   display: flex;
   flex-direction: column;
   color: #fff;
+
+  @include desktop {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .page-template-about .vatjss-read-more-button {
@@ -171,11 +174,11 @@ section.vatjss-about-content {
   width: rem(160);  
   background-color: $background_red;  
   border-radius: rem(5);
-  overflow: auto;  
   margin: 0 auto;
   
   a.vatjss-button-link {
     color: $color_white;
+    text-decoration: none;
 
     span.vatjss-right-arrow {
       padding-left: rem(20);
@@ -188,12 +191,11 @@ section.vatjss-about-content {
     width: rem(204);	
     padding-top: rem(9);
     padding-bottom: rem(44);
-    margin-top: rem(135); 
-    position: relative;
-    left: rem(88);
-    top: rem(210);
     font-size: rem(24);
     border-radius: rem(10);
+    position: absolute;
+    left: 730px;
+    margin-top: 350px;
 
     a span.vatjss-right-arrow {
       display: none;

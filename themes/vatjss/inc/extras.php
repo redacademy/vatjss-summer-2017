@@ -43,8 +43,6 @@ function vatjss_about_dynamic_css() {
 			url({$image}) no-repeat center bottom;
 		height: 100vh;
 		background-size: cover;
-		margin: 0;
-		padding: 0;
 	}";
 	wp_add_inline_style( 'vatjss-style', $banner_css );
 }
