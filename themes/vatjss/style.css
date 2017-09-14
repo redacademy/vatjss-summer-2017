@@ -1418,6 +1418,18 @@ div aside.vatjss-biz-hours-class {
 .menu-menu-container a {
   text-transform: uppercase; }
 
+body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap input.wpcf7-form-control.wpcf7-text {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  height: 50px;
+  border-radius: 8px; }
+
+body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap textarea.wpcf7-textarea {
+  height: 166px;
+  padding: 15px;
+  border-radius: 8px; }
+
 @media (min-width: 768px) {
   body.page-template-contact .tab.vatjss-flex-container-no-wrap {
     padding: 0 15px; }
@@ -2164,11 +2176,26 @@ object {
   .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form label, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container label {
     color: #fff; }
   .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form input, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container input {
-    width: 100%; }
+    width: 100%;
+    padding: 15px;
+    height: 50px;
+    border-radius: 8px; }
   .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form select, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container select {
     background-color: #fff;
     width: 100%;
     padding: 5px; }
+  .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form input.wpcf7-submit, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container input.wpcf7-submit {
+    width: auto;
+    background-color: #000;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    color: #fff;
+    font-size: 0.875rem; }
+    .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form input.wpcf7-submit:hover, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container input.wpcf7-submit:hover {
+      background-color: gray; }
+  .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form .vatjss-contact-bottom, .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .vatjss-contact-bottom {
+    text-align: center; }
   .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container {
     color: #fff; }
     .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container ul {

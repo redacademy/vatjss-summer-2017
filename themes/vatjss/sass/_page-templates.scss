@@ -769,11 +769,30 @@
       }
       input{
         width: 100%;
+        padding: 15px;
+        height: 50px;
+        border-radius: 8px;
       }
       select{
         background-color: $color_white;
         width: 100%;
         padding: 5px;
+      }
+      input.wpcf7-submit{
+        width: auto;
+        background-color:$background_black;
+        box-shadow: none;
+        text-shadow: none;
+        border:none;
+        color:$color_white;
+        font-size: rem(14);
+        &:hover{
+          background-color: lighten($background_black,50%);
+        }
+      }
+      .vatjss-contact-bottom{
+        text-align: center;
+        
       }
     }
     .vatjss-volunteer-container{
