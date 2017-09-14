@@ -27,9 +27,9 @@ get_header(); ?>
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-mobile-30 vatjss-services-sidebar vatjss-hidden-mobile">
 							<div class="vatjss-services-sidebar-btns">
-								<button><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></button>
-								<button>Resources</button>
-								<button>FAQ</button>
+								<button><a href="#housing-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></a></button>
+								<button><a href="#resources">Resources</a></button>
+								<button><a href="#faq">FAQ</a></button>
 							</div>
 						</div>
 						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
@@ -72,7 +72,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></h2>
+								<h2 id="housing-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></h2>
 								<?php echo CFS()->get( 'housing_services' ); ?>
 							</div>
 						</div>
@@ -82,7 +82,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2>Resources</h2>
+								<h2 id="resources">Resources</h2>
 								<p>We provide a number of resources to help with housing issues. This range from landlord dealings to finding emergency shelters.</p>
 								<a href="/resource" class="vatjss-text-uppercase">learn more</a>
 							</div>
@@ -93,7 +93,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2>FAQs</h2>
+								<h2 id="faq">FAQs</h2>
 							<?php
 								$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
 								$faq_posts = get_posts( $args );

@@ -92,6 +92,15 @@ function vatjss_scripts() {
 	if( is_archive( 'resource' ) ) {
 		wp_enqueue_script( 'vatjss-resource', get_template_directory_uri() . '/build/js/resource.min.js', array( 'jquery' ), '20130115', true );	
 	}
+	if( is_single( 'financial-services' ) ) {
+		wp_enqueue_script( 'vatjss-services', get_template_directory_uri() . '/build/js/services.min.js', array( 'jquery' ), '20130115', true );	
+	}
+	if( is_single( 'housing-services' ) ) {
+		wp_enqueue_script( 'vatjss-services', get_template_directory_uri() . '/build/js/services.min.js', array( 'jquery' ), '20130115', true );	
+	}
+	if( is_single( 'justice-services' ) ) {
+		wp_enqueue_script( 'vatjss-services', get_template_directory_uri() . '/build/js/services.min.js', array( 'jquery' ), '20130115', true );	
+	}
 
 	wp_enqueue_script( 'vatjss-flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array( 'jquery' ), '20130115', true );
 	wp_enqueue_script( 'vatjss-vatjss-carousel', get_template_directory_uri() . '/build/js/vatjss-carousel.min.js', array( 'vatjss-flickity' ), '20130115', true );

@@ -27,10 +27,12 @@ get_header(); ?>
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-desktp-30 vatjss-services-sidebar vatjss-hidden-mobile">
 							<div class="vatjss-services-sidebar-btns">
-								<button><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></button>
-								<button><?php $props = CFS()->get_field_info( 'tax_clinic' ); echo $props['label'];  ?></button>
-								<button>Resources</button>
-								<button>FAQ</button>
+								<?php $props1 = CFS()->get_field_info( 'income_assist' ); ?>
+								<button><a href="#income-assist"><?php echo $props1['label']; ?></a></button>
+								<?php $props2 = CFS()->get_field_info( 'tax_clinic' ); ?>
+								<button><a href="#tax-clinic"> <?php echo $props2['label']; ?></a></button>
+								<button><a href='#resource'>Resources</a></button>
+								<button><a href='#faq'>FAQ</a></button>
 							</div>
 						</div>
 						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
@@ -44,11 +46,11 @@ get_header(); ?>
 								</div>
 							</header>
 							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
-								<button class="accordion-services"><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></button>
+								<button class="accordion-services"><?php echo $props1['label'];?></button>
 								<div class="panel">
 									<?php echo CFS()->get( 'income_assist' ); ?>
 								</div>
-								<button class="accordion-services"><?php $props = CFS()->get_field_info( 'tax_clinic' ); echo $props['label'];  ?></button>
+								<button class="accordion-services"><?php echo $props2['label'];  ?></button>
 								<div class="panel">
 									<?php echo CFS()->get( 'tax_clinic' ); ?>
 								</div>
@@ -77,7 +79,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2><?php $props = CFS()->get_field_info( 'income_assist' ); echo $props['label'];  ?></h2>
+								<h2 id="income-assist"><?php echo $props1['label'];  ?></h2>
 								<?php echo CFS()->get( 'income_assist' ); ?>
 							</div>
 						</div>
@@ -87,7 +89,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2><?php $props = CFS()->get_field_info( 'tax_clinic' ); echo $props['label'];  ?></h2>
+								<h2 id="tax-clinic"><?php echo $props2['label'];  ?></h2>
 								<p><?php echo CFS()->get( 'tax_clinic' ); ?></p>
 							</div>
 						</div>
@@ -97,7 +99,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2>Resources</h2>
+								<h2 id="resource">Resources</h2>
 								<p>We provide a number of resources to help with housing issues. This range from landlord dealings to finding emergency shelters.</p>
 								<a href="/resource" class="vatjss-text-uppercase">learn more</a>
 							</div>
@@ -108,7 +110,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2>FAQs</h2>
+								<h2 id="faq">FAQs</h2>
 							<?php
 								$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
 								$faq_posts = get_posts( $args );

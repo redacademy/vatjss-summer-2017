@@ -27,10 +27,10 @@ get_header(); ?>
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-mobile-30 vatjss-services-sidebar vatjss-hidden-mobile">
               <div class="vatjss-services-sidebar-btns">
-                <button><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></button>
-                <button><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></button>
-                <button>Resources</button>
-                <button>FAQ</button>
+                <button><a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></a></button>
+                <button><a href="#extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></a></button>
+                <button><a href="#resources">Resources</a></button>
+                <button><a href="#faq">FAQ</a></button>
               </div>
 						</div>
 						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
@@ -118,7 +118,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></h2>
+								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></h2>
 								<?php echo CFS()->get( 'alternative_measures_adults' ); ?>
 							</div>
 						</div>
@@ -128,7 +128,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></h2>
+								<h2 id="extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></h2>
 								<?php echo CFS()->get( 'extrajudicial_sancition' ); ?>
 							</div>
 						</div>
@@ -138,7 +138,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-                <h2>Resources</h2>
+                <h2 id="resources">Resources</h2>
                 <p>We provide a number of resources to help with housing issues. This range from landlord dealings to finding emergency shelters.</p>
                 <a href="/resource" class="vatjss-service-justice-resource-btn vatjss-text-uppercase">learn more</a>
 							</div>
@@ -149,7 +149,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2>FAQs</h2>
+								<h2 id="faq">FAQs</h2>
 							<?php
 								$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
 								$faq_posts = get_posts( $args );
