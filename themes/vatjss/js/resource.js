@@ -1,7 +1,7 @@
 (function($){
   function resourceAccordion() {
     $('.resource-accordion-button').on('click', function(){
-      if ( $(this).next().hasClass("resource-accordion-toggle-on") ) {
+      if ( $(this).next().hasClass('resource-accordion-toggle-on') ) {
         $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
         $(this).children('.button-chevron').removeClass('button-chevron-toggle-on');
         $(this).removeClass('resource-accordion-button-toggle-on');
@@ -38,7 +38,7 @@
   }
   if ( windowWidth >= 769 ) {
     $(document).ready(function() {
-      $("a[href^='#']").on('click', function(event) {
+      $('a[href^="#"]').on('click', function(event) {
 
         if (this.hash) {
           event.preventDefault();

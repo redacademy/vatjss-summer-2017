@@ -46,29 +46,30 @@ get_header(); ?>
 								</div>
 							</header>
 							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
-								<button class="accordion-services"><?php echo $props1['label'];?></button>
-								<div class="panel">
-									<?php echo CFS()->get( 'income_assist' ); ?>
-								</div>
-								<button class="accordion-services"><?php echo $props2['label'];  ?></button>
-								<div class="panel">
-									<?php echo CFS()->get( 'tax_clinic' ); ?>
-								</div>
+								<div class="vatjss-service-faq-btns">
+									<button class="accordion-services"><?php echo $props1['label'];?></button>
+									<div class="panel">
+										<?php echo CFS()->get( 'income_assist' ); ?>
+									</div>
+									<button class="accordion-services"><?php echo $props2['label'];  ?></button>
+									<div class="panel">
+										<?php echo CFS()->get( 'tax_clinic' ); ?>
+									</div>
 
-								<button class="accordion-services">Resources</button>
-								<?php get_template_part( 'template-parts/resources', 'financial' ); ?>
+									<button class="accordion-services">Resources</button>
+									<?php get_template_part( 'template-parts/resources', 'financial' ); ?>
 
-								<button class="accordion-services">FAQ</button>
-								<div class="panel">
-									<?php
-										$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
-										$faq_posts = get_posts( $args );
-									?>
-									<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
-									<h3><?php echo $faq->post_title ?></h3>
-									<p><?php echo $faq->post_content ?></p>
-									<?php endforeach; wp_reset_postdata(); ?>
-								</div>
+									<button class="accordion-services">FAQ</button>
+									<div class="panel">
+										<?php
+											$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
+											$faq_posts = get_posts( $args );
+										?>
+										<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
+										<h3><?php echo $faq->post_title ?></h3>
+										<p><?php echo $faq->post_content ?></p>
+										<?php endforeach; wp_reset_postdata(); ?>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -110,7 +111,7 @@ get_header(); ?>
 				<section class="vatjss-service-faq-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-80">
+							<div class="vatjss-flex-item-desktop-80 vatjss-service-faq-btns">
 								<h2 id="faq">FAQs</h2>
 							<?php
 								$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
