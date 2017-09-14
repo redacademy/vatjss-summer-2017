@@ -13,20 +13,28 @@
     }
   });
   var acc = document.getElementsByClassName("accordion-services");
-  var i;
+  var i
   for (i = 0; i < acc.length; i++) {
       acc[i].onclick = function(){
-          /* Toggle between adding and removing the "active" class,
-          to highlight the button that controls the panel */
-          this.classList.toggle("active");
-  
-          /* Toggle between hiding and showing the active panel */
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-              panel.style.display = "none";
-          } else {
-              panel.style.display = "block";
+        for (var j=0; j< acc.length; j++){
+          if(this != acc[j]){
+            acc[j].classList.remove("active");
+            if (acc[j].nextElementSibling.style.display === "block") {
+              acc[j].nextElementSibling.style.display = "none";
+            }
           }
+        }
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
       }
   }
   $('#vatjss-justice-service-carousel .circle-container button').click(function(){

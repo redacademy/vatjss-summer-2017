@@ -25,21 +25,21 @@ get_header(); ?>
 				</div>
 				<div class="vatjss-container-fluid vatjss-serivce-no-padding">
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-						<div class="vatjss-flex-item-mobile-30 vatjss-services-sidebar vatjss-hidden-mobile">
+						<div class="vatjss-flex-item-desktop-20 vatjss-services-sidebar vatjss-hidden-mobile">
               <div class="vatjss-services-sidebar-btns">
-                <button><a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></a></button>
-                <button><a href="#extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></a></button>
-                <button><a href="#resources">Resources</a></button>
-                <button><a href="#faq">FAQ</a></button>
+                <a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></a>
+                <a href="#extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></a>
+                <a href="#resources">Resources</a>
+                <a href="#faq">FAQ</a>
               </div>
 						</div>
-						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
+						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-80">
 							<header class="entry-header vatjss-flex-container-no-wrap">
-								<div class="vatjss-service-title vatjss-flex-item-desktop-30">
+								<div class="vatjss-service-title vatjss-flex-item-desktop-40">
 									<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 									<?php the_content(); ?>
                 </div>
-                <div id="vatjss-justice-service-carousel" class="vatjss-justice-service-carousel vatjss-flex-item-desktop-70">
+                <div id="vatjss-justice-service-carousel" class="vatjss-justice-service-carousel vatjss-flex-item-desktop-60">
                   <div class="vatjss-carousel-background"></div>
                   <ul class='circle-container'>
                     <li><button value="1">1</button></li>
@@ -62,37 +62,39 @@ get_header(); ?>
                 </div>
 							</header>
 							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
-                <button class="accordion-services">Restorative Justice</button>
-								<div class="panel">
-									<p>
-                    Restorative justice process focuses on repairing relationships among those affected by crime - the victim, the offender, 
-                    their families and the community - and to empower individuals to formulate appropriate responses and strategies
-                    to deal with the crime and participate directly in processes that affect the overall well-being of the community.
-                  </p>
-                </div>
-                
-                <button class="accordion-services"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></button>
-								<div class="panel">
-									<?php echo CFS()->get( 'alternative_measures_adults' ); ?>
-                </div>
-                <button class="accordion-services"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></button>
-								<div class="panel">
-									<?php echo CFS()->get( 'extrajudicial_sancition' ); ?>
-								</div>
+								<div class="vatjss-service-faq-btns">
+									<button class="accordion-services">Restorative Justice</button>
+									<div class="panel">
+										<p>
+											Restorative justice process focuses on repairing relationships among those affected by crime - the victim, the offender, 
+											their families and the community - and to empower individuals to formulate appropriate responses and strategies
+											to deal with the crime and participate directly in processes that affect the overall well-being of the community.
+										</p>
+									</div>
+									
+									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></button>
+									<div class="panel">
+										<?php echo CFS()->get( 'alternative_measures_adults' ); ?>
+									</div>
+									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></button>
+									<div class="panel">
+										<?php echo CFS()->get( 'extrajudicial_sancition' ); ?>
+									</div>
 
-								<button class="accordion-services">Resources</button>
-									<?php get_template_part('template-parts/resources', 'justice'); ?>
+									<button class="accordion-services">Resources</button>
+										<?php get_template_part('template-parts/resources', 'justice'); ?>
 
-								<button class="accordion-services">FAQ</button>
-								<div class="panel">
-									<?php
-										$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
-										$faq_posts = get_posts( $args );
-									?>
-									<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
-									<h3><?php echo $faq->post_title ?></h3>
-									<p><?php echo $faq->post_content ?></p>
-									<?php endforeach; wp_reset_postdata(); ?>
+									<button class="accordion-services">FAQ</button>
+									<div class="panel">
+										<?php
+											$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);
+											$faq_posts = get_posts( $args );
+										?>
+										<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
+										<h3><?php echo $faq->post_title ?></h3>
+										<p><?php echo $faq->post_content ?></p>
+										<?php endforeach; wp_reset_postdata(); ?>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -148,7 +150,7 @@ get_header(); ?>
 				<section class="vatjss-service-faq-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80 vatjss-service-faq-btns">
 								<h2 id="faq">FAQs</h2>
 							<?php
 								$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);

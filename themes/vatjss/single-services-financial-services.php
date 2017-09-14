@@ -25,17 +25,17 @@ get_header(); ?>
 				</div>
 				<div class="vatjss-container-fluid vatjss-serivce-no-padding">
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-						<div class="vatjss-flex-item-desktp-30 vatjss-services-sidebar vatjss-hidden-mobile">
+						<div class="vatjss-flex-item-desktop-20 vatjss-services-sidebar vatjss-hidden-mobile">
 							<div class="vatjss-services-sidebar-btns">
 								<?php $props1 = CFS()->get_field_info( 'income_assist' ); ?>
-								<button><a href="#income-assist"><?php echo $props1['label']; ?></a></button>
+								<a href="#income-assist"><?php echo $props1['label']; ?></a>
 								<?php $props2 = CFS()->get_field_info( 'tax_clinic' ); ?>
-								<button><a href="#tax-clinic"> <?php echo $props2['label']; ?></a></button>
-								<button><a href='#resource'>Resources</a></button>
-								<button><a href='#faq'>FAQ</a></button>
+								<a href="#tax-clinic"> <?php echo $props2['label']; ?></a>
+								<a href='#resource'>Resources</a>
+								<a href='#faq'>FAQ</a>
 							</div>
 						</div>
-						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
+						<div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-80">
 							<header class="entry-header">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'full' ); ?>
@@ -69,6 +69,7 @@ get_header(); ?>
 									<p><?php echo $faq->post_content ?></p>
 									<?php endforeach; wp_reset_postdata(); ?>
 								</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -78,7 +79,7 @@ get_header(); ?>
 				<section class="vatjss-service-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="income-assist"><?php echo $props1['label'];  ?></h2>
 								<?php echo CFS()->get( 'income_assist' ); ?>
 							</div>
@@ -88,7 +89,7 @@ get_header(); ?>
 				<section class="vatjss-service-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="tax-clinic"><?php echo $props2['label'];  ?></h2>
 								<p><?php echo CFS()->get( 'tax_clinic' ); ?></p>
 							</div>
@@ -98,7 +99,7 @@ get_header(); ?>
 				<section class="vatjss-service-red-maple-background-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="resource">Resources</h2>
 								<p>We provide a number of resources to help with housing issues. This range from landlord dealings to finding emergency shelters.</p>
 								<a href="/resource" class="vatjss-text-uppercase">learn more</a>
@@ -109,7 +110,7 @@ get_header(); ?>
 				<section class="vatjss-service-faq-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="faq">FAQs</h2>
 							<?php
 								$args = array( 'post_type' => 'faq', 'orderby' => 'date', 'order' => 'ASC',);

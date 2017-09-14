@@ -752,6 +752,10 @@ a {
     .site-header .search-form .search-submit {
       display: none; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-navigation li {
+    font-size: 0.75rem; } }
+
 @media (max-width: 767px) {
   .site-header {
     top: 0;
@@ -1641,6 +1645,9 @@ object {
     color: #fff;
     max-width: 800px;
     margin: 0 auto; }
+  .post-type-archive-services .vatjss-service-hero p:last-child {
+    column-count: 2;
+    text-align: left; }
 
 .post-type-archive-services .vatjss-services-section-container .vatjss-container {
   padding: 0; }
@@ -1652,6 +1659,7 @@ object {
   max-width: 35%; }
 
 .post-type-archive-services .vatjss-services-section {
+  padding: 40px 0;
   position: relative;
   overflow: hidden; }
   .post-type-archive-services .vatjss-services-section h2 {
@@ -1680,7 +1688,8 @@ object {
     text-decoration: none;
     font-size: 0.875rem;
     display: inline-block;
-    float: right; }
+    float: right;
+    border-radius: 5px; }
     .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
       position: relative;
       top: 1px;
@@ -1713,7 +1722,8 @@ object {
 .services-template-default .vatjss-service-hero {
   background-color: #000;
   position: relative;
-  padding: 20px 0; }
+  padding: 20px 0;
+  min-height: 70vh; }
   .services-template-default .vatjss-service-hero .vatjss-btn-section {
     margin: 20px 15px; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .vatjss-flex-item-mobile-33 {
@@ -1769,7 +1779,7 @@ object {
     padding: 10px 20px;
     border-radius: 5px; }
 
-.services-template-default .vatjss-mobile-accordion button.accordion-services, .services-template-default .vatjss-service-faq-section button.accordion-services {
+.services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services {
   background-color: #971E16;
   box-shadow: none;
   text-shadow: none;
@@ -1785,13 +1795,13 @@ object {
   border-bottom: 1px solid white;
   font-size: 1rem; }
 
-.services-template-default .vatjss-mobile-accordion button.accordion-services:last-child, .services-template-default .vatjss-service-faq-section button.accordion-services:last-child {
-  border-bottom: none; }
-
-.services-template-default .vatjss-mobile-accordion button.accordion-services.active, .services-template-default .vatjss-mobile-accordion button.accordion-services:hover, .services-template-default .vatjss-service-faq-section button.accordion-services.active, .services-template-default .vatjss-service-faq-section button.accordion-services:hover {
+.services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services.active, .services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services:hover, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services.active, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services:hover {
   background-color: #666; }
 
-.services-template-default .vatjss-mobile-accordion div.panel, .services-template-default .vatjss-service-faq-section div.panel {
+.services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services:last-child, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services:last-child {
+  border: none; }
+
+.services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns div.panel, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns div.panel {
   padding: 0 18px;
   background-color: white;
   display: none;
@@ -1818,7 +1828,8 @@ object {
   left: 0;
   padding-left: 0; }
 
-.services-template-default .vatjss-financial-services .vatjss-services-sidebar button, .services-template-default .vatjss-home-services .vatjss-services-sidebar button {
+.services-template-default .vatjss-financial-services .vatjss-services-sidebar a, .services-template-default .vatjss-home-services .vatjss-services-sidebar a {
+  display: inline-block;
   width: 60%;
   background: #971E16;
   border: none;
@@ -1828,10 +1839,19 @@ object {
   color: white;
   border-radius: 0;
   padding: 30px 10px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none; }
+  .services-template-default .vatjss-financial-services .vatjss-services-sidebar a:hover, .services-template-default .vatjss-home-services .vatjss-services-sidebar a:hover {
+    background-color: #6a1510; }
+
+.services-template-default .vatjss-financial-services .vatjss-services-sidebar a {
+  width: 56%; }
 
 .services-template-default .vatjss-justice-services .entry-header {
-  display: block; }
+  display: block;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .services-template-default .vatjss-justice-services .vatjss-service-section .vatjss-flex-item-desktop-70 {
   border-bottom: 1px solid white; }
@@ -1848,7 +1868,6 @@ object {
 .services-template-default .vatjss-justice-services .vatjss-service-title {
   padding: 10px;
   width: 100%;
-  height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5)), url("../../images/syim-photo-3.jpg");
   background-position: center;
   background-size: cover; }
@@ -1935,8 +1954,9 @@ object {
   left: 0;
   padding-left: 0; }
 
-.services-template-default .vatjss-justice-services .vatjss-services-sidebar button {
-  width: 85%;
+.services-template-default .vatjss-justice-services .vatjss-services-sidebar a {
+  display: inline-block;
+  width: 78%;
   display: block;
   background: #971E16;
   border: none;
@@ -1946,7 +1966,9 @@ object {
   color: white;
   border-radius: 0;
   padding: 30px 10px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center; }
 
 .services-template-default .vatjss-service-faq-section {
   background: #000; }
@@ -2270,6 +2292,13 @@ object {
       height: 100%;
       box-shadow: none;
       text-shadow: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .services-template-default .vatjss-flex-item-desktop-80 {
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%; }
+  .services-template-default .vatjss-financial-services .vatjss-services-sidebar a {
+    width: 53%; } }
 
 @media (min-width: 768px) {
   body:not(.home) .site-header-background {
@@ -2606,7 +2635,6 @@ section.vatjss-about-content {
     display: none; } }
 
 /*Search Page*/
-<<<<<<< HEAD
 .search-results .content-area {
   overflow: auto; }
 
@@ -2642,28 +2670,6 @@ section.vatjss-about-content {
       .search-results .entry-header .entry-title a:hover {
         text-decoration: underline;
         cursor: pointer; }
-=======
-.search {
-  margin: 50.59px auto 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1120px;
-  height: 100vh; }
-  .search .page-title {
-    margin: 100px;
-    text-transform: uppercase;
-    font-size: 2.5rem; }
-  .search .entry-header {
-    padding: 50px;
-    width: 100%; }
-    .search .entry-header .entry-title {
-      font-size: 2rem; }
-      .search .entry-header .entry-title a {
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #971E16; }
->>>>>>> about page more functional; separate the hover buttons
 
 /* 404 PAGE */
 body.error404 header.site-header {

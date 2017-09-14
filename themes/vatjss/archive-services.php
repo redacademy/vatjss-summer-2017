@@ -49,7 +49,7 @@ get_header(); ?>
               <header class="entry-header">
                 <img class="vatjss-service-icons vatjss-hidden-mobile" src=<?php echo CFS()->get( 'icon' ); ?> />
                 <?php the_title( sprintf( '<h2 class="entry-title">'), '</h2>' ); ?>
-                <p><?php the_content(); ?></p> 
+                <div class="vatjss-hidden-desktop"><?php the_content(); ?></div> 
                 <a class="vatjss-service-learn-btn" href="<?php echo get_permalink() ?>">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
               </header>
             </section>
