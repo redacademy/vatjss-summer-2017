@@ -1571,6 +1571,18 @@ object {
   height: 20vh; }
   .vatjss-home-mobile-subscribe-banner button {
     font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .vatjss-home-mobile-subscribe-banner {
+      height: 0; } }
+
+.on-subscribe {
+  height: 0; }
+
+.on-subscribe-click {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(151, 30, 22, 0.4); }
 
 @media (min-width: 768px) {
   .page-template-front-page footer .vatjss-footer-web {

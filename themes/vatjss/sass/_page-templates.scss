@@ -74,6 +74,18 @@
   button{
     font-size: rem(24);
   }
+  @include desktop {
+    height:0;
+  }
+}
+.on-subscribe {
+  height: 0;
+}
+.on-subscribe-click {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(151, 30, 22, 0.4);
 }
 
 //FRONT PAGE FOOTER

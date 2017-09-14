@@ -101,7 +101,9 @@ function vatjss_scripts() {
 	if( is_single( 'justice-services' ) ) {
 		wp_enqueue_script( 'vatjss-services', get_template_directory_uri() . '/build/js/services.min.js', array( 'jquery' ), '20130115', true );	
 	}
-
+	if( is_front_page() ) {
+		wp_enqueue_script( 'vatjss-front-page', get_template_directory_uri() . '/build/js/front-page.min.js', array( 'jquery' ), '20130115', true );	
+	}
 	wp_enqueue_script( 'vatjss-flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array( 'jquery' ), '20130115', true );
 	wp_enqueue_script( 'vatjss-vatjss-carousel', get_template_directory_uri() . '/build/js/vatjss-carousel.min.js', array( 'vatjss-flickity' ), '20130115', true );
 	wp_enqueue_script( 'vatjss-main', get_template_directory_uri() . '/build/js/main.min.js', array( 'jquery' ), '20130115', true );

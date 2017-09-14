@@ -66,7 +66,8 @@ get_header(); ?>
       </div>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
-      <button>Subscribe</button>
+      <button class="subscribe">Subscribe</button>
+      <div class="on-subscribe"><?php get_sidebar(); ?></div>
     </section>
   </main>
 </div>
