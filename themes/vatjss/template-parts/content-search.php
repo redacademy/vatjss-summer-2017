@@ -20,5 +20,6 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<a href=<?php echo get_permalink(); ?> class="vatjss-search-read-btn">Read More</a>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

@@ -1129,7 +1129,7 @@ div aside.vatjss-biz-hours-class {
       z-index: 1; } }
 
 .post-type-archive-resource .resources-content-area {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/black_maple_background.png");
+  background-image: url("../../images/black_maple_background.png");
   background-position: top right;
   background-repeat: repeat; }
   @media (min-width: 768px) {
@@ -1549,7 +1549,7 @@ object {
   .page-template-front-page footer .vatjss-footer-icons {
     display: none; } }
 
-.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content {
+.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .single .site-content {
   padding-top: 5.125rem; }
 
 .post-type-archive-staff h1 {
@@ -2195,6 +2195,10 @@ object {
     .page-template-contact .vatjss-mobile-tab-section .vatjss-volunteer-container .volunteer-form-contact-page {
       margin-top: 40px; }
 
+.single .entry-header img {
+  max-height: 250px;
+  width: auto; }
+
 @media (min-width: 992px) {
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {
     background-size: 250px;
@@ -2259,7 +2263,7 @@ object {
       .vatjss-home-hero .main-carousel .flickity-page-dots {
         position: relative;
         bottom: 30px; }
-  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content {
+  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .single .site-content {
     padding-top: 11.25rem; }
   .post-type-archive-staff h1 {
     text-align: center;
@@ -2572,26 +2576,41 @@ section.vatjss-about-content {
     display: none; } }
 
 /*Search Page*/
-.search {
-  margin: 50.59px auto 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1120px;
-  height: 100vh; }
-  .search .page-title {
-    margin: 100px;
-    text-transform: uppercase;
-    font-size: 2.5rem; }
-  .search .entry-header {
-    padding: 50px;
-    width: 100%; }
-    .search .entry-header .entry-title {
-      font-size: 2rem; }
-      .search .entry-header .entry-title a {
-        text-transform: uppercase;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #971E16; }
+.search-results .content-area {
+  overflow: auto; }
+
+.search-results .page-title {
+  font-size: 1.75rem; }
+
+.search-results .hentry {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 40px 0;
+  margin: 0; }
+  .search-results .hentry .vatjss-search-read-btn {
+    background-color: #971E16;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    display: inline-block; }
+    .search-results .hentry .vatjss-search-read-btn:hover {
+      background-color: #6a1510; }
+
+.search-results .hentry:last-child {
+  border-bottom: none; }
+
+.search-results .entry-header {
+  width: 100%; }
+  .search-results .entry-header .entry-title {
+    font-size: 1.3125rem;
+    margin: 0; }
+    .search-results .entry-header .entry-title a {
+      text-transform: uppercase;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #971E16; }
+      .search-results .entry-header .entry-title a:hover {
+        text-decoration: underline;
+        cursor: pointer; }
 
 /* 404 PAGE */
 body.error404 header.site-header {

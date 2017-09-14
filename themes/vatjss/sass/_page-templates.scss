@@ -89,7 +89,7 @@
   }
  }
 
-.post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact{
+.post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.single{
   .site-content{
     padding-top: rem(82);
   }
@@ -845,6 +845,14 @@
     }
   }
 }
+.single{
+  .entry-header{
+    img{
+      max-height: 250px;
+      width: auto;
+    }
+  }
+}
 @media(min-width:992px){
   .services-template-default{
     .vatjss-justice-services{
@@ -910,7 +918,7 @@
       }
     }
   }
-  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact{
+  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.single{
     .site-content{
       padding-top: rem(180);
     }
