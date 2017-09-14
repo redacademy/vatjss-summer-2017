@@ -19,7 +19,7 @@
 
 //resource page elements
 .resources-content-area {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../images/black_maple_background.png');
+  background-image: url('../../images/black_maple_background.png');
   background-position: top right;
   background-repeat: repeat;
   @include desktop {

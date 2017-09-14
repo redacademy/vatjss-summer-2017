@@ -1,5 +1,19 @@
 body.page-template-contact {
   @include desktop  {
+    .tab.vatjss-flex-container-no-wrap{
+      padding: 0 15px;
+      .vatjss-flex-item-desktop-50 {
+        padding: 0;
+        button {
+          &:hover {
+            background-color: rgba(151, 30, 22, 0.6);
+          }
+          &:focus:hover, &:active:hover {
+            background-color: $background_red;
+          }
+        }
+      }
+    }
     form.wpcf7-form div span.wpcf7-form-control-wrap {
       select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, input.wpcf7-form-control.wpcf7-text {
         width: 100%;
@@ -16,6 +30,17 @@ body.page-template-contact {
     }
     label {
       font-size: 1.3rem;
+    }
+    input {
+      text-transform: uppercase;
+      border-radius: 8px;
+    }
+    .volunteer-form-contact-page {
+      input {
+        height: 60px;
+        width: 100%;
+        
+      }
     }
   }
 }

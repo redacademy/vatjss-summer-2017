@@ -1388,6 +1388,14 @@ div aside.vatjss-biz-hours-class {
   display: block; }
 
 @media (min-width: 768px) {
+  body.page-template-contact .tab.vatjss-flex-container-no-wrap {
+    padding: 0 15px; }
+    body.page-template-contact .tab.vatjss-flex-container-no-wrap .vatjss-flex-item-desktop-50 {
+      padding: 0; }
+      body.page-template-contact .tab.vatjss-flex-container-no-wrap .vatjss-flex-item-desktop-50 button:hover {
+        background-color: rgba(151, 30, 22, 0.6); }
+      body.page-template-contact .tab.vatjss-flex-container-no-wrap .vatjss-flex-item-desktop-50 button:focus:hover, body.page-template-contact .tab.vatjss-flex-container-no-wrap .vatjss-flex-item-desktop-50 button:active:hover {
+        background-color: #971E16; }
   body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap input.wpcf7-form-control.wpcf7-text {
     width: 100%;
     margin: 0;
@@ -1399,7 +1407,13 @@ div aside.vatjss-biz-hours-class {
     padding: 15px;
     border-radius: 8px; }
   body.page-template-contact label {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  body.page-template-contact input {
+    text-transform: uppercase;
+    border-radius: 8px; }
+  body.page-template-contact .volunteer-form-contact-page input {
+    height: 60px;
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 # Media
