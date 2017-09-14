@@ -846,10 +846,12 @@
   }
 }
 .single{
-  .entry-header{
-    img{
-      max-height: 250px;
-      width: auto;
+  &:not(.services-template-default){
+    .entry-header{
+      img{
+        max-height: 250px;
+        width: auto;
+      }
     }
   }
 }
@@ -891,6 +893,23 @@
       }
       .site-header{
         background: rgba(151, 30, 22,0.5);
+        .search-form{
+          .search-field{
+            color:$color_white;
+            &::-webkit-input-placeholder {
+              color: $color_white;
+            }
+            &::-moz-placeholder {
+              color: $color_white;
+            }
+            &:-ms-input-placeholder {
+              color: $color_white;
+            }
+            &:-moz-placeholder {
+              color: $color_white;
+            }
+          }
+        }
         .menu{
           li{
             a{
