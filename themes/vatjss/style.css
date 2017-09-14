@@ -2553,10 +2553,13 @@ section.vatjss-about-content {
         background: #971E16;
         height: 10rem;
         border-radius: 0.625rem;
-        overflow: scroll; } }
+        overflow: scroll;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
 
 .page-template-about div div h2.vatjss-hover-title {
-  padding-left: 280px;
   padding-top: 45px; }
 
 @media (min-width: 768px) {

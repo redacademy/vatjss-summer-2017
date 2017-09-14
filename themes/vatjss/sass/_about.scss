@@ -73,14 +73,15 @@ section.vatjss-about-content {
     display: flex;
     margin-bottom: 0;
     padding: 5rem 40px;
-
-
+    
     div.vatjss-all-buttons {
       border: $border_grey;
       background: $background_red;
       height: rem(160);
       border-radius: rem(10);
       overflow: scroll;
+      display: flex;
+      justify-content: space-around;
     }
   }
 }
@@ -92,7 +93,7 @@ div div.vatjss-first {
 }
 
 .page-template-about div div h2.vatjss-hover-title{
-  padding-left: 280px;
+  //padding-left: 280px;
   padding-top: 45px;
 }
 
