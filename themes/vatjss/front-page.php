@@ -71,5 +71,5 @@ get_header(); ?>
     </section>
   </main>
 </div>
-<?php get_sidebar(); ?>
+<?php get_sidebar('footer-widget'); ?>
 <?php get_footer(); ?>

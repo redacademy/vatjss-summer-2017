@@ -1,6 +1,6 @@
 <?php
 /**
- * The sidebar containing the main widget area.s
+ * The footer widget containing the main widget area.s
  *
  * @package vatjss_Theme
  */
