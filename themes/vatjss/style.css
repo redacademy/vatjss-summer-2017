@@ -1410,6 +1410,10 @@ div aside.vatjss-biz-hours-class {
 .bypostauthor {
   display: block; }
 
+/* Nav Bar */
+.menu-menu-container a {
+  text-transform: uppercase; }
+
 @media (min-width: 768px) {
   body.page-template-contact .tab.vatjss-flex-container-no-wrap {
     padding: 0 15px; }
