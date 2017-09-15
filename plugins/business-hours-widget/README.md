@@ -1,4 +1,4 @@
-# VATJSS Business Hour Widget Plugin
+# VATJSS Business Hour Widget
 
 Customized plugin designed for Client(s) to change business hours in their back-end of WordPress. 
 

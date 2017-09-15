@@ -2756,8 +2756,10 @@ section.vatjss-about-content {
       height: auto;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       margin-bottom: 0;
-      padding: 5rem 40px; }
+      padding: 50px; }
       .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons {
         border: 1px solid #979797;
         background: #971E16;
@@ -2768,6 +2770,12 @@ section.vatjss-about-content {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around; } }
+
+@media (min-width: 768px) {
+  .vatjss-first, .vatjss-second {
+    width: 45%; }
+    .vatjss-first div:nth-child(2), .vatjss-first div:nth-child(4), .vatjss-second div:nth-child(2), .vatjss-second div:nth-child(4) {
+      margin-top: 55px; } }
 
 .page-template-about div div h2.vatjss-hover-title {
   padding-top: 45px; }
@@ -2796,7 +2804,7 @@ section.vatjss-about-content {
     .page-template-about div.vatjss-staff-img {
       height: 485px;
       width: 90%;
-      margin-left: 50px; } }
+      margin-left: 75px; } }
 
 .page-template-about .vatjss-staff-parag {
   margin: 0 auto;
