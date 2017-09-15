@@ -95,6 +95,7 @@
     @include desktop {
       height: 0;
       width: 0;
+      overflow: hidden;
 
       button {
         display: none;
@@ -132,12 +133,6 @@
       }
     }    
   }
-
-  .on-subscribe {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
   
   .on-subscribe-click {
     height: 100vh;
@@ -147,10 +142,6 @@
     top:0;
     background-color: rgba(151, 30, 22, 0.4);
     z-index: 100000;
-    @include desktop {
-      height:0;
-      width: 0;
-    }
     .vatjss-sidebar-widget-click {
       width: 80vw;
       height: 60vh;
@@ -174,6 +165,7 @@
       @include desktop {
         width: 0;
         height: 0;
+        overflow: hidden
       }
     }
   }
@@ -181,9 +173,11 @@
   .close {
     width: 0;
     height: 0;
+    overflow: hidden;
     @include desktop {
       width: 0;
       height: 0;
+      overflow: hidden;
     }
   }
   .close-click {
@@ -200,6 +194,7 @@
     @include desktop {
       width: 0;
       height: 0;
+      overflow: hidden;
     }
   }
 }

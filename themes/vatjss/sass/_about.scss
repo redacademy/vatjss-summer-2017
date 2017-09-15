@@ -35,8 +35,12 @@ section.vatjss-about-content {
     }
 
     .vatjss-about-category {
+      width: auto;
+      height: auto;
       @include desktop {
-        display: none;
+        width: 0;
+        height: 0;
+        overflow: hidden;
       }
     }
     
@@ -62,17 +66,24 @@ section.vatjss-about-content {
 }
 
 .vatjss-our-vision {
-  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 
   @include desktop {
-    display: unset;
+    width: auto;
+    height: auto;
   }
 }
 
 .page-template-about .vatjss-mission-buttons {
-  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 
   @include desktop {
+    width: auto;
+    height: auto;
     display: flex;
     margin-bottom: 0;
     padding: 5rem 40px;
@@ -202,7 +213,13 @@ div div.vatjss-first {
     margin-top: 350px;
 
     a span.vatjss-right-arrow {
-      display: none;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      @include desktop {
+        width: auto;
+        height: auto;
+      }
     }
   }   
 }
@@ -215,7 +232,11 @@ div div.vatjss-first {
 }
 
  .page-template-about footer .vatjss-footer-icons {
+   width: auto;
+   height: auto;
   @include desktop {
-    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
  }

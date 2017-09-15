@@ -10,9 +10,12 @@
 }
 
  .page-template-front-page footer .vatjss-footer-icons {
+   width: auto;
+   height: auto;
   @include desktop {
     width: 0;
     height: 0;
+    overflow: hidden;
   }
  }
 
@@ -279,7 +282,11 @@
         background-color: white;
         width: 0;
         height: 0;
-        overflow: auto;
+        overflow: hidden;
+        @include desktop {
+          width: auto;
+          height: auto;
+        }
       }
     }
   }
@@ -618,6 +625,11 @@
     .tabcontent {
       width: 0;
       height: 0;
+      overflow: hidden;
+      @include desktop {
+        width: auto;
+        height: auto;
+      }
     }
     .vatjss-desktop-staff-section{
       overflow: auto;
@@ -760,6 +772,11 @@
     .tabcontent {
       width: 0;
       height: 0;
+      overflow: hidden;
+      @include desktop {
+        width: auto;
+        height: auto;
+      }
     }
     .vatjss-contact-form{
       h3{
@@ -970,9 +987,12 @@
         float: none;
         font-size: rem(16);
         padding: rem(10) rem(15);
+        width: auto;
+        height: auto;
         .fa{
           width: 0;
           height: 0;
+          overflow: hidden;
         }
       }
     }
