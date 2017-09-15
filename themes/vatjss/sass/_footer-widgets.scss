@@ -44,10 +44,12 @@ div div aside#text-3 {
     padding-bottom: rem(10);
     border-radius: rem(10);
 		border: 3px solid #FFFFFF;	
-
 		&:focus {
 			color: $color_white;
 		}
+	}
+	form p input.wpcf7-text{
+		width: 80%;	
 	}
 
 	form p input.wpcf7-submit {
@@ -124,7 +126,7 @@ div aside.vatjss-biz-hours-class {
 	font-size: rem(14);
 
 		.vatjss-hours{
-			width: 460px;
+			text-align: center;
 			line-height: .6;
 		}
 
@@ -132,34 +134,33 @@ div aside.vatjss-biz-hours-class {
 			flex-direction: column;
 
 			.vatjss-hours {
-			padding-left: rem(112);
-			
 			}
 		}
 }
 
 .vatjss-widget-address p {
-	padding-left: rem(15);
-	margin: 0;
+	margin: 50px auto 0 auto;
 	line-height: rem(35); 
 	font-size: rem(14);
 	text-transform: uppercase;
-
+	text-align: center;
+	width: 80%;
 	span.widget_address {
 		width: 0;
 		height: 0;
 		overflow: hidden;
+		display: block;
 		@include desktop {
 			width: auto;
 			height: auto;
 		}
 	}	
 
-	@include desktop {
-		width: rem(147);
-		margin-left: rem(100);		
-		margin-top: rem(40);
-	}
+	// @include desktop {
+	// 	width: rem(147);
+	// 	margin-left: rem(100);		
+	// 	margin-top: rem(40);
+	// }
 }
 
 .vatjss-biz-hours-class {

@@ -238,6 +238,9 @@
 
 @include desktop {
   .home{
+    .on-subscribe{
+      height: auto;
+    }
     .vatjss-home-services-section{
       background-color:$background_black;
       color: $color_white;
