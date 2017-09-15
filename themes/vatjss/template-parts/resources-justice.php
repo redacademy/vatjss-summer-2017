@@ -33,7 +33,7 @@
           <h5><?php echo $term2_child->name ?></h5>
           <ul>
             <?php foreach ( $resource_posts as $resource ) : setup_postdata( $resource ); ?>
-              <li><a href="<?php echo $resources->link_url ?>" target="blank"><?php echo $resource->list_item $resources->link_url ?></a></li>
+              <li><a href="<?php echo $resource->link_url ?>" target="_blank"><?php echo $resource->list_item ?></a></li>
             <?php endforeach; wp_reset_postdata(); ?>
           </ul>
         <?php endforeach; wp_reset_postdata(); ?>
