@@ -21,7 +21,7 @@
           for (var j=0; j< acc.length; j++){
             if(this !== acc[j]){
               acc[j].classList.remove('active');
-              if (acc[j].nextElementSibling.style.display === 'block') {
+              if (acc[j].nextElementSibling.style.height >= 0) {
                 acc[j].nextElementSibling.style.display = 'none';
               }
             }
