@@ -1563,8 +1563,13 @@ object {
       height: 0;
       overflow: hidden; } }
 
-.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .single .site-content {
+.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
   padding-top: 5.125rem; }
+
+.search-no-results .search-form fieldset {
+  border: none; }
+  .search-no-results .search-form fieldset #search-form-input .icon-search {
+    display: none; }
 
 .post-type-archive-staff h1 {
   color: white; }
@@ -2334,7 +2339,7 @@ object {
       color: #fff; }
     body:not(.home) .site-header .fa-search {
       color: white; }
-  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .single .site-content {
+  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
     padding-top: 11.25rem; }
   .post-type-archive-staff h1 {
     text-align: center;

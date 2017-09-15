@@ -1,6 +1,7 @@
 (function($) {
   // Search icon animation
   $('#search-form-input .icon-search').click(function(){
+    console.log('test');
     $('#search-form-input .search-field').toggleClass('search-field-focus');
     $('#site-navigation .vatjss-mobile-logo').toggleClass('hide-item');
     $('#vatjss-nav-menu').toggleClass('hide-item');

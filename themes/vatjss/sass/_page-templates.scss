@@ -19,9 +19,22 @@
   }
  }
 
-.post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.single{
+.post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.search-no-results,.single{
   .site-content{
     padding-top: rem(82);
+  }
+}
+.search-no-results{
+  .search-form{
+    fieldset{
+      border: none;
+      #search-form-input{
+        .icon-search{
+          display: none;
+        }
+      }
+      
+    }
   }
 }
 .post-type-archive-staff{
@@ -930,7 +943,7 @@
       }
     }
   }
-  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.single{
+  .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.search-no-results,.single{
     .site-content{
       padding-top: rem(180);
     }
