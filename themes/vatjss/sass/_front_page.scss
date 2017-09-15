@@ -1,6 +1,12 @@
 
 /* Front page */
 .home {
+  .on-subscribe{
+    height: 0;
+  }
+  .on-subscribe-click{
+    height: auto;
+  }
   .vatjss-home-hero{
     padding-top: 134px;
     background-image:linear-gradient(rgba(151, 30, 22, 0.5) 0,rgba(151, 30, 22, 0.5)),url('../../images/bc_lake.png');
@@ -91,6 +97,15 @@
     height: 20vh;
     button{
       font-size: rem(24);
+      background-color:$color_black;
+      box-shadow: none;
+      text-shadow: none;
+      border:none;
+      color:$color_white;
+      padding: 10px 20px;
+      &:hover{
+        background-color: lighten($color_black, 10%);
+      }
     }
     @include desktop {
       height: 0;
@@ -128,8 +143,11 @@
     .vatjss-home-service-mobile-image{
       position: absolute;
       z-index: -1;
+      height:100%;
       img{
         display: block;
+        height: 100%;
+        object-fit: cover;
       }
     }    
   }
@@ -155,6 +173,21 @@
         background-color: black;
         border: 1px solid white;
         color: white;
+        text-align: center;
+        padding-top: 20px;
+        h2{
+          font-size: rem(18);
+          margin-top: 20px;
+        }
+        p{
+          margin-bottom:0;
+          width:80%;
+          margin: 10px auto 0 auto;
+        }
+        input.wpcf7-text{
+          width: 100%;
+          height: 40px;
+        }
       }
       span {
         width: 100%;
@@ -190,7 +223,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid grey;
+    border: none;
+    &:hover{
+      cursor: pointer;
+    }
     @include desktop {
       width: 0;
       height: 0;

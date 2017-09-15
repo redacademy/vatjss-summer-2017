@@ -2423,6 +2423,12 @@ object {
       margin: 0; } }
 
 /* Front page */
+.home .on-subscribe {
+  height: 0; }
+
+.home .on-subscribe-click {
+  height: auto; }
+
 .home .vatjss-home-hero {
   padding-top: 134px;
   background-image: linear-gradient(rgba(151, 30, 22, 0.5) 0, rgba(151, 30, 22, 0.5)), url("../../images/bc_lake.png");
@@ -2499,7 +2505,15 @@ object {
 .home .vatjss-home-mobile-subscribe-banner {
   height: 20vh; }
   .home .vatjss-home-mobile-subscribe-banner button {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    background-color: #000;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    color: #fff;
+    padding: 10px 20px; }
+    .home .vatjss-home-mobile-subscribe-banner button:hover {
+      background-color: #1a1a1a; }
   @media (min-width: 768px) {
     .home .vatjss-home-mobile-subscribe-banner {
       height: 0;
@@ -2529,9 +2543,12 @@ object {
       margin-bottom: 1.125rem; }
   .home .vatjss-home-services-section .vatjss-home-service-mobile-image {
     position: absolute;
-    z-index: -1; }
+    z-index: -1;
+    height: 100%; }
     .home .vatjss-home-services-section .vatjss-home-service-mobile-image img {
-      display: block; }
+      display: block;
+      height: 100%;
+      object-fit: cover; }
 
 .home .on-subscribe-click {
   height: 100vh;
@@ -2553,7 +2570,19 @@ object {
       height: 100%;
       background-color: black;
       border: 1px solid white;
-      color: white; }
+      color: white;
+      text-align: center;
+      padding-top: 20px; }
+      .home .on-subscribe-click .vatjss-sidebar-widget-click aside#text-3 h2 {
+        font-size: 1.125rem;
+        margin-top: 20px; }
+      .home .on-subscribe-click .vatjss-sidebar-widget-click aside#text-3 p {
+        margin-bottom: 0;
+        width: 80%;
+        margin: 10px auto 0 auto; }
+      .home .on-subscribe-click .vatjss-sidebar-widget-click aside#text-3 input.wpcf7-text {
+        width: 100%;
+        height: 40px; }
     .home .on-subscribe-click .vatjss-sidebar-widget-click span {
       width: 100%; }
     .home .on-subscribe-click .vatjss-sidebar-widget-click h2 {
@@ -2587,7 +2616,9 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  border: 1px solid grey; }
+  border: none; }
+  .home .close-click:hover {
+    cursor: pointer; }
   @media (min-width: 768px) {
     .home .close-click {
       width: 0;
