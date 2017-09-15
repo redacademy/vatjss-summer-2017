@@ -1,8 +1,18 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.logged-in .site-header {
-	top: 44px;
+.logged-in {
+	.site-header-background{
+		top: 32px;
+	}
+	.site-header{
+		top:76px;
+		.vatjss-phone-search{
+			a{
+				top:32px;
+			}
+		}
+	}
 }
 .logged-in{
 	button#responsive-menu-button{

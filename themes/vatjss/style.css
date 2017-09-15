@@ -558,8 +558,13 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.logged-in .site-header-background {
+  top: 32px; }
+
 .logged-in .site-header {
-  top: 44px; }
+  top: 76px; }
+  .logged-in .site-header .vatjss-phone-search a {
+    top: 32px; }
 
 .logged-in button#responsive-menu-button {
   top: 64px; }
