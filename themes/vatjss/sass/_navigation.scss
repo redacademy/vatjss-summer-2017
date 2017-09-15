@@ -4,6 +4,14 @@
 .logged-in .site-header {
 	top: 44px;
 }
+.logged-in{
+	button#responsive-menu-button{
+		top:64px;
+	}
+	#responsive-menu-wrapper{
+		margin-top: 50px;
+	}
+}
 .site-header {
 	top: 0px;
 }
