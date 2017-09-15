@@ -126,7 +126,7 @@ get_header(); ?>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button class="subscribe">Subscribe</button>
-      <div class="on-subscribe"><?php get_sidebar('footer-widget'); ?></div>
+      <!-- <div class="on-subscribe">?></div> -->
     </section>
   </main>
 </div>
