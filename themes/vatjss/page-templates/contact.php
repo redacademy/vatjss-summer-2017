@@ -17,7 +17,7 @@ get_header(); ?>
             </div>
             <div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-50 vatjss-no-padding-mobile">
               <div class="vatjss-location-section" style='background-image:url(<?php echo the_post_thumbnail_url(); ?>)'>
-                <p><?php echo CFS()->get( 'address' ); ?></p>
+                <p><?php echo esc_html(CFS()->get( 'address' )); ?></p>
               </div>
             </div>
           </div>
@@ -54,9 +54,9 @@ get_header(); ?>
                     </div>
                     <div class="vatjss-flex-item-mobile-70">
                       <h4><?php echo $staff->post_title; ?></h4>
-                      <p><?php echo CFS()->get( 'position', $staff->ID ); ?></p>
-                      <p><?php echo CFS()->get( 'email', $staff->ID ); ?></p>
-                      <p><?php echo CFS()->get( 'phone', $staff->ID ); ?></p>
+                      <p><?php echo esc_html(CFS()->get( 'position', $staff->ID )); ?></p>
+                      <p><?php echo esc_html(CFS()->get( 'email', $staff->ID )); ?></p>
+                      <p><?php echo esc_html(CFS()->get( 'phone', $staff->ID )); ?></p>
                     </div>
                   </div>
                 </div>
@@ -134,9 +134,9 @@ get_header(); ?>
                     </div>
                     <div class="vatjss-flex-item-mobile-70">
                       <h4><?php echo $staff->post_title; ?></h4>
-                      <p><?php echo CFS()->get( 'position', $staff->ID ); ?></p>
-                      <p><?php echo CFS()->get( 'email', $staff->ID ); ?></p>
-                      <p><?php echo CFS()->get( 'phone', $staff->ID ); ?></p>
+                      <p><?php echo esc_html(CFS()->get( 'position', $staff->ID )); ?></p>
+                      <p><?php echo esc_html(CFS()->get( 'email', $staff->ID )); ?></p>
+                      <p><?php echo esc_html(CFS()->get( 'phone', $staff->ID )); ?></p>
                     </div>
                   </div>
                 </div>

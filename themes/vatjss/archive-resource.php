@@ -23,7 +23,7 @@ get_header(); ?>
             $resource_page = get_posts( $args );
             foreach ( $resource_page as $post ) : setup_postdata( $post );
             
-              echo '<h3 class=resource-subtitle>' . CFS()->get( 'subtitle' ) . '</h3>';
+              echo '<h3 class=resource-subtitle>' . esc_html(CFS()->get( 'subtitle' )) . '</h3>';
               the_content();
             
             endforeach; wp_reset_postdata();

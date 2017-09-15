@@ -14,9 +14,9 @@ get_header(); ?>
             foreach ($carousel_articles as $article) :
           ?>
           <div class="carousel-cell">
-            <h3 class="carousel-title vatjss-text-uppercase"><?php echo $article['front_page_carousel_Item_title'] ?></h3>
-            <p class="carousel-content"><?php echo $article['front_page_carousel_item_content'] ?></p>
-            <a class="vatjss-carousel-button vatjss-text-uppercase" href="<?php echo $article['front_page_carousel_link'] ?>">Learn More</a>
+            <h3 class="carousel-title vatjss-text-uppercase"><?php echo esc_html($article['front_page_carousel_Item_title']) ?></h3>
+            <p class="carousel-content"><?php echo esc_html($article['front_page_carousel_item_content']) ?></p>
+            <a class="vatjss-carousel-button vatjss-text-uppercase" href="<?php echo esc_html($article['front_page_carousel_link']) ?>">Learn More</a>
           </div>
           <?php endforeach; ?>
       </div>
@@ -25,7 +25,7 @@ get_header(); ?>
       <div class="vatjss-container">
         <div class="vatjss-flex-container">
           <div class="vatjss-flex-item-desktop-70">
-            <h2 class="vatjss-text-uppercase vatjss-text-center"><?php echo CFS()->get( 'volunteer_opportunities' ); ?></h2>
+            <h2 class="vatjss-text-uppercase vatjss-text-center"><?php echo esc_html(CFS()->get( 'volunteer_opportunities' )); ?></h2>
           </div>
           <div class="vatjss-flex-item-desktop-30 vatjss-hidden-mobile">
             <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
@@ -57,7 +57,7 @@ get_header(); ?>
               <?php
                 foreach ( $service_post as $post ) : setup_postdata( $post );
                   if($post->ID === 113){
-                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. CFS()->get( 'icon' ) .'"/>';
+                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. esc_url(CFS()->get( 'icon' )) .'"/>';
                   }
                 endforeach; wp_reset_postdata();
               ?>
@@ -81,7 +81,7 @@ get_header(); ?>
               <?php
                 foreach ( $service_post as $post ) : setup_postdata( $post );
                   if($post->ID === 103){
-                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. CFS()->get( 'icon' ) .'"/>';
+                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. esc_url(CFS()->get( 'icon' )) .'"/>';
                   }
                 endforeach; wp_reset_postdata();
               ?>
@@ -117,7 +117,7 @@ get_header(); ?>
             </div>
             <div class="volunteer-fp">
               <h3 class="volunteer-title-fp">Volunteer Opportunities</h3>
-              <p class="volunteer-description-fp"><?php echo CFS()->get( 'volunteer_opportunities' ); ?></p>
+              <p class="volunteer-description-fp"><?php echo esc_html(CFS()->get( 'volunteer_opportunities' )); ?></p>
               <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
             </div>
           </div>

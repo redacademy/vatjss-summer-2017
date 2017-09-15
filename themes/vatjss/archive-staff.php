@@ -36,9 +36,9 @@ get_header(); ?>
           <?php endif; ?>
             <div class="vatjss-flex-item-mobile-60 vatjss-hidden-desktop">
               <?php the_title( sprintf( '<h2 class="entry-title">' ), '</h2>' ); ?>
-              <p><?php echo CFS()->get( 'position' ); ?></p>
-              <p><?php echo CFS()->get( 'email' ); ?></p>
-              <p><?php echo CFS()->get( 'phone' ); ?></p>
+              <p><?php echo esc_html(CFS()->get( 'position' )); ?></p>
+              <p><?php echo esc_html(CFS()->get( 'email' )); ?></p>
+              <p><?php echo esc_html(CFS()->get( 'phone' )); ?></p>
             </div>
           </header>
 
@@ -46,9 +46,9 @@ get_header(); ?>
             <div class="vatjss-hidden-mobile">
               <?php the_title( sprintf( '<h2 class="entry-title">' ), '</h2>' ); ?>
               
-              <p><?php echo CFS()->get( 'position' ); ?></p>
-              <p><?php echo CFS()->get( 'email' ); ?></p>
-              <p><?php echo CFS()->get( 'phone' ); ?></p>
+              <p><?php echo esc_html(CFS()->get( 'position' )); ?></p>
+              <p><?php echo esc_html(CFS()->get( 'email' )); ?></p>
+              <p><?php echo esc_html(CFS()->get( 'phone' )); ?></p>
             </div>
             <?php the_content(); ?>
           </div>

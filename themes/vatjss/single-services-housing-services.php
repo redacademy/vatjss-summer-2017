@@ -27,7 +27,7 @@ get_header(); ?>
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-desktop-20 vatjss-services-sidebar vatjss-hidden-mobile">
 							<div class="vatjss-services-sidebar-btns">
-								<a href="#housing-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></a>
+								<a href="#housing-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo esc_html($props['label']);  ?></a>
 								<a href="#resources">Resources</a>
 								<a href="#faq">FAQ</a>
 							</div>
@@ -44,9 +44,9 @@ get_header(); ?>
 							</header>
 							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
 								<div class="vatjss-service-faq-btns">
-									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></button>
+									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo esc_html($props['label']);  ?></button>
 									<div class="panel">
-										<?php echo CFS()->get( 'housing_services' ); ?>
+										<?php echo esc_html(CFS()->get( 'housing_services' )); ?>
 									</div>
 
 									<button class="accordion-services">Resources</button>
@@ -74,8 +74,8 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-80">
-								<h2 id="housing-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo $props['label'];  ?></h2>
-								<?php echo CFS()->get( 'housing_services' ); ?>
+								<h2 id="housing-services"><?php $props = CFS()->get_field_info( 'housing_services' ); echo esc_html($props['label']);  ?></h2>
+								<p><?php echo esc_html(CFS()->get( 'housing_services' )); ?></p>
 							</div>
 						</div>
 					</div>
@@ -101,9 +101,9 @@ get_header(); ?>
 								$faq_posts = get_posts( $args );
 							?>
 							<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
-								<button class="accordion-services"><?php echo $faq->post_title ?></button>
+								<button class="accordion-services"><?php echo esc_html($faq->post_title) ?></button>
 								<div class="panel">
-									<p><?php echo $faq->post_content ?></p>
+									<p><?php echo esc_html($faq->post_content) ?></p>
 								</div>
 							<?php endforeach; wp_reset_postdata(); ?>
 							</div>

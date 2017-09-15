@@ -27,8 +27,8 @@ get_header(); ?>
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-desktop-20 vatjss-services-sidebar vatjss-hidden-mobile">
               <div class="vatjss-services-sidebar-btns">
-                <a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></a>
-                <a href="#extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></a>
+                <a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></a>
+                <a href="#extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></a>
                 <a href="#resources">Resources</a>
                 <a href="#faq">FAQ</a>
               </div>
@@ -72,13 +72,13 @@ get_header(); ?>
 										</p>
 									</div>
 									
-									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></button>
+									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></button>
 									<div class="panel">
-										<?php echo CFS()->get( 'alternative_measures_adults' ); ?>
+										<?php echo esc_html(CFS()->get( 'alternative_measures_adults' )); ?>
 									</div>
-									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></button>
+									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></button>
 									<div class="panel">
-										<?php echo CFS()->get( 'extrajudicial_sancition' ); ?>
+										<?php echo esc_html(CFS()->get( 'extrajudicial_sancition' )); ?>
 									</div>
 
 									<button class="accordion-services">Resources</button>
@@ -120,8 +120,8 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo $props['label'];  ?></h2>
-								<?php echo CFS()->get( 'alternative_measures_adults' ); ?>
+								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></h2>
+								<p><?php echo esc_html(CFS()->get( 'alternative_measures_adults' )); ?></p>
 							</div>
 						</div>
 					</div>
@@ -130,8 +130,8 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-70">
-								<h2 id="extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo $props['label'];  ?></h2>
-								<?php echo CFS()->get( 'extrajudicial_sancition' ); ?>
+								<h2 id="extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></h2>
+								<p><?php echo esc_html(CFS()->get( 'extrajudicial_sancition' )); ?></p>
 							</div>
 						</div>
 					</div>
@@ -157,9 +157,9 @@ get_header(); ?>
 								$faq_posts = get_posts( $args );
 							?>
 							<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
-								<button class="accordion-services"><?php echo $faq->post_title ?></button>
+								<button class="accordion-services"><?php echo esc_html($faq->post_title) ?></button>
 								<div class="panel">
-									<p><?php echo $faq->post_content ?></p>
+									<p><?php echo esc_html($faq->post_content) ?></p>
 								</div>
 							<?php endforeach; wp_reset_postdata(); ?>
 							</div>

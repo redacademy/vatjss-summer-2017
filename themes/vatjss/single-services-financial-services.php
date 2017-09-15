@@ -30,7 +30,7 @@ get_header(); ?>
 								<?php $props1 = CFS()->get_field_info( 'income_assist' ); ?>
 								<a href="#income-assist"><?php echo $props1['label']; ?></a>
 								<?php $props2 = CFS()->get_field_info( 'tax_clinic' ); ?>
-								<a href="#tax-clinic"> <?php echo $props2['label']; ?></a>
+								<a href="#tax-clinic"> <?php echo esc_html($props2['label']); ?></a>
 								<a href='#resource'>Resources</a>
 								<a href='#faq'>FAQ</a>
 							</div>
@@ -47,13 +47,13 @@ get_header(); ?>
 							</header>
 							<div class="vatjss-mobile-accordion vatjss-hidden-desktop">
 								<div class="vatjss-service-faq-btns">
-									<button class="accordion-services"><?php echo $props1['label'];?></button>
+									<button class="accordion-services"><?php echo esc_html($props1['label']);?></button>
 									<div class="panel">
-										<?php echo CFS()->get( 'income_assist' ); ?>
+										<p><?php echo esc_html(CFS()->get( 'income_assist' )); ?></p>
 									</div>
-									<button class="accordion-services"><?php echo $props2['label'];  ?></button>
+									<button class="accordion-services"><?php echo esc_html($props2['label']);  ?></button>
 									<div class="panel">
-										<?php echo CFS()->get( 'tax_clinic' ); ?>
+										<?php echo esc_html(CFS()->get( 'tax_clinic' )); ?>
 									</div>
 
 									<button class="accordion-services">Resources</button>
@@ -66,8 +66,8 @@ get_header(); ?>
 											$faq_posts = get_posts( $args );
 										?>
 										<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
-										<h3><?php echo $faq->post_title ?></h3>
-										<p><?php echo $faq->post_content ?></p>
+										<h3><?php echo esc_html($faq->post_title) ?></h3>
+										<p><?php echo esc_html($faq->post_content) ?></p>
 										<?php endforeach; wp_reset_postdata(); ?>
 									</div>
 								</div>
@@ -82,7 +82,7 @@ get_header(); ?>
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="income-assist"><?php echo $props1['label'];  ?></h2>
-								<?php echo CFS()->get( 'income_assist' ); ?>
+									<p><?php echo esc_html(CFS()->get( 'income_assist' )); ?></p>
 							</div>
 						</div>
 					</div>
@@ -92,7 +92,7 @@ get_header(); ?>
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="tax-clinic"><?php echo $props2['label'];  ?></h2>
-								<p><?php echo CFS()->get( 'tax_clinic' ); ?></p>
+								<p><?php echo esc_html(CFS()->get( 'tax_clinic' )); ?></p>
 							</div>
 						</div>
 					</div>
@@ -118,9 +118,9 @@ get_header(); ?>
 								$faq_posts = get_posts( $args );
 							?>
 							<?php foreach ( $faq_posts as $faq ) : setup_postdata( $faq ); ?>
-								<button class="accordion-services"><?php echo $faq->post_title ?></button>
+								<button class="accordion-services"><?php echo esc_html($faq->post_title) ?></button>
 								<div class="panel">
-									<p><?php echo $faq->post_content ?></p>
+									<p><?php echo esc_html($faq->post_content) ?></p>
 								</div>
 							<?php endforeach; wp_reset_postdata(); ?>
 							</div>

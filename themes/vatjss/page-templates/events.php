@@ -36,8 +36,8 @@ get_header(); ?>
             <div class="vatjss-flex-container-no-wrap vatjss-hidden-mobile">
               <?php foreach ( $partner_posts as $key=>$partner ) : setup_postdata( $partner ); ?>
                 <div class="vatjss-flex-item-desktop-25">
-                  <a href=<?php echo CFS()->get( 'community_partner_link', $partner->ID ); ?>>
-                  <img src=<?php echo wp_get_attachment_url( get_post_thumbnail_id( $partner->ID ) )  ?> alt=""/>
+                  <a href=<?php echo esc_html(CFS()->get( 'community_partner_link', $partner->ID )); ?>>
+                  <img src=<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id( $partner->ID ) ));  ?> alt="community partner logos"/>
                   </a>
                 </div>
             <?php if( ($key+1)%4 === 0 && (($key+1) != count($partner_posts)) ){ echo '</div><div class="vatjss-flex-container-no-wrap vatjss-hidden-mobile">'; } ?>
@@ -46,8 +46,8 @@ get_header(); ?>
             <div class="vatjss-flex-container-no-wrap vatjss-hidden-desktop">
               <?php foreach ( $partner_posts as $key=>$partner ) : setup_postdata( $partner ); ?>
                 <div class="vatjss-flex-item-mobile-50">
-                  <a href=<?php echo CFS()->get( 'community_partner_link', $partner->ID ); ?>>
-                  <img src=<?php echo wp_get_attachment_url( get_post_thumbnail_id( $partner->ID ) )  ?> alt=""/>
+                  <a href=<?php echo esc_html(CFS()->get( 'community_partner_link', $partner->ID )); ?>>
+                  <img src=<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id( $partner->ID ) ));  ?> alt="community partner logos"/>
                   </a>
                 </div>
             <?php if( ($key+1)%2 === 0 && (($key+1) != count($partner_posts)) ){ echo '</div><div class="vatjss-flex-container-no-wrap vatjss-hidden-desktop">'; } ?>
