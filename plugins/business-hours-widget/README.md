@@ -20,7 +20,8 @@ Lightly forked from the [WordPress Widget Boilerplate](https://github.com/tommcf
 
 ## License
 
-This project is made with the help of RED Starter Theme, as a final community project.
+This project is made for our final community project.
+It is licensed under GPL-2.0+ - see (http://www.gnu.org/licenses/gpl-2.0.txt) for more details
 
 ## Screenshots
 

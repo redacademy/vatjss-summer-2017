@@ -2,15 +2,19 @@
  /**
  *
  * @package   VATJSS Functionality
- * @author    Your Name <your_email@email.com>
+ * @author   	Ayesha Kanani 		<https://github.com/isha21>
+ *						Bobby Soetarto	  <https://github.com/bsoetarto7>
+ * 						Camden Shaw 			<https://github.com/CamdenShaw>
+ * 						Chinatsu Kusuhara <https://github.com/ChinatsuKusuhara>  
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @link 			https://github.com/redacademy/vatjss-summer-2017
+ * @copyright 2017 RED
  *
  * @wordpress-plugin
  * Plugin Name: VATJSS Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      Your Name
+ * Author:      Ayesha Kanani, Bobby Soetarto, Camden Shaw, Chinatsu Kusuhara
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */

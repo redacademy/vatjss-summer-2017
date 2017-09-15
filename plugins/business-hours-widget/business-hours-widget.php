@@ -21,8 +21,7 @@
  * Plugin URI:        https://github.com/redacademy/vatjss-summer-2017
  * Description:       The Red Widget Boilerplate
  * Version:           1.0.0
- * Author:            Chinatsu Kusuhara
- * Author URI:        https://github.com/ChinatsuKusuhara
+ * Author:            Ayeshsa Kanani, Bobby Soetarto, Camden Shaw, Chinatsu Kusuhara
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
