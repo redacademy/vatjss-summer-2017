@@ -2,25 +2,31 @@
 # Navigation
 --------------------------------------------------------------*/
 .logged-in {
-	.site-header-background{
-		top: 32px;
-	}
 	.site-header{
-		top:76px;
-		.vatjss-phone-search{
-			a{
-				top:32px;
-			}
-		}
+		top:44px;
 	}
-}
-.logged-in{
 	button#responsive-menu-button{
 		top:64px;
 	}
 	#responsive-menu-wrapper{
 		margin-top: 50px;
 	}
+	@include desktop{
+		.site-header-background{
+			top: 32px;
+		}
+		.site-header{
+			top:76px;
+			.vatjss-phone-search{
+				a{
+					top:32px;
+				}
+			}
+		}	
+	}
+}
+.logged-in{
+	
 }
 .site-header {
 	top: 0px;
