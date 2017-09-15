@@ -28,7 +28,7 @@
 }
 
 /* bottom sidebar */
-div div aside#text-3 {
+div div aside#text-5 {
 	width:0;
 	height:0;
 	overflow: hidden;
@@ -36,7 +36,6 @@ div div aside#text-3 {
 		width: auto;
 		height: auto;
 	}
-
 	form p input.wpcf7-form-control {
 		background: $background_black;
 		text-align: center;
@@ -51,7 +50,6 @@ div div aside#text-3 {
 	form p input.wpcf7-text{
 		width: 80%;	
 	}
-
 	form p input.wpcf7-submit {
 		background: $background_red;
 		color: $color_white;
@@ -62,7 +60,6 @@ div div aside#text-3 {
 		letter-spacing: rem(1);
     font-size: rem(16);
 	}
-
 	@include desktop {
 		display: unset;
 		margin: 0;
@@ -73,11 +70,10 @@ div div aside#text-3 {
 	 }
 }  //subscribe
 
-div div aside#text-2 {
+div div aside#text-4 {
 	width: 0;
 	height: 0;
 	overflow: hidden;
-
 	@include desktop {
 		display: unset;
 		margin: 0;
@@ -92,8 +88,7 @@ div div aside#text-2 {
 			padding-left: rem(40);
 			padding-right: rem(40);
 			padding-top: rem(120);
-				
-			div.vatjss-widget-social-icons{
+			p{
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
