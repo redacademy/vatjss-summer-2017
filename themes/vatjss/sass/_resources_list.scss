@@ -215,21 +215,37 @@
     }
     h4 {
       margin: 0;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       text-decoration: underline;
+        @include desktop {
+        font-size: 1.3rem;
+      }
     }
     h5 {
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-left: 20px;
-    }
-    ul li a {
-      font-size: 0.8rem;
-      &:link, &:visited {
-        color: white;
+        @include desktop {
+        font-size: 1rem;
       }
-      &:link:hover, &:visited:hover {
-        color: lighten($background_red, 10%);
+    }
+    ul li{
+      margin: 10px;
+      @include desktop {
+        margin: 0;
+      }
+      a {
+        font-size: 1.2rem;
+        margin: 10px;
+        @include desktop {
+          font-size: 0.8rem;
+        }
+        &:link, &:visited {
+          color: white;
+        }
+        &:link:hover, &:visited:hover {
+          color: lighten($background_red, 10%);
+        }
       }
     }
   }

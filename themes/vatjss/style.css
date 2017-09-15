@@ -1291,7 +1291,7 @@ div aside.vatjss-biz-hours-class {
               width: 0;
               height: 0;
               overflow: hidden; } }
-    .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile-on a {
+    .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile-on {
       background-color: #971E16; }
   .post-type-archive-resource .resources-content-area .vatjss-resource-desktop-content {
     height: 0;
@@ -1353,18 +1353,33 @@ div aside.vatjss-biz-hours-class {
         width: 100%; } }
     .post-type-archive-resource .resources-content-area .panel h4 {
       margin: 0;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       text-decoration: underline; }
+      @media (min-width: 768px) {
+        .post-type-archive-resource .resources-content-area .panel h4 {
+          font-size: 1.3rem; } }
     .post-type-archive-resource .resources-content-area .panel h5 {
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-left: 20px; }
-    .post-type-archive-resource .resources-content-area .panel ul li a {
-      font-size: 0.8rem; }
-      .post-type-archive-resource .resources-content-area .panel ul li a:link, .post-type-archive-resource .resources-content-area .panel ul li a:visited {
-        color: white; }
-      .post-type-archive-resource .resources-content-area .panel ul li a:link:hover, .post-type-archive-resource .resources-content-area .panel ul li a:visited:hover {
-        color: #c4271c; }
+      @media (min-width: 768px) {
+        .post-type-archive-resource .resources-content-area .panel h5 {
+          font-size: 1rem; } }
+    .post-type-archive-resource .resources-content-area .panel ul li {
+      margin: 10px; }
+      @media (min-width: 768px) {
+        .post-type-archive-resource .resources-content-area .panel ul li {
+          margin: 0; } }
+      .post-type-archive-resource .resources-content-area .panel ul li a {
+        font-size: 1.2rem;
+        margin: 10px; }
+        @media (min-width: 768px) {
+          .post-type-archive-resource .resources-content-area .panel ul li a {
+            font-size: 0.8rem; } }
+        .post-type-archive-resource .resources-content-area .panel ul li a:link, .post-type-archive-resource .resources-content-area .panel ul li a:visited {
+          color: white; }
+        .post-type-archive-resource .resources-content-area .panel ul li a:link:hover, .post-type-archive-resource .resources-content-area .panel ul li a:visited:hover {
+          color: #c4271c; }
   .post-type-archive-resource .resources-content-area .resources-accordion {
     background: #f1f1f1;
     padding: 20px 0;
