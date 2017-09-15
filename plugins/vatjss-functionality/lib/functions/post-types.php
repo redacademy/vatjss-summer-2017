@@ -41,7 +41,7 @@ function vatjss_cpt_services() {
       'label'                 => 'Service',
       'description'           => 'A custom post-type listing services supplied by VATJSS',
       'labels'                => $labels,
-      'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
+      'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail'),
       'hierarchical'          => true,
       'public'                => true,
       'show_ui'               => true,
