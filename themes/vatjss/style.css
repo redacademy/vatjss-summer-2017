@@ -1288,6 +1288,8 @@ div aside.vatjss-biz-hours-class {
               width: 0;
               height: 0;
               overflow: hidden; } }
+    .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container div.resource-toggle-mobile-on a {
+      background-color: #971E16; }
   .post-type-archive-resource .resources-content-area .vatjss-resource-desktop-content {
     height: 0;
     overflow: hidden; }

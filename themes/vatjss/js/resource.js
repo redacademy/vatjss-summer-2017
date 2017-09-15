@@ -21,18 +21,24 @@
   if ( windowWidth <= 768 ){
 
     $('.housing-toggle').on('click', function(){
+      $('resource-toggle-mobile').removeClass('resource-toggle-mobile-on');
       $('.resource-list-page').removeClass('resource-toggle-on');
       $('.housing-resource-list').addClass('resource-toggle-on');
+      $('.housing-toggle').addClass('resource-toggle-mobile-on');
     });
 
     $('.justice-toggle').on('click', function(){
+      $('resource-toggle-mobile').removeClass('resource-toggle-mobile-on');
       $('.resource-list-page').removeClass('resource-toggle-on');
       $('.justice-resource-list').addClass('resource-toggle-on');
+      $('.justice-toggle').addClass('resource-toggle-mobile-on');
     });
 
     $('.community-toggle').on('click', function(){
+      $('resource-toggle-mobile').removeClass('resource-toggle-mobile-on');
       $('.resource-list-page').removeClass('resource-toggle-on');
       $('.community-resource-list').addClass('resource-toggle-on');
+      $('.community-toggle').addClass('resource-toggle-mobile-on');
     });
     resourceAccordion();
   }

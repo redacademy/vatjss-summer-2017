@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary-resources" class="resources-content-area">
 		<main id="main" class="site-main" role="main">
       <div class="vatjss-mobile-resource-toggle-container">
-        <div class="housing-toggle resource-toggle-mobile"><a href='#housing'><h3>Housing<span> Resources</span></h3></a></div>
+        <div class="housing-toggle resource-toggle-mobile resource-toggle-mobile-on"><a href='#housing'><h3>Housing<span> Resources</span></h3></a></div>
         <div class="justice-toggle resource-toggle-mobile"><a href='#justice'><h3>Justice<span> Resources</span></h3></a></div>
         <div class="community-toggle resource-toggle-mobile"><a href='#community'><h3>Community<span> Resources</span></h3></a></div>
       </div>
@@ -30,7 +30,7 @@ get_header(); ?>
           ?>
         </div> 
         <div id='housing' class="housing-toggle resource-toggle-desktop"><h3>Housing</h3></div>
-        <section class="housing-resource-list resource-list-page">
+        <section class="housing-resource-list resource-list-page resource-toggle-on">
           <?php get_template_part('template-parts/resources', 'housing'); ?>
         </section>
         <div id='justice' class="justice-toggle resource-toggle-desktop"><h3>Justice</h3></div>
