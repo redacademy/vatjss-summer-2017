@@ -1033,11 +1033,14 @@ http://flickity.metafizzy.co
 
 /* Search widget. */
 .widget_search .search-submit {
-  display: none; }
+  width: 0;
+  height: 0;
+  overflow: hidden; }
 
 /* bottom sidebar */
 div div aside#text-3 {
-  display: none; }
+  width: 0;
+  height: 0; }
   div div aside#text-3 form p input.wpcf7-form-control {
     background: #000;
     text-align: center;
@@ -1067,7 +1070,9 @@ div div aside#text-3 {
           align-content: center; } }
 
 div div aside#text-2 {
-  display: none; }
+  width: 0;
+  height: 0;
+  overflow: hidden; }
   @media (min-width: 768px) {
     div div aside#text-2 {
       display: unset;
@@ -1125,7 +1130,9 @@ div aside.vatjss-biz-hours-class {
   font-size: 0.875rem;
   text-transform: uppercase; }
   .vatjss-widget-address p span.widget_address {
-    display: none; }
+    width: 0;
+    height: 0;
+    overflow: hidden; }
   @media (min-width: 768px) {
     .vatjss-widget-address p {
       width: 9.1875rem;
@@ -1133,7 +1140,9 @@ div aside.vatjss-biz-hours-class {
       margin-top: 2.5rem; } }
 
 .vatjss-biz-hours-class {
-  display: none; }
+  width: 0;
+  height: 0;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .vatjss-biz-hours-class {
       display: unset;
@@ -1527,7 +1536,8 @@ object {
 
 @media (min-width: 768px) {
   .page-template-front-page footer .vatjss-footer-icons {
-    display: none; } }
+    width: 0;
+    height: 0; } }
 
 .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .single .site-content {
   padding-top: 5.125rem; }
@@ -1753,7 +1763,8 @@ object {
 .services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns div.panel, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns div.panel {
   padding: 0 18px;
   background-color: white;
-  display: none;
+  width: 0;
+  height: 0;
   overflow: auto; }
 
 .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
@@ -2058,7 +2069,8 @@ object {
         border: 1px solid #971E16;
         outline: none; }
   .page-template-contact .vatjss-contact-form-staff-section .tabcontent {
-    display: none; }
+    width: 0;
+    height: 0; }
   .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-staff-section {
     overflow: auto;
     padding: 30px 15px; }
@@ -2169,7 +2181,8 @@ object {
         color: #fff;
         outline: none; }
   .page-template-contact .vatjss-mobile-tab-section .tabcontent {
-    display: none; }
+    width: 0;
+    height: 0; }
   .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form h3 {
     color: #fff;
     margin-top: 20px; }
@@ -2327,7 +2340,8 @@ object {
       font-size: 1rem;
       padding: 0.625rem 0.9375rem; }
       .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
-        display: none; }
+        width: 0;
+        height: 0; }
   .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
     position: absolute;
     top: 50%;
@@ -2450,7 +2464,10 @@ object {
     font-size: 1.5rem; }
   @media (min-width: 768px) {
     .home .vatjss-home-mobile-subscribe-banner {
-      height: 0; } }
+      height: 0;
+      width: 0; }
+      .home .vatjss-home-mobile-subscribe-banner button {
+        display: none; } }
 
 .home .vatjss-home-services-section {
   background-color: transparent; }
@@ -2478,8 +2495,9 @@ object {
       display: block; }
 
 .home .on-subscribe {
+  width: 0;
   height: 0;
-  width: 0; }
+  overflow: hidden; }
 
 .home .on-subscribe-click {
   height: 100vh;
@@ -2489,6 +2507,58 @@ object {
   top: 0;
   background-color: rgba(151, 30, 22, 0.4);
   z-index: 100000; }
+  @media (min-width: 768px) {
+    .home .on-subscribe-click {
+      height: 0;
+      width: 0; } }
+  .home .on-subscribe-click .vatjss-sidebar-widget-click {
+    width: 80vw;
+    height: 60vh;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .home .on-subscribe-click .vatjss-sidebar-widget-click aside#text-3 {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      border: 1px solid white;
+      color: white; }
+    .home .on-subscribe-click .vatjss-sidebar-widget-click span {
+      width: 100%; }
+    .home .on-subscribe-click .vatjss-sidebar-widget-click h2 {
+      width: 100%; }
+    @media (min-width: 768px) {
+      .home .on-subscribe-click .vatjss-sidebar-widget-click {
+        width: 0;
+        height: 0; } }
+
+.home .close {
+  width: 0;
+  height: 0; }
+  @media (min-width: 768px) {
+    .home .close {
+      width: 0;
+      height: 0; } }
+
+.home .close-click {
+  position: absolute;
+  top: 22vh;
+  color: white;
+  right: 13vw;
+  width: 30px;
+  height: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 1px solid grey; }
+  @media (min-width: 768px) {
+    .home .close-click {
+      width: 0;
+      height: 0; } }
 
 @media (min-width: 768px) {
   .home .vatjss-home-services-section {

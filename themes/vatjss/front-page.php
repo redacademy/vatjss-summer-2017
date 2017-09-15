@@ -91,15 +91,40 @@ get_header(); ?>
             </div>
           </div>
         </div>
-        <?php
-          $resources_category = get_categories( 'resources=types' );
-          $resources = $resources_category[0];
-        ?>
-        <div class="vatjss-flex-item-mobile-100">
-          <div class="resources-fp">
-            <h3 class="resources-title-fp">Resources</h3>
-            <p class="resources-description-fp"><?php echo $resources->description ?></p>
-            <div class="resources-learn-more-fp"><a href="resource">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+    <section class="vatjss-home-services-section">
+      <div class="vatjss-container-fluid">
+        <div class="vatjss-flex-container">
+          <?php
+            $service_types = get_terms( 'services-type' );
+            $housing = $service_types[1];
+
+            $args_service = array( 'post_type' => 'services');
+            $service_post = get_posts( $args_service );
+          ?>
+          <div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-33">
+            <div class="vatjss-home-service-mobile-image vatjss-hidden-desktop">
+            <?php
+              foreach ( $service_post as $post ) : setup_postdata( $post );
+                if($post->ID === 113){
+                  echo the_post_thumbnail( 'full' );
+                }
+              endforeach; wp_reset_postdata();
+            ?>
+            </div>
+            <div class="housing-services-fp">
+              <?php
+                foreach ( $service_post as $post ) : setup_postdata( $post );
+                  if($post->ID === 113){
+                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. CFS()->get( 'icon' ) .'"/>';
+                  }
+                endforeach; wp_reset_postdata();
+              ?>
+              <h3 class="housing-title-fp">Housing Services</h3>
+              <p class="housing-description-fp vatjss-hidden-desktop"><?php echo $housing->description ?></p>
+              <div class="housing-learn-more-fp"><a href="services/housing-services">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+            </div>
           </div>
           <div class="vatjss-flex-item-mobile-100 vatjss-hidden-desktop">
             <div class="vatjss-home-service-mobile-image vatjss-hidden-desktop">
@@ -116,9 +141,12 @@ get_header(); ?>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button class="subscribe">Subscribe</button>
-      <!-- <div class="on-subscribe"></div> -->
+      
     </section>
   </main>
 </div>
-<?php get_sidebar('footer-widget'); ?>
+<div class="on-subscribe">
+  <?php get_sidebar('footer-widget'); ?>
+  <div class="close">X</div>
+</div>
 <?php get_footer(); ?>

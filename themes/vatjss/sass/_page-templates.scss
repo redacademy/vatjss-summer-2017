@@ -11,7 +11,8 @@
 
  .page-template-front-page footer .vatjss-footer-icons {
   @include desktop {
-    display: none;
+    width: 0;
+    height: 0;
   }
  }
 
@@ -276,7 +277,8 @@
       div.panel {
         padding: 0 18px;
         background-color: white;
-        display: none;
+        width: 0;
+        height: 0;
         overflow: auto;
       }
     }
@@ -614,7 +616,8 @@
     }
     /* Style the tab content */
     .tabcontent {
-      display: none;
+      width: 0;
+      height: 0;
     }
     .vatjss-desktop-staff-section{
       overflow: auto;
@@ -755,7 +758,8 @@
     }
     /* Style the tab content */
     .tabcontent {
-      display: none;
+      width: 0;
+      height: 0;
     }
     .vatjss-contact-form{
       h3{
@@ -967,7 +971,8 @@
         font-size: rem(16);
         padding: rem(10) rem(15);
         .fa{
-          display: none;
+          width: 0;
+          height: 0;
         }
       }
     }

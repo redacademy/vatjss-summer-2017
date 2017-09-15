@@ -22,12 +22,15 @@
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
 }
 
 /* bottom sidebar */
 div div aside#text-3 {
-	display: none;
+	width:0;
+	height:0;
 
 	form p input.wpcf7-form-control {
 		background: $background_black;
@@ -64,7 +67,9 @@ div div aside#text-3 {
 }  //subscribe
 
 div div aside#text-2 {
-	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
 
 	@include desktop {
 		display: unset;
@@ -135,7 +140,9 @@ div aside.vatjss-biz-hours-class {
 	text-transform: uppercase;
 
 	span.widget_address {
-		display: none;
+		width: 0;
+		height: 0;
+		overflow: hidden;
 	}	
 
 	@include desktop {
@@ -146,7 +153,9 @@ div aside.vatjss-biz-hours-class {
 }
 
 .vatjss-biz-hours-class {
-  display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
 
     @include desktop {
       display: unset;

@@ -1,6 +1,6 @@
 
 /* Front page */
-.home{
+.home {
   .vatjss-home-hero{
     padding-top: 134px;
     background-image:linear-gradient(rgba(151, 30, 22, 0.5) 0,rgba(151, 30, 22, 0.5)),url('../../images/bc_lake.png');
@@ -93,7 +93,12 @@
       font-size: rem(24);
     }
     @include desktop {
-      height:0;
+      height: 0;
+      width: 0;
+
+      button {
+        display: none;
+      }
     }
   }
   .vatjss-home-services-section{
@@ -124,13 +129,14 @@
       z-index: -1;
       img{
         display: block;
-        
       }
     }    
   }
+
   .on-subscribe {
-    height: 0;
     width: 0;
+    height: 0;
+    overflow: hidden;
   }
   
   .on-subscribe-click {
@@ -145,8 +151,60 @@
       height:0;
       width: 0;
     }
+    .vatjss-sidebar-widget-click {
+      width: 80vw;
+      height: 60vh;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      aside#text-3 {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+      }
+      span {
+        width: 100%;
+      }
+      h2 {
+        width: 100%;
+      }
+      @include desktop {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  .close {
+    width: 0;
+    height: 0;
+    @include desktop {
+      width: 0;
+      height: 0;
+    }
+  }
+  .close-click {
+    position: absolute;
+    top: 22vh;
+    color: white;
+    right: 13vw;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    @include desktop {
+      width: 0;
+      height: 0;
+    }
   }
 }
+
+
 @include desktop {
   .home{
     .vatjss-home-services-section{
