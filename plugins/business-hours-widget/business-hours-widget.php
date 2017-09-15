@@ -7,7 +7,11 @@
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
  * @package   Vatjss_Biz_Hours
- * @author    Chinatsu Kusuhara <chinatsu.kusuhara@gmail.com>
+ * @author   	Ayesha Kanani 		<https://github.com/isha21>
+ *						Bobby Soetarto	  <https://github.com/bsoetarto7>
+ * 						Camden Shaw 			<https://github.com/CamdenShaw>
+ * 						Chinatsu Kusuhara <https://github.com/ChinatsuKusuhara>  
+ *
  * @license   GPL-2.0+
  * @link      https://github.com/redacademy/vatjss-summer-2017
  * @copyright 2017 RED
