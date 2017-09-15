@@ -33,7 +33,7 @@ get_header(); ?>
                 the_post_thumbnail( 'large' );
               }
               echo '<p>'.esc_html(CFS()->get( 'is_this_for' )).'</p>';
-            endforeach; wp_reset_postdata(); ?>
+            endforeach; wp_reset_postdata();
           ?>
         </div>
       </section>
