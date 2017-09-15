@@ -55,6 +55,9 @@ section.vatjss-about-content {
     border-bottom: $border_grey;
     padding-bottom: rem(30);    
     margin: auto;  
+      @include desktop {
+        border: 0;
+      }
   }
 }
 

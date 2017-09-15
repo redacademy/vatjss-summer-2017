@@ -1,49 +1,86 @@
 /* 404 PAGE */
-body.error404 header.site-header {
-  top: 0;
+// .error404 header.site-header {
+//   top: 0;
 
-  @include desktop {
-    top: 44px;
-  }
-}
+//   @include desktop {
+//     top: 44px;
+//   }
+// }
 
-body.error404{
+// .error404{
+//   background:$background_red;
+//   color:$color_white;
+
+//   .site-content{
+//     display:flex;
+//     height:100vh;
+//     vertical-align: center;
+//   }
+// }
+
+// div div main section.error-404 {
+//   margin-top:35%;
+//   text-align: center;
+
+//   header h1.page-title {
+//     height: rem(40);	
+//     width: rem(375);
+//     opacity: 0.29;
+//     font-size: rem(144);
+//     z-index: -100000;
+//   }
+
+//   div i.fa-bug {
+//     width: 100%;
+//     opacity: 0.5;
+//     font-size: rem(110);
+//     z-index: 10000;
+//     margin-top: rem(-160);
+//   }
+
+//   div.page-content p.vatjss-404-sentence {
+//     height: 100%;	
+//     width: 80%;	
+//     color: #FFFFFF;
+//     font-size: rem(20);	
+//     margin: 0 auto;
+//     line-height: rem(40);
+//   }
+// }
+
+.error404 .error-404 {
+  height: 100vh;
+  max-width: 100%;
   background:$background_red;
-  color:$color_white;
-
-  .site-content{
-    display:flex;
-    height:100vh;
-    vertical-align: center;
-  }
+  color: $color_white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    .not-found {
+      display: flex;
+    }
+    h1 {
+      margin: 0;
+      font-size:rem(144);
+      opacity: 0.29
+    }
 }
 
-div div main section.error-404 {
-  margin-top:35%;
+.error404 .page-content {
+  line-height: 0;
   text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
 
-  header h1.page-title {
-    height: rem(40);	
-    width: rem(375);
-    opacity: 0.29;
-    font-size: rem(144);
-    z-index: -100000;
-  }
+.error404 .fa-bug {
+  font-size:rem(89);
+  opacity: 0.60;
 
-  div i.fa-bug {
-    width: 100%;
-    opacity: 0.5;
-    font-size: rem(110);
-    z-index: 10000;
-    margin-top: rem(-160);
-  }
-
-  div.page-content p.vatjss-404-sentence {
-    height: 100%;	
-    width: 80%;	
-    color: #FFFFFF;
-    font-size: rem(20);	
-    margin: 0 auto;
-    line-height: rem(40);
-  }
+}
+.error-bug {
+  align-self: center;
+  position: absolute;
+  left: 39%;
 }

@@ -43,10 +43,16 @@ We've learnt to attach taxonomies and work in a group environment. We incorporat
 
 ## Authors
 
+Designers
 * **Ayesha Kanani** (https://github.com/isha21)
 * **Bobby Soetarto** (https://github.com/bsoetarto7)
 * **Camden Shaw** (https://github.com/CamdenShaw)
 * **Chinatsu Kusuhara** (https://github.com/ChinatsuKusuhara)
+
+UX/UI Designers
+* **Jennifer Ta** (UI)
+* **Jothish John** (UX)
+* **Monica Ibrahim** (UX)
 
 ## License
 

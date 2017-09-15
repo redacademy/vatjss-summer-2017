@@ -2616,6 +2616,9 @@ section.vatjss-about-content {
     border-bottom: 1px solid #979797;
     padding-bottom: 1.875rem;
     margin: auto; }
+    @media (min-width: 768px) {
+      section.vatjss-about-content p {
+        border: 0; } }
 
 .vatjss-our-vision {
   display: none; }
@@ -2770,40 +2773,40 @@ section.vatjss-about-content {
         cursor: pointer; }
 
 /* 404 PAGE */
-body.error404 header.site-header {
-  top: 0; }
-  @media (min-width: 768px) {
-    body.error404 header.site-header {
-      top: 44px; } }
-
-body.error404 {
+.error404 .error-404 {
+  height: 100vh;
+  max-width: 100%;
   background: #971E16;
-  color: #fff; }
-  body.error404 .site-content {
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .error404 .error-404 .not-found {
     display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
-    vertical-align: center; }
-
-div div main section.error-404 {
-  margin-top: 35%;
-  text-align: center; }
-  div div main section.error-404 header h1.page-title {
-    height: 2.5rem;
-    width: 23.4375rem;
-    opacity: 0.29;
+    display: flex; }
+  .error404 .error-404 h1 {
+    margin: 0;
     font-size: 9rem;
-    z-index: -100000; }
-  div div main section.error-404 div i.fa-bug {
-    width: 100%;
-    opacity: 0.5;
-    font-size: 6.875rem;
-    z-index: 10000;
-    margin-top: -10rem; }
-  div div main section.error-404 div.page-content p.vatjss-404-sentence {
-    height: 100%;
-    width: 80%;
-    color: #FFFFFF;
-    font-size: 1.25rem;
-    margin: 0 auto;
-    line-height: 2.5rem; }
+    opacity: 0.29; }
+
+.error404 .page-content {
+  line-height: 0;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase; }
+
+.error404 .fa-bug {
+  font-size: 5.5625rem;
+  opacity: 0.60; }
+
+.error-bug {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  left: 39%; }
