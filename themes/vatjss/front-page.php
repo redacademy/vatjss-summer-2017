@@ -90,26 +90,16 @@ get_header(); ?>
               <div class="justice-learn-more-fp"><a href="services/justice-services">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
             </div>
           </div>
-          <?php
-            $resources_category = get_categories( 'resources=types' );
-            $resources = $resources_category[0];
-          ?>
-          <div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-33">
-            <div class="vatjss-home-service-mobile-image vatjss-hidden-desktop">
-            <?php
-              foreach ( $service_post as $post ) : setup_postdata( $post );
-                if($post->ID === 114){
-                  echo the_post_thumbnail( 'full' );
-                }
-              endforeach; wp_reset_postdata();
-            ?>
-            </div>
-            <div class="resources-fp">
-              <img class="vatjss-home-service-icons vatjss-hidden-mobile" src=<?php echo get_stylesheet_directory_uri(); ?>/images/resources.png />
-              <h3 class="resources-title-fp">Resources</h3>
-              <p class="resources-description-fp vatjss-hidden-desktop"><?php echo $resources->description ?></p>
-              <div class="resources-learn-more-fp"><a href="resource">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
-            </div>
+        </div>
+        <?php
+          $resources_category = get_categories( 'resources=types' );
+          $resources = $resources_category[0];
+        ?>
+        <div class="vatjss-flex-item-mobile-100">
+          <div class="resources-fp">
+            <h3 class="resources-title-fp">Resources</h3>
+            <p class="resources-description-fp"><?php echo $resources->description ?></p>
+            <div class="resources-learn-more-fp"><a href="resource">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
           </div>
           <div class="vatjss-flex-item-mobile-100 vatjss-hidden-desktop">
             <div class="vatjss-home-service-mobile-image vatjss-hidden-desktop">
@@ -126,7 +116,7 @@ get_header(); ?>
     </section>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button class="subscribe">Subscribe</button>
-      <!-- <div class="on-subscribe">?></div> -->
+      <!-- <div class="on-subscribe"></div> -->
     </section>
   </main>
 </div>

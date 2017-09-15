@@ -141,6 +141,10 @@
     top:0;
     background-color: rgba(151, 30, 22, 0.4);
     z-index: 100000;
+    @include desktop {
+      height:0;
+      width: 0;
+    }
   }
 }
 @include desktop {
