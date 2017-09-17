@@ -5,7 +5,8 @@ function openTab(evt, cityName) {
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      tabcontent[i].style.width = "0";
+      tabcontent[i].style.height = "0";
       tabcontent[i].style.backgroundColor = "transparent";
   }
 
@@ -16,7 +17,8 @@ function openTab(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityName).style.width = "auto";
+  document.getElementById(cityName).style.height = "auto";
   document.getElementById(cityName).style.backgroundColor = "#971e16";
   evt.currentTarget.className += " active";
 }
