@@ -1171,6 +1171,23 @@ div aside.vatjss-biz-hours-class {
       display: unset;
       width: 26rem; } }
 
+@media (min-width: 768px) {
+  .vatjss-widget-address {
+    padding-right: 2.8125rem; } }
+
+@media (min-width: 768px) {
+  .vatjss-widget-address p {
+    line-height: 2.1875rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 8.125rem;
+    text-align: unset;
+    padding-top: 3.125rem; }
+    .vatjss-widget-address p span.widget_address {
+      width: 0;
+      height: 0; } }
+
 /*--------------------------------------------------------------
 # Resource List
 --------------------------------------------------------------*/
@@ -2941,23 +2958,6 @@ section.vatjss-about-content {
       height: 0;
       overflow: hidden; } }
 
-@media (min-width: 768px) {
-  .page-template-about .vatjss-widget-address {
-    padding-right: 2.8125rem; } }
-
-@media (min-width: 768px) {
-  .page-template-about .vatjss-widget-address p {
-    line-height: 2.1875rem;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    margin: 0 auto;
-    width: 8.125rem;
-    text-align: unset;
-    padding-top: 3.125rem; }
-    .page-template-about .vatjss-widget-address p span.widget_address {
-      width: 0;
-      height: 0; } }
-
 /*Search Page*/
 .search-results .content-area {
   overflow: auto; }
@@ -3033,3 +3033,7 @@ section.vatjss-about-content {
       align-self: center;
   position: absolute;
   left: 39%; }
+  @media (min-width: 768px) {
+    .error-bug {
+      left: 47.1%;
+      position: fixed; } }

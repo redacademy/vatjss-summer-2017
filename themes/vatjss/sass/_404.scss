@@ -1,53 +1,4 @@
 /* 404 PAGE */
-// .error404 header.site-header {
-//   top: 0;
-
-//   @include desktop {
-//     top: 44px;
-//   }
-// }
-
-// .error404{
-//   background:$background_red;
-//   color:$color_white;
-
-//   .site-content{
-//     display:flex;
-//     height:100vh;
-//     vertical-align: center;
-//   }
-// }
-
-// div div main section.error-404 {
-//   margin-top:35%;
-//   text-align: center;
-
-//   header h1.page-title {
-//     height: rem(40);	
-//     width: rem(375);
-//     opacity: 0.29;
-//     font-size: rem(144);
-//     z-index: -100000;
-//   }
-
-//   div i.fa-bug {
-//     width: 100%;
-//     opacity: 0.5;
-//     font-size: rem(110);
-//     z-index: 10000;
-//     margin-top: rem(-160);
-//   }
-
-//   div.page-content p.vatjss-404-sentence {
-//     height: 100%;	
-//     width: 80%;	
-//     color: #FFFFFF;
-//     font-size: rem(20);	
-//     margin: 0 auto;
-//     line-height: rem(40);
-//   }
-// }
-
 .error404 .error-404 {
   height: 100vh;
   max-width: 100%;
@@ -83,4 +34,8 @@
   align-self: center;
   position: absolute;
   left: 39%;
+    @include desktop {
+      left: 47.1%;
+      position: fixed;
+    }
 }

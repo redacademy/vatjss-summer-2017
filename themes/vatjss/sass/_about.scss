@@ -245,29 +245,4 @@ section.vatjss-about-content {
     overflow: hidden;
   }
 }
-.page-template-about .vatjss-widget-address {
-  @include desktop {
-    padding-right: rem(45);
-  }
-}
-.page-template-about .vatjss-widget-address p {
-  @include desktop {
-	line-height: rem(35); 
-	font-size: rem(14);
-	text-transform: uppercase;
-  margin: 0 auto;
-  width: rem(130);
-  text-align: unset;
-  padding-top:rem(50);
-	span.widget_address {
-		width: 0;
-		height: 0;
-	}	
 
-	// @include desktop {
-	// 	width: rem(147);
-	// 	margin-left: rem(100);		
-	// 	margin-top: rem(40);
-	// }
-}
-}
