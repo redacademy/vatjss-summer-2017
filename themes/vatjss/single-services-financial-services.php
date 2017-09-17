@@ -103,7 +103,7 @@ get_header(); ?>
 							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="resource">Resources</h2>
 								<p>We provide a number of resources to help with housing issues. This range from landlord dealings to finding emergency shelters.</p>
-								<a href="/resource" class="vatjss-text-uppercase">learn more</a>
+								<a href="/vatjss/resource" class="vatjss-text-uppercase">learn more</a>
 							</div>
 						</div>
 					</div>
