@@ -17,6 +17,9 @@
   if(acc.length>0){
     var i
     acc[acc.length-1].style.border = 'none';
+    acc[acc.length-1].style.width = '0';
+    acc[acc.length-1].style.height = '0';
+    acc[acc.length-1].style.overflow = 'hidden';
     for (i = 0; i < acc.length; i++) {
         acc[i].onclick = function(){
           for (var j=0; j< acc.length; j++){
@@ -24,6 +27,9 @@
               acc[j].classList.remove('active');
               if (acc[j].nextElementSibling.style.height >= 0) {
                 acc[j].nextElementSibling.style.display = 'none';
+                acc[j].nextElementSibling.style.width = '0';
+                acc[j].nextElementSibling.style.height = '0';
+                acc[j].nextElementSibling.style.overflow = 'hidden';
               }
             }
           }
@@ -35,8 +41,13 @@
           var panel = this.nextElementSibling;
           if (panel.style.display === 'block') {
               panel.style.display = 'none';
+              panel.style.width = '0';
+              panel.style.height = '0';
+              panel.style.overflow = 'hidden';
           } else {
               panel.style.display = 'block';
+              panel.style.width = 'auto';
+              panel.style.height = 'auto';
           }
         }
     }
