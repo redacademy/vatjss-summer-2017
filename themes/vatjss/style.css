@@ -1770,6 +1770,9 @@ object {
       text-decoration: none; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .active {
       background: #971E16; }
+      .services-template-default .vatjss-service-hero .vatjss-btn-section .active .panel {
+        width: auto;
+        height: auto; }
 
 .services-template-default .entry-content {
   margin: 0; }
@@ -1925,8 +1928,9 @@ object {
       display: none;
       font-size: 1.5rem;
       margin: 0; }
-    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps .active {
-      display: block; }
+    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps .active .panel {
+      width: auto;
+      height: auto; }
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6)), url("../../images/vatjss_logo_justice_service.svg"), linear-gradient(white 0, white);
     background-size: 200px;
@@ -2140,6 +2144,9 @@ object {
         color: #fff;
         border: 1px solid #971E16;
         outline: none; }
+      .page-template-contact .vatjss-contact-form-staff-section .tab .active .panel {
+        width: auto;
+        height: auto; }
   .page-template-contact .vatjss-contact-form-staff-section .tabcontent {
     width: 0;
     height: 0;
