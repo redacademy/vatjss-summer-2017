@@ -8,9 +8,9 @@ footer.site-footer{
   width: 100%;
   
   @include desktop {
+    justify-content: center;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     padding-left: rem(40);
     padding-right: rem(40);
   }

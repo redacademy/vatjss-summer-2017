@@ -185,6 +185,7 @@ section.vatjss-about-content {
   display: flex;
   flex-direction: column;
   color: #fff;
+  padding-bottom: rem(35);
 
   @include desktop {
     padding-top: 50px;
@@ -234,11 +235,6 @@ section.vatjss-about-content {
 }
 
 //Footer
-.page-template-about footer .vatjss-footer-web {
-  @include desktop {
-    margin-right: rem(285);
-  }  
-}
 
  .page-template-about footer .vatjss-footer-icons {
    width: auto;
@@ -248,4 +244,30 @@ section.vatjss-about-content {
     height: 0;
     overflow: hidden;
   }
+}
+.page-template-about .vatjss-widget-address {
+  @include desktop {
+    padding-right: rem(45);
+  }
+}
+.page-template-about .vatjss-widget-address p {
+  @include desktop {
+	line-height: rem(35); 
+	font-size: rem(14);
+	text-transform: uppercase;
+  margin: 0 auto;
+  width: rem(130);
+  text-align: unset;
+  padding-top:rem(50);
+	span.widget_address {
+		width: 0;
+		height: 0;
+	}	
+
+	// @include desktop {
+	// 	width: rem(147);
+	// 	margin-left: rem(100);		
+	// 	margin-top: rem(40);
+	// }
+}
 }

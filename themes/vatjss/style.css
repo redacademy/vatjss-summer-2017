@@ -1039,11 +1039,9 @@ http://flickity.metafizzy.co
     padding-left: 4rem;
     padding-right: 4rem; } }
 
-.widget {
-  margin: 0 0 1.5rem;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
+/* Make sure select elements fit in widgets. */
+select {
+  max-width: 100%; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -1108,7 +1106,7 @@ div div aside#text-4 {
         font-size: 3.4375rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
-        padding-top: 7.5rem; }
+        padding-top: 1.25rem; }
         div div aside#text-4 div.textwidget p {
           display: -ms-flexbox;
           display: flex;
@@ -1136,7 +1134,9 @@ div aside.vatjss-biz-hours-class {
   padding-right: 0.99375rem;
   font-size: 0.875rem; }
   .vatjss-business-hours .vatjss-hours {
-    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     line-height: .6; }
   @media (min-width: 768px) {
     .vatjss-business-hours {
@@ -2691,12 +2691,12 @@ footer.site-footer {
   width: 100%; }
   @media (min-width: 768px) {
     footer.site-footer {
+      -ms-flex-pack: center;
+          justify-content: center;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
       padding-left: 2.5rem;
       padding-right: 2.5rem; } }
 
@@ -2892,7 +2892,8 @@ section.vatjss-about-content {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 2.1875rem; }
   @media (min-width: 768px) {
     .page-template-about .vatjss-staff {
       padding-top: 50px;
@@ -2931,10 +2932,6 @@ section.vatjss-about-content {
         width: auto;
         height: auto; } }
 
-@media (min-width: 768px) {
-  .page-template-about footer .vatjss-footer-web {
-    margin-right: 17.8125rem; } }
-
 .page-template-about footer .vatjss-footer-icons {
   width: auto;
   height: auto; }
@@ -2943,6 +2940,23 @@ section.vatjss-about-content {
       width: 0;
       height: 0;
       overflow: hidden; } }
+
+@media (min-width: 768px) {
+  .page-template-about .vatjss-widget-address {
+    padding-right: 2.8125rem; } }
+
+@media (min-width: 768px) {
+  .page-template-about .vatjss-widget-address p {
+    line-height: 2.1875rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 8.125rem;
+    text-align: unset;
+    padding-top: 3.125rem; }
+    .page-template-about .vatjss-widget-address p span.widget_address {
+      width: 0;
+      height: 0; } }
 
 /*Search Page*/
 .search-results .content-area {
