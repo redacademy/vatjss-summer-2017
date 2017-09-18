@@ -1692,11 +1692,13 @@ object {
     .post-type-archive-services .vatjss-services-section p {
       color: #fff; }
     .post-type-archive-services .vatjss-services-section .entry-header {
-      padding: 40px;
+      padding: 80px;
+      margin: -40px 0;
       background: rgba(0, 0, 0, 0.5);
       overflow: auto; }
     .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image {
       position: absolute;
+      background: rgba(0, 0, 0, 0.5);
       top: 0;
       left: 0;
       z-index: -1;

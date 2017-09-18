@@ -133,12 +133,14 @@
       color:$color_white;
     }
     .entry-header{
-      padding: 40px;
+      padding: 80px;
+      margin: -40px 0;
       background:rgba(0,0,0,.5);
       overflow: auto;
     }
     .vatjss-service-mobile-image{
       position: absolute;
+      background: rgba(0,0,0,.5);
       top:0;
       left:0;
       z-index: -1;
