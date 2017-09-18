@@ -60,9 +60,8 @@ function vatjss_about_staff_css() {
 	$staff_photo_css = " .vatjss-staff-img {
 		background-image: url({$staff_photo});
 		background-repeat: no-repeat;
-		background-size: contain;
-		height: 43vh;		
-		width: 100%;
+		background-size: cover;
+		background-position: center;
 		margin: 0;
 		padding: 0;
 	}";

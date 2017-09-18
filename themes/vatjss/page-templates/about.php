@@ -67,9 +67,9 @@ get_header(); ?>
 				<div class="vatjss-staff-parag">
 					<h2 class="vatjss-our-staff vatjss-text-uppercase">Our Staff</h2>
 					<p><?php echo esc_html(CFS()->get( 'our_staff' )); ?></p>
+					<div class="vatjss-read-more-button">
+						<a href="staff" class="vatjss-button-link vatjss-text-uppercase">Read more<span class="vatjss-right-arrow">></span></a>
 				</div>
-				<div class="vatjss-read-more-button">
-					<a href="staff" class="vatjss-button-link vatjss-text-uppercase">Read more<span class="vatjss-right-arrow">></span></a>
 				</div>
 			</div>
     </section>

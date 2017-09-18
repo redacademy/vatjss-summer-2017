@@ -1,4 +1,7 @@
 /* ABOUT PAGE STYLE */
+.page-template-about {
+  background: black;
+}
 .page-template-about .vatjss-custom-hero {
   display: flex;
   justify-content: center;
@@ -53,7 +56,6 @@ section.vatjss-about-content {
   }
 
   p {
-    height: 100%;
     width: 90%;
     line-height: rem(30);
     border-bottom: $border_grey;
@@ -116,7 +118,7 @@ section.vatjss-about-content {
 
 .page-template-about div div h2.vatjss-hover-title {
   //padding-left: 280px;
-  padding-top: 45px;
+  padding-top: rem(45);
 }
 
 @include desktop {
@@ -138,7 +140,7 @@ section.vatjss-about-content {
     }
 
     h2 {
-      top: -100px;
+      top: rem(-100);
     }
   }
 }
@@ -150,37 +152,37 @@ section.vatjss-about-content {
 }
 
 .page-template-about div.vatjss-staff-img {
-  height: 285px;
+  height: rem(285);
   width: 100%;
 
   @include desktop {
-  height: 485px;
-  width: 90%;
-  margin-left: 75px;
+  height: 40vw;
+  width: 50%;
+  margin-left: 5%;
   }
 }
 
 .page-template-about .vatjss-staff-parag {
-  margin: 0 auto;
-  padding-left: 16px;
+  margin: auto;
+  padding-left: rem(16);
 
   
    @include desktop {
     height: rem(300);
     font-size: 1.5625rem;
     line-height: 2.0625rem;
-    left: 730px;
+    right: 0;
     position: absolute;
-    overflow: auto;
+    top: 0;
+    width: 43%;
     
     p{
-      padding-right: 50px;      
+      padding-right: rem(50);      
     }
    }
  }
 
 .page-template-about .vatjss-staff {
-
   background: black;
   display: flex;
   flex-direction: column;
@@ -188,8 +190,9 @@ section.vatjss-about-content {
   padding-bottom: rem(35);
 
   @include desktop {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: rem(50);
+    padding-bottom: rem(50);
+    position: relative;
   }
 }
 
@@ -219,9 +222,9 @@ section.vatjss-about-content {
     font-size: rem(24);
     border-radius: rem(10);
     position: absolute;
-    left: 730px;
-    margin-left: 15px;
-    margin-top: 350px;
+    margin-left: rem(15);
+    margin-top: rem(350);
+    top: 0;
 
     a span.vatjss-right-arrow {
       width: 0;

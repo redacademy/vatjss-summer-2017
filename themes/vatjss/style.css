@@ -2840,6 +2840,9 @@ div p.vatjss-footer-mobile {
     color: #fff; } }
 
 /* ABOUT PAGE STYLE */
+.page-template-about {
+  background: black; }
+
 .page-template-about .vatjss-custom-hero {
   display: -ms-flexbox;
   display: flex;
@@ -2890,7 +2893,6 @@ section.vatjss-about-content {
     text-align: center;
     font-size: 1.5rem; }
   section.vatjss-about-content p {
-    height: 100%;
     width: 90%;
     line-height: 1.875rem;
     border-bottom: 1px solid #979797;
@@ -2941,7 +2943,7 @@ section.vatjss-about-content {
       margin-top: 55px; } }
 
 .page-template-about div div h2.vatjss-hover-title {
-  padding-top: 45px; }
+  padding-top: 2.8125rem; }
 
 @media (min-width: 768px) {
   div.vatjss-hover h2 {
@@ -2954,34 +2956,35 @@ section.vatjss-about-content {
   div.vatjss-hover:hover p {
     opacity: 1; }
   div.vatjss-hover:hover h2 {
-    top: -100px; } }
+    top: -6.25rem; } }
 
 .page-template-about .vatjss-staff-content {
   background-color: black;
   margin-bottom: -0.0625rem; }
 
 .page-template-about div.vatjss-staff-img {
-  height: 285px;
+  height: 17.8125rem;
   width: 100%; }
   @media (min-width: 768px) {
     .page-template-about div.vatjss-staff-img {
-      height: 485px;
-      width: 90%;
-      margin-left: 75px; } }
+      height: 40vw;
+      width: 50%;
+      margin-left: 5%; } }
 
 .page-template-about .vatjss-staff-parag {
-  margin: 0 auto;
-  padding-left: 16px; }
+  margin: auto;
+  padding-left: 1rem; }
   @media (min-width: 768px) {
     .page-template-about .vatjss-staff-parag {
       height: 18.75rem;
       font-size: 1.5625rem;
       line-height: 2.0625rem;
-      left: 730px;
+      right: 0;
       position: absolute;
-      overflow: auto; }
+      top: 0;
+      width: 43%; }
       .page-template-about .vatjss-staff-parag p {
-        padding-right: 50px; } }
+        padding-right: 3.125rem; } }
 
 .page-template-about .vatjss-staff {
   background: black;
@@ -2993,8 +2996,9 @@ section.vatjss-about-content {
   padding-bottom: 2.1875rem; }
   @media (min-width: 768px) {
     .page-template-about .vatjss-staff {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
+      margin-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      position: relative; } }
 
 .page-template-about .vatjss-read-more-button {
   text-align: center;
@@ -3018,9 +3022,9 @@ section.vatjss-about-content {
       font-size: 1.5rem;
       border-radius: 0.625rem;
       position: absolute;
-      left: 730px;
-      margin-left: 15px;
-      margin-top: 350px; }
+      margin-left: 0.9375rem;
+      margin-top: 21.875rem;
+      top: 0; }
       .page-template-about .vatjss-read-more-button a span.vatjss-right-arrow {
         width: 0;
         height: 0;
