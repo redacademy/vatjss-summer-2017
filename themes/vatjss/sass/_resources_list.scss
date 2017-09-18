@@ -257,9 +257,10 @@
     }
 
     .resources-accordion {
+      width: 100vw;
       background: $color__background-screen;
       padding: 20px 0;
-      width: 430px;
+      max-width: 430px;
       margin: 0;
       border: none;
       border-radius: 10px;

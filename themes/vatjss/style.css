@@ -1402,9 +1402,10 @@ div aside.vatjss-biz-hours-class {
         .post-type-archive-resource .resources-content-area .panel ul li a:link:hover, .post-type-archive-resource .resources-content-area .panel ul li a:visited:hover {
           color: #c4271c; }
   .post-type-archive-resource .resources-content-area .resources-accordion {
+    width: 100vw;
     background: #f1f1f1;
     padding: 20px 0;
-    width: 430px;
+    max-width: 430px;
     margin: 0;
     border: none;
     border-radius: 10px; }
