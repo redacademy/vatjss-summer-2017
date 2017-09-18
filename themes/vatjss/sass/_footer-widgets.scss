@@ -146,12 +146,6 @@ div aside.vatjss-biz-hours-class {
 			height: auto;
 		}
 	}	
-
-	// @include desktop {
-	// 	width: rem(147);
-	// 	margin-left: rem(100);		
-	// 	margin-top: rem(40);
-	// }
 }
 
 .vatjss-biz-hours-class {
@@ -183,12 +177,6 @@ div aside.vatjss-biz-hours-class {
 	span.widget_address {
 		width: 0;
 		height: 0;
-	}	
-
-	// @include desktop {
-	// 	width: rem(147);
-	// 	margin-left: rem(100);		
-	// 	margin-top: rem(40);
-	// }
-}
+		}	
+	}
 }

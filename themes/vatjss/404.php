@@ -14,10 +14,7 @@ get_header(); ?>
 			<section class="error-404">
 
 				<div class="not-found">
-					<h1 class="page-title"><?php echo esc_html( '404' ); ?></h1>
-					<div class="error-bug">
-						<i class="fa fa-bug" aria-hidden="true"></i>	
-					</div>
+					<h1 class="page-title"><?php echo esc_html( '404' ); ?></h1><span class="error-bug"><i class="fa fa-bug" aria-hidden="true"></i></span>
 				</div>	
 				<div class="page-content">			
 					<p class="vatjss-404-sentence"><?php echo esc_html( 'Sorry!' ); ?></p>

@@ -3001,6 +3001,7 @@ section.vatjss-about-content {
       border-radius: 0.625rem;
       position: absolute;
       left: 730px;
+      margin-left: 15px;
       margin-top: 350px; }
       .page-template-about .vatjss-read-more-button a span.vatjss-right-arrow {
         width: 0;
