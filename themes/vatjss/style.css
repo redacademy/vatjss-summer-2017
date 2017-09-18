@@ -1655,92 +1655,88 @@ object {
   background-position: center;
   border-bottom: 1px solid white; }
 
-.post-type-archive-services h1 {
-  color: white;
-  font-size: 1.375rem; }
-
-.post-type-archive-services .vatjss-service-hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15)), url("../../images/healing.jpeg");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  text-align: center; }
-  .post-type-archive-services .vatjss-service-hero img {
-    margin: 40px 0; }
-  .post-type-archive-services .vatjss-service-hero p {
-    text-align: center;
-    color: #fff;
-    max-width: 800px;
-    margin: 0 auto; }
-  .post-type-archive-services .vatjss-service-hero p:last-child {
-    column-count: 2;
-    text-align: left; }
-
-.post-type-archive-services .vatjss-services-section-container .vatjss-container {
-  padding: 0; }
-
-.post-type-archive-services .vatjss-services-section-container .vatjss-flex-container-no-wrap {
-  display: block; }
-
-.post-type-archive-services .vatjss-services-section-container .vatjss-service-icons {
-  max-width: 35%; }
-
-.post-type-archive-services .vatjss-services-section {
-  padding: 40px 0;
-  position: relative;
-  overflow: hidden; }
-  .post-type-archive-services .vatjss-services-section h2 {
-    font-size: 1.125rem;
-    color: #fff; }
-  .post-type-archive-services .vatjss-services-section p {
-    color: #fff; }
-  .post-type-archive-services .vatjss-services-section .entry-header {
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    overflow: auto; }
-  .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%; }
-    .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image img {
-      object-fit: cover;
-      width: 100%; }
-  .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn {
-    background-color: #971E16;
-    padding: 0.375rem 0.75rem;
+.post-type-archive-services {
+  padding-top: 80px; }
+  .post-type-archive-services h1 {
     color: white;
-    text-decoration: none;
-    font-size: 0.875rem;
-    display: inline-block;
-    float: right;
-    border-radius: 5px; }
-    .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
-      position: relative;
-      top: 1px;
-      margin-left: 10px; }
-    .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn:hover {
-      background-color: #6a1510; }
-
-.post-type-archive-services .vatjss-btn-section {
-  margin: 0; }
-  .post-type-archive-services .vatjss-btn-section .vatjss-flex-item-mobile-33 {
+    font-size: 1.375rem; }
+  .post-type-archive-services .vatjss-service-hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15) 0, rgba(255, 255, 255, 0.15)), url("../../images/healing.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center; }
+    .post-type-archive-services .vatjss-service-hero img {
+      margin: 40px 0; }
+    .post-type-archive-services .vatjss-service-hero p {
+      text-align: center;
+      color: #fff;
+      max-width: 800px;
+      margin: 0 auto; }
+    .post-type-archive-services .vatjss-service-hero p:last-child {
+      column-count: 2;
+      text-align: left; }
+  .post-type-archive-services .vatjss-services-section-container .vatjss-container {
     padding: 0; }
-  .post-type-archive-services .vatjss-btn-section .vatjss-service-btn {
-    width: 100%;
-    display: inline-block;
-    background: transparent;
-    border: 1px solid white;
-    box-shadow: none;
-    font-size: 0.75rem;
-    text-shadow: none;
-    color: white;
-    border-radius: 0;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none; }
+  .post-type-archive-services .vatjss-services-section-container .vatjss-flex-container-no-wrap {
+    display: block; }
+  .post-type-archive-services .vatjss-services-section-container .vatjss-service-icons {
+    max-width: 35%; }
+  .post-type-archive-services .vatjss-services-section {
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden; }
+    .post-type-archive-services .vatjss-services-section h2 {
+      font-size: 1.125rem;
+      color: #fff; }
+    .post-type-archive-services .vatjss-services-section p {
+      color: #fff; }
+    .post-type-archive-services .vatjss-services-section .entry-header {
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      overflow: auto; }
+    .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+      .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image img {
+        object-fit: cover;
+        width: 100%; }
+    .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn {
+      background-color: #971E16;
+      padding: 0.375rem 0.75rem;
+      color: white;
+      text-decoration: none;
+      font-size: 0.875rem;
+      display: inline-block;
+      float: right;
+      border-radius: 5px; }
+      .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
+        position: relative;
+        top: 1px;
+        margin-left: 10px; }
+      .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn:hover {
+        background-color: #6a1510; }
+  .post-type-archive-services .vatjss-btn-section {
+    margin: 0; }
+    .post-type-archive-services .vatjss-btn-section .vatjss-flex-item-mobile-33 {
+      padding: 0; }
+    .post-type-archive-services .vatjss-btn-section .vatjss-service-btn {
+      width: 100%;
+      display: inline-block;
+      background: transparent;
+      border: 1px solid white;
+      box-shadow: none;
+      font-size: 0.75rem;
+      text-shadow: none;
+      color: white;
+      border-radius: 0;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none; }
 
 .services-template-default .vatjss-serivce-no-padding {
   padding-top: 0;
@@ -1752,7 +1748,7 @@ object {
   padding: 20px 0;
   min-height: 70vh; }
   .services-template-default .vatjss-service-hero .vatjss-btn-section {
-    margin: 20px 15px; }
+    margin: 70px 15px 20px; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .vatjss-flex-item-mobile-33 {
       padding: 0; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .vatjss-service-btn {
@@ -1770,9 +1766,6 @@ object {
       text-decoration: none; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .active {
       background: #971E16; }
-      .services-template-default .vatjss-service-hero .vatjss-btn-section .active .panel {
-        width: auto;
-        height: auto; }
 
 .services-template-default .entry-content {
   margin: 0; }
@@ -1824,6 +1817,8 @@ object {
   border-radius: 0;
   border-bottom: 1px solid white;
   font-size: 1rem; }
+  .services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services:last-of-type, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services:last-of-type {
+    border-bottom: none; }
 
 .services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services.active, .services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns button.accordion-services:hover, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services.active, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns button.accordion-services:hover {
   background-color: #666; }
@@ -1839,10 +1834,16 @@ object {
   overflow: hidden; }
   @media (min-width: 768px) {
     .services-template-default .vatjss-mobile-accordion .vatjss-service-faq-btns div.panel, .services-template-default .vatjss-service-faq-section .vatjss-service-faq-btns div.panel {
-      width: auto;
-      height: auto; } }
+      width: 0;
+      height: 0; } }
 
 .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   position: absolute;
   top: 0;
   right: 0;
@@ -1903,9 +1904,16 @@ object {
 .services-template-default .vatjss-justice-services .vatjss-service-title {
   padding: 10px;
   width: 100%;
+  height: 70vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5)), url("../../images/syim-photo-3.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .services-template-default .vatjss-justice-services .vatjss-service-title h1, .services-template-default .vatjss-justice-services .vatjss-service-title p {
     color: white;
     text-align: center; }
@@ -1928,9 +1936,8 @@ object {
       display: none;
       font-size: 1.5rem;
       margin: 0; }
-    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps .active .panel {
-      width: auto;
-      height: auto; }
+    .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps .active {
+      display: block; }
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-carousel-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6)), url("../../images/vatjss_logo_justice_service.svg"), linear-gradient(white 0, white);
     background-size: 200px;
@@ -2144,9 +2151,6 @@ object {
         color: #fff;
         border: 1px solid #971E16;
         outline: none; }
-      .page-template-contact .vatjss-contact-form-staff-section .tab .active .panel {
-        width: auto;
-        height: auto; }
   .page-template-contact .vatjss-contact-form-staff-section .tabcontent {
     width: 0;
     height: 0;
