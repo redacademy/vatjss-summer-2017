@@ -51,13 +51,13 @@ get_header(); ?>
                     <li><button value="7">7</button></li>
                   </ul>
                   <div class="vatjss-justice-service-steps vatjss-vertical-align-center">
-                    <p id="vatjss-justice-service-step-1" class="vatjss-justice-service-step active">Step 1</p>
-                    <p id="vatjss-justice-service-step-2" class="vatjss-justice-service-step">Step 2</p>
-                    <p id="vatjss-justice-service-step-3" class="vatjss-justice-service-step">Step 3</p>
-                    <p id="vatjss-justice-service-step-4" class="vatjss-justice-service-step">Step 4</p>
-                    <p id="vatjss-justice-service-step-5" class="vatjss-justice-service-step">Step 5</p>
-                    <p id="vatjss-justice-service-step-6" class="vatjss-justice-service-step">Step 6</p>
-                    <p id="vatjss-justice-service-step-7" class="vatjss-justice-service-step">Step 7</p>
+                    <p id="vatjss-justice-service-step-1" class="vatjss-justice-service-step vatjss-text-center active">Referral from Crown Counsel/VPD/Probation</p>
+                    <p id="vatjss-justice-service-step-2" class="vatjss-justice-service-step vatjss-text-center">First Meeting</p>
+                    <p id="vatjss-justice-service-step-3" class="vatjss-justice-service-step vatjss-text-center">Second Meeting</p>
+                    <p id="vatjss-justice-service-step-4" class="vatjss-justice-service-step vatjss-text-center">Third Meeting</p>
+                    <p id="vatjss-justice-service-step-5" class="vatjss-justice-service-step vatjss-text-center">Community Council Forum</p>
+                    <p id="vatjss-justice-service-step-6" class="vatjss-justice-service-step vatjss-text-center">Follow-up</p>
+                    <p id="vatjss-justice-service-step-7" class="vatjss-justice-service-step vatjss-text-center">Compliance/Non-compliance</p>
                   </div>
                 </div>
 							</header>

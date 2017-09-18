@@ -2002,7 +2002,7 @@ object {
       display: block;
       color: white;
       display: none;
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       margin: 0; }
     .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps .active {
       display: block; }
@@ -2058,7 +2058,8 @@ object {
     height: 100%;
     box-shadow: none;
     text-shadow: none;
-    font-size: 1rem; }
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8); }
 
 .services-template-default .vatjss-justice-services .vatjss-services-sidebar .vatjss-services-sidebar-btns {
   position: absolute;
@@ -2399,6 +2400,8 @@ object {
     background-size: 250px;
     width: 250px;
     height: 250px; }
+  .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps p {
+    font-size: 1.5rem; }
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container {
     position: relative;
     width: 20rem;
@@ -2413,9 +2416,9 @@ object {
       position: absolute;
       top: 50%;
       left: 50%;
-      margin: -1.75rem;
-      width: 3.5rem;
-      height: 3.5rem; }
+      margin: -1.5rem;
+      width: 3rem;
+      height: 3rem; }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(1) {
         transform: rotate(-89deg) translate(10rem) rotate(89deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(2) {
