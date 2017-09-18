@@ -3,15 +3,16 @@
     $('.resource-accordion-button').on('click', function(){
       if ( $(this).next().hasClass('resource-accordion-toggle-on') ) {
         $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
-        $(this).children('.button-chevron').removeClass('button-chevron-toggle-on');
+        $('.button-chevron').removeClass('button-chevron-toggle-on');
         $(this).removeClass('resource-accordion-button-toggle-on');
-        return;
+      } else {
+        $('.button-chevron').removeClass('button-chevron-toggle-on');
+        $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
+        $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
+        $(this).next().addClass('resource-accordion-toggle-on');
+        $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
+        $(this).addClass('resource-accordion-button-toggle-on');
       }
-      $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
-      $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
-      $(this).next().addClass('resource-accordion-toggle-on');
-      $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
-      $(this).addClass('resource-accordion-button-toggle-on');
     });
   }
 
@@ -19,6 +20,10 @@
   applyFunctionality(windowWidth);
 
   $(window).resize(function(windowWidth) {
+    $('.resource-accordion-section').unbind();
+    $('.button-chevron').unbind();
+    $('.resource-toggle-mobile').unbind();
+    $('.resource-list-page').unbind();
     $('.housing-toggle').unbind();
     $('.community-toggle').unbind();
     $('.justice-toggle').unbind();
@@ -26,10 +31,10 @@
     windowWidth = window.innerWidth;
     console.log(windowWidth);
     applyFunctionality(windowWidth);
-    return windowWidth;
   });
 
   function applyFunctionality(windowW){
+    resourceAccordion();
     if ( windowW <= 768 ){
       $('.housing-toggle').on('click', function(){
         $('.resource-toggle-mobile').removeClass('resource-toggle-mobile-on');
@@ -51,12 +56,12 @@
         $('.community-resource-list').addClass('resource-toggle-on');
         $('.community-toggle').addClass('resource-toggle-mobile-on');
       });
-      resourceAccordion();
     }
     if ( windowW >= 769 ) {
       if ( windowW < 769 ) {
         return;
       }
+      resourceAccordion();
       $(document).ready(function() {
         $('a[href^="#"]').on('click', function(event) {
 
@@ -75,6 +80,5 @@
         });
       });
     }
-    resourceAccordion();
   }
 }(jQuery));
