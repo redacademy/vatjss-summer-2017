@@ -19,6 +19,11 @@
   }
  }
 
+.post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.search-no-results,.single{		
+  .site-content{		
+    padding-top: rem(82);		
+  }		
+}
 .search-no-results{
   .search-form{
     fieldset{
@@ -242,7 +247,6 @@
     background-color: $color_black;
     h2,p{
       color: $color_white;
-      margin-top: 0;
     }
     .vatjss-flex-item-desktop-70{
       padding: 20px 15px;
@@ -439,7 +443,7 @@
     .circle-container {
       @include on-circle($item-count: 7, $circle-size: 16rem, $item-size: 2.5rem); 
       margin: rem(40) auto;
-      border: solid 5px tomato;
+      border: solid 5px $background_red;
       button { 
         display: block; 
         border-radius: 50%;
@@ -450,8 +454,9 @@
         text-shadow: none;
         font-size:rem(16);
         background:rgba(255,255,255,.8);
+        border: none;
         &:hover{
-
+          background:rgba(255,255,255,1);
         }
       }
     }
@@ -898,7 +903,7 @@
         .circle-container {
           @include on-circle($item-count: 7, $circle-size: 20rem, $item-size: 3rem); 
           margin: rem(40) auto;
-          border: solid 5px tomato;
+          border: solid 5px $background_red;
           button { 
             display: block; 
             border-radius: 50%;

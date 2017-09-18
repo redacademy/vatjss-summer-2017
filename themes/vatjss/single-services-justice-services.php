@@ -105,7 +105,7 @@ get_header(); ?>
 				<section class="vatjss-service-red-maple-background-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2>Restorative Justice</h2>
 								<p>
                   Restorative justice process focuses on repairing relationships among those affected by crime - the victim, the offender, 
@@ -119,7 +119,7 @@ get_header(); ?>
         <section class="vatjss-service-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></h2>
 								<p><?php echo esc_html(CFS()->get( 'alternative_measures_adults' )); ?></p>
 							</div>
@@ -129,7 +129,7 @@ get_header(); ?>
         <section class="vatjss-service-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></h2>
 								<p><?php echo esc_html(CFS()->get( 'extrajudicial_sancition' )); ?></p>
 							</div>
@@ -139,7 +139,7 @@ get_header(); ?>
         <section class="vatjss-service-section">
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
-							<div class="vatjss-flex-item-desktop-70">
+							<div class="vatjss-flex-item-desktop-80">
                 <h2 id="resources">Resources</h2>
                 <p>We provide a number of resources to help with housing issues. This range from landlord dealings to finding emergency shelters.</p>
                 <a href="/vatjss/resource" class="vatjss-service-justice-resource-btn vatjss-text-uppercase">learn more</a>

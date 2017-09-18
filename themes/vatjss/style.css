@@ -1668,6 +1668,9 @@ object {
       height: 0;
       overflow: hidden; } }
 
+.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
+  padding-top: 5.125rem; }
+
 .search-no-results .search-form fieldset {
   border: none; }
   .search-no-results .search-form fieldset #search-form-input .icon-search {
@@ -1847,8 +1850,7 @@ object {
 .services-template-default .vatjss-service-section {
   background-color: #000; }
   .services-template-default .vatjss-service-section h2, .services-template-default .vatjss-service-section p {
-    color: #fff;
-    margin-top: 0; }
+    color: #fff; }
   .services-template-default .vatjss-service-section .vatjss-flex-item-desktop-70 {
     padding: 20px 15px; }
 
@@ -2027,7 +2029,7 @@ object {
   padding: 0;
   list-style: none;
   margin: 2.5rem auto;
-  border: solid 5px tomato; }
+  border: solid 5px #971E16; }
   .services-template-default .vatjss-justice-services .circle-container > * {
     display: block;
     position: absolute;
@@ -2059,7 +2061,10 @@ object {
     box-shadow: none;
     text-shadow: none;
     font-size: 1rem;
-    background: rgba(255, 255, 255, 0.8); }
+    background: rgba(255, 255, 255, 0.8);
+    border: none; }
+    .services-template-default .vatjss-justice-services .circle-container button:hover {
+      background: white; }
 
 .services-template-default .vatjss-justice-services .vatjss-services-sidebar .vatjss-services-sidebar-btns {
   position: absolute;
@@ -2410,7 +2415,7 @@ object {
     padding: 0;
     list-style: none;
     margin: 2.5rem auto;
-    border: solid 5px tomato; }
+    border: solid 5px #971E16; }
     .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > * {
       display: block;
       position: absolute;
