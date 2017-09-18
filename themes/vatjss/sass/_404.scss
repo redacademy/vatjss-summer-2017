@@ -10,11 +10,14 @@
   flex-direction: column;
     .not-found {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
     h1 {
       margin: 0;
       font-size:rem(144);
-      opacity: 0.29;
+      opacity: 0.29
     }
 }
 
@@ -33,7 +36,8 @@
 .error-bug {
   align-self: center;
   position: absolute;
-  left: 39%;
+  transform: translate(0, 0);
+  align-items: center;
     @include desktop {
       left: 47.1%;
       position: fixed;
