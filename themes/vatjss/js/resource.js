@@ -28,7 +28,6 @@
     $('a[href^="#"]').unbind();
     windowWidth = window.innerWidth;
     applyFunctionality(windowWidth);
-    console.log(windowWidth);
   });
 
   function applyFunctionality(windowW){

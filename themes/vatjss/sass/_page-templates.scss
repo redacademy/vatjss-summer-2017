@@ -83,6 +83,9 @@
 }
 .post-type-archive-services{
   padding-top: 80px;
+  @include desktop {
+    padding-top: 0;
+  }
   h1{
     color:white;
     font-size: rem(22);
@@ -653,8 +656,10 @@
       }
     }
     .vatjss-desktop-staff-section{
-      overflow: auto;
-      padding: 30px 15px;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      padding: 0;
     }
     .vatjss-desktop-contact-form-section{
       overflow: auto;
@@ -794,10 +799,17 @@
       width: 0;
       height: 0;
       overflow: hidden;
+      display: none;
       @include desktop {
         width: auto;
         height: auto;
       }
+    }
+    #vatjss-mobile-contact-form-section{
+      width: auto;
+      height: auto;
+      padding: 30px 15px;
+      display: block;
     }
     .vatjss-contact-form{
       h3{
@@ -834,7 +846,6 @@
       }
       .vatjss-contact-bottom{
         text-align: center;
-        
       }
     }
     .vatjss-volunteer-container{

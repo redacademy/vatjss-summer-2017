@@ -56,4 +56,42 @@ body.page-template-contact {
       }
     }
   }
+  .wpcf7-response-output {
+    color: white;
+  }
+  .alert {
+    border: 1px solid white;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: $background_red;
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    h3 {
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid white;
+    }
+    p {
+      text-align: center;
+    }
+    .close-alert {
+      border: 1px solid black;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      &:hover, &:visited:hover {
+        background-color: lighten($background_red, 15%);
+      }
+    }
+  }
+  .alert-close {
+    display: none;
+  }
 }

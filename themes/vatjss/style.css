@@ -1533,6 +1533,43 @@ body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap text
     height: 60px;
     width: 100%; } }
 
+body.page-template-contact .wpcf7-response-output {
+  color: white; }
+
+body.page-template-contact .alert {
+  border: 1px solid white;
+  border-radius: 9px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  color: white;
+  background-color: #971E16;
+  position: fixed;
+  width: 500px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  body.page-template-contact .alert h3 {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid white; }
+  body.page-template-contact .alert p {
+    text-align: center; }
+  body.page-template-contact .alert .close-alert {
+    border: 1px solid black;
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+    body.page-template-contact .alert .close-alert:hover, body.page-template-contact .alert .close-alert:visited:hover {
+      background-color: #da2b20; }
+
+body.page-template-contact .alert-close {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1661,6 +1698,9 @@ object {
 
 .post-type-archive-services {
   padding-top: 80px; }
+  @media (min-width: 768px) {
+    .post-type-archive-services {
+      padding-top: 0; } }
   .post-type-archive-services h1 {
     color: white;
     font-size: 1.375rem; }
@@ -2166,8 +2206,10 @@ object {
         width: auto;
         height: auto; } }
   .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-staff-section {
-    overflow: auto;
-    padding: 30px 15px; }
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    padding: 0; }
   .page-template-contact .vatjss-contact-form-staff-section .vatjss-desktop-contact-form-section {
     overflow: auto;
     padding: 30px 15px; }
@@ -2277,11 +2319,17 @@ object {
   .page-template-contact .vatjss-mobile-tab-section .tabcontent {
     width: 0;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }
     @media (min-width: 768px) {
       .page-template-contact .vatjss-mobile-tab-section .tabcontent {
         width: auto;
         height: auto; } }
+  .page-template-contact .vatjss-mobile-tab-section #vatjss-mobile-contact-form-section {
+    width: auto;
+    height: auto;
+    padding: 30px 15px;
+    display: block; }
   .page-template-contact .vatjss-mobile-tab-section .vatjss-contact-form h3 {
     color: #fff;
     margin-top: 20px; }

@@ -35,7 +35,6 @@
   
           /* Toggle between hiding and showing the active panel */
           var panel = this.nextElementSibling;
-          var allPanel = document.getElementsByClassName('panel');
           if ( panel.style.width === 'auto' ) {
               panel.style.width = '0';
               panel.style.height = '0';

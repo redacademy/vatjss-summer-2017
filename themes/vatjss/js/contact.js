@@ -7,6 +7,9 @@ function openTab(evt, cityName) {
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.width = "0";
       tabcontent[i].style.height = "0";
+      tabcontent[i].style.overflow = "hidden";
+      tabcontent[i].style.padding = "0";
+      tabcontent[i].style.display = "none";
       tabcontent[i].style.backgroundColor = "transparent";
   }
 
@@ -18,7 +21,20 @@ function openTab(evt, cityName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.width = "auto";
+  document.getElementById(cityName).style.display = "block";
   document.getElementById(cityName).style.height = "auto";
+  document.getElementById(cityName).style.padding = "30px 15px";
   document.getElementById(cityName).style.backgroundColor = "#971e16";
   evt.currentTarget.className += " active";
 }
+
+(function($){
+   var wpcf7Elm = document.querySelector( '.wpcf7' );
+   
+   wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+       $('.wpcf7-form').append( '<div class="alert"><h3>Thank You!</h3> <p>Your message has been received. One of the staff from the department you requested service from will be in touch with you</p> <div class="close-alert">X</div></div>');
+       $('.close-alert').on('click', function() {
+           $('.alert').addClass('alert-close');
+       })
+   }, false );
+}(jQuery));
