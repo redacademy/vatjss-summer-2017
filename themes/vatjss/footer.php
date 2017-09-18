@@ -17,8 +17,8 @@
 				</div>
 
 				<div class="site-info">
-					<p class="vatjss-footer-mobile">&copy; 2017 <span class="vatjss-text-uppercase">vatjss.</span> All Rights Reserved.<p>
-					<p class="vatjss-footer-web">&copy; 2017 <span class="vatjss-text-uppercase">vatjss</span> (Vancouver Aboriginal Transformative Justice Services Society). All Rights Reserved.</p>
+					<p class="vatjss-footer-mobile vatjss-hidden-desktop">&copy; 2017 <span class="vatjss-text-uppercase">vatjss.</span> All Rights Reserved.</p>
+					<p class="vatjss-footer-web vatjss-hidden-mobile">&copy; 2017 <span class="vatjss-text-uppercase">vatjss</span> (Vancouver Aboriginal Transformative Justice Services Society). All Rights Reserved.</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
