@@ -1218,7 +1218,9 @@ div aside.vatjss-biz-hours-class {
     overflow: hidden; }
     @media (min-width: 768px) {
       .post-type-archive-resource .resources-content-area section.resource-list-page {
-        height: auto; } }
+        height: auto; }
+        .post-type-archive-resource .resources-content-area section.resource-list-page .panel {
+          margin-left: 40px; } }
   .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container {
     z-index: 1000;
     margin: 120px auto 20px;
@@ -1316,12 +1318,12 @@ div aside.vatjss-biz-hours-class {
   @media (min-width: 768px) {
     .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion {
       width: 100%;
-      margin: 200px 30px; }
+      margin: 200px 60px 40px; }
       .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content {
         color: white;
         height: auto; }
         .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content h3.resource-subtitle {
-          font-size: 1.7rem;
+          font-size: 2rem;
           margin: 0; }
         .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content p {
           font-size: 1.2rem; }
@@ -1329,10 +1331,10 @@ div aside.vatjss-biz-hours-class {
         color: white;
         font-size: 1.5rem; }
       .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .panel {
-        margin-left: 20px;
         height: 200px;
         overflow: scroll; }
       .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel {
+        margin-left: 0;
         height: auto;
         overflow: display; }
         .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion {
@@ -1358,7 +1360,9 @@ div aside.vatjss-biz-hours-class {
     @media (min-width: 768px) {
       .post-type-archive-resource .resources-content-area .resource-toggle-desktop {
         height: 100px;
-        width: 100%; } }
+        width: 100%; }
+        .post-type-archive-resource .resources-content-area .resource-toggle-desktop h3 {
+          font-size: 1.5; } }
   .post-type-archive-resource .resources-content-area section.resource-list-page.resource-toggle-on {
     height: auto; }
   .post-type-archive-resource .resources-content-area .panel {
@@ -1378,7 +1382,7 @@ div aside.vatjss-biz-hours-class {
     .post-type-archive-resource .resources-content-area .panel h5 {
       margin: 0;
       font-size: 1.3rem;
-      margin-left: 20px; }
+      margin-left: 40px; }
       @media (min-width: 768px) {
         .post-type-archive-resource .resources-content-area .panel h5 {
           font-size: 1rem; } }

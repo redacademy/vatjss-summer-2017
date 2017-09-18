@@ -34,6 +34,9 @@
       overflow: hidden;
       @include desktop {
         height: auto;
+        .panel {
+          margin-left: 40px;
+        }
       }
     }
 
@@ -144,12 +147,12 @@
     .vatjss-mobile-accordion {
       @include desktop {
         width: 100%;
-        margin: 200px 30px;
+        margin: 200px 60px 40px;
         .vatjss-resource-desktop-content {
           color: white;
           height: auto;
           h3.resource-subtitle {
-            font-size: 1.7rem;
+            font-size: 2rem;
             margin: 0;
           }
           p {
@@ -161,11 +164,11 @@
           font-size: 1.5rem;
         }
         .panel {
-          margin-left: 20px;
           height: 200px;
           overflow: scroll;
         }
         .community-resource-list .panel {
+          margin-left: 0;
           height: auto;
           overflow: display;
           div.resources-accordion {
@@ -199,6 +202,9 @@
       @include desktop {
         height: 100px;
         width: 100%;
+        h3 {
+          font-size: 1.5;
+        }
       }
     }
 
@@ -224,7 +230,7 @@
       h5 {
         margin: 0;
         font-size: 1.3rem;
-        margin-left: 20px;
+        margin-left: 40px;
           @include desktop {
           font-size: 1rem;
         }

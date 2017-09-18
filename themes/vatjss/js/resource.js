@@ -1,20 +1,18 @@
 (function($){
-  function resourceAccordion() {
-    $('.resource-accordion-button').on('click', function(){
-      if ( $(this).next().hasClass('resource-accordion-toggle-on') ) {
-        $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
-        $('.button-chevron').removeClass('button-chevron-toggle-on');
-        $(this).removeClass('resource-accordion-button-toggle-on');
-      } else {
-        $('.button-chevron').removeClass('button-chevron-toggle-on');
-        $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
-        $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
-        $(this).next().addClass('resource-accordion-toggle-on');
-        $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
-        $(this).addClass('resource-accordion-button-toggle-on');
-      }
-    });
-  }
+  $('.resource-accordion-button').on('click', function(){
+    if ( $(this).next().hasClass('resource-accordion-toggle-on') ) {
+      $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
+      $('.button-chevron').removeClass('button-chevron-toggle-on');
+      $(this).removeClass('resource-accordion-button-toggle-on');
+    } else {
+      $('.button-chevron').removeClass('button-chevron-toggle-on');
+      $('.resource-accordion-button').removeClass('resource-accordion-button-toggle-on');
+      $('.resource-accordion-section').removeClass('resource-accordion-toggle-on');
+      $(this).next().addClass('resource-accordion-toggle-on');
+      $(this).children('.button-chevron').addClass('button-chevron-toggle-on');
+      $(this).addClass('resource-accordion-button-toggle-on');
+    }
+  });
 
   var windowWidth = window.innerWidth;
   applyFunctionality(windowWidth);
@@ -29,12 +27,11 @@
     $('.justice-toggle').unbind();
     $('a[href^="#"]').unbind();
     windowWidth = window.innerWidth;
-    console.log(windowWidth);
     applyFunctionality(windowWidth);
+    console.log(windowWidth);
   });
 
   function applyFunctionality(windowW){
-    resourceAccordion();
     if ( windowW <= 768 ){
       $('.housing-toggle').on('click', function(){
         $('.resource-toggle-mobile').removeClass('resource-toggle-mobile-on');
@@ -58,10 +55,6 @@
       });
     }
     if ( windowW >= 769 ) {
-      if ( windowW < 769 ) {
-        return;
-      }
-      resourceAccordion();
       $(document).ready(function() {
         $('a[href^="#"]').on('click', function(event) {
 
