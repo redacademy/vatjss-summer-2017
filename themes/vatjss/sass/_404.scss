@@ -1,4 +1,9 @@
 /* 404 PAGE */
+.error404 .hfeed .site-header {
+  @include desktop { 
+    background: hsla(0,0%,100%,.5);
+  }
+}
 .error404 .error-404 {
   height: 100vh;
   max-width: 100%;
@@ -38,8 +43,4 @@
   position: absolute;
   transform: translate(0, 0);
   align-items: center;
-    @include desktop {
-      left: 47.1%;
-      position: fixed;
-    }
 }
