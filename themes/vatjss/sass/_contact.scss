@@ -59,39 +59,61 @@ body.page-template-contact {
   .wpcf7-response-output {
     color: white;
   }
+  .alert-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+  }
   .alert {
-    border: 1px solid white;
-    border-radius: 9px;
+    margin: 0;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     background-color: $background_red;
     position: fixed;
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 300px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     h3 {
+      margin: 0;
+      padding: 10px;
+      font-size: 2rem;
       text-align: center;
       width: 100%;
       border-bottom: 1px solid white;
     }
     p {
+      padding: 20px 30px;
+      line-height: 1.7;
+      font-size: 1.1rem;
       text-align: center;
     }
     .close-alert {
-      border: 1px solid black;
+      font-size: 1.5rem;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      text-align: center;
+      color: black;
       position: absolute;
       top: 5px;
       right: 5px;
       &:hover, &:visited:hover {
-        background-color: lighten($background_red, 15%);
+        background-color: lighten($background_red, 10%);
       }
     }
   }
   .alert-close {
-    display: none;
+    display: none !important;
   }
 }
