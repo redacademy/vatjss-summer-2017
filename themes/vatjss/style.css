@@ -3288,4 +3288,5 @@ section.vatjss-about-content {
   display: flex;
   width: 100%;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  height: 100%; }
