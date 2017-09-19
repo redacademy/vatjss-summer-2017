@@ -3236,9 +3236,13 @@ section.vatjss-about-content {
 
 .error-bug {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   position: absolute;
-  transform: translate(0, 0);
+  transform: translateY(50%);
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center; }

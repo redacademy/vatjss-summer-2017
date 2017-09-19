@@ -124,6 +124,13 @@ get_header(); ?>
         </div>
       </div>
     </section>
+    <?php while ( have_posts() ) : the_post(); ?>
+    <section id="post-<?php the_ID(); ?>" class="vatjss-location-map-section">
+      <section class="front-page-video">
+        <?php the_content(); ?>
+      </section>
+    </section>
+    <?php endwhile; ?>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button class="subscribe">Subscribe</button>
     </section>

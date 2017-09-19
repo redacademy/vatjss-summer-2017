@@ -122,6 +122,7 @@ get_header(); ?>
 							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></h2>
 								<p><?php echo esc_html(CFS()->get( 'alternative_measures_adults' )); ?></p>
+								<?php echo CFS()->get( 'alternative_measures_video' ); ?>
 							</div>
 						</div>
 					</div>
@@ -132,6 +133,7 @@ get_header(); ?>
 							<div class="vatjss-flex-item-desktop-80">
 								<h2 id="extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></h2>
 								<p><?php echo esc_html(CFS()->get( 'extrajudicial_sancition' )); ?></p>
+								<?php echo CFS()->get( 'extrajudicial_sanctions_video' ); ?>
 							</div>
 						</div>
 					</div>
