@@ -24,7 +24,7 @@ get_header(); ?>
     <section class="vatjss-home-banner">
       <div class="vatjss-container">
         <div class="vatjss-flex-container">
-          <div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-70">
+          <div class="vatjss-flex-item-desktop-70">
             <h2 class="vatjss-text-uppercase vatjss-text-center"><?php echo esc_html(CFS()->get( 'volunteer_opportunities' )); ?></h2>
           </div>
           <div class="vatjss-flex-item-desktop-30 vatjss-hidden-mobile">
@@ -124,13 +124,6 @@ get_header(); ?>
         </div>
       </div>
     </section>
-    <?php while ( have_posts() ) : the_post(); ?>
-    <section id="post-<?php the_ID(); ?>" class="vatjss-location-map-section">
-      <section class="front-page-video">
-        <?php the_content(); ?>
-      </section>
-    </section>
-    <?php endwhile; ?>
     <section class="vatjss-home-mobile-subscribe-banner vatjss-vertical-align-center">
       <button class="subscribe">Subscribe</button>
     </section>
@@ -141,3 +134,6 @@ get_header(); ?>
   <div class="close">X</div>
 </div>
 <?php get_footer(); ?>
+
+
+<!-- MAAARK WAS HERE TOO! :D -->
