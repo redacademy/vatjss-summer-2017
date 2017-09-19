@@ -1696,7 +1696,6 @@ object {
 --------------------------------------------------------------*/
 body #content {
   min-height: 70vh;
-  padding-top: 0;
   background-color: black; }
   @media (min-width: 768px) {
     body #content {
@@ -1724,9 +1723,8 @@ body.archive #content {
       height: 0;
       overflow: hidden; } }
 
-@media (min-width: 768px) {
-  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
-    padding-top: 5rem; } }
+.post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
+  padding-top: 5rem; }
 
 body.search #content {
   padding-top: 100px;
@@ -1821,7 +1819,6 @@ body.search #content {
   max-width: 35%; }
 
 .post-type-archive-services .vatjss-services-section {
-  padding: 40px 0;
   position: relative;
   overflow: hidden; }
   .post-type-archive-services .vatjss-services-section h2 {
@@ -1830,8 +1827,7 @@ body.search #content {
   .post-type-archive-services .vatjss-services-section p {
     color: #fff; }
   .post-type-archive-services .vatjss-services-section .entry-header {
-    padding: 58px 80px;
-    margin: -40px 0;
+    padding: 20px 30px;
     background: rgba(0, 0, 0, 0.5);
     overflow: auto; }
     @media (min-width: 768px) {
@@ -1844,10 +1840,9 @@ body.search #content {
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100%; }
-    .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image img {
-      object-fit: cover;
-      width: 100%; }
+    height: 100%;
+    background-size: cover;
+    background-position: center; }
   .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn {
     background-color: #971E16;
     padding: 0.375rem 0.75rem;
@@ -1892,7 +1887,7 @@ body.search #content {
   padding: 20px 0;
   min-height: 70vh; }
   .services-template-default .vatjss-service-hero .vatjss-btn-section {
-    margin: 70px 15px 20px; }
+    margin: 0px 15px 20px 15px; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .vatjss-flex-item-mobile-33 {
       padding: 0; }
     .services-template-default .vatjss-service-hero .vatjss-btn-section .vatjss-service-btn {
@@ -2067,7 +2062,6 @@ body.search #content {
     font-size: 0.875rem; }
 
 .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel {
-  overflow: auto;
   position: relative; }
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .vatjss-justice-service-steps {
     position: absolute;
@@ -2235,40 +2229,40 @@ body.search #content {
 .page-template-contact .site-main {
   background-color: #000; }
 
-.page-template-contact .vatjss-location-map-section {
-  padding: 70px 0; }
-  .page-template-contact .vatjss-location-map-section .vatjss-container-fluid {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 15px;
-    padding-left: 15px; }
-  .page-template-contact .vatjss-location-map-section .vatjss-location-section {
-    background-position: center;
-    background-size: cover;
+.page-template-contact .vatjss-location-map-section .vatjss-container {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.page-template-contact .vatjss-location-map-section .vatjss-location-section {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  -ms-flex-order: 2;
+      order: 2; }
+  .page-template-contact .vatjss-location-map-section .vatjss-location-section p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
     width: 100%;
-    height: 300px;
-    position: relative;
-    -ms-flex-order: 2;
-        order: 2; }
-    .page-template-contact .vatjss-location-map-section .vatjss-location-section p {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      padding: 20px 10px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff; }
-  .page-template-contact .vatjss-location-map-section .vatjss-map-section {
-    -ms-flex-order: 1;
-        order: 1; }
-    .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
-      margin: 0 -15px;
-      height: 300px; }
-    .page-template-contact .vatjss-location-map-section .vatjss-map-section iframe {
-      width: 100%;
-      height: 300px; }
+    margin: 0;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+
+.page-template-contact .vatjss-location-map-section .vatjss-map-section {
+  -ms-flex-order: 1;
+      order: 1; }
+  .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
+    margin: 0 -15px;
+    height: 300px; }
+  .page-template-contact .vatjss-location-map-section .vatjss-map-section iframe {
+    width: 100%;
+    height: 300px; }
 
 .page-template-contact .vatjss-contact-form-staff-section {
   padding: 40px 0;
@@ -2631,16 +2625,18 @@ body.search #content {
       text-align: left; }
   .post-type-archive-tribe_events .vatjss-community-partner-logo-banner h2 {
     font-size: 1.5rem; }
-  .page-template-contact .vatjss-location-map-section .vatjss-container-fluid {
-    padding: 40px 0; }
-  .page-template-contact .vatjss-location-map-section .vatjss-location-section {
-    -ms-flex-order: 1;
-        order: 1; }
-  .page-template-contact .vatjss-location-map-section .vatjss-map-section {
-    -ms-flex-order: 2;
-        order: 2; }
-    .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
-      margin: 0; } }
+  .page-template-contact .vatjss-location-map-section {
+    padding: 70px 0; }
+    .page-template-contact .vatjss-location-map-section .vatjss-container {
+      padding: 40px 0; }
+    .page-template-contact .vatjss-location-map-section .vatjss-location-section {
+      -ms-flex-order: 1;
+          order: 1; }
+    .page-template-contact .vatjss-location-map-section .vatjss-map-section {
+      -ms-flex-order: 2;
+          order: 2; }
+      .page-template-contact .vatjss-location-map-section .vatjss-map-section p {
+        margin: 0; } }
 
 /* Front page */
 .home .on-subscribe {
@@ -2650,7 +2646,6 @@ body.search #content {
   height: auto; }
 
 .home .vatjss-home-hero {
-  padding-top: 134px;
   background-image: linear-gradient(rgba(151, 30, 22, 0.5) 0, rgba(151, 30, 22, 0.5)), url("../../images/bc_lake.png");
   background-size: cover;
   background-position: center;
@@ -2660,6 +2655,9 @@ body.search #content {
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
+  @media (min-width: 768px) {
+    .home .vatjss-home-hero {
+      padding-top: 8.375rem; } }
   .home .vatjss-home-hero .main-carousel .flickity-viewport .carousel-cell {
     width: 100%;
     height: 100%; }
@@ -2667,11 +2665,14 @@ body.search #content {
     width: 70%; }
   .home .vatjss-home-hero .main-carousel {
     width: 100%;
-    margin: 0 auto;
-    height: 60%;
-    max-width: 600px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff; }
+    @media (min-width: 768px) {
+      .home .vatjss-home-hero .main-carousel {
+        height: 60%;
+        margin: 0 auto;
+        max-width: 600px; } }
     .home .vatjss-home-hero .main-carousel h3 {
       margin-bottom: 0;
       font-size: 1.5rem; }
@@ -2708,13 +2709,15 @@ body.search #content {
         flex-wrap: nowrap;
     -ms-flex-pack: center;
         justify-content: center;
-    width: 100%;
     -ms-flex-align: center;
         align-items: center;
     height: 30vh; }
   .home .vatjss-home-banner h2 {
     color: #fff;
     font-size: 1.125rem; }
+    @media (min-width: 768px) {
+      .home .vatjss-home-banner h2 {
+        text-align: left; } }
   .home .vatjss-home-banner .volunteer-learn-more-fp a {
     background-color: #000;
     color: #fff;

@@ -4,7 +4,6 @@
 // target all body elements
 body #content {
   min-height: 70vh;
-  padding-top: 0;
   background-color: black;
   @include desktop {
     padding-top: 180px;
@@ -39,9 +38,7 @@ body.archive #content {
 
 .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.search-no-results,.single{		
   .site-content{			
-    @include desktop {
-      padding-top: rem(80);	
-    }	
+    padding-top: rem(80);		
   }		
 }
 body.search #content {
@@ -160,7 +157,6 @@ body.search #content {
     }
   }
   .vatjss-services-section{
-    padding: 40px 0;
     position: relative;
     overflow: hidden;
     h2{
@@ -171,8 +167,7 @@ body.search #content {
       color:$color_white;
     }
     .entry-header{
-      padding: 58px 80px;
-      margin: -40px 0;
+      padding: 20px 30px;
       background:rgba(0,0,0,.5);
       overflow: auto;
       @include desktop {
@@ -187,10 +182,8 @@ body.search #content {
       z-index: -1;
       width: 100%;
       height:100%;
-      img{
-        object-fit: cover;
-        width: 100%;
-      }
+      background-size:cover;
+      background-position:center;
     }
     .vatjss-service-learn-btn{
       background-color: $background_red;
@@ -243,7 +236,7 @@ body.search #content {
     padding: 20px 0;
     min-height: 70vh;
     .vatjss-btn-section{
-      margin: 70px 15px 20px;
+      margin: 0px 15px 20px 15px;
       .vatjss-flex-item-mobile-33{
         padding: 0;
       }
@@ -442,7 +435,6 @@ body.search #content {
       }
     }
     .vatjss-justice-service-carousel{
-      overflow: auto;
       position: relative;
       .vatjss-justice-service-steps{
         position: absolute;
@@ -614,8 +606,7 @@ body.search #content {
     background-color:$color_black;
   }
   .vatjss-location-map-section{
-    padding: 70px 0;
-    .vatjss-container-fluid{
+    .vatjss-container{
       padding-top: 0;
       padding-bottom: 0;
       padding-right: 15px;
@@ -1129,7 +1120,8 @@ body.search #content {
   }
   .page-template-contact{
     .vatjss-location-map-section{
-      .vatjss-container-fluid{
+      padding: 70px 0;
+      .vatjss-container{
         padding: 40px 0;
       }
       .vatjss-location-section{
