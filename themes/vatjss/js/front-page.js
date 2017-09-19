@@ -31,4 +31,15 @@
     $('.vatjss-sidebar-widget').removeClass('vatjss-sidebar-widget-click');
     $('.close').removeClass('close-click');
   });
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if($(window).scrollTop()>=44 && $( "body" ).hasClass( "logged-in" )){
+      $('.site-header').css('top','0');
+      $('button#responsive-menu-button').css('top','23px');
+    }
+    if($(window).scrollTop()<44 && $( "body" ).hasClass( "logged-in" )){
+      $('.site-header').css('top','44px');
+      $('button#responsive-menu-button').css('top','64px');
+    }
+  });
 }(jQuery));
