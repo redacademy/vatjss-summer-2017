@@ -2877,7 +2877,12 @@ body.search #content {
         color: #fff;
         display: inline-block; }
         .home .vatjss-home-services-section .housing-services-fp a:hover, .home .vatjss-home-services-section .justice-services-fp a:hover, .home .vatjss-home-services-section .resources-fp a:hover {
-          background-color: #6a1510; } }
+          background-color: #6a1510; }
+  .front-page-video p {
+    background: black;
+    margin: 0; }
+  .front-page-video iframe {
+    width: 100vw; } }
 
 /*--------------------------------------------------------------
 # Footer

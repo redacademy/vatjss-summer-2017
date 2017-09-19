@@ -31,7 +31,7 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="vatjss-hidden-desktop vatjss-mobile-logo" src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_mobile_logo.svg alt="hero image"/></a>
 							<div id="vatjss-nav-menu" class="vatjss-hidden-mobile vatjss-nav-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?></div>
 							<div class="vatjss-phone-search">
-								<a class="phone" href="tel:604-123-4567"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="vatjss-hidden-mobile">(604)-123-4567</span></a>
+								<a class="phone" href="tel:604-251-7200"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="vatjss-hidden-mobile">(604)-251-7200</span></a>
 								<?php echo get_search_form(); ?>
 							</div>
 						</nav>
