@@ -1073,14 +1073,29 @@ body.search #content {
     .vatjss-service-section {
       .media-container {
         display: flex;
-        .justice-list-video-1 ul{
-          color: $color_white;
+        border-bottom: $border_grey;
+        .justice-list-video-1 {
+          margin-top: rem(25);
+          margin-left: rem(10);
+          ul {
+            color: $color_white;
+          }
         }
       }
       .media-container-2 {
         display: flex;
-        .justice-list-video-2 ul{
-          color: $color_white;
+        border-bottom: $border_grey;
+        flex-direction: row-reverse;
+        .alternative-measures-video iframe{
+          width: 1000px;
+        }
+        .justice-list-video-2 {
+          margin-top: rem(25);
+          ul {
+            color: $color_white;
+            padding-left: 0;
+            padding-right: rem(15);
+          }
         }
       }
     }

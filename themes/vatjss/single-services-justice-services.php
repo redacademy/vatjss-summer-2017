@@ -72,9 +72,9 @@ get_header(); ?>
 										</p>
 									</div>
 									
-									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></button>
+									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'alternative_measures_adults1' ); echo esc_html($props['label']);  ?></button>
 									<div class="panel">
-										<?php echo esc_html(CFS()->get( 'alternative_measures_adults' )); ?>
+										<?php echo esc_html(CFS()->get( 'alternative_measures_adults1' )); ?>
 									</div>
 									<button class="accordion-services"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></button>
 									<div class="panel">

@@ -2598,14 +2598,27 @@ body.search #content {
         overflow: hidden; }
   .services-template-default .vatjss-service-section .media-container {
     display: -ms-flexbox;
-    display: flex; }
-    .services-template-default .vatjss-service-section .media-container .justice-list-video-1 ul {
-      color: #fff; }
+    display: flex;
+    border-bottom: 1px solid #979797; }
+    .services-template-default .vatjss-service-section .media-container .justice-list-video-1 {
+      margin-top: 1.5625rem;
+      margin-left: 0.625rem; }
+      .services-template-default .vatjss-service-section .media-container .justice-list-video-1 ul {
+        color: #fff; }
   .services-template-default .vatjss-service-section .media-container-2 {
     display: -ms-flexbox;
-    display: flex; }
-    .services-template-default .vatjss-service-section .media-container-2 .justice-list-video-2 ul {
-      color: #fff; }
+    display: flex;
+    border-bottom: 1px solid #979797;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    .services-template-default .vatjss-service-section .media-container-2 .alternative-measures-video iframe {
+      width: 1000px; }
+    .services-template-default .vatjss-service-section .media-container-2 .justice-list-video-2 {
+      margin-top: 1.5625rem; }
+      .services-template-default .vatjss-service-section .media-container-2 .justice-list-video-2 ul {
+        color: #fff;
+        padding-left: 0;
+        padding-right: 0.9375rem; }
   .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
     position: absolute;
     top: 50%;
