@@ -34,7 +34,7 @@
         text-transform:uppercase;
         font-size: rem(16);
         text-decoration:none;
-        color:#971E16;
+        color: lighten($background_red, 15%);
         &:hover{
           text-decoration: underline;
           cursor: pointer;

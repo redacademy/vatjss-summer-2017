@@ -236,6 +236,9 @@ h1, h2, h3, h4, h5, h5, h6 {
   max-width: 1120px;
   overflow: hidden; }
 
+.vatjss-community-partner-logo-list .vatjss-container {
+  background-color: white; }
+
 .vatjss-container-fluid {
   padding: 20px 0px;
   margin: 0 auto;
@@ -251,12 +254,14 @@ h1, h2, h3, h4, h5, h5, h6 {
   display: flex; }
 
 .vatjss-flex-container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: -15px;
   margin-right: -15px; }
+  @media (min-width: 768px) {
+    .vatjss-flex-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
 
 .vatjss-flex-container-no-wrap {
   -ms-flex-wrap: nowrap;
@@ -1081,7 +1086,7 @@ div div aside#text-5 {
     font-size: 1rem; }
   @media (min-width: 768px) {
     div div aside#text-5 {
-      display: unset;
+      display: block;
       margin: 0;
       width: 33rem;
       border-right: 5px solid #971E16;
@@ -1095,7 +1100,7 @@ div div aside#text-4 {
   overflow: hidden; }
   @media (min-width: 768px) {
     div div aside#text-4 {
-      display: unset;
+      display: block;
       margin: 0;
       width: 22rem;
       height: auto;
@@ -1169,7 +1174,7 @@ div aside.vatjss-biz-hours-class {
     .vatjss-biz-hours-class {
       width: auto;
       height: auto;
-      display: unset;
+      display: block;
       width: 26rem; } }
 
 @media (min-width: 768px) {
@@ -1194,10 +1199,12 @@ div aside.vatjss-biz-hours-class {
 --------------------------------------------------------------*/
 .post-type-archive-resource .site-main {
   overflow: auto;
-  min-height: 85vh; }
+  min-height: 85vh;
+  padding-top: 100px; }
   @media (min-width: 768px) {
     .post-type-archive-resource .site-main {
-      min-height: 90vh; } }
+      min-height: 90vh;
+      padding-top: 0; } }
 
 .post-type-archive-resource .site-header-background {
   z-index: -1000; }
@@ -1221,10 +1228,10 @@ div aside.vatjss-biz-hours-class {
       .post-type-archive-resource .resources-content-area section.resource-list-page {
         height: auto; }
         .post-type-archive-resource .resources-content-area section.resource-list-page .panel {
-          margin-left: 40px; } }
+          padding-left: 40px; } }
   .post-type-archive-resource .resources-content-area div.vatjss-mobile-resource-toggle-container {
     z-index: 1000;
-    margin: 120px auto 20px;
+    margin: 0 auto 20px;
     height: auto;
     width: 92vw;
     min-width: 246px;
@@ -1242,7 +1249,7 @@ div aside.vatjss-biz-hours-class {
         z-index: 1;
         width: 300px;
         height: 300px;
-        margin: 200px auto 20px 0;
+        margin: 80px auto 20px 0;
         position: relative;
         left: 0;
         -ms-flex-direction: column;
@@ -1319,7 +1326,7 @@ div aside.vatjss-biz-hours-class {
   @media (min-width: 768px) {
     .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion {
       width: 100%;
-      margin: 200px 60px 40px; }
+      margin: 80px 60px 40px; }
       .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .vatjss-resource-desktop-content {
         color: white;
         height: auto; }
@@ -1333,11 +1340,17 @@ div aside.vatjss-biz-hours-class {
         font-size: 1.5rem; }
       .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .panel {
         height: 200px;
-        overflow: scroll; }
+        overflow-y: scroll; }
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .panel::-webkit-scrollbar-track {
+          display: none; }
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .panel::-webkit-scrollbar {
+          display: none; }
+        .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .panel::-webkit-scrollbar-thumb {
+          display: none; }
       .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel {
         margin-left: 0;
         height: auto;
-        overflow: display; }
+        overflow: visible; }
         .post-type-archive-resource .resources-content-area .vatjss-mobile-accordion .community-resource-list .panel div.resources-accordion {
           background-color: #971E16;
           border-radius: 0;
@@ -1378,7 +1391,7 @@ div aside.vatjss-biz-hours-class {
       margin: 0;
       font-size: 1.4rem;
       text-decoration: underline; }
-      @media (max-width: 420px) {
+      @media (max-width: 450px) {
         .post-type-archive-resource .resources-content-area .panel h4 {
           margin-left: 15px; } }
       @media (min-width: 768px) {
@@ -1391,7 +1404,7 @@ div aside.vatjss-biz-hours-class {
       @media (min-width: 768px) {
         .post-type-archive-resource .resources-content-area .panel h5 {
           font-size: 1rem; } }
-    @media (max-width: 420px) {
+    @media (max-width: 450px) {
       .post-type-archive-resource .resources-content-area .panel ul {
         padding-left: 20px; } }
     .post-type-archive-resource .resources-content-area .panel ul li {
@@ -1505,7 +1518,6 @@ div aside.vatjss-biz-hours-class {
   text-transform: uppercase; }
 
 body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, body.page-template-contact form.wpcf7-form div span.wpcf7-form-control-wrap input.wpcf7-form-control.wpcf7-text {
-  width: 100vw;
   margin: 0;
   padding: 15px;
   height: 50px;
@@ -1603,6 +1615,11 @@ body.page-template-contact .alert {
 body.page-template-contact .alert-close {
   display: none !important; }
 
+@media (min-width: 768px) {
+  body.page-template-contact .vatjss-staff-section .vatjss-flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1666,6 +1683,23 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body #content {
+  min-height: 70vh;
+  padding-top: 0;
+  background-color: black; }
+  @media (min-width: 768px) {
+    body #content {
+      padding-top: 180px; } }
+
+body.home #content {
+  background-color: transparent; }
+  @media (min-width: 768px) {
+    body.home #content {
+      padding-top: 0; } }
+
+body.archive #content {
+  background-color: transparent; }
+
 @media (min-width: 768px) {
   .page-template-front-page footer .vatjss-footer-web {
     margin-right: 17.8125rem; } }
@@ -1681,6 +1715,21 @@ object {
 
 .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
   padding-top: 5rem; }
+@media (min-width: 768px) {
+  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
+    padding-top: 5.125rem; } }
+
+body.search #content {
+  padding-top: 100px;
+  min-height: 75vh; }
+  body.search #content p {
+    color: white; }
+  body.search #content h1 {
+    color: white; }
+  @media (min-width: 768px) {
+    body.search #content {
+      padding-top: 180px;
+      min-height: 82vh; } }
 
 .search-no-results .search-form fieldset {
   border: none; }
@@ -1820,6 +1869,70 @@ object {
     padding: 12px 24px;
     text-align: center;
     text-decoration: none; }
+  .post-type-archive-services .vatjss-services-section-container .vatjss-flex-container-no-wrap {
+    display: block; }
+  .post-type-archive-services .vatjss-services-section-container .vatjss-service-icons {
+    max-width: 35%; }
+  .post-type-archive-services .vatjss-services-section {
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden; }
+    .post-type-archive-services .vatjss-services-section h2 {
+      font-size: 1.125rem;
+      color: #fff; }
+    .post-type-archive-services .vatjss-services-section p {
+      color: #fff; }
+    .post-type-archive-services .vatjss-services-section .entry-header {
+      padding: 58px 80px;
+      margin: -40px 0;
+      background: rgba(0, 0, 0, 0.5);
+      overflow: auto; }
+      @media (min-width: 768px) {
+        .post-type-archive-services .vatjss-services-section .entry-header {
+          padding: 80px 0; } }
+    .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+      .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image img {
+        object-fit: cover;
+        width: 100%; }
+    .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn {
+      background-color: #971E16;
+      padding: 0.375rem 0.75rem;
+      color: white;
+      text-decoration: none;
+      font-size: 0.875rem;
+      display: inline-block;
+      float: right;
+      border-radius: 5px; }
+      .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
+        position: relative;
+        top: 1px;
+        margin-left: 10px; }
+      .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn:hover {
+        background-color: #6a1510; }
+  .post-type-archive-services .vatjss-btn-section {
+    margin: 0; }
+    .post-type-archive-services .vatjss-btn-section .vatjss-flex-item-mobile-33 {
+      padding: 0; }
+    .post-type-archive-services .vatjss-btn-section .vatjss-service-btn {
+      width: 100%;
+      display: inline-block;
+      background: transparent;
+      border: 1px solid white;
+      box-shadow: none;
+      font-size: 0.75rem;
+      text-shadow: none;
+      color: white;
+      border-radius: 0;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none; }
 
 .services-template-default .vatjss-serivce-no-padding {
   padding-top: 0;
@@ -1872,7 +1985,8 @@ object {
 
 .services-template-default .vatjss-service-red-maple-background-section {
   padding: 40px 0;
-  background-image: url("../../images/red_maple_background.png"); }
+  background-image: url("../../images/red_maple_background.png");
+  background-size: 120%; }
   .services-template-default .vatjss-service-red-maple-background-section h2, .services-template-default .vatjss-service-red-maple-background-section p {
     color: white;
     margin-top: 0; }
@@ -2150,7 +2264,8 @@ object {
     font-size: 1rem; }
 
 .page-template-events .vatjss-community-partner-logo-banner {
-  background-image: url("../../images/red_maple_background.png"); }
+  background-image: url("../../images/red_maple_background.png");
+  background-size: 80%; }
   .page-template-events .vatjss-community-partner-logo-banner h2 {
     color: #fff;
     padding: 40px 0;
@@ -2468,7 +2583,10 @@ object {
 
 @media (min-width: 768px) {
   body:not(.home) .site-header-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6)), url("../../images/black_maple_background.png"); }
+    z-index: 100;
+    background-image: url("../../images/black_maple_background.png");
+    background-position: center;
+    background-size: 79%; }
   body:not(.home) .site-header {
     background: rgba(151, 30, 22, 0.5); }
     body:not(.home) .site-header .search-form .search-field {
@@ -2588,7 +2706,7 @@ object {
   background-image: linear-gradient(rgba(151, 30, 22, 0.5) 0, rgba(151, 30, 22, 0.5)), url("../../images/bc_lake.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 600px;
   width: 100vw;
   display: -ms-flexbox;
   display: flex;
@@ -2636,6 +2754,13 @@ object {
 .home .vatjss-home-banner {
   overflow: auto; }
   .home .vatjss-home-banner .vatjss-flex-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
     -ms-flex-align: center;
         align-items: center;
     height: 30vh; }
@@ -2702,6 +2827,7 @@ object {
     .home .vatjss-home-services-section .vatjss-home-service-mobile-image img {
       display: block;
       height: 100%;
+      width: 100%;
       object-fit: cover; }
 
 .home .on-subscribe-click {
@@ -2892,7 +3018,7 @@ section.vatjss-about-content {
   width: 100%; }
   @media (min-width: 768px) {
     section.vatjss-about-content {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/black_maple_background.png);
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/black_maple_background.png);
       background-size: cover;
       background-repeat: no-repeat; } }
   section.vatjss-about-content .vatjss-about-category {
@@ -2947,11 +3073,17 @@ section.vatjss-about-content {
         background: #971E16;
         height: 10rem;
         border-radius: 0.625rem;
-        overflow: scroll;
+        overflow-y: scroll;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around; }
+        .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons::-webkit-scrollbar-track {
+          display: none; }
+        .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons::-webkit-scrollbar {
+          display: none; }
+        .page-template-about .vatjss-mission-buttons div.vatjss-all-buttons::-webkit-scrollbar-thumb {
+          display: none; } }
 
 @media (min-width: 768px) {
   .vatjss-first, .vatjss-second {
@@ -2973,7 +3105,20 @@ section.vatjss-about-content {
   div.vatjss-hover:hover p {
     opacity: 1; }
   div.vatjss-hover:hover h2 {
-    top: -6.25rem; } }
+    top: -6.25rem; }
+  div.vatjss-hover:hover::-webkit-scrollbar-track {
+    display: unset;
+    border-radius: 5px;
+    background-color: black; }
+  div.vatjss-hover:hover::-webkit-scrollbar {
+    display: unset;
+    width: 5px;
+    background-color: black; }
+  div.vatjss-hover:hover::-webkit-scrollbar-thumb {
+    display: unset;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: #971E16; } }
 
 .page-template-about .vatjss-staff-content {
   background-color: black;
@@ -3092,7 +3237,7 @@ section.vatjss-about-content {
       text-transform: uppercase;
       font-size: 1rem;
       text-decoration: none;
-      color: #971E16; }
+      color: #da2b20; }
       .search-results .entry-header .entry-title a:hover {
         text-decoration: underline;
         cursor: pointer; }

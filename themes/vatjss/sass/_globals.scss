@@ -16,6 +16,9 @@ h1,h2,h3,h4,h5,h5,h6{
   max-width: $container-width;
   overflow: hidden;
 }
+.vatjss-community-partner-logo-list .vatjss-container{
+  background-color: white
+}
 .vatjss-container-fluid{
   padding: 20px 0px;
   margin: 0 auto;
@@ -28,10 +31,12 @@ h1,h2,h3,h4,h5,h5,h6{
   display: flex;
 }
 .vatjss-flex-container{
-  flex-wrap: wrap;
-  display: flex;
   margin-left: -15px;
   margin-right: -15px;
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .vatjss-flex-container-no-wrap{
   flex-wrap: nowrap;

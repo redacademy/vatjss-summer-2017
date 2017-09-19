@@ -1,7 +1,25 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+// target all body elements
+body #content {
+  min-height: 70vh;
+  padding-top: 0;
+  background-color: black;
+  @include desktop {
+    padding-top: 180px;
+  }
+}
 
+body.home #content {
+  background-color: transparent;
+  @include desktop{
+    padding-top: 0;
+  }
+}
+body.archive #content {
+  background-color: transparent;
+}
 //FRONT PAGE FOOTER
 .page-template-front-page footer .vatjss-footer-web {
   @include desktop {
@@ -22,7 +40,24 @@
 .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.search-no-results,.single{		
   .site-content{		
     padding-top: rem(80);		
+    @include desktop {
+      padding-top: rem(82);	
+    }	
   }		
+}
+body.search #content {
+  padding-top: 100px;
+  min-height: 75vh;
+    p {
+      color: white;
+  }
+  h1 {
+    color: white;
+  }
+  @include desktop {
+    padding-top: 180px;
+    min-height: 82vh;
+  }
 }
 .search-no-results{
   .search-form{
@@ -137,10 +172,13 @@
       color:$color_white;
     }
     .entry-header{
-      padding: 80px;
+      padding: 58px 80px;
       margin: -40px 0;
       background:rgba(0,0,0,.5);
       overflow: auto;
+      @include desktop {
+        padding: 80px 0;
+      }
     }
     .vatjss-service-mobile-image{
       position: absolute;
@@ -254,6 +292,7 @@
   .vatjss-service-red-maple-background-section{
     padding: 40px 0;
     background-image: url('../../images/red_maple_background.png');
+    background-size: 120%;
     h2,p{
       color:white;
       margin-top: 0;
@@ -548,6 +587,7 @@
   }
   .vatjss-community-partner-logo-banner{
     background-image: url('../../images/red_maple_background.png');
+    background-size: 80%;
     h2{
       color:$color_white;
       padding: 40px 0;
@@ -935,7 +975,10 @@
   body{
     &:not(.home){
       .site-header-background{
-        background-image:linear-gradient(rgba(0,0,0, 0.6) 0,rgba(0,0,0, 0.6)),url('../../images/black_maple_background.png');
+        z-index: 100;
+        background-image: url('../../images/black_maple_background.png');
+        background-position: center;
+        background-size: 79%;
       }
       .site-header{
         background: rgba(151, 30, 22,0.5);

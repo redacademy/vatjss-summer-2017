@@ -5,8 +5,10 @@
   .site-main {
     overflow: auto;
     min-height: 85vh;
+    padding-top: 100px;
     @include desktop {
       min-height: 90vh;
+      padding-top: 0;
     }
   }
 
@@ -35,14 +37,14 @@
       @include desktop {
         height: auto;
         .panel {
-          margin-left: 40px;
+          padding-left: 40px;
         }
       }
     }
 
     div.vatjss-mobile-resource-toggle-container {
       z-index: 1000;
-      margin: 120px auto 20px;
+      margin: 0 auto 20px;
       height: auto;
       width: 92vw;
       min-width: 246px;
@@ -58,7 +60,7 @@
         z-index: 1;
         width: 300px;
         height: 300px;
-        margin: 200px auto 20px 0;
+        margin: 80px auto 20px 0;
         position: relative;
         left: 0;
         flex-direction: column;
@@ -147,7 +149,7 @@
     .vatjss-mobile-accordion {
       @include desktop {
         width: 100%;
-        margin: 200px 60px 40px;
+        margin: 80px 60px 40px;
         .vatjss-resource-desktop-content {
           color: white;
           height: auto;
@@ -165,12 +167,21 @@
         }
         .panel {
           height: 200px;
-          overflow: scroll;
+          overflow-y: scroll;
+          &::-webkit-scrollbar-track {
+            display: none;
+          }
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          &::-webkit-scrollbar-thumb {
+            display: none;
+          }
         }
         .community-resource-list .panel {
           margin-left: 0;
           height: auto;
-          overflow: display;
+          overflow: visible;
           div.resources-accordion {
             background-color: $background_red;
             border-radius: 0;
@@ -221,7 +232,7 @@
         width: 100%;
       }
       h4 {
-        @media (max-width:420px) {
+        @media (max-width:450px) {
           margin-left: 15px;
         }
         margin: 0;
@@ -240,7 +251,7 @@
         }
       }
       ul {
-        @media (max-width:420px) {
+        @media (max-width:450px) {
           padding-left: 20px;
         }
         li{

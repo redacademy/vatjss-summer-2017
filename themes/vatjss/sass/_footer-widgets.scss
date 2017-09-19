@@ -58,7 +58,7 @@ div div aside#text-5 {
     font-size: rem(16);
 	}
 	@include desktop {
-		display: unset;
+		display: block;
 		margin: 0;
 		width: 33rem;
 		border-right: 5px solid #971E16;
@@ -73,7 +73,7 @@ div div aside#text-4 {
 	overflow: hidden;
 
 	@include desktop {
-		display: unset;
+		display: block;
 		margin: 0;
 		width: 22rem;
 		height: auto;
@@ -156,7 +156,7 @@ div aside.vatjss-biz-hours-class {
     @include desktop {
 			width: auto;
 			height: auto;
-      display: unset;
+      display: block;
       width: 26rem;
     }
 }

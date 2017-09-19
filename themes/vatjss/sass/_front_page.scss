@@ -12,7 +12,7 @@
     background-image:linear-gradient(rgba(151, 30, 22, 0.5) 0,rgba(151, 30, 22, 0.5)),url('../../images/bc_lake.png');
     background-size:cover;
     background-position: center;
-    height: 100vh;
+    height: 600px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -68,6 +68,10 @@
   .vatjss-home-banner {
     overflow: auto;
     .vatjss-flex-container{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      width: 100%;
       align-items: center;
       height: 30vh;
     }
@@ -147,6 +151,7 @@
       img{
         display: block;
         height: 100%;
+        width: 100%;
         object-fit: cover;
       }
     }    

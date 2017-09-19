@@ -1,7 +1,6 @@
 body.page-template-contact {
   form.wpcf7-form div span.wpcf7-form-control-wrap {
     select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, input.wpcf7-form-control.wpcf7-text {
-      width: 100vw;
       margin: 0;
       padding: 15px;
       height: 50px;
@@ -115,5 +114,10 @@ body.page-template-contact {
   }
   .alert-close {
     display: none !important;
+  }
+  @include desktop {
+    .vatjss-staff-section .vatjss-flex-container {
+      flex-wrap: wrap;
+    }
   }
 }
