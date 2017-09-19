@@ -51,13 +51,42 @@
     $( '#vatjss-justice-service-carousel .vatjss-justice-service-step' ).removeClass( 'active' );
     $( '#vatjss-justice-service-carousel '+ stepClick ).addClass( 'active' );
   });
-  $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    if($(window).scrollTop()>=44 && $( "body" ).hasClass( "logged-in" )){
+  
+  if($(window).scrollTop()>=44 && $( "body" ).hasClass( "logged-in" ) && $(window).width()<768){
+    $('.site-header').css('top','0');
+    $('button#responsive-menu-button').css('top','23px');
+  }
+  if($(window).scrollTop()<44 && $( "body" ).hasClass( "logged-in" ) && $(window).width()<768){
+    $('.site-header').css('top','44px');
+    $('button#responsive-menu-button').css('top','64px');
+  }
+  $(window).resize(function() {
+    if($( "body" ).hasClass( "logged-in" )){
+      if($(window).width()>767){
+        $('.site-header').css('top','76px');
+      }else{
+        $('.site-header').css('top','44px');
+        $('button#responsive-menu-button').css('top','64px');
+        console.log('test');
+      }
+    }
+    if($(window).scrollTop()>=44 && $( "body" ).hasClass( "logged-in" ) && $(window).width()<768){
       $('.site-header').css('top','0');
       $('button#responsive-menu-button').css('top','23px');
     }
-    if($(window).scrollTop()<44 && $( "body" ).hasClass( "logged-in" )){
+    if($(window).scrollTop()<44 && $( "body" ).hasClass( "logged-in" ) && $(window).width()<768){
+      $('.site-header').css('top','44px');
+      $('button#responsive-menu-button').css('top','64px');
+    }
+  });
+  
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if($(window).scrollTop()>=44 && $( "body" ).hasClass( "logged-in" ) && $(window).width()<768){
+      $('.site-header').css('top','0');
+      $('button#responsive-menu-button').css('top','23px');
+    }
+    if($(window).scrollTop()<44 && $( "body" ).hasClass( "logged-in" ) && $(window).width()<768){
       $('.site-header').css('top','44px');
       $('button#responsive-menu-button').css('top','64px');
     }
