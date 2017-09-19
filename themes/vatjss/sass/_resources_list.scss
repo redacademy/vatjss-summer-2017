@@ -240,7 +240,6 @@
         }
         margin: 0;
         font-size: 1.4rem;
-        text-decoration: underline;
           @include desktop {
           font-size: 1.3rem;
         }
@@ -282,6 +281,9 @@
     }
     .community-resource-list .panel {
       width: 430px;
+      @include desktop {
+        width: 100%;
+      }
     }
 
     .resources-accordion {
