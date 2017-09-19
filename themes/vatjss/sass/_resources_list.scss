@@ -222,12 +222,14 @@
     section.resource-list-page.resource-toggle-on {
       height: auto;
     }
-
+    .resource-list-page {
+      display: flex;
+      justify-content: center;
+    }
     .panel {
       color: white;
-      width: 430px;
+      width: 366px;
       max-width: 100vw;
-      margin: 0 auto;
       @include desktop {
         width: 100%;
       }
@@ -277,11 +279,14 @@
         }
       }
     }
+    .community-resource-list .panel {
+      width: 430px;
+    }
 
     .resources-accordion {
       width: 100vw;
       background: $color__background-screen;
-      padding: 20px 0;
+      padding: 20px 1px;
       max-width: 430px;
       margin: 0;
       border: none;
