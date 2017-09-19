@@ -129,11 +129,15 @@ get_header(); ?>
     </section>
   </main>
 </div>
+<?php while ( have_posts() ) : the_post(); ?>
+<section id="post-<?php the_ID(); ?>" class="vatjss-location-map-section">
+  <section class="front-page-video">
+    <?php the_content(); ?>
+  </section>
+</section>
+<?php endwhile; ?>
 <div class="on-subscribe">
   <?php get_sidebar('footer-widget'); ?>
   <div class="close">X</div>
 </div>
 <?php get_footer(); ?>
-
-
-<!-- MAAARK WAS HERE TOO! :D -->
