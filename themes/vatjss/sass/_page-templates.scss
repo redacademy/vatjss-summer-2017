@@ -1088,6 +1088,7 @@ body.search #content {
       .media-container {
         display: flex;
         border-bottom: $border_grey;
+        padding-bottom: 20px;
         iframe{
           max-height: 300px;
         }
