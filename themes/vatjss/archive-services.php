@@ -47,7 +47,7 @@ get_header(); ?>
             <section id="post-<?php the_ID(); ?>" class="vatjss-services-section vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-33">
               <div class="vatjss-service-mobile-image vatjss-hidden-desktop"><?php the_post_thumbnail( 'full' ); ?></div>
               <header class="entry-header">
-                <img class="vatjss-service-icons vatjss-hidden-mobile" src=<?php echo esc_html(CFS()->get( 'icon' )); ?> />
+                <img class="vatjss-service-icons vatjss-hidden-mobile" alt="Services icon" src=<?php echo esc_html(CFS()->get( 'icon' )); ?> />
                 <?php the_title( sprintf( '<h2 class="entry-title">'), '</h2>' ); ?>
                 <div class="vatjss-hidden-desktop"><?php the_content(); ?></div> 
                 <a class="vatjss-service-learn-btn" href="<?php echo get_permalink() ?>">Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></a>

@@ -57,7 +57,7 @@ get_header(); ?>
               <?php
                 foreach ( $service_post as $post ) : setup_postdata( $post );
                   if($post->ID === 113){
-                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. CFS()->get( 'icon' ) .'"/>';
+                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" alt="House Service icon" src="'. CFS()->get( 'icon' ) .'"/>';
                   }
                 endforeach; wp_reset_postdata();
               ?>
@@ -81,7 +81,7 @@ get_header(); ?>
               <?php
                 foreach ( $service_post as $post ) : setup_postdata( $post );
                   if($post->ID === 103){
-                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" src="'. CFS()->get( 'icon' ) .'"/>';
+                    echo '<img class="vatjss-home-service-icons vatjss-hidden-mobile" alt="Transformatice Justice icon" src="'. CFS()->get( 'icon' ) .'"/>';
                   }
                 endforeach; wp_reset_postdata();
               ?>
@@ -105,7 +105,7 @@ get_header(); ?>
             ?>
             </div>
             <div class="resources-fp">
-              <img class="vatjss-home-service-icons vatjss-hidden-mobile" src=<?php echo get_stylesheet_directory_uri(); ?>/images/resources.png />
+              <img class="vatjss-home-service-icons vatjss-hidden-mobile" alt="Resources icon" src=<?php echo get_stylesheet_directory_uri(); ?>/images/resources.png />
               <h3 class="resources-title-fp">Resources</h3>
               <p class="resources-description-fp vatjss-hidden-desktop"><?php echo $resources->description ?></p>
               <div class="resources-learn-more-fp"><a href="resource">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>

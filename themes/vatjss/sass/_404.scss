@@ -41,6 +41,9 @@
 .error-bug {
   align-self: center;
   position: absolute;
-  transform: translate(0, 0);
+  transform: translateY(50%);
   align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
