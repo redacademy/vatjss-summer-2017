@@ -38,10 +38,9 @@ body.archive #content {
  }
 
 .post-type-archive-services, .post-type-archive-staff,.services-template-default,.page-template-events,.page-template-contact,.search-results,.search-no-results,.single{		
-  .site-content{		
-    padding-top: rem(80);		
+  .site-content{			
     @include desktop {
-      padding-top: rem(82);	
+      padding-top: rem(80);	
     }	
   }		
 }
