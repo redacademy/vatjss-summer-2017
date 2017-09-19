@@ -1088,6 +1088,9 @@ body.search #content {
       .media-container {
         display: flex;
         border-bottom: $border_grey;
+        iframe{
+          max-height: 300px;
+        }
         .justice-list-video-1 {
           margin-top: rem(25);
           margin-left: rem(10);
@@ -1102,6 +1105,7 @@ body.search #content {
         flex-direction: row-reverse;
         .alternative-measures-video iframe{
           width: 1000px;
+          max-height: 300px;
         }
         .justice-list-video-2 {
           margin-top: rem(25);

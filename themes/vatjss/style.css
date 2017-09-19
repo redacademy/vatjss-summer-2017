@@ -2610,6 +2610,8 @@ body.search #content {
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #979797; }
+    .services-template-default .vatjss-service-section .media-container iframe {
+      max-height: 300px; }
     .services-template-default .vatjss-service-section .media-container .justice-list-video-1 {
       margin-top: 1.5625rem;
       margin-left: 0.625rem; }
@@ -2622,7 +2624,8 @@ body.search #content {
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse; }
     .services-template-default .vatjss-service-section .media-container-2 .alternative-measures-video iframe {
-      width: 1000px; }
+      width: 1000px;
+      max-height: 300px; }
     .services-template-default .vatjss-service-section .media-container-2 .justice-list-video-2 {
       margin-top: 1.5625rem; }
       .services-template-default .vatjss-service-section .media-container-2 .justice-list-video-2 ul {
