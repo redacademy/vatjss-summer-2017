@@ -1483,6 +1483,9 @@ div aside.vatjss-biz-hours-class {
       background-image: none;
       background: black; } }
 
+.resources-content-area h3, .resources-content-area h4 {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

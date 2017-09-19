@@ -24,6 +24,7 @@
     background-image: url('../../images/black_maple_background.png');
     background-position: top right;
     background-repeat: repeat;
+    
     @include desktop {
       main {
         display: flex;
@@ -345,3 +346,9 @@
     }
   }
 }
+
+.resources-content-area{
+   h3, h4{
+     text-transform:uppercase;
+   }
+} 
