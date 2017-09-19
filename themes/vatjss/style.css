@@ -681,7 +681,7 @@ a {
   top: 44px;
   z-index: 100; }
   .site-header .site-header-container {
-    overflow: initial; }
+    overflow: visible; }
   .site-header .vatjss-flex-container-no-wrap {
     -ms-flex-align: center;
         align-items: center; }
