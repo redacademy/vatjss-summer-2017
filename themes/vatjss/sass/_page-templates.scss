@@ -1070,6 +1070,20 @@ body.search #content {
     }
   }
   .services-template-default{
+    .vatjss-service-section {
+      .media-container {
+        display: flex;
+        .justice-list-video-1 ul{
+          color: $color_white;
+        }
+      }
+      .media-container-2 {
+        display: flex;
+        .justice-list-video-2 ul{
+          color: $color_white;
+        }
+      }
+    }
     .vatjss-financial-services,.vatjss-home-services{
       .vatjss-service-title{
         position: absolute;

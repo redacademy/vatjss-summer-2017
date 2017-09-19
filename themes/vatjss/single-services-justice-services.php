@@ -27,7 +27,7 @@ get_header(); ?>
 					<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 						<div class="vatjss-flex-item-desktop-20 vatjss-services-sidebar vatjss-hidden-mobile">
               <div class="vatjss-services-sidebar-btns">
-                <a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></a>
+                <a href="#alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults1' ); echo esc_html($props['label']);  ?></a>
                 <a href="#extrajudicial-sanctions"><?php $props = CFS()->get_field_info( 'extrajudicial_sancition' ); echo esc_html($props['label']);  ?></a>
                 <a href="#resources">Resources</a>
                 <a href="#faq">FAQ</a>

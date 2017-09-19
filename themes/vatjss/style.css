@@ -2596,6 +2596,16 @@ body.search #content {
         width: 0;
         height: 0;
         overflow: hidden; }
+  .services-template-default .vatjss-service-section .media-container {
+    display: -ms-flexbox;
+    display: flex; }
+    .services-template-default .vatjss-service-section .media-container .justice-list-video-1 ul {
+      color: #fff; }
+  .services-template-default .vatjss-service-section .media-container-2 {
+    display: -ms-flexbox;
+    display: flex; }
+    .services-template-default .vatjss-service-section .media-container-2 .justice-list-video-2 ul {
+      color: #fff; }
   .services-template-default .vatjss-financial-services .vatjss-service-title, .services-template-default .vatjss-home-services .vatjss-service-title {
     position: absolute;
     top: 50%;
