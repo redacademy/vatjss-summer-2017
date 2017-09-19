@@ -179,6 +179,9 @@ a {
 	background: rgba(255,255,255,0.5);
 	top: 44px;
 	z-index: 100;
+	.site-header-container{
+		overflow: initial;
+	}
 	.vatjss-flex-container-no-wrap{
 		align-items: center;
 	}

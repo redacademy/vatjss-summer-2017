@@ -680,6 +680,8 @@ a {
   background: rgba(255, 255, 255, 0.5);
   top: 44px;
   z-index: 100; }
+  .site-header .site-header-container {
+    overflow: initial; }
   .site-header .vatjss-flex-container-no-wrap {
     -ms-flex-align: center;
         align-items: center; }
@@ -1715,9 +1717,9 @@ body.archive #content {
 
 .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
   padding-top: 5rem; }
-@media (min-width: 768px) {
-  .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
-    padding-top: 5.125rem; } }
+  @media (min-width: 768px) {
+    .post-type-archive-services .site-content, .post-type-archive-staff .site-content, .services-template-default .site-content, .page-template-events .site-content, .page-template-contact .site-content, .search-results .site-content, .search-no-results .site-content, .single .site-content {
+      padding-top: 5.125rem; } }
 
 body.search #content {
   padding-top: 100px;
@@ -1821,10 +1823,13 @@ body.search #content {
   .post-type-archive-services .vatjss-services-section p {
     color: #fff; }
   .post-type-archive-services .vatjss-services-section .entry-header {
-    padding: 80px;
+    padding: 58px 80px;
     margin: -40px 0;
     background: rgba(0, 0, 0, 0.5);
     overflow: auto; }
+    @media (min-width: 768px) {
+      .post-type-archive-services .vatjss-services-section .entry-header {
+        padding: 80px 0; } }
   .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -1869,70 +1874,6 @@ body.search #content {
     padding: 12px 24px;
     text-align: center;
     text-decoration: none; }
-  .post-type-archive-services .vatjss-services-section-container .vatjss-flex-container-no-wrap {
-    display: block; }
-  .post-type-archive-services .vatjss-services-section-container .vatjss-service-icons {
-    max-width: 35%; }
-  .post-type-archive-services .vatjss-services-section {
-    padding: 40px 0;
-    position: relative;
-    overflow: hidden; }
-    .post-type-archive-services .vatjss-services-section h2 {
-      font-size: 1.125rem;
-      color: #fff; }
-    .post-type-archive-services .vatjss-services-section p {
-      color: #fff; }
-    .post-type-archive-services .vatjss-services-section .entry-header {
-      padding: 58px 80px;
-      margin: -40px 0;
-      background: rgba(0, 0, 0, 0.5);
-      overflow: auto; }
-      @media (min-width: 768px) {
-        .post-type-archive-services .vatjss-services-section .entry-header {
-          padding: 80px 0; } }
-    .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.5);
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%; }
-      .post-type-archive-services .vatjss-services-section .vatjss-service-mobile-image img {
-        object-fit: cover;
-        width: 100%; }
-    .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn {
-      background-color: #971E16;
-      padding: 0.375rem 0.75rem;
-      color: white;
-      text-decoration: none;
-      font-size: 0.875rem;
-      display: inline-block;
-      float: right;
-      border-radius: 5px; }
-      .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn .fa {
-        position: relative;
-        top: 1px;
-        margin-left: 10px; }
-      .post-type-archive-services .vatjss-services-section .vatjss-service-learn-btn:hover {
-        background-color: #6a1510; }
-  .post-type-archive-services .vatjss-btn-section {
-    margin: 0; }
-    .post-type-archive-services .vatjss-btn-section .vatjss-flex-item-mobile-33 {
-      padding: 0; }
-    .post-type-archive-services .vatjss-btn-section .vatjss-service-btn {
-      width: 100%;
-      display: inline-block;
-      background: transparent;
-      border: 1px solid white;
-      box-shadow: none;
-      font-size: 0.75rem;
-      text-shadow: none;
-      color: white;
-      border-radius: 0;
-      padding: 12px 24px;
-      text-align: center;
-      text-decoration: none; }
 
 .services-template-default .vatjss-serivce-no-padding {
   padding-top: 0;

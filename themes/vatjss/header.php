@@ -21,7 +21,7 @@
 			
 			<div class="site-header-background"></div>
 			<header id="masthead" class="site-header" role="banner">
-				<div class="vatjss-container">
+				<div class="vatjss-container site-header-container">
 					<div class="vatjss-flex-container-no-wrap">
 						<div class="site-branding vatjss-flex-item-desktop-20">
 						<a href=<?php echo home_url() ?>><img class="vatjss-hidden-mobile" src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_logo_text_side_white.svg alt="VATJSS logo image"/></a>
