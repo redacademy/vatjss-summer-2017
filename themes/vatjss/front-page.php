@@ -130,10 +130,10 @@ get_header(); ?>
   </main>
 </div>
 <?php while ( have_posts() ) : the_post(); ?>
-<section id="post-<?php the_ID(); ?>" class="vatjss-location-map-section">
-  <section class="front-page-video">
+<section id="post-<?php the_ID(); ?>" class="vatjss-location-map-section vatjss-hidden-mobile">
+  <div class="front-page-video">
     <?php the_content(); ?>
-  </section>
+  </div>
 </section>
 <?php endwhile; ?>
 <div class="on-subscribe">
