@@ -28,7 +28,7 @@
 							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						</div>
 						<nav id="site-navigation" class="main-navigation vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-80" role="navigation">
-							<img class="vatjss-hidden-desktop vatjss-mobile-logo" src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_mobile_logo.svg alt="hero image"/>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="vatjss-hidden-desktop vatjss-mobile-logo" src=<?php echo get_stylesheet_directory_uri(); ?>/images/vatjss_mobile_logo.svg alt="hero image"/></a>
 							<div id="vatjss-nav-menu" class="vatjss-hidden-mobile vatjss-nav-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?></div>
 							<div class="vatjss-phone-search">
 								<a class="phone" href="tel:604-123-4567"><span><i class="fa fa-phone" aria-hidden="true"></i></span><span class="vatjss-hidden-mobile">(604)-123-4567</span></a>
