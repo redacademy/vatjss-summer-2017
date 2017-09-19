@@ -1802,6 +1802,8 @@ body.search #content {
   text-align: center; }
   .post-type-archive-services .vatjss-service-hero img {
     margin: 40px 0; }
+  .post-type-archive-services .vatjss-service-hero h2 {
+    color: #fff; }
   .post-type-archive-services .vatjss-service-hero p {
     text-align: center;
     color: #fff;
@@ -2269,6 +2271,9 @@ body.search #content {
 .page-template-contact .vatjss-contact-form-staff-section {
   padding: 40px 0;
   /* Style the tab content */ }
+  .page-template-contact .vatjss-contact-form-staff-section h2 {
+    color: #fff;
+    margin-bottom: 40px; }
   .page-template-contact .vatjss-contact-form-staff-section .tab {
     text-align: center;
     overflow: hidden; }
@@ -2353,6 +2358,11 @@ body.search #content {
   padding: 40px 0; }
   .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container {
     color: #fff; }
+    .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container h3 {
+      font-size: 1.625rem; }
+    .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-requirements h4, .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-benefits-container h4 {
+      font-size: 1.3125rem;
+      text-transform: uppercase; }
     .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-requirements ul, .page-template-contact .vatjss-contact-volunteer-section .vatjss-volunteer-container .volunteer-benefits-container ul {
       padding: 0;
       margin-left: 20px; }
@@ -2480,13 +2490,13 @@ body.search #content {
     font-size: 1.5rem; }
   .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container {
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 50%;
     padding: 0;
     list-style: none;
     margin: 2.5rem auto;
-    border: solid 5px #971E16; }
+    border: solid 10px #971E16; }
     .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > * {
       display: block;
       position: absolute;
@@ -2496,19 +2506,19 @@ body.search #content {
       width: 3rem;
       height: 3rem; }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(1) {
-        transform: rotate(-89deg) translate(10rem) rotate(89deg); }
+        transform: rotate(-89deg) translate(11rem) rotate(89deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(2) {
-        transform: rotate(-37.57143deg) translate(10rem) rotate(37.57143deg); }
+        transform: rotate(-37.57143deg) translate(11rem) rotate(37.57143deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(3) {
-        transform: rotate(13.85714deg) translate(10rem) rotate(-13.85714deg); }
+        transform: rotate(13.85714deg) translate(11rem) rotate(-13.85714deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(4) {
-        transform: rotate(65.28571deg) translate(10rem) rotate(-65.28571deg); }
+        transform: rotate(65.28571deg) translate(11rem) rotate(-65.28571deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(5) {
-        transform: rotate(116.71429deg) translate(10rem) rotate(-116.71429deg); }
+        transform: rotate(116.71429deg) translate(11rem) rotate(-116.71429deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(6) {
-        transform: rotate(168.14286deg) translate(10rem) rotate(-168.14286deg); }
+        transform: rotate(168.14286deg) translate(11rem) rotate(-168.14286deg); }
       .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container > *:nth-of-type(7) {
-        transform: rotate(219.57143deg) translate(10rem) rotate(-219.57143deg); }
+        transform: rotate(219.57143deg) translate(11rem) rotate(-219.57143deg); }
     .services-template-default .vatjss-justice-services .vatjss-justice-service-carousel .circle-container button {
       display: block;
       border-radius: 50%;
@@ -3076,13 +3086,17 @@ section.vatjss-about-content {
   padding-top: 2.8125rem; }
 
 @media (min-width: 768px) {
-  div.vatjss-hover h2 {
-    position: absolute;
-    transition: top 0.2s; }
-  div.vatjss-hover p {
-    opacity: 0;
-    transition: opacity 0.5s linear;
-    border: none; }
+  div.vatjss-hover {
+    position: relative; }
+    div.vatjss-hover h2 {
+      position: absolute;
+      transition: top 0.2s;
+      left: 50%;
+      transform: translate(-50%, 0); }
+    div.vatjss-hover p {
+      opacity: 0;
+      transition: opacity 0.5s linear;
+      border: none; }
   div.vatjss-hover:hover p {
     opacity: 1; }
   div.vatjss-hover:hover h2 {
@@ -3268,7 +3282,6 @@ section.vatjss-about-content {
   -ms-flex-item-align: center;
       align-self: center;
   position: absolute;
-  transform: translateY(50%);
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;

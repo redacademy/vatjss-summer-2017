@@ -17,7 +17,7 @@ get_header(); ?>
             </div>
             <div class="vatjss-flex-item-mobile-100 vatjss-flex-item-desktop-50 vatjss-no-padding-mobile">
               <div class="vatjss-location-section" style='background-image:url(<?php echo the_post_thumbnail_url(); ?>)'>
-                <p><?php echo esc_html(CFS()->get( 'address' )); ?></p>
+                <p><?php echo esc_html(CFS()->get( 'address' )); ?><br/>+1-(604)-251-7200</p>
               </div>
             </div>
           </div>
@@ -25,6 +25,7 @@ get_header(); ?>
       </section>
       <?php endwhile; ?>
       <section id="vatjss-contact-form-staff-section" class="vatjss-contact-form-staff-section vatjss-hidden-mobile">
+        <h2 class="vatjss-text-center">Contact us for more information service</h2>
         <div class="vatjss-container">
           <div class="tab vatjss-flex-container-no-wrap">
             <div class="vatjss-flex-item-desktop-50"><button class="tablinks active" onclick="openTab(event, 'vatjss-desktop-contact-form-section')">Send a Message</button></div>

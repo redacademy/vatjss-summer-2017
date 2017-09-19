@@ -28,7 +28,7 @@ get_header(); ?>
             <h2 class="vatjss-text-uppercase vatjss-text-center"><?php echo esc_html(CFS()->get( 'volunteer_opportunities' )); ?></h2>
           </div>
           <div class="vatjss-flex-item-desktop-30 vatjss-hidden-mobile">
-            <div class="volunteer-learn-more-fp"><a href="contact-us">Learn More <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+            <div class="volunteer-learn-more-fp vatjss-text-uppercase"><a href="contact-us">Volunteer</a></div>
           </div>
         </div>
       </div>

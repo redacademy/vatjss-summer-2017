@@ -131,9 +131,12 @@ section.vatjss-about-content {
 
 @include desktop {
   div.vatjss-hover {
+    position: relative;
     h2 {
       position: absolute;
       transition: top 0.2s;
+      left: 50%;
+      transform: translate(-50%,0);
     }
     p { 
       opacity: 0; 

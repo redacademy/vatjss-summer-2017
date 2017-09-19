@@ -32,7 +32,7 @@ get_header(); ?>
               if ( has_post_thumbnail() ){
                 the_post_thumbnail( 'large' );
               }
-              echo '<p class="vatjss-hidden-mobile">'.esc_html(CFS()->get( 'is_this_for' )).'</p>';
+              echo '<div class="vatjss-hidden-mobile"><h2>Is this for me?</h2><p>'.esc_html(CFS()->get( 'is_this_for' )).'</p></div>';
             endforeach; wp_reset_postdata();
           ?>
         </div>
