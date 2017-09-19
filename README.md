@@ -60,4 +60,4 @@ This project is made with the help of RED Starter Theme, as a final community pr
 * Hat tip to anyone who's code was used
 * Big thanks to the designers from UX/UI class
 
-![screencapture-localhost-8888-vatjss-1505840791530](https://user-images.githubusercontent.com/29563161/30605452-fb1d33ba-9d22-11e7-9e90-d3ca322a3428.png)
+![screencapture-vatjss-cp-academy-red-1505841271940](https://user-images.githubusercontent.com/29563161/30605557-627279c6-9d23-11e7-820c-d1f5f36a7e93.png)
