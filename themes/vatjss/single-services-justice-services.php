@@ -120,7 +120,7 @@ get_header(); ?>
 					<div class="vatjss-container-fluid">
 						<div class="vatjss-flex-container-no-wrap vatjss-justify-end">
 							<div class="vatjss-flex-item-desktop-80">
-								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults' ); echo esc_html($props['label']);  ?></h2>
+								<h2 id="alternative-measures"><?php $props = CFS()->get_field_info( 'alternative_measures_adults1' ); echo esc_html($props['label']);  ?></h2>
 								<p><?php echo esc_html(CFS()->get( 'alternative_measures_adults1' )); ?></p>
 								<p><?php echo esc_html(CFS()->get( 'alternative_measures_adults2' )); ?></p>
 								<?php echo CFS()->get( 'alternative_measures_video' ); ?>
